@@ -434,6 +434,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                 data-venue-type={exhibition.venue.type}
                 data-price={exhibition.priceStatus}
                 data-not-explicitly-paid={isNotExplicitlyPaid(exhibition) ? "true" : "false"}
+                data-start-date={exhibition.startDate}
                 data-start-offset={exhibition.startOffset}
                 data-end-offset={exhibition.endOffset}
                 data-priority-rank={venueRank(exhibition.venue.name)}
@@ -654,7 +655,10 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       });
     };
 
-    const calendarResizeObserver = new ResizeObserver(updateCalendarMetrics);
+    const calendarResizeObserver = new ResizeObserver(() => {
+      updateCalendarMetrics();
+      scheduleExpandedActiveDay();
+    });
     calendarResizeObserver.observe(calendarHeaderScroll);
 
     const prettyDate = (iso) =>
@@ -671,6 +675,78 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const getSelected = (inputs) =>
       new Set(inputs.filter((input) => input.checked).map((input) => input.value));
 
+    let expandedActiveDayFrame = 0;
+    let expandedGroupStarts = [];
+
+    const clearExpandedActiveDay = () => {
+      calendarDays.forEach((day) => day.classList.remove("is-expanded-active"));
+    };
+
+    const setExpandedActiveDay = (date) => {
+      calendarDays.forEach((day) => {
+        day.classList.toggle(
+          "is-expanded-active",
+          currentViewMode === "images" && !day.hidden && day.dataset.date === date,
+        );
+      });
+    };
+
+    const updateExpandedActiveDay = () => {
+      expandedActiveDayFrame = 0;
+      if (currentViewMode !== "images" || expandedGroupStarts.length === 0) {
+        clearExpandedActiveDay();
+        return;
+      }
+
+      const activationLine = calendarHeaderScroll.getBoundingClientRect().bottom + 1;
+      let activeGroup = expandedGroupStarts[0];
+      expandedGroupStarts.forEach((groupStart) => {
+        if (groupStart.getBoundingClientRect().top <= activationLine) {
+          activeGroup = groupStart;
+        }
+      });
+      setExpandedActiveDay(activeGroup.dataset.scrollGroupDate);
+    };
+
+    const scheduleExpandedActiveDay = () => {
+      if (expandedActiveDayFrame) return;
+      expandedActiveDayFrame = requestAnimationFrame(updateExpandedActiveDay);
+    };
+
+    const getExpandedCardGroupDate = (card) => {
+      const firstVisibleDay = calendarDays[calendarStartOffset];
+      const visibleDays = calendarDays.slice(
+        calendarStartOffset,
+        calendarStartOffset + visibleDayCount,
+      );
+      const startOffset = Number(card.dataset.startOffset);
+      const groupDate =
+        startOffset <= calendarStartOffset ? firstVisibleDay?.dataset.date : card.dataset.startDate;
+      return visibleDays.some((day) => day.dataset.date === groupDate) ? groupDate : null;
+    };
+
+    const refreshExpandedDayGroups = () => {
+      expandedGroupStarts = [];
+      expandedCards.forEach((card) => card.removeAttribute("data-scroll-group-date"));
+
+      if (currentViewMode !== "images") {
+        clearExpandedActiveDay();
+        return;
+      }
+
+      let previousGroupDate = null;
+      expandedCards
+        .filter((card) => !card.hidden)
+        .forEach((card) => {
+          const groupDate = getExpandedCardGroupDate(card);
+          if (!groupDate || groupDate === previousGroupDate) return;
+          card.dataset.scrollGroupDate = groupDate;
+          expandedGroupStarts.push(card);
+          previousGroupDate = groupDate;
+        });
+      scheduleExpandedActiveDay();
+    };
+
     const updateViewModeUi = () => {
       const imagesActive = currentViewMode === "images";
       calendarSection.dataset.viewMode = currentViewMode;
@@ -679,6 +755,10 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       calendarScroll.hidden = imagesActive;
       expandedEvents.hidden = !imagesActive;
       hoverPreview.hidden = true;
+      if (!imagesActive) {
+        expandedGroupStarts = [];
+        clearExpandedActiveDay();
+      }
     };
 
     const matchesCurrentFilters = (element, areas, venueIds, venueTypes, freeOnly) =>
@@ -746,6 +826,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
         card.hidden = !matchesCurrentFilters(card, areas, venueIds, venueTypes, freeOnly);
       });
       sortExpandedCards();
+      refreshExpandedDayGroups();
 
       const activeCount = areas.size + venueIds.size + venueTypes.size + (freeOnly ? 1 : 0);
       document.querySelector("#calendar-empty").hidden = visible !== 0;
@@ -1167,7 +1248,11 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       });
     });
 
-    window.addEventListener("resize", hideHoverPreview);
+    window.addEventListener("resize", () => {
+      hideHoverPreview();
+      scheduleExpandedActiveDay();
+    });
+    window.addEventListener("scroll", scheduleExpandedActiveDay, { passive: true });
     document.addEventListener("scroll", hideHoverPreview, true);
 
     [...areaInputs, ...venueInputs, freeInput].forEach((input) =>

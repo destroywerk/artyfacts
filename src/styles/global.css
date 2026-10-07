@@ -517,6 +517,11 @@ button {
   background: var(--ink);
 }
 
+.calendar-day.is-expanded-active:not(.today) {
+  color: var(--ink);
+  background: var(--secondary);
+}
+
 .calendar-day span,
 .calendar-day small {
   font-size: 13px;
@@ -2679,13 +2684,13 @@ body :where(*) {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 2px;
+    gap: 6px;
   }
 
   .calendar-scale-controls {
     min-width: 0;
-    flex: 0 0 auto;
-    gap: 2px;
+    flex: 1 1 auto;
+    gap: 6px;
   }
 
   .view-mode-controls {
@@ -2700,11 +2705,11 @@ body :where(*) {
 
   .zoom-controls {
     min-width: 0;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     height: var(--mobile-toolbar-height);
     grid-template-columns:
       calc(var(--mobile-toolbar-height) - 2px)
-      clamp(36px, 10.94vw, 42px)
+      minmax(clamp(30px, 7.5vw, 42px), 1fr)
       calc(var(--mobile-toolbar-height) - 2px);
   }
 
@@ -2744,10 +2749,12 @@ body :where(*) {
 
   .mobile-filter-button {
     min-width: 0;
+    flex: 2 1 auto;
+    justify-content: center;
     height: var(--mobile-toolbar-height);
     min-height: var(--mobile-toolbar-height);
     gap: 2px;
-    padding: 0 3px;
+    padding: 0 5px;
     font-size: 9px;
     white-space: nowrap;
   }
