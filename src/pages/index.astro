@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { AREAS } from "../types";
-import { addDays, asUtcDate, catalog, toIsoDate } from "../lib/catalog";
+import { addDays, asUtcDate, catalog, isNotExplicitlyPaid, toIsoDate } from "../lib/catalog";
 import registryVenues from "../../data/venues.json";
 
 const today = new Date();
@@ -117,6 +117,8 @@ const venueTypes = [
   { value: "public", label: "Public" },
   { value: "independent", label: "Independent" },
 ] as const;
+const venueTypeLabel = (type: string) =>
+  venueTypes.find((venueType) => venueType.value === type)?.label ?? type;
 const priceLabels = {
   free: "Free entry",
   paid: "Ticketed",
@@ -129,7 +131,17 @@ const calendarData = catalogue.map((exhibition) => ({
   venue: exhibition.venue.name,
   venueType: exhibition.venue.type,
   area: exhibition.venue.area,
-  address: `${exhibition.venue.address}, ${exhibition.venue.postcode}`,
+  address: [exhibition.venue.address, exhibition.venue.postcode].filter(Boolean).join(", "),
+  mapsQuery: exhibition.venue.coordinates
+    ? `${exhibition.venue.coordinates.lat},${exhibition.venue.coordinates.lng}`
+    : [
+        exhibition.venue.name,
+        exhibition.venue.address,
+        exhibition.venue.postcode,
+        "London",
+      ]
+        .filter(Boolean)
+        .join(", "),
   startDate: exhibition.startDate,
   endDate: exhibition.endDate,
   description: exhibition.shortDescription,
@@ -213,8 +225,11 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
               <label class="toolbar-toggle">
                 <span>Free entry</span>
-                <input id="free-only" type="checkbox" role="switch" />
+                <input id="free-only" type="checkbox" role="switch" aria-describedby="free-entry-policy" />
                 <span class="toggle-track" aria-hidden="true"></span>
+                <span id="free-entry-policy" class="sr-only">
+                  Includes confirmed free exhibitions and exhibitions with no price found; excludes explicitly ticketed exhibitions.
+                </span>
               </label>
 
               <details class="filter-menu" id="area-menu">
@@ -280,7 +295,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                         <label data-institution-option data-search={institutionSearchText(venue)} data-venue-type={venue.type}>
                           <input type="checkbox" name="venue" value={venue.id} />
                           <span>{venue.name}</span>
-                          <small>{venue.type}</small>
+                          <small>{venueTypeLabel(venue.type)}</small>
                         </label>
                       ))
                     }
@@ -329,6 +344,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                     data-venue={exhibition.venue.id}
                     data-venue-type={exhibition.venue.type}
                     data-price={exhibition.priceStatus}
+                    data-not-explicitly-paid={isNotExplicitlyPaid(exhibition) ? "true" : "false"}
                     data-start-date={exhibition.startDate}
                     data-start-offset={exhibition.startOffset}
                     data-end-offset={exhibition.endOffset}
@@ -438,9 +454,20 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
             <dt>Dates</dt>
             <dd id="modal-dates"></dd>
           </div>
-          <div>
+          <div class="modal-where-fact">
             <dt>Where</dt>
             <dd id="modal-address"></dd>
+            <a
+              class="modal-map-link"
+              id="modal-map-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M5 15 15 5M8 5h7v7" vector-effect="non-scaling-stroke" />
+              </svg>
+            </a>
           </div>
           <div>
             <dt>Area</dt>
@@ -581,7 +608,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
           (!areas.size || areas.has(row.dataset.area)) &&
           (!venueIds.size || venueIds.has(row.dataset.venue)) &&
           (!venueTypes.size || venueTypes.has(row.dataset.venueType)) &&
-          (!freeOnly || row.dataset.price === "free");
+          (!freeOnly || row.dataset.notExplicitlyPaid === "true");
         row.hidden = !show;
         if (show) visible += 1;
       });
@@ -815,6 +842,9 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       document.querySelector("#modal-dates").textContent =
         `${prettyDate(event.startDate)} — ${prettyDate(event.endDate)}`;
       document.querySelector("#modal-address").textContent = event.address;
+      const mapLink = document.querySelector("#modal-map-link");
+      mapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.mapsQuery)}`;
+      mapLink.setAttribute("aria-label", `Open ${event.venue} in Google Maps`);
       document.querySelector("#modal-area").textContent = event.area;
       document.querySelector("#modal-price").textContent = event.price;
       document.querySelector("#modal-link").href = event.sourceUrl;

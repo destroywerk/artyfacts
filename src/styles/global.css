@@ -1275,6 +1275,49 @@ button {
   font-size: 10px;
 }
 
+.modal-where-fact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 36px;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.modal-where-fact dt,
+.modal-where-fact dd {
+  grid-column: 1;
+}
+
+.modal-map-link {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  justify-self: end;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: var(--surface);
+  text-decoration: none;
+}
+
+.modal-map-link:hover,
+.modal-map-link:focus-visible {
+  color: var(--surface);
+  background: var(--ink);
+}
+
+.modal-map-link svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  vector-effect: non-scaling-stroke;
+}
+
 .venue-link {
   min-height: 48px;
   display: flex;

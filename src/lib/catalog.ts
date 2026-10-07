@@ -64,6 +64,17 @@ export const catalog: ExhibitionWithVenue[] = exhibitions
   })
   .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.title.localeCompare(b.title));
 
+/**
+ * Free-entry filtering is evidence based: only an explicit paid/ticketed
+ * status excludes an exhibition. Unknown prices remain unknown, including at
+ * commercial galleries, rather than being rewritten as confirmed free.
+ */
+export function isNotExplicitlyPaid(
+  exhibition: Pick<ExhibitionWithVenue, "priceStatus">,
+): boolean {
+  return exhibition.priceStatus === "free" || exhibition.priceStatus === "unknown";
+}
+
 export function getFortnightCatalog(today: Date): ExhibitionWithVenue[] {
   const start = toIsoDate(today);
   const end = toIsoDate(addDays(today, 13));
