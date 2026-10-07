@@ -3,11 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { AREAS } from "../types";
 import { addDays, asUtcDate, catalog, isNotExplicitlyPaid, toIsoDate } from "../lib/catalog";
 import registryVenues from "../../data/venues.json";
+import runSummary from "../../data/run-summary.json";
 
-const today = new Date();
-today.setUTCHours(12, 0, 0, 0);
-
-const todayIso = toIsoDate(today);
+// Static HTML uses the latest catalog window as a no-JavaScript fallback.
+// The browser immediately replaces this with the live Europe/London date.
+const fallbackTodayIso = runSummary.windowStart;
+const fallbackToday = asUtcDate(fallbackTodayIso);
 const DAY_MS = 86_400_000;
 
 const formatDate = (iso: string, options: Intl.DateTimeFormatOptions) =>
@@ -19,11 +20,9 @@ const formatCompactDate = (iso: string) => {
 };
 
 const dayOffset = (iso: string) =>
-  Math.round((asUtcDate(iso).getTime() - asUtcDate(todayIso).getTime()) / DAY_MS);
+  Math.round((asUtcDate(iso).getTime() - fallbackToday.getTime()) / DAY_MS);
 
-const horizonEnd = new Date(today);
-horizonEnd.setUTCMonth(horizonEnd.getUTCMonth() + 1);
-const horizonEndIso = toIsoDate(horizonEnd);
+const horizonEndIso = runSummary.windowEnd;
 const horizonDayCount = dayOffset(horizonEndIso) + 1;
 
 const venuePriority = [
@@ -62,7 +61,7 @@ const venueRank = (name: string) => {
 };
 
 const days = Array.from({ length: horizonDayCount }, (_, index) => {
-  const date = addDays(today, index);
+  const date = addDays(fallbackToday, index);
   const iso = toIsoDate(date);
   return {
     iso,
@@ -75,7 +74,6 @@ const days = Array.from({ length: horizonDayCount }, (_, index) => {
 });
 
 const catalogue = catalog
-  .filter((exhibition) => exhibition.startDate <= horizonEndIso && exhibition.endDate >= todayIso)
   .map((exhibition) => {
     const startOffset = dayOffset(exhibition.startDate);
     const endOffset = dayOffset(exhibition.endDate);
@@ -87,7 +85,7 @@ const catalogue = catalog
       endOffset,
       startColumn,
       span: Math.max(1, endColumn - startColumn + 1),
-      continuesBefore: exhibition.startDate < todayIso,
+      continuesBefore: exhibition.startDate < fallbackTodayIso,
       continuesAfter: endOffset >= 3,
     };
   })
@@ -375,6 +373,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                     data-price={exhibition.priceStatus}
                     data-not-explicitly-paid={isNotExplicitlyPaid(exhibition) ? "true" : "false"}
                     data-start-date={exhibition.startDate}
+                    data-end-date={exhibition.endDate}
                     data-start-offset={exhibition.startOffset}
                     data-end-offset={exhibition.endOffset}
                   >
@@ -453,6 +452,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                 data-price={exhibition.priceStatus}
                 data-not-explicitly-paid={isNotExplicitlyPaid(exhibition) ? "true" : "false"}
                 data-start-date={exhibition.startDate}
+                data-end-date={exhibition.endDate}
                 data-start-offset={exhibition.startOffset}
                 data-end-offset={exhibition.endOffset}
                 data-priority-rank={venueRank(exhibition.venue.name)}
@@ -594,7 +594,15 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
   <script id="calendar-data" type="application/json" is:inline set:html={JSON.stringify(calendarData)}></script>
 
-  <script is:inline>
+  <script type="module" is:inline>
+    import {
+      calendarDayDifference,
+      isIsoDate,
+      londonCalendarDates,
+      londonDateIso,
+      millisecondsUntilLondonDateChange,
+    } from "/london-date.mjs";
+
     const dataElement = document.querySelector("#calendar-data");
     const events = new Map(JSON.parse(dataElement?.textContent ?? "[]").map((item) => [item.id, item]));
     const rows = [...document.querySelectorAll("[data-row]")];
@@ -624,7 +632,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const calendarHeaderScroll = document.querySelector("#calendar-header-scroll");
     const calendarHeaderSentinel = document.querySelector("#calendar-header-sentinel");
     const calendarDaysGrid = document.querySelector(".calendar-days");
-    const calendarDays = [...document.querySelectorAll(".calendar-day")];
+    let calendarDays = [...document.querySelectorAll(".calendar-day")];
     const removeDay = document.querySelector("#remove-day");
     const addDay = document.querySelector("#add-day");
     const previousRange = document.querySelector("#previous-range");
@@ -643,6 +651,58 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const isMobileFilterLayout = () => window.matchMedia("(max-width: 1199px)").matches;
     const dayBreakpoint = window.matchMedia("(max-width: 600px)");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const calendarDateFormatter = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "UTC",
+      weekday: "short",
+      day: "numeric",
+      month: "short",
+    });
+    const calendarDateLabelFormatter = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "UTC",
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+    let liveTodayIso = londonDateIso();
+
+    const renderCalendarDays = () => {
+      calendarDays = londonCalendarDates(liveTodayIso).map((iso) => {
+        const date = new Date(`${iso}T12:00:00Z`);
+        const parts = Object.fromEntries(
+          calendarDateFormatter
+            .formatToParts(date)
+            .filter(({ type }) => type !== "literal")
+            .map(({ type, value }) => [type, value]),
+        );
+        const button = document.createElement("button");
+        button.className = "calendar-day";
+        button.type = "button";
+        button.dataset.date = iso;
+        button.setAttribute("aria-label", calendarDateLabelFormatter.format(date));
+        button.classList.toggle("today", iso === liveTodayIso);
+        button.classList.toggle("weekend", [0, 6].includes(date.getUTCDay()));
+        if (iso === liveTodayIso) button.setAttribute("aria-current", "date");
+        button.innerHTML = `<span>${parts.weekday}</span><strong>${parts.day}</strong><small>${parts.month}</small>`;
+        return button;
+      });
+      calendarDaysGrid.replaceChildren(...calendarDays);
+    };
+
+    const refreshEventDateOffsets = () => {
+      [...rows, ...expandedCards].forEach((element) => {
+        element.dataset.startOffset = String(
+          calendarDayDifference(liveTodayIso, element.dataset.startDate),
+        );
+        element.dataset.endOffset = String(
+          calendarDayDifference(liveTodayIso, element.dataset.endDate),
+        );
+      });
+    };
+
+    renderCalendarDays();
+    refreshEventDateOffsets();
+
     const initialParams = new URLSearchParams(location.search);
     const initialViewParam = initialParams.get("view");
     let hasExplicitViewChoice = initialViewParam === "images" || initialViewParam === "list";
@@ -657,10 +717,23 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     let visibleDayCount = hasExplicitDayChoice ? parsedInitialDays : (dayBreakpoint.matches ? 1 : 5);
     const initialStartIso = initialParams.get("start");
     const initialOffsetParam = Number.parseInt(initialParams.get("offset") ?? "", 10);
-    const requestedStartOffset = initialStartIso
-      ? Math.round((new Date(`${initialStartIso}T12:00:00Z`).getTime() - new Date(`${calendarDays[0].dataset.date}T12:00:00Z`).getTime()) / 86_400_000)
-      : initialOffsetParam;
     const maximumStartOffset = () => Math.max(0, calendarDays.length - visibleDayCount);
+    const hasValidInitialStart =
+      initialStartIso !== null &&
+      isIsoDate(initialStartIso) &&
+      initialStartIso >= liveTodayIso &&
+      initialStartIso <= calendarDays.at(-1).dataset.date;
+    const hasValidInitialOffset =
+      initialParams.has("offset") &&
+      Number.isInteger(initialOffsetParam) &&
+      initialOffsetParam >= 0 &&
+      initialOffsetParam <= maximumStartOffset();
+    let hasExplicitStartChoice = hasValidInitialStart || hasValidInitialOffset;
+    const requestedStartOffset = hasValidInitialStart
+      ? calendarDayDifference(liveTodayIso, initialStartIso)
+      : hasValidInitialOffset
+        ? initialOffsetParam
+        : 0;
     let calendarStartOffset = Number.isFinite(requestedStartOffset)
       ? Math.min(maximumStartOffset(), Math.max(0, requestedStartOffset))
       : 0;
@@ -855,6 +928,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       const selectedOffset = calendarDays.indexOf(day);
       if (selectedOffset < 0) return;
       expandedScrollTargetDate = null;
+      hasExplicitStartChoice = true;
       hasExplicitDayChoice = true;
       visibleDayCount = 1;
       calendarStartOffset = selectedOffset;
@@ -910,7 +984,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       if (historyMode === "none") return;
       const params = new URLSearchParams();
       if (hasExplicitDayChoice) params.set("days", String(visibleDayCount));
-      if (calendarStartOffset > 0) {
+      if (hasExplicitStartChoice) {
         params.set("start", calendarDays[calendarStartOffset].dataset.date);
       }
       if (areas.size) params.set("area", [...areas].join(","));
@@ -996,7 +1070,8 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       addDay.disabled = visibleDayCount === 14;
       previousRange.disabled = calendarStartOffset === 0;
       nextRange.disabled = calendarStartOffset === maximumStartOffset();
-      todayRange.disabled = calendarStartOffset === 0;
+      todayRange.disabled =
+        calendarDays[calendarStartOffset]?.dataset.date === liveTodayIso;
       document.querySelector("#calendar-scroll").scrollLeft = 0;
       calendarHeaderScroll.scrollLeft = 0;
       updateCalendarMetrics();
@@ -1032,13 +1107,22 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
       const startIso = params.get("start");
       const parsedOffset = Number.parseInt(params.get("offset") ?? "", 10);
-      const restoredOffset = startIso
-        ? Math.round(
-            (new Date(`${startIso}T12:00:00Z`).getTime() -
-              new Date(`${calendarDays[0].dataset.date}T12:00:00Z`).getTime()) /
-              86_400_000,
-          )
-        : parsedOffset;
+      const hasValidStart =
+        startIso !== null &&
+        isIsoDate(startIso) &&
+        startIso >= liveTodayIso &&
+        startIso <= calendarDays.at(-1).dataset.date;
+      const hasValidOffset =
+        params.has("offset") &&
+        Number.isInteger(parsedOffset) &&
+        parsedOffset >= 0 &&
+        parsedOffset <= maximumStartOffset();
+      hasExplicitStartChoice = hasValidStart || hasValidOffset;
+      const restoredOffset = hasValidStart
+        ? calendarDayDifference(liveTodayIso, startIso)
+        : hasValidOffset
+          ? parsedOffset
+          : 0;
       calendarStartOffset = Number.isFinite(restoredOffset)
         ? Math.min(maximumStartOffset(), Math.max(0, restoredOffset))
         : 0;
@@ -1102,10 +1186,12 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       updateCalendarRange(visibleDayCount + 1);
     });
     previousRange.addEventListener("click", () => {
+      hasExplicitStartChoice = true;
       calendarStartOffset = Math.max(0, calendarStartOffset - visibleDayCount);
       updateCalendarRange(visibleDayCount, "push");
     });
     nextRange.addEventListener("click", () => {
+      hasExplicitStartChoice = true;
       calendarStartOffset = Math.min(
         maximumStartOffset(),
         calendarStartOffset + visibleDayCount,
@@ -1113,13 +1199,16 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       updateCalendarRange(visibleDayCount, "push");
     });
     todayRange.addEventListener("click", () => {
+      refreshLondonDate("none");
+      hasExplicitStartChoice = false;
       calendarStartOffset = 0;
       updateCalendarRange(visibleDayCount, "push");
     });
     viewImages.addEventListener("click", () => setViewMode("images"));
     viewList.addEventListener("click", () => setViewMode("list"));
-    calendarDays.forEach((day) => {
-      day.addEventListener("click", () => activateCalendarDay(day));
+    calendarDaysGrid.addEventListener("click", (event) => {
+      const day = event.target.closest(".calendar-day");
+      if (day) activateCalendarDay(day);
     });
 
     dayBreakpoint.addEventListener("change", (event) => {
@@ -1127,7 +1216,10 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       updateCalendarRange(event.matches ? 1 : 5);
     });
 
-    window.addEventListener("popstate", restoreCalendarState);
+    window.addEventListener("popstate", () => {
+      refreshLondonDate("none");
+      restoreCalendarState();
+    });
 
     const openFilters = () => {
       hoverPreview.hidden = true;
@@ -1534,10 +1626,63 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       });
     });
 
+    let londonDateRefreshTimer = 0;
+
+    const scheduleLondonDateRefresh = () => {
+      window.clearTimeout(londonDateRefreshTimer);
+      londonDateRefreshTimer = window.setTimeout(
+        () => refreshLondonDate(),
+        millisecondsUntilLondonDateChange() + 100,
+      );
+    };
+
+    const refreshLondonDate = (historyMode = "replace") => {
+      const nextTodayIso = londonDateIso();
+      if (nextTodayIso === liveTodayIso) {
+        scheduleLondonDateRefresh();
+        return false;
+      }
+
+      const selectedDate = calendarDays[calendarStartOffset]?.dataset.date;
+      const preserveExplicitDate =
+        hasExplicitStartChoice &&
+        selectedDate &&
+        selectedDate >= nextTodayIso;
+
+      liveTodayIso = nextTodayIso;
+      renderCalendarDays();
+      refreshEventDateOffsets();
+
+      if (
+        preserveExplicitDate &&
+        selectedDate <= calendarDays.at(-1).dataset.date
+      ) {
+        calendarStartOffset = Math.min(
+          maximumStartOffset(),
+          calendarDayDifference(liveTodayIso, selectedDate),
+        );
+      } else {
+        hasExplicitStartChoice = false;
+        calendarStartOffset = 0;
+      }
+
+      expandedScrollTargetDate = null;
+      updateCalendarRange(visibleDayCount, historyMode);
+      scheduleLondonDateRefresh();
+      return true;
+    };
+
+    window.addEventListener("focus", () => refreshLondonDate());
+    window.addEventListener("pageshow", () => refreshLondonDate());
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") refreshLondonDate();
+    });
+
     restoreFilters();
     filterInstitutions(institutionSearch.value);
     filters.setAttribute("aria-hidden", isMobileFilterLayout() ? "true" : "false");
     updateViewModeUi();
     updateCalendarRange(visibleDayCount);
+    scheduleLondonDateRefresh();
   </script>
 </BaseLayout>

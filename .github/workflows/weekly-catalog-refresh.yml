@@ -1,0 +1,159 @@
+name: Weekly catalog refresh
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-catalog-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Refresh catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read successful scrape baseline
+        id: baseline
+        shell: bash
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+
+          summary = json.loads(Path("data/run-summary.json").read_text(encoding="utf-8"))
+          successful = summary.get("successfulScrapes")
+          if not isinstance(successful, int) or successful < 1:
+              raise SystemExit("Existing successfulScrapes baseline must be a positive integer")
+          print(f"successful={successful}")
+          print(f"exhibitions={summary.get('exhibitionsFound', 'unknown')}")
+          PY
+
+      - name: Refresh catalog conservatively
+        run: python3 scripts/ingest.py --workers 4 --delay 2.5
+
+      - name: Enforce refresh safety guard
+        env:
+          BASELINE_SUCCESSFUL: ${{ steps.baseline.outputs.successful }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import math
+          import os
+          from pathlib import Path
+
+          baseline = int(os.environ["BASELINE_SUCCESSFUL"])
+          summary = json.loads(Path("data/run-summary.json").read_text(encoding="utf-8"))
+          exhibitions = json.loads(Path("data/exhibitions.json").read_text(encoding="utf-8"))
+          current = summary.get("successfulScrapes")
+          threshold = math.ceil(baseline * 0.70)
+
+          print(f"Successful scrape baseline: {baseline}")
+          print(f"Required successful scrapes (70%): {threshold}")
+          print(f"Current successful scrapes: {current}")
+          print(f"Generated exhibitions: {len(exhibitions) if isinstance(exhibitions, list) else 'invalid'}")
+
+          if not isinstance(current, int) or current < threshold:
+              raise SystemExit(
+                  f"Safety guard failed: successfulScrapes={current!r}, "
+                  f"required>={threshold} from baseline={baseline}"
+              )
+          if not isinstance(exhibitions, list) or not exhibitions:
+              raise SystemExit("Safety guard failed: generated exhibitions are empty or invalid")
+          PY
+
+      - name: Validate generated catalog
+        run: python3 scripts/validate_data.py
+
+      - name: Install site dependencies
+        run: npm ci
+
+      - name: Test London date behavior
+        run: npm test
+
+      - name: Build production site
+        run: npm run build
+
+      - name: Commit and push generated files
+        id: commit
+        shell: bash
+        run: |
+          git add -- data/ src/data/
+          if git diff --cached --quiet; then
+            echo "No generated catalog changes to commit."
+            echo "result=no-changes" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --cached --stat
+          git commit -m "chore: refresh weekly exhibition catalog"
+          git push origin HEAD:main
+          echo "result=pushed" >> "$GITHUB_OUTPUT"
+
+      - name: Upload failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-catalog-refresh-diagnostics-${{ github.run_id }}
+          path: |
+            data/run-summary.json
+            data/coverage.csv
+            data/coverage.json
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Write refresh summary
+        if: always()
+        env:
+          BASELINE_SUCCESSFUL: ${{ steps.baseline.outputs.successful }}
+          BASELINE_EXHIBITIONS: ${{ steps.baseline.outputs.exhibitions }}
+          COMMIT_RESULT: ${{ steps.commit.outputs.result }}
+          JOB_STATUS: ${{ job.status }}
+        shell: bash
+        run: |
+          {
+            echo "## Weekly catalog refresh"
+            echo
+            echo "- Job result: ${JOB_STATUS}"
+            echo "- Previous successful scrapes: ${BASELINE_SUCCESSFUL:-unavailable}"
+            echo "- Previous exhibitions: ${BASELINE_EXHIBITIONS:-unavailable}"
+            echo "- Git result: ${COMMIT_RESULT:-not reached}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+
+          path = Path("data/run-summary.json")
+          if path.exists():
+              summary = json.loads(path.read_text(encoding="utf-8"))
+              print(f"- Generated successful scrapes: {summary.get('successfulScrapes', 'unavailable')}")
+              print(f"- Generated exhibitions: {summary.get('exhibitionsFound', 'unavailable')}")
+              print(f"- Catalog window: {summary.get('windowStart', '?')} to {summary.get('windowEnd', '?')}")
+          PY

@@ -9,7 +9,8 @@
     "start": "astro dev --host 127.0.0.1",
     "build": "astro check && astro build",
     "check": "astro check",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
