@@ -45,6 +45,7 @@ export interface Venue {
   area: Area | null;
   website: string | null;
   whatsOnUrl: string | null;
+  instagramUrl?: string | null;
   openingHours: WeeklyHours | null;
   hoursLastChecked: string | null;
   scrapeMethod: ScrapeMethod;
@@ -61,6 +62,7 @@ export interface Exhibition {
   shortDescription: string;
   imageUrl: string | null;
   cachedThumbnail: string | null;
+  imageAlt?: string;
   sourceUrl: string;
   priceStatus: PriceStatus;
   confidenceScore: number;

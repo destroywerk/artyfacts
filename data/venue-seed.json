@@ -841,6 +841,16 @@
       "whatsOnUrl": "https://www.blueshopcottage.com/exhibitions",
       "scrapeMethod": "website",
       "sourceNote": "The official site brands the physical venue as Blue Shop Gallery."
+    },
+    {
+      "id": "refuses-at-queensrollahouse",
+      "name": "Refusés at Queensrollahouse",
+      "type": "independent",
+      "website": "https://refuses.info/",
+      "whatsOnUrl": "https://refuses.info/Archive",
+      "instagramUrl": "https://www.instagram.com/r.efuses/",
+      "scrapeMethod": "link-only",
+      "sourceNote": "Official exhibition details are published by @r.efuses; permanent London venue verified through Queensrollahouse."
     }
   ]
 }

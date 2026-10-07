@@ -2344,5 +2344,25 @@
     "scrapeMethod": "link-only",
     "lastSuccessfulScrape": null,
     "priorityRank": null
+  },
+  {
+    "id": "refuses-at-queensrollahouse",
+    "name": "Refusés at Queensrollahouse",
+    "type": "independent",
+    "address": "18 Trading Estate Road",
+    "postcode": "NW10 7LU",
+    "coordinates": {
+      "lat": 51.526479,
+      "lng": -0.268658
+    },
+    "area": "South Kensington & West",
+    "website": "https://refuses.info/",
+    "whatsOnUrl": "https://refuses.info/Archive",
+    "instagramUrl": "https://www.instagram.com/r.efuses/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
   }
 ]

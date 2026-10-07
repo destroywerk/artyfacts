@@ -1150,6 +1150,19 @@
         "lat": 51.478127,
         "lng": -0.112466
       }
+    },
+    {
+      "venueId": "refuses-at-queensrollahouse",
+      "name": "Refusés at Queensrollahouse",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official Queensrollahouse contact page gives 18 Trading Estate Road, NW10 7LU; postcode resolves to London.",
+      "postcode": "NW10 7LU",
+      "coordinates": {
+        "lat": 51.526479,
+        "lng": -0.268658
+      }
     }
   ],
   "exhibitions": [
@@ -2412,6 +2425,15 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"Young V&A\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"E2 9PA\", \"streetAddress\": \"Cam…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "refuses-at-queensrollahouse-elspeth-vince-soft-tissue-2026-10-09",
+      "venueId": "refuses-at-queensrollahouse",
+      "title": "Elspeth Vince: Soft Tissue",
+      "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "Official @r.efuses post identifies Queensrollahouse, 18 Trading Estate Road, London NW10 7LU."
     }
   ]
 }

@@ -436,6 +436,14 @@
         "sunday": { "open": "10:00", "close": "18:00" }
       },
       "hoursLastChecked": "2026-10-06"
+    },
+    "refuses-at-queensrollahouse": {
+      "address": "18 Trading Estate Road",
+      "postcode": "NW10 7LU",
+      "coordinates": { "lat": 51.526479, "lng": -0.268658 },
+      "area": "South Kensington & West",
+      "instagramUrl": "https://www.instagram.com/r.efuses/",
+      "addressSourceUrl": "https://queensrollahouse.com/Contact/"
     }
   }
 }

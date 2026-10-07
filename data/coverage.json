@@ -2679,5 +2679,32 @@
     "paidShowCount": 0,
     "unknownPriceShowCount": 0,
     "rejectedNonLondonCount": 0
+  },
+  {
+    "venueId": "refuses-at-queensrollahouse",
+    "name": "Refusés at Queensrollahouse",
+    "windowStart": "2026-10-06",
+    "windowEnd": "2026-11-06",
+    "windowKind": "calendar-month-inclusive",
+    "status": "instagram-only",
+    "attemptedAt": "2026-10-07T16:10:00+00:00",
+    "lastSuccess": null,
+    "showCount": 1,
+    "freshShowCount": 1,
+    "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+    "httpStatus": 200,
+    "robotsAllowed": true,
+    "extractionMethods": [
+      "manual-official-instagram"
+    ],
+    "reviewStatus": "verified-user-source",
+    "error": null,
+    "priorityRank": null,
+    "locationVerified": true,
+    "locationEvidence": "Official post and Queensrollahouse contact page identify 18 Trading Estate Road, London NW10 7LU.",
+    "freeShowCount": 1,
+    "paidShowCount": 0,
+    "unknownPriceShowCount": 0,
+    "rejectedNonLondonCount": 0
   }
 ]

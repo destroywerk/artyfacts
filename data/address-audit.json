@@ -4,8 +4,8 @@
   "windowStart": "2026-10-06",
   "windowEnd": "2026-11-06",
   "windowKind": "calendar-month-inclusive",
-  "totalVenues": 99,
-  "verified": 52,
+  "totalVenues": 100,
+  "verified": 53,
   "unresolved": 47,
   "records": [
     {
@@ -1549,6 +1549,23 @@
       "evidence": "Official venue address 72 Brixton Road, Oval, SW9 6BH; postcode resolves to Lambeth, London",
       "previousAddress": "72 Brixton Road, Oval",
       "previousPostcode": "SW9 6BH"
+    },
+    {
+      "venueId": "refuses-at-queensrollahouse",
+      "name": "Refusés at Queensrollahouse",
+      "priorityRank": null,
+      "status": "verified-official-london-address",
+      "accepted": true,
+      "address": "18 Trading Estate Road",
+      "postcode": "NW10 7LU",
+      "coordinates": {
+        "lat": 51.526479,
+        "lng": -0.268658
+      },
+      "sourceUrl": "https://queensrollahouse.com/Contact/",
+      "evidence": "Official Queensrollahouse contact page gives 18 Trading Estate Road, NW10 7LU.",
+      "previousAddress": null,
+      "previousPostcode": null
     }
   ]
 }

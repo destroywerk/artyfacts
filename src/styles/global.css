@@ -232,7 +232,10 @@ button {
 }
 
 .hero {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
   padding: clamp(30px, 4vw, 58px) clamp(18px, 3vw, 48px) clamp(24px, 3vw, 42px);
 }
 
@@ -253,6 +256,30 @@ button {
   letter-spacing: -0.02em !important;
   line-height: 0.78;
   white-space: nowrap;
+}
+
+.creator-credit {
+  flex: 0 0 auto;
+  margin: 0;
+  font-family: var(--sans) !important;
+  font-weight: 300 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.creator-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.creator-credit a:hover,
+.creator-credit a:focus-visible {
+  outline: 0;
+  color: #fff;
+  background: var(--ink);
 }
 
 .calendar-section {
@@ -490,13 +517,23 @@ button {
 
 .calendar-day {
   position: relative;
+  width: 100%;
   min-height: 100%;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr) auto;
   align-items: start;
+  margin: 0;
   padding: 11px 10px 9px;
+  border: 0;
   border-right: 1px solid var(--line);
+  border-radius: 0;
+  color: inherit;
+  background: var(--paper);
+  font: inherit;
+  text-align: left;
+  appearance: none;
+  cursor: pointer;
   transition: padding 180ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -520,6 +557,17 @@ button {
 .calendar-day.is-expanded-active:not(.today) {
   color: var(--ink);
   background: var(--secondary);
+}
+
+.calendar-day:not(:disabled):hover,
+.calendar-day:focus-visible {
+  outline: 0;
+  background-image: linear-gradient(rgb(0 0 0 / 5%), rgb(0 0 0 / 5%));
+}
+
+.calendar-day:disabled {
+  color: var(--line);
+  cursor: not-allowed;
 }
 
 .calendar-day span,
@@ -1773,6 +1821,7 @@ button {
 .toolbar-toggle,
 .filter-menu summary,
 .toolbar-clear,
+.creator-credit,
 .mobile-filter-button,
 .mobile-apply,
 .filter-menu-content,
@@ -1976,6 +2025,18 @@ button {
 }
 
 @media (max-width: 1199px) {
+  .hero {
+    --credit-balance-space: calc((10px + clamp(24px, 3vw, 42px)) / 2);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--credit-balance-space);
+    padding-bottom: var(--credit-balance-space);
+  }
+
+  .creator-credit {
+    align-self: flex-start;
+  }
+
   .calendar-actions {
     gap: 8px;
   }

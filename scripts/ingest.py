@@ -2659,6 +2659,7 @@ def venue_output_record(
         "area": area,
         "website": seed.get("website"),
         "whatsOnUrl": seed.get("whatsOnUrl"),
+        "instagramUrl": override.get("instagramUrl") or seed.get("instagramUrl"),
         "openingHours": merged.get("openingHours"),
         "hoursLastChecked": merged.get("hoursLastChecked"),
         "scrapeMethod": scrape_method,

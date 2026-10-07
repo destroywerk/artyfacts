@@ -907,6 +907,17 @@
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
       "verifiedAt": "2026-10-06"
+    },
+    {
+      "exhibitionId": "refuses-at-queensrollahouse-elspeth-vince-soft-tissue-2026-10-09",
+      "venueId": "refuses-at-queensrollahouse",
+      "title": "Elspeth Vince: Soft Tissue",
+      "description": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
+      "descriptionBeforeOverride": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
+      "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+      "reasonCode": "official-source-description",
+      "evidence": "Official gallery caption and contemporaneous FAD coverage describe the new paintings and site-specific installation.",
+      "verifiedAt": "2026-10-07"
     }
   ]
 }

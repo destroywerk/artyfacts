@@ -27,7 +27,7 @@ const horizonEndIso = toIsoDate(horizonEnd);
 const horizonDayCount = dayOffset(horizonEndIso) + 1;
 
 const venuePriority = [
-  "The Photographers' Gallery", "Pilar Corrias", "THE TAGLI", "Lisson Gallery", "William Hine",
+  "Refusés at Queensrollahouse", "The Photographers' Gallery", "Pilar Corrias", "THE TAGLI", "Lisson Gallery", "William Hine",
   "Terrace Gallery", "Chisenhale Gallery", "Soho Revue", "The Cob Gallery", "October Gallery",
   "Mimosa House", "Ginny on Frederick", "Haricot Gallery", "Hannah Barry Gallery",
   "Sprüth Magers Gallery", "Kristin Hjellegjerde Gallery", "Matt's Gallery", "Maureen Paley",
@@ -105,6 +105,7 @@ const institutionSearchText = (venue: (typeof registryVenues)[number]) =>
     venue.id.replaceAll("-", " "),
     venue.website,
     venue.whatsOnUrl,
+    "instagramUrl" in venue ? venue.instagramUrl : null,
   ]
     .filter(Boolean)
     .join(" ")
@@ -143,6 +144,7 @@ const calendarData = catalogue.map((exhibition) => ({
   endDate: exhibition.endDate,
   description: exhibition.shortDescription,
   image: exhibition.cachedThumbnail ?? exhibition.imageUrl,
+  imageAlt: exhibition.imageAlt ?? "",
   imagePosition: exhibition.imagePosition ?? "center",
   sourceUrl: exhibition.sourceUrl,
   price: priceLabels[exhibition.priceStatus],
@@ -182,6 +184,14 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     <main>
       <section class="hero" aria-labelledby="page-title">
         <h1 id="page-title">Artyfacts</h1>
+        <p class="creator-credit">
+          Created by{" "}
+          <a
+            href="https://www.instagram.com/timgreen.studio/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Tim Green</a>
+        </p>
       </section>
 
       <section class="calendar-section" data-view-mode="images" aria-label="Exhibition calendar">
@@ -325,18 +335,26 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
         <div class="calendar-header-sentinel" id="calendar-header-sentinel" aria-hidden="true"></div>
         <div class="calendar-header-scroll" id="calendar-header-scroll">
-          <div class="calendar-days" style="--visible-days:3" aria-hidden="true">
+          <div class="calendar-days" style="--visible-days:3">
             {
               days.map((day, index) => (
-                <div
+                <button
                   class:list={["calendar-day", { today: day.isToday, weekend: day.isWeekend }]}
+                  type="button"
                   data-date={day.iso}
                   hidden={index > 2}
+                  aria-label={formatDate(day.iso, {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                  aria-current={day.isToday ? "date" : undefined}
                 >
                   <span>{day.weekday}</span>
                   <strong>{day.day}</strong>
                   <small>{day.month}</small>
-                </div>
+                </button>
               ))
             }
           </div>
@@ -378,7 +396,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                         exhibition.imageUrl ? (
                           <img
                             src={exhibition.cachedThumbnail ?? exhibition.imageUrl}
-                            alt=""
+                            alt={exhibition.imageAlt ?? ""}
                             loading="lazy"
                             decoding="async"
                             referrerpolicy="no-referrer"
@@ -451,7 +469,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                     exhibition.cachedThumbnail ?? exhibition.imageUrl ? (
                       <img
                         src={exhibition.cachedThumbnail ?? exhibition.imageUrl}
-                        alt=""
+                        alt={exhibition.imageAlt ?? ""}
                         loading="lazy"
                         decoding="async"
                         referrerpolicy="no-referrer"
@@ -624,6 +642,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const mobileInstitutionSearchClear = document.querySelector("#mobile-institution-search-clear");
     const isMobileFilterLayout = () => window.matchMedia("(max-width: 1199px)").matches;
     const dayBreakpoint = window.matchMedia("(max-width: 600px)");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const initialParams = new URLSearchParams(location.search);
     const initialViewParam = initialParams.get("view");
     let hasExplicitViewChoice = initialViewParam === "images" || initialViewParam === "list";
@@ -719,23 +738,39 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
     let expandedActiveDayFrame = 0;
     let expandedGroupStarts = [];
+    let expandedScrollTargetDate = null;
 
     const clearExpandedActiveDay = () => {
-      calendarDays.forEach((day) => day.classList.remove("is-expanded-active"));
+      calendarDays.forEach((day) => {
+        day.classList.remove("is-expanded-active");
+        day.removeAttribute("aria-pressed");
+      });
     };
 
     const setExpandedActiveDay = (date) => {
       calendarDays.forEach((day) => {
-        day.classList.toggle(
-          "is-expanded-active",
-          currentViewMode === "images" && !day.hidden && day.dataset.date === date,
-        );
+        const active =
+          currentViewMode === "images" && !day.hidden && day.dataset.date === date;
+        day.classList.toggle("is-expanded-active", active);
+        if (currentViewMode === "images" && !day.hidden) {
+          day.setAttribute("aria-pressed", String(active));
+        } else {
+          day.removeAttribute("aria-pressed");
+        }
       });
     };
 
     const updateExpandedActiveDay = () => {
       expandedActiveDayFrame = 0;
-      if (currentViewMode !== "images" || expandedGroupStarts.length === 0) {
+      if (currentViewMode !== "images") {
+        clearExpandedActiveDay();
+        return;
+      }
+      if (expandedScrollTargetDate) {
+        setExpandedActiveDay(expandedScrollTargetDate);
+        return;
+      }
+      if (expandedGroupStarts.length === 0) {
         clearExpandedActiveDay();
         return;
       }
@@ -789,6 +824,43 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       scheduleExpandedActiveDay();
     };
 
+    const scrollExpandedToDay = (day) => {
+      const date = day.dataset.date;
+      const visibleCards = expandedCards.filter((card) => !card.hidden);
+      const nextCard = visibleCards.find((card) => {
+        const groupDate = getExpandedCardGroupDate(card);
+        return groupDate && groupDate >= date;
+      });
+      const boundary = nextCard
+        ? nextCard.getBoundingClientRect().top + window.scrollY
+        : expandedEvents.getBoundingClientRect().bottom + window.scrollY;
+      const stickyOffset = calendarHeaderScroll.getBoundingClientRect().height + 1;
+
+      expandedScrollTargetDate = date;
+      setExpandedActiveDay(date);
+      window.scrollTo({
+        top: Math.max(0, boundary - stickyOffset),
+        behavior: reducedMotion.matches ? "auto" : "smooth",
+      });
+      requestAnimationFrame(() => setExpandedActiveDay(date));
+    };
+
+    const activateCalendarDay = (day) => {
+      if (day.disabled || day.hidden) return;
+      if (currentViewMode === "images") {
+        scrollExpandedToDay(day);
+        return;
+      }
+
+      const selectedOffset = calendarDays.indexOf(day);
+      if (selectedOffset < 0) return;
+      expandedScrollTargetDate = null;
+      hasExplicitDayChoice = true;
+      visibleDayCount = 1;
+      calendarStartOffset = selectedOffset;
+      updateCalendarRange(1, "push");
+    };
+
     const updateViewModeUi = () => {
       const imagesActive = currentViewMode === "images";
       calendarSection.dataset.viewMode = currentViewMode;
@@ -815,10 +887,14 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       const compareCards = (a, b) => {
         const aStart = Number(a.dataset.startOffset);
         const bStart = Number(b.dataset.startOffset);
-        const aOngoing = aStart <= calendarStartOffset;
-        const bOngoing = bStart <= calendarStartOffset;
-        if (aOngoing !== bOngoing) return aOngoing ? -1 : 1;
-        if (!aOngoing && aStart !== bStart) return aStart - bStart;
+        const aGroupStart = Math.max(aStart, calendarStartOffset);
+        const bGroupStart = Math.max(bStart, calendarStartOffset);
+        if (aGroupStart !== bGroupStart) return aGroupStart - bGroupStart;
+        const aOpensOnRangeStart = aStart === calendarStartOffset;
+        const bOpensOnRangeStart = bStart === calendarStartOffset;
+        if (aOpensOnRangeStart !== bOpensOnRangeStart) {
+          return aOpensOnRangeStart ? -1 : 1;
+        }
         const priorityDifference =
           Number(a.dataset.priorityRank) - Number(b.dataset.priorityRank);
         if (priorityDifference) return priorityDifference;
@@ -939,6 +1015,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     };
 
     const restoreCalendarState = () => {
+      expandedScrollTargetDate = null;
       const params = new URLSearchParams(location.search);
       const viewParam = params.get("view");
       hasExplicitViewChoice = viewParam === "images" || viewParam === "list";
@@ -973,6 +1050,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
     const setViewMode = (mode, historyMode = "push") => {
       if (mode !== "images" && mode !== "list") return;
+      expandedScrollTargetDate = null;
       hasExplicitViewChoice = true;
       currentViewMode = mode;
       updateViewModeUi();
@@ -1040,6 +1118,9 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     });
     viewImages.addEventListener("click", () => setViewMode("images"));
     viewList.addEventListener("click", () => setViewMode("list"));
+    calendarDays.forEach((day) => {
+      day.addEventListener("click", () => activateCalendarDay(day));
+    });
 
     dayBreakpoint.addEventListener("change", (event) => {
       if (hasExplicitDayChoice) return;
@@ -1086,11 +1167,13 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       visual.style.setProperty("--modal-accent", "#C33100");
       if (event.image) {
         image.src = event.image;
+        image.alt = event.imageAlt;
         image.style.objectPosition = event.imagePosition;
         image.hidden = false;
         monogram.hidden = true;
       } else {
         image.removeAttribute("src");
+        image.alt = "";
         image.hidden = true;
         monogram.hidden = false;
         monogram.textContent = event.venue.slice(0, 1);
@@ -1297,6 +1380,15 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       scheduleResponsiveToolbarSize();
     });
     window.addEventListener("scroll", scheduleExpandedActiveDay, { passive: true });
+    window.addEventListener("wheel", () => {
+      expandedScrollTargetDate = null;
+    }, { passive: true });
+    window.addEventListener("touchstart", () => {
+      expandedScrollTargetDate = null;
+    }, { passive: true });
+    document.addEventListener("pointerdown", () => {
+      expandedScrollTargetDate = null;
+    }, { passive: true });
     document.addEventListener("scroll", hideHoverPreview, true);
 
     [...areaInputs, ...venueInputs, freeInput].forEach((input) =>
@@ -1362,6 +1454,9 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     modal.addEventListener("close", () => document.body.classList.remove("overlay-open"));
 
     document.addEventListener("keydown", (event) => {
+      if (["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "].includes(event.key)) {
+        expandedScrollTargetDate = null;
+      }
       if (event.key === "Escape") {
         if (filters.classList.contains("is-open") && isMobileFilterLayout()) {
           closeFilters();
@@ -1388,7 +1483,6 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       }
     });
 
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let synchronizingCalendarScroll = false;
 
     const syncCalendarScroll = (source, target) => {
@@ -1436,7 +1530,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       event.preventDefault();
       calendarScroll.scrollBy({
         left: event.key === "ArrowRight" ? 180 : -180,
-        behavior: reducedMotion ? "auto" : "smooth",
+        behavior: reducedMotion.matches ? "auto" : "smooth",
       });
     });
 

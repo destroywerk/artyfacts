@@ -282,7 +282,7 @@ def validate() -> list[str]:
             errors.append(f"{venue_id}: invalid venue type")
         if venue.get("scrapeMethod") not in SCRAPE_METHODS:
             errors.append(f"{venue_id}: invalid scrape method")
-        for field in ("website", "whatsOnUrl"):
+        for field in ("website", "whatsOnUrl", "instagramUrl"):
             value = venue.get(field)
             if value is not None and not valid_http_url(value):
                 errors.append(f"{venue_id}: invalid {field}")
@@ -434,11 +434,10 @@ def validate() -> list[str]:
             errors.append(
                 f"{exhibition_id}: generic listing URL is not an exhibition detail page"
             )
-        elif "instagram.com" in (urllib.parse.urlparse(source_url).hostname or ""):
-            errors.append(f"{exhibition_id}: Instagram cannot be an ingested source")
         elif not (
             same_organisation(source_url, venue.get("website") or "")
             or same_organisation(source_url, venue.get("whatsOnUrl") or "")
+            or same_organisation(source_url, venue.get("instagramUrl") or "")
         ):
             errors.append(f"{exhibition_id}: source URL is not on an official venue host")
         if valid_http_url(source_url):

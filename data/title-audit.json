@@ -1001,6 +1001,16 @@
       "reasonCode": "official-title-override",
       "evidence": "Official exhibition H1 supplies the show title; the page-title suffix naming Young V&A and V&A is site metadata.",
       "verifiedAt": "2026-10-06"
+    },
+    {
+      "exhibitionId": "refuses-at-queensrollahouse-elspeth-vince-soft-tissue-2026-10-09",
+      "venueId": "refuses-at-queensrollahouse",
+      "title": "Elspeth Vince: Soft Tissue",
+      "titleBeforeOverride": "Soft Tissue",
+      "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+      "reasonCode": "official-title-override",
+      "evidence": "Official @r.efuses post names Soft Tissue as a solo exhibition by Elspeth Vince.",
+      "verifiedAt": "2026-10-07"
     }
   ]
 }

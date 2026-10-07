@@ -1080,6 +1080,23 @@
     "accent": "#385448"
   },
   {
+    "id": "refuses-at-queensrollahouse-elspeth-vince-soft-tissue-2026-10-09",
+    "venueId": "refuses-at-queensrollahouse",
+    "title": "Elspeth Vince: Soft Tissue",
+    "startDate": "2026-10-09",
+    "endDate": "2026-11-27",
+    "shortDescription": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
+    "imageUrl": "https://www.artyfacts.london/images/soft-tissue-elspeth-vince.jpg",
+    "cachedThumbnail": "/images/soft-tissue-elspeth-vince.jpg",
+    "imageAlt": "Poster for Soft Tissue by Elspeth Vince at Refusés, in amber and dark brown.",
+    "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+    "priceStatus": "free",
+    "confidenceScore": 0.99,
+    "lastVerified": "2026-10-07",
+    "imagePosition": "center",
+    "accent": "#7b2b0d"
+  },
+  {
     "id": "gasworks-umi-ishihara-nocturnal-melody-2026-10-10",
     "venueId": "gasworks",
     "title": "Umi Ishihara: Nocturnal Melody",
