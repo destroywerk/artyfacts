@@ -595,6 +595,12 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const hoverPreview = document.querySelector("#hover-preview");
     document.body.append(hoverPreview);
     const modal = document.querySelector("#event-modal");
+    const calendarActions = document.querySelector(".calendar-actions");
+    const viewModeControls = document.querySelector(".view-mode-controls");
+    const zoomControls = document.querySelector(".zoom-controls");
+    const rangeNavigation = document.querySelector(".range-navigation");
+    const mobileFilterButton = document.querySelector(".mobile-filter-button");
+    const visibleDaysOutput = document.querySelector("#visible-days");
     const calendarBoard = document.querySelector(".calendar-board");
     const calendarScroll = document.querySelector("#calendar-scroll");
     const calendarHeaderScroll = document.querySelector("#calendar-header-scroll");
@@ -641,6 +647,38 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       : 0;
     const minimumCalendarCellWidth = 96;
     let calendarMetricsFrame = 0;
+    let toolbarSizingFrame = 0;
+
+    const updateResponsiveToolbarSize = () => {
+      toolbarSizingFrame = 0;
+      if (!isMobileFilterLayout()) {
+        calendarActions.style.removeProperty("--toolbar-control-size");
+        return;
+      }
+
+      const currentSize = viewModeControls.getBoundingClientRect().height;
+      if (!Number.isFinite(currentSize) || currentSize <= 0) return;
+
+      const sections = [viewModeControls, zoomControls, rangeNavigation, mobileFilterButton];
+      const sectionWidth = sections.reduce(
+        (total, section) => total + section.getBoundingClientRect().width,
+        0,
+      );
+      const fixedSectionWidth = sectionWidth - currentSize * 6;
+      const exactSectionGaps = 12 * (sections.length - 1);
+      const availableSize =
+        (calendarActions.clientWidth - fixedSectionWidth - exactSectionGaps) / 6;
+      const nextSize = Math.min(82, Math.max(18, availableSize));
+
+      if (Math.abs(nextSize - currentSize) > 0.05) {
+        calendarActions.style.setProperty("--toolbar-control-size", `${nextSize.toFixed(2)}px`);
+      }
+    };
+
+    const scheduleResponsiveToolbarSize = () => {
+      if (toolbarSizingFrame) return;
+      toolbarSizingFrame = requestAnimationFrame(updateResponsiveToolbarSize);
+    };
 
     const updateCalendarMetrics = () => {
       cancelAnimationFrame(calendarMetricsFrame);
@@ -660,6 +698,10 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       scheduleExpandedActiveDay();
     });
     calendarResizeObserver.observe(calendarHeaderScroll);
+
+    const toolbarResizeObserver = new ResizeObserver(scheduleResponsiveToolbarSize);
+    toolbarResizeObserver.observe(calendarActions);
+    document.fonts?.ready.then(scheduleResponsiveToolbarSize);
 
     const prettyDate = (iso) =>
       new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(
@@ -871,8 +913,9 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
         bar.classList.toggle("starts-here", visibleDates.includes(row.dataset.startDate));
       });
 
-      document.querySelector("#visible-days").textContent =
+      visibleDaysOutput.textContent =
         `${visibleDayCount} ${visibleDayCount === 1 ? "day" : "days"}`;
+      scheduleResponsiveToolbarSize();
       removeDay.disabled = visibleDayCount === 1;
       addDay.disabled = visibleDayCount === 14;
       previousRange.disabled = calendarStartOffset === 0;
@@ -1251,6 +1294,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     window.addEventListener("resize", () => {
       hideHoverPreview();
       scheduleExpandedActiveDay();
+      scheduleResponsiveToolbarSize();
     });
     window.addEventListener("scroll", scheduleExpandedActiveDay, { passive: true });
     document.addEventListener("scroll", hideHoverPreview, true);

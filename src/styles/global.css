@@ -2836,14 +2836,14 @@ body :where(*) {
   }
 
   .calendar-actions {
-    --toolbar-control-size: clamp(30px, 8.5vw, 82px);
-    --toolbar-label-size: clamp(10px, 2.2vw, 15px);
+    --toolbar-control-size: clamp(22px, 8.5vw, 82px);
+    --toolbar-label-size: clamp(11px, calc(2.2vw + 1px), 16px);
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 6px;
+    justify-content: center;
+    gap: 12px;
   }
 
   .calendar-scale-controls {
@@ -2892,7 +2892,7 @@ body :where(*) {
   .zoom-controls output {
     width: max-content;
     min-width: 0;
-    padding-inline: clamp(4px, 1vw, 10px);
+    padding-inline: clamp(8px, calc(1vw + 4px), 14px);
   }
 
   .range-navigation {
@@ -2919,7 +2919,7 @@ body :where(*) {
     min-width: 0;
     justify-content: center;
     gap: 0;
-    padding-inline: clamp(4px, 1vw, 10px);
+    padding-inline: clamp(8px, calc(1vw + 4px), 14px);
     white-space: nowrap;
   }
 
