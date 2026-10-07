@@ -1975,7 +1975,7 @@ button {
   font-size: 14px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1199px) {
   .calendar-actions {
     gap: 8px;
   }
@@ -2820,6 +2820,223 @@ body :where(*) {
 
   .expanded-card-location p {
     max-width: calc(100% - 52px);
+  }
+}
+
+@media (max-width: 1199px) {
+  body.overlay-open {
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
+
+  .calendar-toolbar {
+    min-height: 0;
+    padding: clamp(10px, 1.6vw, 16px) clamp(8px, 2.5vw, 24px);
+  }
+
+  .calendar-actions {
+    --toolbar-control-size: clamp(30px, 8.5vw, 82px);
+    --toolbar-label-size: clamp(10px, 2.2vw, 15px);
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .calendar-scale-controls {
+    display: contents;
+  }
+
+  .view-mode-controls,
+  .zoom-controls,
+  .range-controls,
+  .range-navigation > .today-control,
+  .mobile-filter-button {
+    height: var(--toolbar-control-size);
+    min-height: var(--toolbar-control-size);
+  }
+
+  .view-mode-controls,
+  .zoom-controls,
+  .range-controls,
+  .range-navigation,
+  .mobile-filter-button {
+    flex: 0 0 auto;
+  }
+
+  .view-mode-controls {
+    grid-template-columns: repeat(2, calc(var(--toolbar-control-size) - 2px));
+  }
+
+  .zoom-controls {
+    width: auto;
+    min-width: 0;
+    grid-template-columns:
+      calc(var(--toolbar-control-size) - 2px)
+      max-content
+      calc(var(--toolbar-control-size) - 2px);
+  }
+
+  .zoom-controls output,
+  .range-navigation > .today-control,
+  .mobile-filter-button {
+    font-family: var(--sans) !important;
+    font-size: var(--toolbar-label-size);
+    font-weight: 300 !important;
+    letter-spacing: normal !important;
+  }
+
+  .zoom-controls output {
+    width: max-content;
+    min-width: 0;
+    padding-inline: clamp(4px, 1vw, 10px);
+  }
+
+  .range-navigation {
+    min-width: 0;
+    gap: 1px;
+  }
+
+  .range-controls {
+    grid-template-columns: repeat(2, calc(var(--toolbar-control-size) - 2px));
+  }
+
+  .range-navigation > .today-control {
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding-inline: clamp(4px, 1vw, 10px);
+    border: 0;
+    white-space: nowrap;
+  }
+
+  .mobile-filter-button {
+    position: relative;
+    width: auto;
+    min-width: 0;
+    justify-content: center;
+    gap: 0;
+    padding-inline: clamp(4px, 1vw, 10px);
+    white-space: nowrap;
+  }
+
+  .mobile-filter-button span {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 14px;
+    height: 14px;
+    font-size: 8px;
+  }
+
+  .view-mode-controls svg,
+  .range-controls svg {
+    width: clamp(18px, 4vw, 30px);
+    height: clamp(18px, 4vw, 30px);
+  }
+
+  .filter-panel {
+    height: min(92dvh, 760px);
+    max-height: 92dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobile-filter-header {
+    position: sticky;
+    z-index: 4;
+    top: 0;
+    flex: 0 0 auto;
+    background: #fff;
+  }
+
+  .filter-menu > summary,
+  .mobile-institution-trigger {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .mobile-institution-trigger:disabled {
+    color: var(--ink);
+    opacity: 1;
+  }
+
+  .filter-menu-content,
+  .institution-menu .filter-menu-content {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .institution-options {
+    max-height: none;
+    overflow: visible;
+    padding-bottom: calc(78px + env(safe-area-inset-bottom));
+  }
+
+  .filter-actions-row {
+    position: sticky;
+    z-index: 5;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 10px 0 calc(10px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--ink);
+    background: #fff;
+  }
+
+  .filter-actions-row .toolbar-clear,
+  .filter-actions-row .mobile-apply {
+    min-height: 50px;
+    margin: 0;
+    border: 1px solid var(--ink);
+    border-radius: 0;
+  }
+
+  .filter-actions-row .toolbar-clear {
+    color: var(--ink);
+    background: #fff;
+  }
+
+  .filter-actions-row .mobile-apply {
+    color: #fff;
+    background: var(--accent);
+  }
+
+  .desktop-institution-search {
+    display: none;
+  }
+
+  .mobile-institution-trigger {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid var(--soft-line);
+    background: #fff;
+    text-align: left;
+  }
+
+  .institution-menu.is-open .mobile-institution-trigger {
+    padding-inline: 10px;
+    color: #fff;
+    background: var(--ink);
+  }
+
+  .institution-menu.is-open .mobile-institution-search {
+    display: flex;
+  }
+
+  .institution-popover {
+    position: static;
   }
 }
 

@@ -616,7 +616,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const institutionNoResults = document.querySelector("#institution-no-results");
     const institutionSearchClear = document.querySelector("#institution-search-clear");
     const mobileInstitutionSearchClear = document.querySelector("#mobile-institution-search-clear");
-    const isMobileFilterLayout = () => window.matchMedia("(max-width: 600px)").matches;
+    const isMobileFilterLayout = () => window.matchMedia("(max-width: 1199px)").matches;
     const dayBreakpoint = window.matchMedia("(max-width: 600px)");
     const initialParams = new URLSearchParams(location.search);
     const initialViewParam = initialParams.get("view");
@@ -1030,7 +1030,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
         setInstitutionOpen(false);
       }
       filters.classList.remove("is-open");
-      filters.setAttribute("aria-hidden", window.matchMedia("(max-width: 600px)").matches ? "true" : "false");
+      filters.setAttribute("aria-hidden", isMobileFilterLayout() ? "true" : "false");
       backdrop.hidden = true;
       document.body.classList.remove("overlay-open");
       document.querySelector("#open-filters").focus();
@@ -1398,7 +1398,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
     restoreFilters();
     filterInstitutions(institutionSearch.value);
-    filters.setAttribute("aria-hidden", window.matchMedia("(max-width: 600px)").matches ? "true" : "false");
+    filters.setAttribute("aria-hidden", isMobileFilterLayout() ? "true" : "false");
     updateViewModeUi();
     updateCalendarRange(visibleDayCount);
   </script>
