@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "description": "Previously venue-sourced metadata retained across generated ingestion runs. Null is used when a value has not been verified.",
+  "venues": {
+    "tate-britain": {
+      "address": "Millbank",
+      "postcode": "SW1P 4RG",
+      "coordinates": { "lat": 51.4911, "lng": -0.1278 },
+      "area": "South West & Lambeth",
+      "openingHours": {
+        "monday": { "open": "10:00", "close": "18:00" },
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "18:00" },
+        "saturday": { "open": "10:00", "close": "18:00" },
+        "sunday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "tate-modern": {
+      "address": "Bankside",
+      "postcode": "SE1 9TG",
+      "coordinates": { "lat": 51.5076, "lng": -0.0994 },
+      "area": "South Bank & Bankside",
+      "openingHours": {
+        "monday": { "open": "10:00", "close": "18:00" },
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "21:00" },
+        "saturday": { "open": "10:00", "close": "21:00" },
+        "sunday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "national-gallery": {
+      "address": "Trafalgar Square",
+      "postcode": "WC2N 5DN",
+      "coordinates": { "lat": 51.5089, "lng": -0.1283 },
+      "area": "Central",
+      "openingHours": {
+        "monday": { "open": "10:00", "close": "18:00" },
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "21:00" },
+        "saturday": { "open": "10:00", "close": "18:00" },
+        "sunday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "royal-academy": {
+      "address": "Burlington House, Piccadilly",
+      "postcode": "W1J 0BD",
+      "coordinates": { "lat": 51.509, "lng": -0.1399 },
+      "area": "Central",
+      "openingHours": {
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "21:00" },
+        "saturday": { "open": "10:00", "close": "21:00" },
+        "sunday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "vam": {
+      "address": "Cromwell Road",
+      "postcode": "SW7 2RL",
+      "coordinates": { "lat": 51.4966, "lng": -0.1722 },
+      "area": "South Kensington & West",
+      "openingHours": {
+        "monday": { "open": "10:00", "close": "17:45" },
+        "tuesday": { "open": "10:00", "close": "17:45" },
+        "wednesday": { "open": "10:00", "close": "17:45" },
+        "thursday": { "open": "10:00", "close": "17:45" },
+        "friday": { "open": "10:00", "close": "22:00" },
+        "saturday": { "open": "10:00", "close": "17:45" },
+        "sunday": { "open": "10:00", "close": "17:45" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "vam-east": {
+      "address": "2 Parkes Street",
+      "postcode": "E20 3AX",
+      "area": "Stratford & East",
+      "addressSourceUrl": "https://www.vam.ac.uk/east-storehouse/visit"
+    },
+    "young-vam": {
+      "address": "Cambridge Heath Road, Bethnal Green",
+      "postcode": "E2 9PA",
+      "coordinates": { "lat": 51.527774, "lng": -0.055182 },
+      "area": "City & East",
+      "addressSourceUrl": "https://www.vam.ac.uk/young/visit",
+      "openingHours": {
+        "monday": { "open": "10:00", "close": "17:45" },
+        "tuesday": { "open": "10:00", "close": "17:45" },
+        "wednesday": { "open": "10:00", "close": "17:45" },
+        "thursday": { "open": "10:00", "close": "17:45" },
+        "friday": { "open": "10:00", "close": "17:45" },
+        "saturday": { "open": "10:00", "close": "17:45" },
+        "sunday": { "open": "10:00", "close": "17:45" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "whitechapel-gallery": {
+      "address": "77–82 Whitechapel High Street",
+      "postcode": "E1 7QX",
+      "coordinates": { "lat": 51.516, "lng": -0.0708 },
+      "area": "City & East",
+      "openingHours": {
+        "tuesday": { "open": "11:00", "close": "18:00" },
+        "wednesday": { "open": "11:00", "close": "18:00" },
+        "thursday": { "open": "11:00", "close": "21:00" },
+        "friday": { "open": "11:00", "close": "18:00" },
+        "saturday": { "open": "11:00", "close": "18:00" },
+        "sunday": { "open": "11:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "lisson-gallery": {
+      "address": "67 Lisson Street",
+      "postcode": "NW1 5DA",
+      "coordinates": { "lat": 51.5227, "lng": -0.166 },
+      "area": "Central",
+      "openingHours": {
+        "monday": { "open": "10:00", "close": "18:00" },
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "18:00" },
+        "saturday": { "open": "11:00", "close": "17:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "pilar-corrias": {
+      "address": "51 Conduit Street",
+      "postcode": "W1S 2YT",
+      "area": "Central",
+      "addressSourceUrl": "https://www.pilarcorrias.com/contact/"
+    },
+    "kristin-hjellegjerde-gallery": {
+      "address": "36 Tanner Street",
+      "postcode": "SE1 3LD",
+      "area": "South Bank & Bankside",
+      "addressSourceUrl": "https://kristinhjellegjerde.com/",
+      "openingHours": {
+        "monday": { "open": "11:00", "close": "18:00" },
+        "tuesday": { "open": "11:00", "close": "18:00" },
+        "wednesday": { "open": "11:00", "close": "18:00" },
+        "thursday": { "open": "11:00", "close": "18:00" },
+        "friday": { "open": "11:00", "close": "18:00" },
+        "saturday": { "open": "11:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "victoria-miro": {
+      "address": "16 Wharf Road",
+      "postcode": "N1 7RW",
+      "coordinates": { "lat": 51.5316, "lng": -0.0972 },
+      "area": "North",
+      "openingHours": {
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "18:00" },
+        "saturday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "white-cube-bermondsey": {
+      "address": "144–152 Bermondsey Street",
+      "postcode": "SE1 3TQ",
+      "coordinates": { "lat": 51.4994, "lng": -0.081 },
+      "area": "South East",
+      "openingHours": {
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "18:00" },
+        "saturday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "chisenhale-gallery": {
+      "address": "64 Chisenhale Road",
+      "postcode": "E3 5QZ",
+      "coordinates": { "lat": 51.5328, "lng": -0.0396 },
+      "area": "City & East",
+      "openingHours": {
+        "wednesday": { "open": "12:00", "close": "18:00" },
+        "thursday": { "open": "12:00", "close": "18:00" },
+        "friday": { "open": "12:00", "close": "18:00" },
+        "saturday": { "open": "12:00", "close": "18:00" },
+        "sunday": { "open": "12:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "camden-art-centre": {
+      "address": "Arkwright Road",
+      "postcode": "NW3 6DG",
+      "coordinates": { "lat": 51.5561, "lng": -0.1833 },
+      "area": "North",
+      "openingHours": {
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "21:00" },
+        "friday": { "open": "10:00", "close": "18:00" },
+        "saturday": { "open": "10:00", "close": "18:00" },
+        "sunday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "auto-italia": {
+      "address": "44 Bonner Road",
+      "postcode": "E2 9JS",
+      "area": "City & East",
+      "openingHours": {
+        "thursday": { "open": "12:00", "close": "17:00" },
+        "friday": { "open": "12:00", "close": "17:00" },
+        "saturday": { "open": "12:00", "close": "17:00" },
+        "sunday": { "open": "12:00", "close": "17:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "fashion-and-textile-museum": {
+      "address": "83 Bermondsey Street",
+      "postcode": "SE1 3XF",
+      "area": "South East",
+      "openingHours": {
+        "tuesday": { "open": "11:00", "close": "18:00" },
+        "wednesday": { "open": "11:00", "close": "18:00" },
+        "thursday": { "open": "11:00", "close": "18:00" },
+        "friday": { "open": "11:00", "close": "18:00" },
+        "saturday": { "open": "11:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "david-zwirner-london": {
+      "address": "24 Grafton Street",
+      "postcode": "W1S 4EZ",
+      "area": "Central"
+    },
+    "design-museum": {
+      "address": "224–238 Kensington High Street",
+      "postcode": "W8 6AG",
+      "area": "South Kensington & West"
+    },
+    "flowers-gallery": {
+      "address": "21 Cork Street",
+      "postcode": "W1S 3LZ",
+      "area": "Central",
+      "openingHours": {
+        "tuesday": { "open": "11:00", "close": "18:00" },
+        "wednesday": { "open": "11:00", "close": "18:00" },
+        "thursday": { "open": "11:00", "close": "18:00" },
+        "friday": { "open": "11:00", "close": "18:00" },
+        "saturday": { "open": "11:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "ben-brown-fine-arts": {
+      "address": "12 Brook's Mews",
+      "postcode": "W1K 4DG",
+      "area": "Central",
+      "openingHours": {
+        "monday": { "open": "11:00", "close": "18:00" },
+        "tuesday": { "open": "11:00", "close": "18:00" },
+        "wednesday": { "open": "11:00", "close": "18:00" },
+        "thursday": { "open": "11:00", "close": "18:00" },
+        "friday": { "open": "11:00", "close": "18:00" },
+        "saturday": { "open": "10:30", "close": "14:30" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "kate-macgarry": {
+      "address": "27 Old Nichol Street",
+      "postcode": "E2 7HR",
+      "area": "City & East",
+      "openingHours": {
+        "tuesday": { "open": "11:00", "close": "17:00" },
+        "wednesday": { "open": "11:00", "close": "17:00" },
+        "thursday": { "open": "11:00", "close": "17:00" },
+        "friday": { "open": "11:00", "close": "17:00" },
+        "saturday": { "open": "11:00", "close": "17:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "hannah-barry-gallery": {
+      "address": "4 Holly Grove, Peckham",
+      "postcode": "SE15 5DF",
+      "area": "South East"
+    },
+    "lbf-contemporary": {
+      "address": "13 Tottenham Mews",
+      "postcode": "W1T 4AQ",
+      "area": "Central"
+    },
+    "pippy-houldsworth-gallery": {
+      "address": "6 Heddon Street",
+      "postcode": "W1B 4BT",
+      "area": "Central",
+      "openingHours": {
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "18:00" },
+        "saturday": { "open": "11:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "sadie-coles-hq": {
+      "address": "17 Savile Row",
+      "postcode": "W1S 3PN",
+      "area": "Central",
+      "openingHours": {
+        "tuesday": { "open": "11:00", "close": "18:00" },
+        "wednesday": { "open": "11:00", "close": "18:00" },
+        "thursday": { "open": "11:00", "close": "18:00" },
+        "friday": { "open": "11:00", "close": "18:00" },
+        "saturday": { "open": "11:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "matts-gallery": {
+      "address": "6 Charles Clowes Walk, Nine Elms",
+      "postcode": "SW11 7AN",
+      "area": "South West & Lambeth",
+      "addressSourceUrl": "https://www.mattsgallery.org/visit",
+      "openingHours": {
+        "wednesday": { "open": "12:00", "close": "18:00" },
+        "thursday": { "open": "12:00", "close": "18:00" },
+        "friday": { "open": "12:00", "close": "18:00" },
+        "saturday": { "open": "12:00", "close": "18:00" },
+        "sunday": { "open": "12:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "annely-juda-fine-art": {
+      "address": "16 Hanover Square",
+      "postcode": "W1S 1HT",
+      "area": "Central",
+      "addressSourceUrl": "https://www.annelyjudafineart.co.uk/contact/"
+    },
+    "dulwich-picture-gallery": {
+      "address": "14 Gallery Road",
+      "postcode": "SE21 7AD",
+      "area": "South East",
+      "addressSourceUrl": "https://www.dulwichpicturegallery.org.uk/visit-us/"
+    },
+    "gasworks": {
+      "address": "155 Vauxhall Street",
+      "postcode": "SE11 5RH",
+      "area": "South West & Lambeth",
+      "addressSourceUrl": "https://gasworks.org.uk/about-us/contact/"
+    },
+    "sir-john-soanes-museum": {
+      "address": "13 Lincoln's Inn Fields",
+      "postcode": "WC2A 3BP",
+      "area": "Central",
+      "addressSourceUrl": "https://www.soane.org/your-visit"
+    },
+    "the-redfern-gallery": {
+      "address": "11–12 Pall Mall",
+      "postcode": "SW1Y 5LU",
+      "area": "Central",
+      "addressSourceUrl": "https://www.redfern-gallery.com/"
+    },
+    "wallace-collection": {
+      "address": "Hertford House, Manchester Square",
+      "postcode": "W1U 3BN",
+      "area": "Central",
+      "addressSourceUrl": "https://www.wallacecollection.org/visit/getting-here/"
+    },
+    "wellcome-collection": {
+      "address": "183 Euston Road",
+      "postcode": "NW1 2BE",
+      "area": "Central",
+      "addressSourceUrl": "https://wellcomecollection.org/visit-us/getting-here"
+    },
+    "blueshop-cottage": {
+      "address": "72 Brixton Road, Oval",
+      "postcode": "SW9 6BH",
+      "area": "South West & Lambeth",
+      "addressSourceUrl": "https://www.blueshopcottage.com/contact",
+      "openingHours": {
+        "thursday": { "open": "12:00", "close": "17:00" },
+        "friday": { "open": "12:00", "close": "17:00" },
+        "saturday": { "open": "12:00", "close": "17:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    },
+    "serpentine-south": {
+      "address": "Kensington Gardens",
+      "postcode": "W2 3XA",
+      "area": "South Kensington & West",
+      "addressSourceUrl": "https://www.serpentinegalleries.org/visit/"
+    },
+    "gagosian-grosvenor-hill": {
+      "address": "20 Grosvenor Hill",
+      "postcode": "W1K 3QD",
+      "area": "Central",
+      "addressSourceUrl": "https://gagosian.com/locations/london-grosvenor-hill/"
+    },
+    "gagosian-britannia-street": {
+      "address": "6–24 Britannia Street",
+      "postcode": "WC1X 9JD",
+      "area": "Central",
+      "addressSourceUrl": "https://gagosian.com/locations/london-britannia-street/"
+    },
+    "national-portrait-gallery": {
+      "address": "St Martin's Place",
+      "postcode": "WC2H 0HE",
+      "area": "Central",
+      "addressSourceUrl": "https://www.npg.org.uk/visit"
+    },
+    "foundling-museum": {
+      "address": "40 Brunswick Square",
+      "postcode": "WC1N 1AZ",
+      "area": "Central",
+      "addressSourceUrl": "https://foundlingmuseum.org.uk/visit/"
+    },
+    "the-courtauld-gallery": {
+      "address": "Somerset House, Strand",
+      "postcode": "WC2R 0RN",
+      "area": "Central",
+      "addressSourceUrl": "https://courtauld.ac.uk/gallery/plan-your-visit/",
+      "openingHours": {
+        "monday": { "open": "10:00", "close": "18:00" },
+        "tuesday": { "open": "10:00", "close": "18:00" },
+        "wednesday": { "open": "10:00", "close": "18:00" },
+        "thursday": { "open": "10:00", "close": "18:00" },
+        "friday": { "open": "10:00", "close": "18:00" },
+        "saturday": { "open": "10:00", "close": "18:00" },
+        "sunday": { "open": "10:00", "close": "18:00" }
+      },
+      "hoursLastChecked": "2026-10-06"
+    }
+  }
+}

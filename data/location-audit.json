@@ -1,0 +1,2417 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-07T01:31:04.118457+00:00",
+  "windowStart": "2026-10-06",
+  "windowEnd": "2026-11-06",
+  "windowKind": "calendar-month-inclusive",
+  "venues": [
+    {
+      "venueId": "the-photographers-gallery",
+      "name": "The Photographers' Gallery",
+      "priorityRank": 1,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "pilar-corrias",
+      "name": "Pilar Corrias",
+      "priorityRank": 2,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 51 Conduit Street, W1S 2YT; postcode resolves to Westminster, London",
+      "postcode": "W1S 2YT",
+      "coordinates": {
+        "lat": 51.512028,
+        "lng": -0.141676
+      }
+    },
+    {
+      "venueId": "the-tagli",
+      "name": "THE TAGLI",
+      "priorityRank": 3,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "lisson-gallery",
+      "name": "Lisson Gallery",
+      "priorityRank": 4,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 67 Lisson Street, NW1 5DA; postcode resolves to Westminster, London",
+      "postcode": "NW1 5DA",
+      "coordinates": {
+        "lat": 51.520905,
+        "lng": -0.168025
+      }
+    },
+    {
+      "venueId": "william-hine",
+      "name": "William Hine",
+      "priorityRank": 5,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "terrace-gallery",
+      "name": "Terrace Gallery",
+      "priorityRank": 6,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "three-rooms",
+      "name": "Three Rooms",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "chisenhale-gallery",
+      "name": "Chisenhale Gallery",
+      "priorityRank": 7,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 64 Chisenhale Road, E3 5QZ; postcode resolves to Tower Hamlets, London",
+      "postcode": "E3 5QZ",
+      "coordinates": {
+        "lat": 51.533629,
+        "lng": -0.038451
+      }
+    },
+    {
+      "venueId": "soho-revue",
+      "name": "Soho Revue",
+      "priorityRank": 8,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "the-cob-gallery",
+      "name": "The Cob Gallery",
+      "priorityRank": 9,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "october-gallery",
+      "name": "October Gallery",
+      "priorityRank": 10,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 24 Old Gloucester Street London, WC1N 3AL; postcode resolves to Camden, London",
+      "postcode": "WC1N 3AL",
+      "coordinates": {
+        "lat": 51.520694,
+        "lng": -0.121705
+      }
+    },
+    {
+      "venueId": "mimosa-house",
+      "name": "Mimosa House",
+      "priorityRank": 11,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "ginny-on-frederick",
+      "name": "Ginny on Frederick",
+      "priorityRank": 12,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "haricot-gallery",
+      "name": "Haricot Gallery",
+      "priorityRank": 13,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 2 Blackall Street London, EC2A 4AD; postcode resolves to Hackney, London",
+      "postcode": "EC2A 4AD",
+      "coordinates": {
+        "lat": 51.525078,
+        "lng": -0.083639
+      }
+    },
+    {
+      "venueId": "hannah-barry-gallery",
+      "name": "Hannah Barry Gallery",
+      "priorityRank": 14,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 4 Holly Grove, Peckham, SE15 5DF; postcode resolves to Southwark, London",
+      "postcode": "SE15 5DF",
+      "coordinates": {
+        "lat": 51.469744,
+        "lng": -0.071517
+      }
+    },
+    {
+      "venueId": "sprueth-magers-london",
+      "name": "Sprüth Magers London",
+      "priorityRank": 15,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "kristin-hjellegjerde-gallery",
+      "name": "Kristin Hjellegjerde Gallery",
+      "priorityRank": 16,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 36 Tanner Street, SE1 3LD; postcode resolves to Southwark, London",
+      "postcode": "SE1 3LD",
+      "coordinates": {
+        "lat": 51.499714,
+        "lng": -0.079502
+      }
+    },
+    {
+      "venueId": "matts-gallery",
+      "name": "Matt's Gallery",
+      "priorityRank": 17,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 6 Charles Clowes Walk, Nine Elms, SW11 7AN; postcode resolves to Wandsworth, London",
+      "postcode": "SW11 7AN",
+      "coordinates": {
+        "lat": 51.481047,
+        "lng": -0.132567
+      }
+    },
+    {
+      "venueId": "maureen-paley",
+      "name": "Maureen Paley",
+      "priorityRank": 18,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "flowers-gallery",
+      "name": "Flowers Gallery",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 21 Cork Street, W1S 3LZ; postcode resolves to Westminster, London",
+      "postcode": "W1S 3LZ",
+      "coordinates": {
+        "lat": 51.510138,
+        "lng": -0.141033
+      }
+    },
+    {
+      "venueId": "kate-macgarry",
+      "name": "Kate MacGarry",
+      "priorityRank": 19,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 27 Old Nichol Street, E2 7HR; postcode resolves to Tower Hamlets, London",
+      "postcode": "E2 7HR",
+      "coordinates": {
+        "lat": 51.524716,
+        "lng": -0.074731
+      }
+    },
+    {
+      "venueId": "hales-gallery",
+      "name": "Hales Gallery",
+      "priorityRank": 20,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 7 Bethnal Green Road, E1 6LA; postcode resolves to Tower Hamlets, London",
+      "postcode": "E1 6LA",
+      "coordinates": {
+        "lat": 51.524203,
+        "lng": -0.073614
+      }
+    },
+    {
+      "venueId": "serpentine-south",
+      "name": "Serpentine South Gallery",
+      "priorityRank": 21,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Kensington Gardens, W2 3XA; postcode resolves to Westminster, London",
+      "postcode": "W2 3XA",
+      "coordinates": {
+        "lat": 51.50479,
+        "lng": -0.174983
+      }
+    },
+    {
+      "venueId": "victoria-miro",
+      "name": "Victoria Miro",
+      "priorityRank": 22,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 16 Wharf Road, N1 7RW; postcode resolves to Hackney, London",
+      "postcode": "N1 7RW",
+      "coordinates": {
+        "lat": 51.53038,
+        "lng": -0.095008
+      }
+    },
+    {
+      "venueId": "tate-britain",
+      "name": "Tate Britain",
+      "priorityRank": 23,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Millbank, SW1P 4RG; postcode resolves to Westminster, London",
+      "postcode": "SW1P 4RG",
+      "coordinates": {
+        "lat": 51.490871,
+        "lng": -0.127181
+      }
+    },
+    {
+      "venueId": "saatchi-gallery",
+      "name": "Saatchi Gallery",
+      "priorityRank": 24,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "barbican-art-gallery",
+      "name": "Barbican Art Gallery",
+      "priorityRank": 25,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "whitechapel-gallery",
+      "name": "Whitechapel Gallery",
+      "priorityRank": 26,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 77–82 Whitechapel High Street, E1 7QX; postcode resolves to Tower Hamlets, London",
+      "postcode": "E1 7QX",
+      "coordinates": {
+        "lat": 51.516012,
+        "lng": -0.070399
+      }
+    },
+    {
+      "venueId": "white-cube-bermondsey",
+      "name": "White Cube Bermondsey",
+      "priorityRank": 27,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 144–152 Bermondsey Street, SE1 3TQ; postcode resolves to Southwark, London",
+      "postcode": "SE1 3TQ",
+      "coordinates": {
+        "lat": 51.498271,
+        "lng": -0.081451
+      }
+    },
+    {
+      "venueId": "pippy-houldsworth-gallery",
+      "name": "Pippy Houldsworth Gallery",
+      "priorityRank": 28,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 6 Heddon Street, W1B 4BT; postcode resolves to Westminster, London",
+      "postcode": "W1B 4BT",
+      "coordinates": {
+        "lat": 51.511057,
+        "lng": -0.139396
+      }
+    },
+    {
+      "venueId": "gagosian-britannia-street",
+      "name": "Gagosian Britannia Street",
+      "priorityRank": 29,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 6–24 Britannia Street, WC1X 9JD; postcode resolves to Camden, London",
+      "postcode": "WC1X 9JD",
+      "coordinates": {
+        "lat": 51.530104,
+        "lng": -0.118002
+      }
+    },
+    {
+      "venueId": "gagosian-grosvenor-hill",
+      "name": "Gagosian Grosvenor Hill",
+      "priorityRank": 29,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 20 Grosvenor Hill, W1K 3QD; postcode resolves to Westminster, London",
+      "postcode": "W1K 3QD",
+      "coordinates": {
+        "lat": 51.51146,
+        "lng": -0.146153
+      }
+    },
+    {
+      "venueId": "saatchi-yates",
+      "name": "Saatchi Yates",
+      "priorityRank": 30,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "huxley-parlour",
+      "name": "Huxley-Parlour",
+      "priorityRank": 31,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "no-9-cork-street",
+      "name": "No.9 Cork Street",
+      "priorityRank": 32,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "john-martin-gallery",
+      "name": "John Martin Gallery",
+      "priorityRank": 33,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "timothy-taylor",
+      "name": "Timothy Taylor",
+      "priorityRank": 34,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "ben-brown-fine-arts",
+      "name": "Ben Brown Fine Arts",
+      "priorityRank": 35,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 12 Brook's Mews, W1K 4DG; postcode resolves to Westminster, London",
+      "postcode": "W1K 4DG",
+      "coordinates": {
+        "lat": 51.512413,
+        "lng": -0.146114
+      }
+    },
+    {
+      "venueId": "thaddaeus-ropac-london",
+      "name": "Thaddaeus Ropac London",
+      "priorityRank": 36,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "hayward-gallery",
+      "name": "Hayward Gallery",
+      "priorityRank": 37,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Belvedere Road London, SE1 8XZ; postcode resolves to Lambeth, London",
+      "postcode": "SE1 8XZ",
+      "coordinates": {
+        "lat": 51.50705,
+        "lng": -0.11767
+      }
+    },
+    {
+      "venueId": "st-art-gallery",
+      "name": "ST.ART Gallery",
+      "priorityRank": 38,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "sadie-coles-hq",
+      "name": "Sadie Coles HQ",
+      "priorityRank": 39,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 17 Savile Row, W1S 3PN; postcode resolves to Westminster, London",
+      "postcode": "W1S 3PN",
+      "coordinates": {
+        "lat": 51.511351,
+        "lng": -0.140349
+      }
+    },
+    {
+      "venueId": "the-redfern-gallery",
+      "name": "The Redfern Gallery",
+      "priorityRank": 40,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 11–12 Pall Mall, SW1Y 5LU; postcode resolves to Westminster, London",
+      "postcode": "SW1Y 5LU",
+      "coordinates": {
+        "lat": 51.507043,
+        "lng": -0.133521
+      }
+    },
+    {
+      "venueId": "unit-london",
+      "name": "Unit London",
+      "priorityRank": 41,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "david-zwirner-london",
+      "name": "David Zwirner London",
+      "priorityRank": 42,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 24 Grafton Street, W1S 4EZ; postcode resolves to Westminster, London",
+      "postcode": "W1S 4EZ",
+      "coordinates": {
+        "lat": 51.509477,
+        "lng": -0.143005
+      }
+    },
+    {
+      "venueId": "white-cube-masons-yard",
+      "name": "White Cube Mason's Yard",
+      "priorityRank": 43,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "rhodes-contemporary-art",
+      "name": "Rhodes Contemporary Art Gallery",
+      "priorityRank": 44,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "the-courtauld-gallery",
+      "name": "The Courtauld Gallery",
+      "priorityRank": 45,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Somerset House, Strand, WC2R 0RN; postcode resolves to Westminster, London",
+      "postcode": "WC2R 0RN",
+      "coordinates": {
+        "lat": 51.510734,
+        "lng": -0.116912
+      }
+    },
+    {
+      "venueId": "maddox-gallery",
+      "name": "Maddox Gallery",
+      "priorityRank": 46,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 9 Maddox Street London, W1S 2QE; postcode resolves to Westminster, London",
+      "postcode": "W1S 2QE",
+      "coordinates": {
+        "lat": 51.513312,
+        "lng": -0.141538
+      }
+    },
+    {
+      "venueId": "pace-gallery-london",
+      "name": "Pace Gallery London",
+      "priorityRank": 47,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "institute-of-contemporary-arts",
+      "name": "Institute of Contemporary Arts",
+      "priorityRank": 48,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "royal-academy",
+      "name": "Royal Academy of Arts",
+      "priorityRank": 49,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Burlington House, Piccadilly, W1J 0BD; postcode resolves to Westminster, London",
+      "postcode": "W1J 0BD",
+      "coordinates": {
+        "lat": 51.509099,
+        "lng": -0.139576
+      }
+    },
+    {
+      "venueId": "national-gallery",
+      "name": "The National Gallery",
+      "priorityRank": 50,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Trafalgar Square, WC2N 5DN; postcode resolves to Westminster, London",
+      "postcode": "WC2N 5DN",
+      "coordinates": {
+        "lat": 51.509098,
+        "lng": -0.127658
+      }
+    },
+    {
+      "venueId": "union-pacific",
+      "name": "Union Pacific",
+      "priorityRank": 51,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "lbf-contemporary",
+      "name": "LBF Contemporary",
+      "priorityRank": 52,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 13 Tottenham Mews, W1T 4AQ; postcode resolves to Camden, London",
+      "postcode": "W1T 4AQ",
+      "coordinates": {
+        "lat": 51.520512,
+        "lng": -0.137367
+      }
+    },
+    {
+      "venueId": "british-museum",
+      "name": "British Museum",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "vam",
+      "name": "V&A South Kensington",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Cromwell Road, SW7 2RL; postcode resolves to Kensington and Chelsea, London",
+      "postcode": "SW7 2RL",
+      "coordinates": {
+        "lat": 51.496941,
+        "lng": -0.172199
+      }
+    },
+    {
+      "venueId": "vam-east",
+      "name": "V&A East",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 2 Parkes Street, E20 3AX; postcode resolves to Hackney, London",
+      "postcode": "E20 3AX",
+      "coordinates": {
+        "lat": 51.545392,
+        "lng": -0.020826
+      }
+    },
+    {
+      "venueId": "young-vam",
+      "name": "Young V&A",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Cambridge Heath Road, Bethnal Green, E2 9PA; postcode resolves to Tower Hamlets, London",
+      "postcode": "E2 9PA",
+      "coordinates": {
+        "lat": 51.527774,
+        "lng": -0.055182
+      }
+    },
+    {
+      "venueId": "tate-modern",
+      "name": "Tate Modern",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Bankside, SE1 9TG; postcode resolves to Southwark, London",
+      "postcode": "SE1 9TG",
+      "coordinates": {
+        "lat": 51.507618,
+        "lng": -0.099374
+      }
+    },
+    {
+      "venueId": "national-portrait-gallery",
+      "name": "National Portrait Gallery",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address St Martin's Place, WC2H 0HE; postcode resolves to Westminster, London",
+      "postcode": "WC2H 0HE",
+      "coordinates": {
+        "lat": 51.509399,
+        "lng": -0.128453
+      }
+    },
+    {
+      "venueId": "science-museum",
+      "name": "Science Museum",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Exhibition Road London, SW7 2DD; postcode resolves to Kensington and Chelsea, London",
+      "postcode": "SW7 2DD",
+      "coordinates": {
+        "lat": 51.497296,
+        "lng": -0.176493
+      }
+    },
+    {
+      "venueId": "natural-history-museum",
+      "name": "Natural History Museum",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "design-museum",
+      "name": "Design Museum",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 224–238 Kensington High Street, W8 6AG; postcode resolves to Kensington and Chelsea, London",
+      "postcode": "W8 6AG",
+      "coordinates": {
+        "lat": 51.499874,
+        "lng": -0.200163
+      }
+    },
+    {
+      "venueId": "wellcome-collection",
+      "name": "Wellcome Collection",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 183 Euston Road, NW1 2BE; postcode resolves to Camden, London",
+      "postcode": "NW1 2BE",
+      "coordinates": {
+        "lat": 51.525898,
+        "lng": -0.133918
+      }
+    },
+    {
+      "venueId": "somerset-house",
+      "name": "Somerset House",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "imperial-war-museum-london",
+      "name": "Imperial War Museum London",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Lambeth Road London, SE1 6HZ; postcode resolves to Southwark, London",
+      "postcode": "SE1 6HZ",
+      "coordinates": {
+        "lat": 51.496009,
+        "lng": -0.108328
+      }
+    },
+    {
+      "venueId": "london-museum",
+      "name": "London Museum",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "royal-museums-greenwich",
+      "name": "Royal Museums Greenwich",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "horniman-museum",
+      "name": "Horniman Museum and Gardens",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "dulwich-picture-gallery",
+      "name": "Dulwich Picture Gallery",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 14 Gallery Road, SE21 7AD; postcode resolves to Southwark, London",
+      "postcode": "SE21 7AD",
+      "coordinates": {
+        "lat": 51.445613,
+        "lng": -0.08668
+      }
+    },
+    {
+      "venueId": "wallace-collection",
+      "name": "Wallace Collection",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Hertford House, Manchester Square, W1U 3BN; postcode resolves to Westminster, London",
+      "postcode": "W1U 3BN",
+      "coordinates": {
+        "lat": 51.517314,
+        "lng": -0.152949
+      }
+    },
+    {
+      "venueId": "the-kings-gallery",
+      "name": "The King's Gallery",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "fashion-and-textile-museum",
+      "name": "Fashion and Textile Museum",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 83 Bermondsey Street, SE1 3XF; postcode resolves to Southwark, London",
+      "postcode": "SE1 3XF",
+      "coordinates": {
+        "lat": 51.501525,
+        "lng": -0.081919
+      }
+    },
+    {
+      "venueId": "museum-of-the-home",
+      "name": "Museum of the Home",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 136 Kingsland Road London, E2 8EA; postcode resolves to Hackney, London",
+      "postcode": "E2 8EA",
+      "coordinates": {
+        "lat": 51.531557,
+        "lng": -0.076244
+      }
+    },
+    {
+      "venueId": "foundling-museum",
+      "name": "Foundling Museum",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 40 Brunswick Square, WC1N 1AZ; postcode resolves to Camden, London",
+      "postcode": "WC1N 1AZ",
+      "coordinates": {
+        "lat": 51.525481,
+        "lng": -0.120758
+      }
+    },
+    {
+      "venueId": "sir-john-soanes-museum",
+      "name": "Sir John Soane's Museum",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 13 Lincoln's Inn Fields, WC2A 3BP; postcode resolves to Camden, London",
+      "postcode": "WC2A 3BP",
+      "coordinates": {
+        "lat": 51.516956,
+        "lng": -0.117953
+      }
+    },
+    {
+      "venueId": "jewish-museum-london",
+      "name": "Jewish Museum London",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "estorick-collection",
+      "name": "Estorick Collection",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 39a Canonbury Square, London, N1 2AN; postcode resolves to Islington, London",
+      "postcode": "N1 2AN",
+      "coordinates": {
+        "lat": 51.543993,
+        "lng": -0.099891
+      }
+    },
+    {
+      "venueId": "garden-museum",
+      "name": "Garden Museum",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Lambeth Palace Road London, SE1 7LB; postcode resolves to Lambeth, London",
+      "postcode": "SE1 7LB",
+      "coordinates": {
+        "lat": 51.495049,
+        "lng": -0.120196
+      }
+    },
+    {
+      "venueId": "newport-street-gallery",
+      "name": "Newport Street Gallery",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "camden-art-centre",
+      "name": "Camden Art Centre",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address Arkwright Road, NW3 6DG; postcode resolves to Camden, London",
+      "postcode": "NW3 6DG",
+      "coordinates": {
+        "lat": 51.551252,
+        "lng": -0.183466
+      }
+    },
+    {
+      "venueId": "south-london-gallery",
+      "name": "South London Gallery",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 65–67 and 82 Peckham Road, SE5 8UH; postcode resolves to Southwark, London",
+      "postcode": "SE5 8UH",
+      "coordinates": {
+        "lat": 51.474002,
+        "lng": -0.081087
+      }
+    },
+    {
+      "venueId": "gasworks",
+      "name": "Gasworks",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 155 Vauxhall Street, SE11 5RH; postcode resolves to Lambeth, London",
+      "postcode": "SE11 5RH",
+      "coordinates": {
+        "lat": 51.486632,
+        "lng": -0.116278
+      }
+    },
+    {
+      "venueId": "studio-voltaire",
+      "name": "Studio Voltaire",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "zabludowicz-collection",
+      "name": "Zabludowicz Collection",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "raven-row",
+      "name": "Raven Row",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "cubitt",
+      "name": "Cubitt",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "delfina-foundation",
+      "name": "Delfina Foundation",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "pump-house-gallery",
+      "name": "Pump House Gallery",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "goldsmiths-cca",
+      "name": "Goldsmiths CCA",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "peckham-platform",
+      "name": "Peckham Platform",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "auto-italia",
+      "name": "Auto Italia",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 44 Bonner Road, E2 9JS; postcode resolves to Tower Hamlets, London",
+      "postcode": "E2 9JS",
+      "coordinates": {
+        "lat": 51.532226,
+        "lng": -0.051979
+      }
+    },
+    {
+      "venueId": "hauser-and-wirth-london",
+      "name": "Hauser & Wirth London",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "marian-goodman-gallery-london",
+      "name": "Marian Goodman Gallery London",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "stephen-friedman-gallery",
+      "name": "Stephen Friedman Gallery",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "herald-st",
+      "name": "Herald St",
+      "priorityRank": null,
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "No complete official street address and postcode were verified to the London region",
+      "postcode": null,
+      "coordinates": null
+    },
+    {
+      "venueId": "annely-juda-fine-art",
+      "name": "Annely Juda Fine Art",
+      "priorityRank": null,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 16 Hanover Square, W1S 1HT; postcode resolves to Westminster, London",
+      "postcode": "W1S 1HT",
+      "coordinates": {
+        "lat": 51.513445,
+        "lng": -0.141402
+      }
+    },
+    {
+      "venueId": "blueshop-cottage",
+      "name": "Blue Shop Cottage",
+      "priorityRank": 53,
+      "accepted": true,
+      "reasonCode": "verified-london-venue",
+      "evidence": "Official venue address 72 Brixton Road, Oval, SW9 6BH; postcode resolves to Lambeth, London",
+      "postcode": "SW9 6BH",
+      "coordinates": {
+        "lat": 51.478127,
+        "lng": -0.112466
+      }
+    }
+  ],
+  "exhibitions": [
+    {
+      "exhibitionId": "the-photographers-gallery-autofoto-photobooth-2026-03-01",
+      "venueId": "the-photographers-gallery",
+      "title": "Autofoto photobooth",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/autofoto-photobooth-photographers-gallery",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "the-photographers-gallery-ninagawa-mika-captive-blooms-2026-06-19",
+      "venueId": "the-photographers-gallery",
+      "title": "NINAGAWA Mika: Captive Blooms",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/ninagawa-mika-captive-blooms",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "the-photographers-gallery-open-call-future-of-archives-whose-archive-is-it-anyway-2026-08-04",
+      "venueId": "the-photographers-gallery",
+      "title": "Open Call | Future of Archives: Whose Archive is it Anyway?",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/open-call-future-archives-whose-archive-it-anyway",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "the-photographers-gallery-roots-2026-09-18",
+      "venueId": "the-photographers-gallery",
+      "title": "Roots",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/roots",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "the-photographers-gallery-sanle-sory-colour-years-2026-10-14",
+      "venueId": "the-photographers-gallery",
+      "title": "Sanlé Sory: Colour Years",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/sanle-sory-colour-years",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "the-photographers-gallery-snap-happy-how-children-became-photographers-2026-10-14",
+      "venueId": "the-photographers-gallery",
+      "title": "Snap Happy! How Children Became Photographers",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/snap-happy-how-children-became-photographers",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "the-photographers-gallery-william-eggleston-all-that-goes-unnoticed-2026-10-14",
+      "venueId": "the-photographers-gallery",
+      "title": "William Eggleston: All that goes unnoticed",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/william-eggleston-all-goes-unnoticed",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "pilar-corrias-mary-ramsden-the-feeling-of-what-happens-2026-09-10",
+      "venueId": "pilar-corrias",
+      "title": "Mary Ramsden: The Feeling of What Happens",
+      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "pilar-corrias-rirkrit-tiravanija-situational-awareness-2026-10-09",
+      "venueId": "pilar-corrias",
+      "title": "Rirkrit Tiravanija: (situational awareness)",
+      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/538-rirkrit-tiravanija-situational-awareness/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "chisenhale-gallery-wakaliga-uganda-kibuuka-omumbaale-2026-10-02",
+      "venueId": "chisenhale-gallery",
+      "title": "Wakaliga Uganda — Kibuuka Omumbaale",
+      "sourceUrl": "https://chisenhale.org.uk/project/wakaliga-uganda/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: E3 5QZ"
+    },
+    {
+      "exhibitionId": "october-gallery-romuald-hazoume-my-blue-period-2026-10-08",
+      "venueId": "october-gallery",
+      "title": "Romuald Hazoumè: My Blue Period",
+      "sourceUrl": "https://www.octobergallery.co.uk/exhibitions/romuald-hazoume-my-blue-period",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"October Gallery\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"24 Old Gloucester Street\", \"addressLocality\": \"London\", \"postalCode\": \"WC1N 3…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "hannah-barry-gallery-stevie-dix-vyvyan-2026-10-01",
+      "venueId": "hannah-barry-gallery",
+      "title": "Stevie Dix — Vyvyan",
+      "sourceUrl": "https://hannahbarry.com/exhibition/stevie-dix-vyvyan-1-october-14-november-2026/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "sprueth-magers-london-upcoming-exhibitions-2026-11-06",
+      "venueId": "sprueth-magers-london",
+      "title": "Upcoming Exhibitions",
+      "sourceUrl": "https://spruethmagers.com/exhibitions/upcoming/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-anne-griffiths-the-bliss-of-rain-2026-11-05",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Anne Griffiths: The Bliss of Rain",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/553/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-bertram-hasenauer-trickster-2026-09-25",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Bertram Hasenauer: Trickster",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/554/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-charmaine-watkiss-west-palm-beach-salon-2026-10-30",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Charmaine Watkiss: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/589/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-colm-mac-athloaich-west-palm-beach-salon-2026-09-18",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Colm Mac Athloaich: West Palm Beach | Salon",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/614/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-darcy-whent-soft-bodies-hard-frames-2026-09-18",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Darcy Whent: Soft Bodies, Hard Frames",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/603/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-elin-melberg-west-palm-beach-salon-2026-10-30",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Elin Melberg: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/612/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-gabriela-giroletti-west-palm-beach-salon-2026-09-18",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Gabriela Giroletti: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/590/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-makiko-harris-i-hold-you-in-devotion-2026-10-30",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Makiko Harris: I Hold You in Devotion",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/583/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-manuela-benaim-west-palm-beach-salon-2026-10-30",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Manuela Benaim: West Palm Beach | Salon",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/578/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-ralf-kokke-candy-for-crocodiles-2026-10-08",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Ralf Kokke: Candy for Crocodiles",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-sabrina-bockler-west-palm-beach-salon-2026-09-18",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Sabrina Bockler: West Palm Beach | Salon",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/592/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-umar-rashid-west-palm-beach-salon-2026-10-30",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Umar Rashid: West Palm Beach | Salon",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/577/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-vibeke-slyngstad-west-palm-beach-salon-2026-09-18",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Vibeke Slyngstad: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/558/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "matts-gallery-annie-whiles-doorway-guardians-2026-09-30",
+      "venueId": "matts-gallery",
+      "title": "Annie Whiles — Doorway Guardians",
+      "sourceUrl": "https://www.mattsgallery.org/exhibitions/doorway-guardians",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "matts-gallery-imogen-stidworthy-skydde-2026-09-30",
+      "venueId": "matts-gallery",
+      "title": "Imogen Stidworthy — Skydde",
+      "sourceUrl": "https://www.mattsgallery.org/exhibitions/imogen-stidworthy-",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "kate-macgarry-bernard-piffaretti-2026-10-02",
+      "venueId": "kate-macgarry",
+      "title": "Bernard Piffaretti",
+      "sourceUrl": "https://www.katemacgarry.com/exhibitions/151-bernard-piffaretti-painting-caption/installation_shots/",
+      "accepted": false,
+      "reasonCode": "missing-london-event-evidence",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
+    },
+    {
+      "exhibitionId": "kate-macgarry-current-future-2026-10-02",
+      "venueId": "kate-macgarry",
+      "title": "Current/Future",
+      "sourceUrl": "https://www.katemacgarry.com/exhibitions/current-future/",
+      "accepted": false,
+      "reasonCode": "missing-london-event-evidence",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
+    },
+    {
+      "exhibitionId": "hales-gallery-staging-resistance-2026-09-10",
+      "venueId": "hales-gallery",
+      "title": "Staging Resistance",
+      "sourceUrl": "https://halesgallery.com/exhibitions/268-staging-resistance-tessa-boffin-rotimi-fani-kayode-and-sunil-gupta-in/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "serpentine-south-jesus-rafael-soto-penetrable-bbl-jaune-2026-06-16",
+      "venueId": "serpentine-south",
+      "title": "Jesús Rafael Soto: Pénétrable BBL Jaune",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/jesus-rafael-soto-penetrable-bbl-jaune/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "victoria-miro-adriana-varejao-modernisms-2026-09-12",
+      "venueId": "victoria-miro",
+      "title": "Adriana Varejão: Modernisms",
+      "sourceUrl": "https://www.victoria-miro.com/exhibitions/adriana-varejao-venice-2026/",
+      "accepted": false,
+      "reasonCode": "non-london-location",
+      "evidence": "Official event title/location assigns the exhibition to venice, not London"
+    },
+    {
+      "exhibitionId": "victoria-miro-hernan-bas-time-to-shine-the-salesmen-2026-09-17",
+      "venueId": "victoria-miro",
+      "title": "Hernan Bas: TIME TO SHINE! (the salesmen)",
+      "sourceUrl": "https://www.victoria-miro.com/exhibitions/685/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "victoria-miro-khalif-tahir-thompson-send-in-the-clowns-2026-10-08",
+      "venueId": "victoria-miro",
+      "title": "Khalif Tahir Thompson: Send in the Clowns",
+      "sourceUrl": "https://www.victoria-miro.com/exhibitions/683/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "tate-britain-art-now-mohammed-z-rahman-2026-06-05",
+      "venueId": "tate-britain",
+      "title": "Art Now: Mohammed Z Rahman",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-now-mohammed-z-rahman",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL"
+    },
+    {
+      "exhibitionId": "tate-britain-tate-britain-commission-2026-zineb-sedira-when-words-fall-silent-cinema-speaks-2026-05-13",
+      "venueId": "tate-britain",
+      "title": "Tate Britain Commission 2026: Zineb Sedira — When Words Fall Silent, Cinema Speaks",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "tate-britain-the-90s-art-and-fashion-2026-10-08",
+      "venueId": "tate-britain",
+      "title": "The 90s: Art and Fashion",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "whitechapel-gallery-cecilia-vicuna-foraging-quipu-2026-10-07",
+      "venueId": "whitechapel-gallery",
+      "title": "Cecilia Vicuña: Foraging Quipu",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/cecilia-vicuna-foraging-quipu/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "whitechapel-gallery-cecilia-vicuna-living-threads-2026-10-07",
+      "venueId": "whitechapel-gallery",
+      "title": "Cecilia Vicuña: Living Threads",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/cecilia-vicuna/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "whitechapel-gallery-screen-portraits-whitechapel-gallery-artists-part-2-2026-10-07",
+      "venueId": "whitechapel-gallery",
+      "title": "Screen Portraits: Whitechapel Gallery Artists - Part 2",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/screen-portraits-whitechapel-gallery-artists-part-2/",
+      "accepted": false,
+      "reasonCode": "missing-london-event-evidence",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
+    },
+    {
+      "exhibitionId": "whitechapel-gallery-this-must-be-the-place-artists-for-whitechapel-gallery-2026-10-08",
+      "venueId": "whitechapel-gallery",
+      "title": "This Must Be the Place: Artists for Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/this-must-be-the-place-artists-for-whitechapel-gallery/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "pippy-houldsworth-gallery-sofia-bassi-2026-10-09",
+      "venueId": "pippy-houldsworth-gallery",
+      "title": "Sofía Bassi",
+      "sourceUrl": "https://www.houldsworth.co.uk/exhibitions/175-sofia-bassi-floating-between-earth-and-sky/press_release_text/",
+      "accepted": false,
+      "reasonCode": "missing-london-event-evidence",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
+    },
+    {
+      "exhibitionId": "ben-brown-fine-arts-alighiero-boetti-curated-by-elena-geuna-2026-05-07",
+      "venueId": "ben-brown-fine-arts",
+      "title": "Alighiero Boetti: Curated by Elena Geuna",
+      "sourceUrl": "https://www.benbrownfinearts.com/exhibitions/231-alighiero-boetti-curated-by-elena-geuna-smac-venice-san-marco-art-centre/",
+      "accepted": false,
+      "reasonCode": "non-london-location",
+      "evidence": "Official event title/location assigns the exhibition to venice, not London"
+    },
+    {
+      "exhibitionId": "ben-brown-fine-arts-qi-lei-2026-09-12",
+      "venueId": "ben-brown-fine-arts",
+      "title": "Qi Lei",
+      "sourceUrl": "https://www.benbrownfinearts.com/exhibitions/234-qi-lei-echoes-of-day-and-night/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "sadie-coles-hq-catherine-murphy-recent-work-2026-09-02",
+      "venueId": "sadie-coles-hq",
+      "title": "Catherine Murphy — Recent Work",
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/recent-work",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: SW1Y 6AB"
+    },
+    {
+      "exhibitionId": "sadie-coles-hq-martine-syms-knot-eye-2026-09-17",
+      "venueId": "sadie-coles-hq",
+      "title": "Martine Syms — Knot Eye",
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: SW1Y 6AB"
+    },
+    {
+      "exhibitionId": "sadie-coles-hq-nicole-eisenman-2026-09-23",
+      "venueId": "sadie-coles-hq",
+      "title": "Nicole Eisenman",
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/nicole-eisenman-2",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: SW1Y 6AB"
+    },
+    {
+      "exhibitionId": "the-redfern-gallery-desmond-morris-19282026-2026-09-16",
+      "venueId": "the-redfern-gallery",
+      "title": "Desmond Morris (1928–2026)",
+      "sourceUrl": "https://www.redfern-gallery.com/exhibitions/122-desmond-morris-1928-2026/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "david-zwirner-london-daichi-takagi-suchness-2026-09-24",
+      "venueId": "david-zwirner-london",
+      "title": "Daichi Takagi: Suchness",
+      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/daichi-takagi-suchness",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page title: Daichi Takagi: Suchness | London | September 24—October 31, 2026 | David Zwirner; page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "david-zwirner-london-louis-fratino-prose-2026-09-18",
+      "venueId": "david-zwirner-london",
+      "title": "Louis Fratino: Prose",
+      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/louis-fratino",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page title: Louis Fratino: Prose | London | September 18—October 31, 2026 | David Zwirner; structured location: {\"@type\": \"Place\", \"name\": \"David Zwirner London\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"24 Grafton Street\", \"addressLocality\": \"London\", \"postalCode\": \"W1S 4EZ\"…; page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "david-zwirner-london-no-plan-at-all-prints-from-borch-editions-2026-11-05",
+      "venueId": "david-zwirner-london",
+      "title": "No Plan at All: Prints from BORCH Editions",
+      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/no-plan-at-all-prints-from-borch-editions",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page title: No Plan at All: Prints from BORCH Editions | London | November 5—December 19, 2026 | David Zwirner; page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "the-courtauld-gallery-salman-toor-someone-like-you-2026-10-02",
+      "venueId": "the-courtauld-gallery",
+      "title": "Salman Toor: Someone Like You",
+      "sourceUrl": "https://courtauld.ac.uk/whats-on/exh-salman-toor-someone-like-you/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "maddox-gallery-bibi-lei-where-light-blooms-2026-10-14",
+      "venueId": "maddox-gallery",
+      "title": "Bibi Lei: Where Light Blooms",
+      "sourceUrl": "https://maddoxgallery.com/pages/exhibition/bibi-lei-where-light-blooms",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "maddox-gallery-touils-between-landscape-and-memory-2026-09-03",
+      "venueId": "maddox-gallery",
+      "title": "Touils: Between Landscape and Memory",
+      "sourceUrl": "https://maddoxgallery.com/pages/exhibition/touils-between-landscape-and-memory",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "pace-gallery-london-david-byrne-pace-gallery-2025-04-10",
+      "venueId": "pace-gallery-london",
+      "title": "David Byrne | Pace Gallery",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/david-byrne-stairwell-drawings/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "pace-gallery-london-exhibitions-pace-gallery-2025-04-10",
+      "venueId": "pace-gallery-london",
+      "title": "Exhibitions | Pace Gallery",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "pace-gallery-london-kiki-smith-untethered-journey-pace-gallery-2026-10-30",
+      "venueId": "pace-gallery-london",
+      "title": "Kiki Smith: Untethered Journey | Pace Gallery",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/kiki-smith-untethered-journey/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "royal-academy-day-2026-09-18",
+      "venueId": "royal-academy",
+      "title": "Day",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/raschools-day-2026",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "royal-academy-emmanuel-awuni-2026-09-29",
+      "venueId": "royal-academy",
+      "title": "Emmanuel Awuni",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-emmanuel-awuni",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "royal-academy-in-provence-and-southern-france-2026-09-29",
+      "venueId": "royal-academy",
+      "title": "In Provence and Southern France",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-barbara-rae-ra",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "royal-academy-nicole-eisenman-2026-09-22",
+      "venueId": "royal-academy",
+      "title": "Nicole Eisenman",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/nicole-eisenman-courtyard-sculpture",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: W1J 0BD"
+    },
+    {
+      "exhibitionId": "royal-academy-painting-the-french-riviera-2026-10-02",
+      "venueId": "royal-academy",
+      "title": "Painting the French Riviera",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: W1J 0BD"
+    },
+    {
+      "exhibitionId": "royal-academy-richard-dadd-2026-07-25",
+      "venueId": "royal-academy",
+      "title": "Richard Dadd",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/richard-dadd",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: W1J 0BD"
+    },
+    {
+      "exhibitionId": "royal-academy-the-john-madejski-fine-rooms-2025-12-16",
+      "venueId": "royal-academy",
+      "title": "The John Madejski Fine Rooms",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/fine-rooms-open",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "royal-academy-white-cube-x-ra-2026-10-06",
+      "venueId": "royal-academy",
+      "title": "White Cube x RA",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-white-cube",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "national-gallery-renoir-and-love-2026-10-03",
+      "venueId": "national-gallery",
+      "title": "Renoir and Love",
+      "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"sameAs\": \"https://www.nationalgallery.org.uk/\", \"address\": \"Trafalgar Square, London, WC2N 5DN, UK\", \"name\": \"The National Gallery\"}; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "national-gallery-yinka-shonibare-and-thomas-gainsborough-a-conversation-2026-10-15",
+      "venueId": "national-gallery",
+      "title": "Yinka Shonibare and Thomas Gainsborough: A Conversation",
+      "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/yinka-shonibare-and-thomas-gainsborough-a-conversation",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"sameAs\": \"https://www.nationalgallery.org.uk/\", \"address\": \"Trafalgar Square, London, WC2N 5DN, UK\", \"name\": \"The National Gallery\"}; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "lbf-contemporary-lawrence-perry-careless-rapture-2026-09-19",
+      "venueId": "lbf-contemporary",
+      "title": "Lawrence Perry: Careless Rapture",
+      "sourceUrl": "https://lbfcontemporary.com/exhibitions/careless-rapture/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "blueshop-cottage-isabel-munoz-newsome-the-other-place-2026-10-07",
+      "venueId": "blueshop-cottage",
+      "title": "Isabel Muñoz-Newsome — The Other Place",
+      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/isabel-munoz-newsome",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "blueshop-cottage-lucy-ray-ill-have-to-remember-it-differently-2026-10-07",
+      "venueId": "blueshop-cottage",
+      "title": "Lucy Ray — I’ll have to remember it differently",
+      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/lucy-ray",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "annely-juda-fine-art-chloe-bonfield-kate-lyddon-and-zulfiya-spowart-what-remains-within-2026-10-01",
+      "venueId": "annely-juda-fine-art",
+      "title": "Chloe Bonfield, Kate Lyddon and Zulfiya Spowart — What Remains Within",
+      "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/406-what-remains-within-curated-by-paola-lucente-chloe-bonfield-kate-lyddon-zulfiya-spowart/overview/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "annely-juda-fine-art-nicola-turner-i-tear-secrets-from-your-yielding-flesh-2026-10-01",
+      "venueId": "annely-juda-fine-art",
+      "title": "Nicola Turner: I Tear Secrets From Your Yielding Flesh",
+      "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/405-nicola-turner-i-tear-secrets-from-your-yielding-flesh/overview/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: W1S 1HT"
+    },
+    {
+      "exhibitionId": "auto-italia-sensual-mutual-2026-07-17",
+      "venueId": "auto-italia",
+      "title": "Sensual / Mutual",
+      "sourceUrl": "https://autoitaliasoutheast.org/projects/sensual-mutual/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "british-museum-declaring-independence-usa-250-2026-06-30",
+      "venueId": "british-museum",
+      "title": "Declaring independence: USA 250",
+      "sourceUrl": "https://www.britishmuseum.org/exhibitions/declaring-independence-usa-250",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "british-museum-korea-2026-10-01",
+      "venueId": "british-museum",
+      "title": "Korea",
+      "sourceUrl": "https://www.britishmuseum.org/exhibitions/korea",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "british-museum-the-bayeux-tapestry-2026-09-10",
+      "venueId": "british-museum",
+      "title": "The Bayeux Tapestry",
+      "sourceUrl": "https://www.britishmuseum.org/exhibitions/bayeux-tapestry",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "camden-art-centre-liz-larner-a-hard-line-to-bend-2026-09-11",
+      "venueId": "camden-art-centre",
+      "title": "Liz Larner — A hard line to bend",
+      "sourceUrl": "https://camdenartcentre.org/whats-on/a-hard-line-to-bend",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"Camden Art Centre\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"Arkwright Road\", \"addressLocality\": \"London\", \"postalCode\": \"NW3 6DG\", \"add…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "design-museum-es-devlin-other-worlds-2026-10-02",
+      "venueId": "design-museum",
+      "title": "Es Devlin: Other Worlds",
+      "sourceUrl": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "dulwich-picture-gallery-charlie-mackesy-the-boy-the-mole-the-fox-the-horse-and-you-2026-11-03",
+      "venueId": "dulwich-picture-gallery",
+      "title": "Charlie Mackesy: The Boy, the Mole, the Fox, the Horse...and You",
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/charlie-mackesy-the-boy-the-fox-the-mole-the-horse-and-you/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: SE21 7AD"
+    },
+    {
+      "exhibitionId": "dulwich-picture-gallery-curtain-up-2026-05-19",
+      "venueId": "dulwich-picture-gallery",
+      "title": "Curtain Up!",
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/curtain-up/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "dulwich-picture-gallery-friends-circle-special-the-year-ahead-2026-05-08",
+      "venueId": "dulwich-picture-gallery",
+      "title": "Friends Circle Special: The Year Ahead",
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/friends-circle-special-the-year-ahead/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "dulwich-picture-gallery-mini-masterpieces-2025-06-26",
+      "venueId": "dulwich-picture-gallery",
+      "title": "Mini Masterpieces",
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/mini-masterpieces/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: SE21 7AD"
+    },
+    {
+      "exhibitionId": "estorick-collection-wanda-and-marion-wulz-avant-garde-photography-in-20th-century-italy-2026-09-16",
+      "venueId": "estorick-collection",
+      "title": "Wanda and Marion Wulz: Avant-garde Photography in 20th-Century Italy",
+      "sourceUrl": "https://www.estorickcollection.com/exhibitions/wanda-and-marion-wulz-avant-garde-photography-in-20th-century-italy",
+      "accepted": false,
+      "reasonCode": "missing-london-event-evidence",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
+    },
+    {
+      "exhibitionId": "flowers-gallery-in-focus-patrick-hughes-2026-09-17",
+      "venueId": "flowers-gallery",
+      "title": "IN FOCUS | Patrick Hughes",
+      "sourceUrl": "https://www.flowersgallery.com/exhibitions/649-in-focus-patrick-hughes/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "flowers-gallery-lower-gallery-spotlight-movana-chen-2026-09-05",
+      "venueId": "flowers-gallery",
+      "title": "Lower Gallery Spotlight | Movana Chen",
+      "sourceUrl": "https://www.flowersgallery.com/exhibitions/654-lower-gallery-spotlight-movana-chen/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "flowers-gallery-nadav-kander-the-edge-of-things-2026-09-18",
+      "venueId": "flowers-gallery",
+      "title": "Nadav Kander | The Edge of Things",
+      "sourceUrl": "https://www.flowersgallery.com/exhibitions/647-nadav-kander-the-edge-of-things/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "flowers-gallery-peter-howson-salvation-2026-09-10",
+      "venueId": "flowers-gallery",
+      "title": "Peter Howson | Salvation",
+      "sourceUrl": "https://www.flowersgallery.com/exhibitions/643-peter-howson-salvation/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "flowers-gallery-tai-shan-schierenberg-mixed-blessings-2026-10-23",
+      "venueId": "flowers-gallery",
+      "title": "Tai Shan Schierenberg | Mixed Blessings",
+      "sourceUrl": "https://www.flowersgallery.com/exhibitions/651-tai-shan-schierenberg-mixed-blessings/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "flowers-gallery-william-crozier-dance-of-the-living-19611974-2026-10-14",
+      "venueId": "flowers-gallery",
+      "title": "William Crozier | Dance of the Living 1961–1974",
+      "sourceUrl": "https://www.flowersgallery.com/exhibitions/646-william-crozier-dance-of-the-living-19611974/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "garden-museum-sabine-moritz-2026-10-08",
+      "venueId": "garden-museum",
+      "title": "Sabine Moritz",
+      "sourceUrl": "https://www.gardenmuseum.org.uk/whats-on/sabine-moritz/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: SE1 7LB"
+    },
+    {
+      "exhibitionId": "gasworks-umi-ishihara-nocturnal-melody-2026-10-10",
+      "venueId": "gasworks",
+      "title": "Umi Ishihara: Nocturnal Melody",
+      "sourceUrl": "https://www.gasworks.org.uk/exhibitions/umi-ishihara/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page text explicitly assigns the event to London"
+    },
+    {
+      "exhibitionId": "goldsmiths-cca-goldsmiths-cca-exhibitions-episode-16-katie-shannon-2026-11-06",
+      "venueId": "goldsmiths-cca",
+      "title": "Goldsmiths CCA Exhibitions EPISODE 16: KATIE SHANNON",
+      "sourceUrl": "https://goldsmithscca.art/exhibitions/upcoming/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "goldsmiths-cca-goldsmiths-cca-exhibitions-evelyn-taocheng-wang-2026-09-25",
+      "venueId": "goldsmiths-cca",
+      "title": "Goldsmiths CCA Exhibitions EVELYN TAOCHENG WANG",
+      "sourceUrl": "https://goldsmithscca.art/exhibition/evelyn-taocheng-wang/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "london-museum-beastly-bookmarks-2026-10-24",
+      "venueId": "london-museum",
+      "title": "Beastly bookmarks",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/beastly-bookmarks/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "london-museum-make-a-mythical-creature-2026-10-24",
+      "venueId": "london-museum",
+      "title": "Make a mythical creature",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/make-mythical-creature/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "london-museum-october-half-term-2026-10-24",
+      "venueId": "london-museum",
+      "title": "October half term",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/october-half-term/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "london-museum-superstitious-sailors-2026-10-24",
+      "venueId": "london-museum",
+      "title": "Superstitious sailors",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/superstitious-sailors/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "national-portrait-gallery-herbert-smith-freehills-kramer-portrait-award-2026-2026-06-25",
+      "venueId": "national-portrait-gallery",
+      "title": "Herbert Smith Freehills Kramer Portrait Award 2026",
+      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/hsf-kramer-portrait-award-2026/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "national-portrait-gallery-tim-walker-s-fairyland-love-and-legends-2026-10-09",
+      "venueId": "national-portrait-gallery",
+      "title": "Tim Walker's Fairyland: Love and Legends",
+      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/tim-walkers-fairyland-love-and-legends",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "national-portrait-gallery-winston-taylor-photo-portrait-prize-2026-2026-11-05",
+      "venueId": "national-portrait-gallery",
+      "title": "Winston Taylor Photo Portrait Prize 2026",
+      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "natural-history-museum-jurassic-oceans-monsters-of-the-deep-2026-05-22",
+      "venueId": "natural-history-museum",
+      "title": "Jurassic Oceans: Monsters of the Deep",
+      "sourceUrl": "https://www.nhm.ac.uk/visit/exhibitions/jurassic-oceans.html",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "natural-history-museum-wildlife-photographer-of-the-year-2026-10-16",
+      "venueId": "natural-history-museum",
+      "title": "Wildlife Photographer of the Year",
+      "sourceUrl": "https://www.nhm.ac.uk/visit/exhibitions/wildlife-photographer-of-the-year.html",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "royal-museums-greenwich-character-actors-at-the-queen-s-house-2026-10-24",
+      "venueId": "royal-museums-greenwich",
+      "title": "Character Actors at the Queen's House",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/queens-house/character-actors",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "royal-museums-greenwich-cutty-sark-characters-2026-10-24",
+      "venueId": "royal-museums-greenwich",
+      "title": "Cutty Sark Characters",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/cutty-sark/cutty-sark-characters",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "royal-museums-greenwich-discover-sundays-2026-10-24",
+      "venueId": "royal-museums-greenwich",
+      "title": "Discover Sundays",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/discover-sundays",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "royal-museums-greenwich-musica-antica-at-the-queen-s-house-2026-10-25",
+      "venueId": "royal-museums-greenwich",
+      "title": "Musica Antica at the Queen's House",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/queens-house/musica-antica-queens-house",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "royal-museums-greenwich-sensory-sailors-2026-10-10",
+      "venueId": "royal-museums-greenwich",
+      "title": "SENsory Sailors",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/sensory-sailors",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "sir-john-soanes-museum-michael-landy-future-ruins-2026-10-14",
+      "venueId": "sir-john-soanes-museum",
+      "title": "Michael Landy: Future Ruins",
+      "sourceUrl": "https://www.soane.org/exhibitions/michael-landy-future-ruins",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: WC2A 3BP"
+    },
+    {
+      "exhibitionId": "somerset-house-fleurs-de-villes-diana-in-support-of-the-diana-award-2026-09-16",
+      "venueId": "somerset-house",
+      "title": "Fleurs de Villes DIANA in Support of The Diana Award",
+      "sourceUrl": "https://www.somersethouse.org.uk",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "somerset-house-jenkin-van-zyl-enclosure-2026-09-24",
+      "venueId": "somerset-house",
+      "title": "Jenkin van Zyl: Enclosure",
+      "sourceUrl": "https://www.somersethouse.org.uk",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "somerset-house-there-are-no-honest-poems-about-dead-women-jemma-desai-2026-07-30",
+      "venueId": "somerset-house",
+      "title": "There Are No Honest Poems About Dead Women: Jemma Desai",
+      "sourceUrl": "https://www.somersethouse.org.uk",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "south-london-gallery-monika-sosnowska-weight-of-matter-2026-09-10",
+      "venueId": "south-london-gallery",
+      "title": "Monika Sosnowska: Weight of Matter",
+      "sourceUrl": "https://www.southlondongallery.org/exhibitions/monika-sosnowska-weight-of-matter/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page title: Monika Sosnowska: Weight of Matter - South London Gallery; page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "tate-modern-ana-mendieta-2026-07-14",
+      "venueId": "tate-modern",
+      "title": "Ana Mendieta",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/ana-mendieta",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL"
+    },
+    {
+      "exhibitionId": "tate-modern-frida-the-making-of-an-icon-2026-06-25",
+      "venueId": "tate-modern",
+      "title": "Frida: The Making of an Icon",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL"
+    },
+    {
+      "exhibitionId": "tate-modern-gathering-ground-2025-01-29",
+      "venueId": "tate-modern",
+      "title": "Gathering Ground",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/gathering-ground",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "tate-modern-hyundai-commission-tarek-atoui-2026-10-13",
+      "venueId": "tate-modern",
+      "title": "Hyundai Commission: Tarek Atoui",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/tarek-atoui",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL"
+    },
+    {
+      "exhibitionId": "tate-modern-julio-le-parc-light-colour-action-2026-06-08",
+      "venueId": "tate-modern",
+      "title": "Julio Le Parc: Light. Colour. Action.",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL"
+    },
+    {
+      "exhibitionId": "tate-modern-light-and-magic-the-birth-of-art-photography-2026-10-14",
+      "venueId": "tate-modern",
+      "title": "Light and Magic: The Birth of Art Photography",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL"
+    },
+    {
+      "exhibitionId": "the-kings-gallery-queen-elizabeth-ii-her-life-in-style-the-kings-gallery-buckingham-palace-2026-04-10",
+      "venueId": "the-kings-gallery",
+      "title": "Queen Elizabeth II: Her Life in Style: The King’s Gallery, Buckingham Palace",
+      "sourceUrl": "https://www.rct.uk/collection/exhibitions/queen-elizabeth-ii-her-life-in-style",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "vam-adobe-creative-residents-on-display-2025-12-02",
+      "venueId": "vam",
+      "title": "Adobe Creative Residents On Display",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-adobe-creative-residents-on-display",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-american-photographs-2025-06-14",
+      "venueId": "vam",
+      "title": "American Photographs",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/american-photographs",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-bharti-kher-at-the-v-a-2026-07-20",
+      "venueId": "vam",
+      "title": "Bharti Kher at the V&A",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/bharti-kher-at-the-va",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-dimensions-contemporary-chinese-studio-crafts-2025-10-28",
+      "venueId": "vam",
+      "title": "Dimensions: Contemporary Chinese Studio Crafts",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/dimensions-contemporary-chinese-studio-crafts",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-henri-cartier-bresson-self-published-photobook-award-shortlist-2026-09-21",
+      "venueId": "vam",
+      "title": "Henri Cartier-Bresson Self-Published PhotoBook Award Shortlist",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…"
+    },
+    {
+      "exhibitionId": "vam-lost-music-venues-2026-05-30",
+      "venueId": "vam",
+      "title": "Lost Music Venues",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/lost-music-venues",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-rising-voices-contemporary-art-from-asia-australia-and-the-pacific-2026-05-16",
+      "venueId": "vam",
+      "title": "Rising Voices: Contemporary Art from Asia, Australia and the Pacific",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/rising-voices-contemporary-art-from-asia-australia-and-the-pacific",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-sacred-treasures-from-kyiv-2026-09-14",
+      "venueId": "vam",
+      "title": "Sacred Treasures from Kyiv",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/sacred-treasures-from-kyiv",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-samuel-palmer-and-modern-art-2026-10-10",
+      "venueId": "vam",
+      "title": "Samuel Palmer and Modern Art",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/samuel-palmer-and-modern-art",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-schiaparelli-fashion-becomes-art-2026-03-28",
+      "venueId": "vam",
+      "title": "Schiaparelli: Fashion Becomes Art",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/schiaparelli",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-the-burberry-trench-crafting-an-icon-2026-09-21",
+      "venueId": "vam",
+      "title": "The Burberry Trench: Crafting an Icon",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-burberry-trench-crafting-an-icon",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "vam-urushi-now-contemporary-japanese-lacquer-2026-04-30",
+      "venueId": "vam",
+      "title": "Urushi Now: Contemporary Japanese Lacquer",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/urushi-now-contemporary-japanese-lacquer",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "wallace-collection-metamorphoses-porcelain-sculpture-by-rachel-kneebone-2026-09-23",
+      "venueId": "wallace-collection",
+      "title": "Metamorphoses: Porcelain Sculpture by Rachel Kneebone",
+      "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/metamorphoses-porcelain-sculpture-by-rachel-kneebone/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "wallace-collection-the-wallace-collection-at-war-2026-04-15",
+      "venueId": "wallace-collection",
+      "title": "The Wallace Collection at War",
+      "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/the-wallace-collection-at-war/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "wallace-collection-winston-churchill-the-painter-2026-04-15",
+      "venueId": "wallace-collection",
+      "title": "Winston Churchill: The Painter",
+      "sourceUrl": "https://www.wallacecollection.org/whats-on/events/winston-churchill-the-painter/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "wellcome-collection-audrey-amiss-the-surviving-exhibitions-2026-07-10",
+      "venueId": "wellcome-collection",
+      "title": "Audrey Amiss: The Surviving Exhibitions",
+      "sourceUrl": "https://wellcomecollection.org/exhibitions/audrey-amiss-the-surviving-exhibitions",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: NW1 2BE"
+    },
+    {
+      "exhibitionId": "wellcome-collection-rudy-loewe-intimacies-of-care-spaces-of-grief-and-possibility-2026-07-10",
+      "venueId": "wellcome-collection",
+      "title": "Rudy Loewe: Intimacies of Care – Spaces of Grief and Possibility",
+      "sourceUrl": "https://wellcomecollection.org/exhibitions/rudy-loewe-intimacies-of-care-spaces-of-grief-and-possibility",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: NW1 2BE"
+    },
+    {
+      "exhibitionId": "wellcome-collection-tenderness-and-rage-2026-05-29",
+      "venueId": "wellcome-collection",
+      "title": "Tenderness and Rage",
+      "sourceUrl": "https://wellcomecollection.org/exhibitions/tenderness-and-rage",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: NW1 2BE"
+    },
+    {
+      "exhibitionId": "wellcome-collection-the-coming-of-age-2026-03-26",
+      "venueId": "wellcome-collection",
+      "title": "The Coming of Age",
+      "sourceUrl": "https://wellcomecollection.org/exhibitions/the-coming-of-age",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: NW1 2BE"
+    },
+    {
+      "exhibitionId": "young-vam-inside-aardman-wallace-gromit-and-friends-2026-02-12",
+      "venueId": "young-vam",
+      "title": "Inside Aardman: Wallace & Gromit and Friends",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/inside-aardman-wallace-gromit-and-friends",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"Young V&A\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"E2 9PA\", \"streetAddress\": \"Cam…; item-scoped official listing assigns the exhibition to London"
+    }
+  ]
+}

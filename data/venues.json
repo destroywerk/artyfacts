@@ -1,0 +1,2348 @@
+[
+  {
+    "id": "the-photographers-gallery",
+    "name": "The Photographers' Gallery",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://thephotographersgallery.org.uk/",
+    "whatsOnUrl": "https://thephotographersgallery.org.uk/whats-on",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 1
+  },
+  {
+    "id": "pilar-corrias",
+    "name": "Pilar Corrias",
+    "type": "commercial",
+    "address": "51 Conduit Street",
+    "postcode": "W1S 2YT",
+    "coordinates": {
+      "lat": 51.512028,
+      "lng": -0.141676
+    },
+    "area": "Central",
+    "website": "https://www.pilarcorrias.com/",
+    "whatsOnUrl": "https://www.pilarcorrias.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 2
+  },
+  {
+    "id": "the-tagli",
+    "name": "THE TAGLI",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": null,
+    "whatsOnUrl": null,
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 3
+  },
+  {
+    "id": "lisson-gallery",
+    "name": "Lisson Gallery",
+    "type": "commercial",
+    "address": "67 Lisson Street",
+    "postcode": "NW1 5DA",
+    "coordinates": {
+      "lat": 51.520905,
+      "lng": -0.168025
+    },
+    "area": "Central",
+    "website": "https://www.lissongallery.com/",
+    "whatsOnUrl": "https://www.lissongallery.com/exhibitions",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "17:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 4
+  },
+  {
+    "id": "william-hine",
+    "name": "William Hine",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://williamhine.com/",
+    "whatsOnUrl": "https://williamhine.com/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 5
+  },
+  {
+    "id": "terrace-gallery",
+    "name": "Terrace Gallery",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": null,
+    "whatsOnUrl": null,
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 6
+  },
+  {
+    "id": "chisenhale-gallery",
+    "name": "Chisenhale Gallery",
+    "type": "independent",
+    "address": "64 Chisenhale Road",
+    "postcode": "E3 5QZ",
+    "coordinates": {
+      "lat": 51.533629,
+      "lng": -0.038451
+    },
+    "area": "City & East",
+    "website": "https://chisenhale.org.uk/",
+    "whatsOnUrl": "https://chisenhale.org.uk/whats-on/",
+    "openingHours": {
+      "wednesday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "sunday": {
+        "open": "12:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 7
+  },
+  {
+    "id": "soho-revue",
+    "name": "Soho Revue",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://sohorevue.com/",
+    "whatsOnUrl": "https://sohorevue.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 8
+  },
+  {
+    "id": "the-cob-gallery",
+    "name": "The Cob Gallery",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.thecobgallery.com/",
+    "whatsOnUrl": "https://www.thecobgallery.com/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 9
+  },
+  {
+    "id": "october-gallery",
+    "name": "October Gallery",
+    "type": "independent",
+    "address": "24 Old Gloucester Street London",
+    "postcode": "WC1N 3AL",
+    "coordinates": {
+      "lat": 51.520694,
+      "lng": -0.121705
+    },
+    "area": "Central",
+    "website": "https://www.octobergallery.co.uk/",
+    "whatsOnUrl": "https://www.octobergallery.co.uk/exhibitions/",
+    "openingHours": {
+      "tuesday": {
+        "open": "12:30",
+        "close": "17:30"
+      },
+      "wednesday": {
+        "open": "12:30",
+        "close": "17:30"
+      },
+      "thursday": {
+        "open": "12:30",
+        "close": "17:30"
+      },
+      "friday": {
+        "open": "12:30",
+        "close": "17:30"
+      },
+      "saturday": {
+        "open": "12:30",
+        "close": "17:30"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 10
+  },
+  {
+    "id": "mimosa-house",
+    "name": "Mimosa House",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.mimosahouse.co.uk/",
+    "whatsOnUrl": "https://www.mimosahouse.co.uk/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 11
+  },
+  {
+    "id": "ginny-on-frederick",
+    "name": "Ginny on Frederick",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.ginnyonfrederick.com/",
+    "whatsOnUrl": "https://www.ginnyonfrederick.com/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 12
+  },
+  {
+    "id": "haricot-gallery",
+    "name": "Haricot Gallery",
+    "type": "commercial",
+    "address": "2 Blackall Street London",
+    "postcode": "EC2A 4AD",
+    "coordinates": {
+      "lat": 51.525078,
+      "lng": -0.083639
+    },
+    "area": "City & East",
+    "website": "https://www.haricotgallery.com/",
+    "whatsOnUrl": "https://www.haricotgallery.com/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 13
+  },
+  {
+    "id": "hannah-barry-gallery",
+    "name": "Hannah Barry Gallery",
+    "type": "commercial",
+    "address": "4 Holly Grove, Peckham",
+    "postcode": "SE15 5DF",
+    "coordinates": {
+      "lat": 51.469744,
+      "lng": -0.071517
+    },
+    "area": "South East",
+    "website": "https://hannahbarry.com/",
+    "whatsOnUrl": "https://hannahbarry.com/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 14
+  },
+  {
+    "id": "sprueth-magers-london",
+    "name": "Sprüth Magers London",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://spruethmagers.com/",
+    "whatsOnUrl": "https://spruethmagers.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 15
+  },
+  {
+    "id": "kristin-hjellegjerde-gallery",
+    "name": "Kristin Hjellegjerde Gallery",
+    "type": "commercial",
+    "address": "36 Tanner Street",
+    "postcode": "SE1 3LD",
+    "coordinates": {
+      "lat": 51.499714,
+      "lng": -0.079502
+    },
+    "area": "South Bank & Bankside",
+    "website": "https://kristinhjellegjerde.com/",
+    "whatsOnUrl": "https://kristinhjellegjerde.com/exhibitions",
+    "openingHours": {
+      "monday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 16
+  },
+  {
+    "id": "matts-gallery",
+    "name": "Matt's Gallery",
+    "type": "independent",
+    "address": "6 Charles Clowes Walk, Nine Elms",
+    "postcode": "SW11 7AN",
+    "coordinates": {
+      "lat": 51.481047,
+      "lng": -0.132567
+    },
+    "area": "South West & Lambeth",
+    "website": "https://www.mattsgallery.org/",
+    "whatsOnUrl": "https://www.mattsgallery.org/exhibitions",
+    "openingHours": {
+      "wednesday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "12:00",
+        "close": "18:00"
+      },
+      "sunday": {
+        "open": "12:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 17
+  },
+  {
+    "id": "maureen-paley",
+    "name": "Maureen Paley",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.maureenpaley.com/",
+    "whatsOnUrl": "https://www.maureenpaley.com/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 18
+  },
+  {
+    "id": "kate-macgarry",
+    "name": "Kate MacGarry",
+    "type": "commercial",
+    "address": "27 Old Nichol Street",
+    "postcode": "E2 7HR",
+    "coordinates": {
+      "lat": 51.524716,
+      "lng": -0.074731
+    },
+    "area": "City & East",
+    "website": "https://www.katemacgarry.com/",
+    "whatsOnUrl": "https://www.katemacgarry.com/exhibitions/",
+    "openingHours": {
+      "tuesday": {
+        "open": "11:00",
+        "close": "17:00"
+      },
+      "wednesday": {
+        "open": "11:00",
+        "close": "17:00"
+      },
+      "thursday": {
+        "open": "11:00",
+        "close": "17:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "17:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "17:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 19
+  },
+  {
+    "id": "hales-gallery",
+    "name": "Hales Gallery",
+    "type": "commercial",
+    "address": "7 Bethnal Green Road",
+    "postcode": "E1 6LA",
+    "coordinates": {
+      "lat": 51.524203,
+      "lng": -0.073614
+    },
+    "area": "City & East",
+    "website": "https://halesgallery.com/",
+    "whatsOnUrl": "https://halesgallery.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 20
+  },
+  {
+    "id": "serpentine-south",
+    "name": "Serpentine South Gallery",
+    "type": "public",
+    "address": "Kensington Gardens",
+    "postcode": "W2 3XA",
+    "coordinates": {
+      "lat": 51.50479,
+      "lng": -0.174983
+    },
+    "area": "South Kensington & West",
+    "website": "https://www.serpentinegalleries.org/",
+    "whatsOnUrl": "https://www.serpentinegalleries.org/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 21
+  },
+  {
+    "id": "victoria-miro",
+    "name": "Victoria Miro",
+    "type": "commercial",
+    "address": "16 Wharf Road",
+    "postcode": "N1 7RW",
+    "coordinates": {
+      "lat": 51.53038,
+      "lng": -0.095008
+    },
+    "area": "North",
+    "website": "https://www.victoria-miro.com/",
+    "whatsOnUrl": "https://www.victoria-miro.com/exhibitions/",
+    "openingHours": {
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 22
+  },
+  {
+    "id": "tate-britain",
+    "name": "Tate Britain",
+    "type": "national",
+    "address": "Millbank",
+    "postcode": "SW1P 4RG",
+    "coordinates": {
+      "lat": 51.490871,
+      "lng": -0.127181
+    },
+    "area": "South West & Lambeth",
+    "website": "https://www.tate.org.uk/visit/tate-britain",
+    "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-britain",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 23
+  },
+  {
+    "id": "saatchi-gallery",
+    "name": "Saatchi Gallery",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.saatchigallery.com/",
+    "whatsOnUrl": "https://www.saatchigallery.com/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 24
+  },
+  {
+    "id": "barbican-art-gallery",
+    "name": "Barbican Art Gallery",
+    "type": "public",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.barbican.org.uk/whats-on/art-design",
+    "whatsOnUrl": "https://www.barbican.org.uk/whats-on/art-design",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 25
+  },
+  {
+    "id": "whitechapel-gallery",
+    "name": "Whitechapel Gallery",
+    "type": "public",
+    "address": "77–82 Whitechapel High Street",
+    "postcode": "E1 7QX",
+    "coordinates": {
+      "lat": 51.516012,
+      "lng": -0.070399
+    },
+    "area": "City & East",
+    "website": "https://www.whitechapelgallery.org/",
+    "whatsOnUrl": "https://www.whitechapelgallery.org/exhibitions/",
+    "openingHours": {
+      "tuesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "sunday": {
+        "open": "11:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 26
+  },
+  {
+    "id": "white-cube-bermondsey",
+    "name": "White Cube Bermondsey",
+    "type": "commercial",
+    "address": "144–152 Bermondsey Street",
+    "postcode": "SE1 3TQ",
+    "coordinates": {
+      "lat": 51.498271,
+      "lng": -0.081451
+    },
+    "area": "South East",
+    "website": "https://www.whitecube.com/",
+    "whatsOnUrl": "https://www.whitecube.com/gallery-exhibitions",
+    "openingHours": {
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 27
+  },
+  {
+    "id": "pippy-houldsworth-gallery",
+    "name": "Pippy Houldsworth Gallery",
+    "type": "commercial",
+    "address": "6 Heddon Street",
+    "postcode": "W1B 4BT",
+    "coordinates": {
+      "lat": 51.511057,
+      "lng": -0.139396
+    },
+    "area": "Central",
+    "website": "https://www.houldsworth.co.uk/",
+    "whatsOnUrl": "https://www.houldsworth.co.uk/exhibitions/",
+    "openingHours": {
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 28
+  },
+  {
+    "id": "gagosian-britannia-street",
+    "name": "Gagosian Britannia Street",
+    "type": "commercial",
+    "address": "6–24 Britannia Street",
+    "postcode": "WC1X 9JD",
+    "coordinates": {
+      "lat": 51.530104,
+      "lng": -0.118002
+    },
+    "area": "Central",
+    "website": "https://gagosian.com/locations/london-britannia-street/",
+    "whatsOnUrl": "https://gagosian.com/exhibitions/?locations=london",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 29
+  },
+  {
+    "id": "gagosian-grosvenor-hill",
+    "name": "Gagosian Grosvenor Hill",
+    "type": "commercial",
+    "address": "20 Grosvenor Hill",
+    "postcode": "W1K 3QD",
+    "coordinates": {
+      "lat": 51.51146,
+      "lng": -0.146153
+    },
+    "area": "Central",
+    "website": "https://gagosian.com/locations/london-grosvenor-hill/",
+    "whatsOnUrl": "https://gagosian.com/exhibitions/?locations=london",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 29
+  },
+  {
+    "id": "saatchi-yates",
+    "name": "Saatchi Yates",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://saatchiyates.com/",
+    "whatsOnUrl": "https://saatchiyates.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 30
+  },
+  {
+    "id": "huxley-parlour",
+    "name": "Huxley-Parlour",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://huxley-parlour.com/",
+    "whatsOnUrl": "https://huxley-parlour.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 31
+  },
+  {
+    "id": "no-9-cork-street",
+    "name": "No.9 Cork Street",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.no9corkstreet.com/",
+    "whatsOnUrl": "https://www.no9corkstreet.com/programme/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 32
+  },
+  {
+    "id": "john-martin-gallery",
+    "name": "John Martin Gallery",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.jmlondon.com/",
+    "whatsOnUrl": "https://www.jmlondon.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 33
+  },
+  {
+    "id": "timothy-taylor",
+    "name": "Timothy Taylor",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.timothytaylor.com/",
+    "whatsOnUrl": "https://www.timothytaylor.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 34
+  },
+  {
+    "id": "ben-brown-fine-arts",
+    "name": "Ben Brown Fine Arts",
+    "type": "commercial",
+    "address": "12 Brook's Mews",
+    "postcode": "W1K 4DG",
+    "coordinates": {
+      "lat": 51.512413,
+      "lng": -0.146114
+    },
+    "area": "Central",
+    "website": "https://www.benbrownfinearts.com/",
+    "whatsOnUrl": "https://www.benbrownfinearts.com/exhibitions/",
+    "openingHours": {
+      "monday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "10:30",
+        "close": "14:30"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 35
+  },
+  {
+    "id": "thaddaeus-ropac-london",
+    "name": "Thaddaeus Ropac London",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://ropac.net/",
+    "whatsOnUrl": "https://ropac.net/gallery-documents/3/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 36
+  },
+  {
+    "id": "hayward-gallery",
+    "name": "Hayward Gallery",
+    "type": "public",
+    "address": "Belvedere Road London",
+    "postcode": "SE1 8XZ",
+    "coordinates": {
+      "lat": 51.50705,
+      "lng": -0.11767
+    },
+    "area": "South Bank & Bankside",
+    "website": "https://www.southbankcentre.co.uk/venues/hayward-gallery/",
+    "whatsOnUrl": "https://www.southbankcentre.co.uk/whats-on/?artform=art-exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 37
+  },
+  {
+    "id": "st-art-gallery",
+    "name": "ST.ART Gallery",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": null,
+    "whatsOnUrl": null,
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 38
+  },
+  {
+    "id": "sadie-coles-hq",
+    "name": "Sadie Coles HQ",
+    "type": "commercial",
+    "address": "17 Savile Row",
+    "postcode": "W1S 3PN",
+    "coordinates": {
+      "lat": 51.511351,
+      "lng": -0.140349
+    },
+    "area": "Central",
+    "website": "https://www.sadiecoles.com/",
+    "whatsOnUrl": "https://www.sadiecoles.com/exhibitions/",
+    "openingHours": {
+      "tuesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 39
+  },
+  {
+    "id": "the-redfern-gallery",
+    "name": "The Redfern Gallery",
+    "type": "commercial",
+    "address": "11–12 Pall Mall",
+    "postcode": "SW1Y 5LU",
+    "coordinates": {
+      "lat": 51.507043,
+      "lng": -0.133521
+    },
+    "area": "Central",
+    "website": "https://www.redfern-gallery.com/",
+    "whatsOnUrl": "https://www.redfern-gallery.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 40
+  },
+  {
+    "id": "unit-london",
+    "name": "Unit London",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://theunitldn.com/",
+    "whatsOnUrl": "https://theunitldn.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 41
+  },
+  {
+    "id": "david-zwirner-london",
+    "name": "David Zwirner London",
+    "type": "commercial",
+    "address": "24 Grafton Street",
+    "postcode": "W1S 4EZ",
+    "coordinates": {
+      "lat": 51.509477,
+      "lng": -0.143005
+    },
+    "area": "Central",
+    "website": "https://www.davidzwirner.com/locations/london",
+    "whatsOnUrl": "https://www.davidzwirner.com/exhibitions",
+    "openingHours": {
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 42
+  },
+  {
+    "id": "white-cube-masons-yard",
+    "name": "White Cube Mason's Yard",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.whitecube.com/",
+    "whatsOnUrl": "https://www.whitecube.com/gallery-exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 43
+  },
+  {
+    "id": "rhodes-contemporary-art",
+    "name": "Rhodes Contemporary Art Gallery",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://rhodescontemporaryart.com/",
+    "whatsOnUrl": "https://rhodescontemporaryart.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 44
+  },
+  {
+    "id": "the-courtauld-gallery",
+    "name": "The Courtauld Gallery",
+    "type": "national",
+    "address": "Somerset House, Strand",
+    "postcode": "WC2R 0RN",
+    "coordinates": {
+      "lat": 51.510734,
+      "lng": -0.116912
+    },
+    "area": "Central",
+    "website": "https://courtauld.ac.uk/gallery/",
+    "whatsOnUrl": "https://courtauld.ac.uk/whats-on/",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 45
+  },
+  {
+    "id": "maddox-gallery",
+    "name": "Maddox Gallery",
+    "type": "commercial",
+    "address": "9 Maddox Street London",
+    "postcode": "W1S 2QE",
+    "coordinates": {
+      "lat": 51.513312,
+      "lng": -0.141538
+    },
+    "area": "Central",
+    "website": "https://maddoxgallery.com/",
+    "whatsOnUrl": "https://maddoxgallery.com/exhibitions/",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 46
+  },
+  {
+    "id": "pace-gallery-london",
+    "name": "Pace Gallery London",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.pacegallery.com/locations/london/",
+    "whatsOnUrl": "https://www.pacegallery.com/exhibitions/?location=london",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 47
+  },
+  {
+    "id": "institute-of-contemporary-arts",
+    "name": "Institute of Contemporary Arts",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.ica.art/",
+    "whatsOnUrl": "https://www.ica.art/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 48
+  },
+  {
+    "id": "royal-academy",
+    "name": "Royal Academy of Arts",
+    "type": "public",
+    "address": "Burlington House, Piccadilly",
+    "postcode": "W1J 0BD",
+    "coordinates": {
+      "lat": 51.509099,
+      "lng": -0.139576
+    },
+    "area": "Central",
+    "website": "https://www.royalacademy.org.uk/",
+    "whatsOnUrl": "https://www.royalacademy.org.uk/exhibitions-and-events",
+    "openingHours": {
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 49
+  },
+  {
+    "id": "national-gallery",
+    "name": "The National Gallery",
+    "type": "national",
+    "address": "Trafalgar Square",
+    "postcode": "WC2N 5DN",
+    "coordinates": {
+      "lat": 51.509098,
+      "lng": -0.127658
+    },
+    "area": "Central",
+    "website": "https://www.nationalgallery.org.uk/",
+    "whatsOnUrl": "https://www.nationalgallery.org.uk/exhibitions",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 50
+  },
+  {
+    "id": "union-pacific",
+    "name": "Union Pacific",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.unionpacific.co.uk/",
+    "whatsOnUrl": "https://www.unionpacific.co.uk/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": 51
+  },
+  {
+    "id": "lbf-contemporary",
+    "name": "LBF Contemporary",
+    "type": "commercial",
+    "address": "13 Tottenham Mews",
+    "postcode": "W1T 4AQ",
+    "coordinates": {
+      "lat": 51.520512,
+      "lng": -0.137367
+    },
+    "area": "Central",
+    "website": "https://www.lbfcontemporary.com/",
+    "whatsOnUrl": "https://www.lbfcontemporary.com/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 52
+  },
+  {
+    "id": "blueshop-cottage",
+    "name": "Blue Shop Cottage",
+    "type": "commercial",
+    "address": "72 Brixton Road, Oval",
+    "postcode": "SW9 6BH",
+    "coordinates": {
+      "lat": 51.478127,
+      "lng": -0.112466
+    },
+    "area": "South West & Lambeth",
+    "website": "https://www.blueshopcottage.com/",
+    "whatsOnUrl": "https://www.blueshopcottage.com/exhibitions",
+    "openingHours": {
+      "thursday": {
+        "open": "12:00",
+        "close": "17:00"
+      },
+      "friday": {
+        "open": "12:00",
+        "close": "17:00"
+      },
+      "saturday": {
+        "open": "12:00",
+        "close": "17:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": 53
+  },
+  {
+    "id": "annely-juda-fine-art",
+    "name": "Annely Juda Fine Art",
+    "type": "commercial",
+    "address": "16 Hanover Square",
+    "postcode": "W1S 1HT",
+    "coordinates": {
+      "lat": 51.513445,
+      "lng": -0.141402
+    },
+    "area": "Central",
+    "website": "https://www.annelyjudafineart.co.uk/",
+    "whatsOnUrl": "https://www.annelyjudafineart.co.uk/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "auto-italia",
+    "name": "Auto Italia",
+    "type": "independent",
+    "address": "44 Bonner Road",
+    "postcode": "E2 9JS",
+    "coordinates": {
+      "lat": 51.532226,
+      "lng": -0.051979
+    },
+    "area": "City & East",
+    "website": "https://autoitaliasoutheast.org/",
+    "whatsOnUrl": "https://autoitaliasoutheast.org/",
+    "openingHours": {
+      "thursday": {
+        "open": "12:00",
+        "close": "17:00"
+      },
+      "friday": {
+        "open": "12:00",
+        "close": "17:00"
+      },
+      "saturday": {
+        "open": "12:00",
+        "close": "17:00"
+      },
+      "sunday": {
+        "open": "12:00",
+        "close": "17:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "british-museum",
+    "name": "British Museum",
+    "type": "national",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.britishmuseum.org/",
+    "whatsOnUrl": "https://www.britishmuseum.org/exhibitions-events",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "camden-art-centre",
+    "name": "Camden Art Centre",
+    "type": "independent",
+    "address": "Arkwright Road",
+    "postcode": "NW3 6DG",
+    "coordinates": {
+      "lat": 51.551252,
+      "lng": -0.183466
+    },
+    "area": "North",
+    "website": "https://camdenartcentre.org/",
+    "whatsOnUrl": "https://camdenartcentre.org/whats-on/",
+    "openingHours": {
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "cubitt",
+    "name": "Cubitt",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.cubittartists.org.uk/",
+    "whatsOnUrl": "https://www.cubittartists.org.uk/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "delfina-foundation",
+    "name": "Delfina Foundation",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.delfinafoundation.com/",
+    "whatsOnUrl": "https://www.delfinafoundation.com/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "design-museum",
+    "name": "Design Museum",
+    "type": "independent",
+    "address": "224–238 Kensington High Street",
+    "postcode": "W8 6AG",
+    "coordinates": {
+      "lat": 51.499874,
+      "lng": -0.200163
+    },
+    "area": "South Kensington & West",
+    "website": "https://designmuseum.org/",
+    "whatsOnUrl": "https://designmuseum.org/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "dulwich-picture-gallery",
+    "name": "Dulwich Picture Gallery",
+    "type": "independent",
+    "address": "14 Gallery Road",
+    "postcode": "SE21 7AD",
+    "coordinates": {
+      "lat": 51.445613,
+      "lng": -0.08668
+    },
+    "area": "South East",
+    "website": "https://www.dulwichpicturegallery.org.uk/",
+    "whatsOnUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "estorick-collection",
+    "name": "Estorick Collection",
+    "type": "independent",
+    "address": "39a Canonbury Square, London",
+    "postcode": "N1 2AN",
+    "coordinates": {
+      "lat": 51.543993,
+      "lng": -0.099891
+    },
+    "area": "City & East",
+    "website": "https://www.estorickcollection.com/",
+    "whatsOnUrl": "https://www.estorickcollection.com/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "fashion-and-textile-museum",
+    "name": "Fashion and Textile Museum",
+    "type": "independent",
+    "address": "83 Bermondsey Street",
+    "postcode": "SE1 3XF",
+    "coordinates": {
+      "lat": 51.501525,
+      "lng": -0.081919
+    },
+    "area": "South East",
+    "website": "https://fashiontextilemuseum.org/",
+    "whatsOnUrl": "https://fashiontextilemuseum.org/",
+    "openingHours": {
+      "tuesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "flowers-gallery",
+    "name": "Flowers Gallery",
+    "type": "commercial",
+    "address": "21 Cork Street",
+    "postcode": "W1S 3LZ",
+    "coordinates": {
+      "lat": 51.510138,
+      "lng": -0.141033
+    },
+    "area": "Central",
+    "website": "https://www.flowersgallery.com/",
+    "whatsOnUrl": "https://www.flowersgallery.com/exhibitions/",
+    "openingHours": {
+      "tuesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "foundling-museum",
+    "name": "Foundling Museum",
+    "type": "independent",
+    "address": "40 Brunswick Square",
+    "postcode": "WC1N 1AZ",
+    "coordinates": {
+      "lat": 51.525481,
+      "lng": -0.120758
+    },
+    "area": "Central",
+    "website": "https://foundlingmuseum.org.uk/",
+    "whatsOnUrl": "https://foundlingmuseum.org.uk/event/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "garden-museum",
+    "name": "Garden Museum",
+    "type": "independent",
+    "address": "Lambeth Palace Road London",
+    "postcode": "SE1 7LB",
+    "coordinates": {
+      "lat": 51.495049,
+      "lng": -0.120196
+    },
+    "area": "South Bank & Bankside",
+    "website": "https://gardenmuseum.org.uk/",
+    "whatsOnUrl": "https://gardenmuseum.org.uk/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "gasworks",
+    "name": "Gasworks",
+    "type": "independent",
+    "address": "155 Vauxhall Street",
+    "postcode": "SE11 5RH",
+    "coordinates": {
+      "lat": 51.486632,
+      "lng": -0.116278
+    },
+    "area": "South West & Lambeth",
+    "website": "https://www.gasworks.org.uk/",
+    "whatsOnUrl": "https://www.gasworks.org.uk/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "goldsmiths-cca",
+    "name": "Goldsmiths CCA",
+    "type": "public",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.goldsmithscca.art/",
+    "whatsOnUrl": "https://www.goldsmithscca.art/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "hauser-and-wirth-london",
+    "name": "Hauser & Wirth London",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.hauserwirth.com/locations/10069-london/",
+    "whatsOnUrl": "https://www.hauserwirth.com/hauser-wirth-exhibitions/?location=london",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "herald-st",
+    "name": "Herald St",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.heraldst.com/",
+    "whatsOnUrl": "https://www.heraldst.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "horniman-museum",
+    "name": "Horniman Museum and Gardens",
+    "type": "public",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.horniman.ac.uk/",
+    "whatsOnUrl": "https://www.horniman.ac.uk/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "imperial-war-museum-london",
+    "name": "Imperial War Museum London",
+    "type": "national",
+    "address": "Lambeth Road London",
+    "postcode": "SE1 6HZ",
+    "coordinates": {
+      "lat": 51.496009,
+      "lng": -0.108328
+    },
+    "area": "South Bank & Bankside",
+    "website": "https://www.iwm.org.uk/visits/iwm-london",
+    "whatsOnUrl": "https://www.iwm.org.uk/events",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "jewish-museum-london",
+    "name": "Jewish Museum London",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://jewishmuseum.org.uk/",
+    "whatsOnUrl": "https://jewishmuseum.org.uk/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "london-museum",
+    "name": "London Museum",
+    "type": "public",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.londonmuseum.org.uk/",
+    "whatsOnUrl": "https://www.londonmuseum.org.uk/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "marian-goodman-gallery-london",
+    "name": "Marian Goodman Gallery London",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.mariangoodman.com/",
+    "whatsOnUrl": "https://www.mariangoodman.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "museum-of-the-home",
+    "name": "Museum of the Home",
+    "type": "public",
+    "address": "136 Kingsland Road London",
+    "postcode": "E2 8EA",
+    "coordinates": {
+      "lat": 51.531557,
+      "lng": -0.076244
+    },
+    "area": "City & East",
+    "website": "https://www.museumofthehome.org.uk/",
+    "whatsOnUrl": "https://www.museumofthehome.org.uk/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "national-portrait-gallery",
+    "name": "National Portrait Gallery",
+    "type": "national",
+    "address": "St Martin's Place",
+    "postcode": "WC2H 0HE",
+    "coordinates": {
+      "lat": 51.509399,
+      "lng": -0.128453
+    },
+    "area": "Central",
+    "website": "https://www.npg.org.uk/",
+    "whatsOnUrl": "https://www.npg.org.uk/whatson/events-calendar/?what=exhibition",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "natural-history-museum",
+    "name": "Natural History Museum",
+    "type": "national",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.nhm.ac.uk/",
+    "whatsOnUrl": "https://www.nhm.ac.uk/visit/exhibitions.html",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "newport-street-gallery",
+    "name": "Newport Street Gallery",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.newportstreetgallery.com/",
+    "whatsOnUrl": "https://www.newportstreetgallery.com/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "peckham-platform",
+    "name": "Peckham Platform",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.peckhamplatform.com/",
+    "whatsOnUrl": "https://www.peckhamplatform.com/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "pump-house-gallery",
+    "name": "Pump House Gallery",
+    "type": "public",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.pumphousegallery.org.uk/",
+    "whatsOnUrl": "https://www.pumphousegallery.org.uk/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "raven-row",
+    "name": "Raven Row",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.ravenrow.org/",
+    "whatsOnUrl": "https://www.ravenrow.org/exhibition/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "royal-museums-greenwich",
+    "name": "Royal Museums Greenwich",
+    "type": "national",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.rmg.co.uk/",
+    "whatsOnUrl": "https://www.rmg.co.uk/whats-on",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "science-museum",
+    "name": "Science Museum",
+    "type": "national",
+    "address": "Exhibition Road London",
+    "postcode": "SW7 2DD",
+    "coordinates": {
+      "lat": 51.497296,
+      "lng": -0.176493
+    },
+    "area": "South Kensington & West",
+    "website": "https://www.sciencemuseum.org.uk/",
+    "whatsOnUrl": "https://www.sciencemuseum.org.uk/see-and-do",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "sir-john-soanes-museum",
+    "name": "Sir John Soane's Museum",
+    "type": "national",
+    "address": "13 Lincoln's Inn Fields",
+    "postcode": "WC2A 3BP",
+    "coordinates": {
+      "lat": 51.516956,
+      "lng": -0.117953
+    },
+    "area": "Central",
+    "website": "https://www.soane.org/",
+    "whatsOnUrl": "https://www.soane.org/whats-on",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "somerset-house",
+    "name": "Somerset House",
+    "type": "public",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.somersethouse.org.uk/",
+    "whatsOnUrl": "https://www.somersethouse.org.uk/whats-on",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "south-london-gallery",
+    "name": "South London Gallery",
+    "type": "independent",
+    "address": "65–67 and 82 Peckham Road",
+    "postcode": "SE5 8UH",
+    "coordinates": {
+      "lat": 51.474002,
+      "lng": -0.081087
+    },
+    "area": "South East",
+    "website": "https://www.southlondongallery.org/",
+    "whatsOnUrl": "https://www.southlondongallery.org/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "stephen-friedman-gallery",
+    "name": "Stephen Friedman Gallery",
+    "type": "commercial",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.stephenfriedman.com/",
+    "whatsOnUrl": "https://www.stephenfriedman.com/exhibitions/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "studio-voltaire",
+    "name": "Studio Voltaire",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://studiovoltaire.org/",
+    "whatsOnUrl": "https://studiovoltaire.org/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "tate-modern",
+    "name": "Tate Modern",
+    "type": "national",
+    "address": "Bankside",
+    "postcode": "SE1 9TG",
+    "coordinates": {
+      "lat": 51.507618,
+      "lng": -0.099374
+    },
+    "area": "South Bank & Bankside",
+    "website": "https://www.tate.org.uk/visit/tate-modern",
+    "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-modern",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "the-kings-gallery",
+    "name": "The King's Gallery",
+    "type": "national",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
+    "whatsOnUrl": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "three-rooms",
+    "name": "Three Rooms",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": null,
+    "whatsOnUrl": null,
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "vam-east",
+    "name": "V&A East",
+    "type": "national",
+    "address": "2 Parkes Street",
+    "postcode": "E20 3AX",
+    "coordinates": {
+      "lat": 51.545392,
+      "lng": -0.020826
+    },
+    "area": "Stratford & East",
+    "website": "https://www.vam.ac.uk/east",
+    "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "vam",
+    "name": "V&A South Kensington",
+    "type": "national",
+    "address": "Cromwell Road",
+    "postcode": "SW7 2RL",
+    "coordinates": {
+      "lat": 51.496941,
+      "lng": -0.172199
+    },
+    "area": "South Kensington & West",
+    "website": "https://www.vam.ac.uk/south-kensington",
+    "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "17:45"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "wallace-collection",
+    "name": "Wallace Collection",
+    "type": "national",
+    "address": "Hertford House, Manchester Square",
+    "postcode": "W1U 3BN",
+    "coordinates": {
+      "lat": 51.517314,
+      "lng": -0.152949
+    },
+    "area": "Central",
+    "website": "https://www.wallacecollection.org/",
+    "whatsOnUrl": "https://www.wallacecollection.org/whats-on/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "wellcome-collection",
+    "name": "Wellcome Collection",
+    "type": "independent",
+    "address": "183 Euston Road",
+    "postcode": "NW1 2BE",
+    "coordinates": {
+      "lat": 51.525898,
+      "lng": -0.133918
+    },
+    "area": "Central",
+    "website": "https://wellcomecollection.org/",
+    "whatsOnUrl": "https://wellcomecollection.org/exhibitions",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "young-vam",
+    "name": "Young V&A",
+    "type": "national",
+    "address": "Cambridge Heath Road, Bethnal Green",
+    "postcode": "E2 9PA",
+    "coordinates": {
+      "lat": 51.527774,
+      "lng": -0.055182
+    },
+    "area": "City & East",
+    "website": "https://www.vam.ac.uk/young/",
+    "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "openingHours": {
+      "monday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "17:45"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "17:45"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-06",
+    "priorityRank": null
+  },
+  {
+    "id": "zabludowicz-collection",
+    "name": "Zabludowicz Collection",
+    "type": "independent",
+    "address": null,
+    "postcode": null,
+    "coordinates": null,
+    "area": null,
+    "website": "https://www.zabludowiczcollection.com/",
+    "whatsOnUrl": "https://www.zabludowiczcollection.com/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  }
+]

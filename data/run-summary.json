@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-07T01:31:04.111284+00:00",
+  "windowStart": "2026-10-06",
+  "windowEnd": "2026-11-06",
+  "windowKind": "calendar-month-inclusive",
+  "windowInclusiveDays": 32,
+  "userAgent": "LondonExhibitionsBot/1.0 (private non-commercial exhibition index; contact: Tim Green)",
+  "totalVenues": 99,
+  "successfulScrapes": 45,
+  "linkOnlyBlockedFailedOrUnverified": 54,
+  "exhibitionsFound": 82,
+  "activeLondonVenues": 34,
+  "rejectedCandidates": 1264,
+  "rejectedNonLondonRecords": 214,
+  "rejectedLocationUnverifiedRecords": 36,
+  "priorityInstitutionCount": 53,
+  "priorityVenueRecordCount": 54,
+  "priorityInstitutionsWithVerifiedShows": 19,
+  "priorityExhibitionsFound": 40,
+  "addressVerifiedVenues": 52,
+  "addressUnresolvedVenues": 47,
+  "titleOverridesApplied": 29,
+  "independentPolicyFreeExhibitions": 5,
+  "exhibitionsWithImages": 82,
+  "exhibitionsMissingImages": 0,
+  "openTodayPriceCountsBeforePolicy": {
+    "free": 15,
+    "paid": 14,
+    "unknown": 31
+  },
+  "openTodayPriceCounts": {
+    "free": 26,
+    "paid": 14,
+    "unknown": 20
+  },
+  "priorityGaps": [
+    {
+      "rank": 1,
+      "name": "The Photographers' Gallery",
+      "venueIds": [
+        "the-photographers-gallery"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 3,
+      "name": "THE TAGLI",
+      "venueIds": [
+        "the-tagli"
+      ],
+      "statuses": [
+        "ambiguous"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 4,
+      "name": "Lisson Gallery",
+      "venueIds": [
+        "lisson-gallery"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 5,
+      "name": "William Hine",
+      "venueIds": [
+        "william-hine"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 6,
+      "name": "Terrace Gallery",
+      "venueIds": [
+        "terrace-gallery"
+      ],
+      "statuses": [
+        "ambiguous"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 8,
+      "name": "Soho Revue",
+      "venueIds": [
+        "soho-revue"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 9,
+      "name": "The Cob Gallery",
+      "venueIds": [
+        "the-cob-gallery"
+      ],
+      "statuses": [
+        "blocked"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 11,
+      "name": "Mimosa House",
+      "venueIds": [
+        "mimosa-house"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 12,
+      "name": "Ginny on Frederick",
+      "venueIds": [
+        "ginny-on-frederick"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 13,
+      "name": "Haricot Gallery",
+      "venueIds": [
+        "haricot-gallery"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 15,
+      "name": "Sprüth Magers London",
+      "venueIds": [
+        "sprueth-magers-london"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 18,
+      "name": "Maureen Paley",
+      "venueIds": [
+        "maureen-paley"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 19,
+      "name": "Kate MacGarry",
+      "venueIds": [
+        "kate-macgarry"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 21,
+      "name": "Serpentine South Gallery",
+      "venueIds": [
+        "serpentine-south"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 24,
+      "name": "Saatchi Gallery",
+      "venueIds": [
+        "saatchi-gallery"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 25,
+      "name": "Barbican Art Gallery",
+      "venueIds": [
+        "barbican-art-gallery"
+      ],
+      "statuses": [
+        "temporarily-closed-unverified"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 27,
+      "name": "White Cube Bermondsey",
+      "venueIds": [
+        "white-cube-bermondsey"
+      ],
+      "statuses": [
+        "failed"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 28,
+      "name": "Pippy Houldsworth Gallery",
+      "venueIds": [
+        "pippy-houldsworth-gallery"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 29,
+      "name": "Gagosian",
+      "venueIds": [
+        "gagosian-britannia-street",
+        "gagosian-grosvenor-hill"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 30,
+      "name": "Saatchi Yates",
+      "venueIds": [
+        "saatchi-yates"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 31,
+      "name": "Huxley-Parlour",
+      "venueIds": [
+        "huxley-parlour"
+      ],
+      "statuses": [
+        "blocked"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 32,
+      "name": "No.9 Cork Street",
+      "venueIds": [
+        "no-9-cork-street"
+      ],
+      "statuses": [
+        "blocked"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 33,
+      "name": "John Martin Gallery",
+      "venueIds": [
+        "john-martin-gallery"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 34,
+      "name": "Timothy Taylor",
+      "venueIds": [
+        "timothy-taylor"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 35,
+      "name": "Ben Brown Fine Arts",
+      "venueIds": [
+        "ben-brown-fine-arts"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 36,
+      "name": "Thaddaeus Ropac London",
+      "venueIds": [
+        "thaddaeus-ropac-london"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 37,
+      "name": "Hayward Gallery",
+      "venueIds": [
+        "hayward-gallery"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
+      "rank": 38,
+      "name": "ST.ART Gallery",
+      "venueIds": [
+        "st-art-gallery"
+      ],
+      "statuses": [
+        "ambiguous"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 41,
+      "name": "Unit London",
+      "venueIds": [
+        "unit-london"
+      ],
+      "statuses": [
+        "blocked"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 43,
+      "name": "White Cube Mason's Yard",
+      "venueIds": [
+        "white-cube-masons-yard"
+      ],
+      "statuses": [
+        "failed"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 44,
+      "name": "Rhodes Contemporary Art Gallery",
+      "venueIds": [
+        "rhodes-contemporary-art"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 47,
+      "name": "Pace Gallery London",
+      "venueIds": [
+        "pace-gallery-london"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 48,
+      "name": "Institute of Contemporary Arts",
+      "venueIds": [
+        "institute-of-contemporary-arts"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    },
+    {
+      "rank": 51,
+      "name": "Union Pacific",
+      "venueIds": [
+        "union-pacific"
+      ],
+      "statuses": [
+        "unresolved"
+      ],
+      "locationVerified": false
+    }
+  ],
+  "statusCounts": {
+    "ambiguous": 3,
+    "blocked": 7,
+    "closed": 2,
+    "failed": 2,
+    "instagram-only": 1,
+    "no-current-shows": 11,
+    "success": 34,
+    "temporarily-closed-unverified": 1,
+    "unresolved": 38
+  },
+  "accuracyClaim": null,
+  "accuracyNote": "No accuracy percentage is claimed; spot-check measurement has not been run."
+}

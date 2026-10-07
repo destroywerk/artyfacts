@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "description": "Official-source admission evidence that overrides heuristic price extraction. Unknown means the source does not explicitly verify free or paid admission.",
+  "venuePolicies": {
+    "camden-art-centre": {
+      "priceStatus": "free",
+      "sourceUrl": "https://camdenartcentre.org/come-visit-us/access",
+      "evidence": "Official access page states: All our exhibitions are free.",
+      "verifiedAt": "2026-10-06"
+    },
+    "victoria-miro": {
+      "priceStatus": "free",
+      "sourceUrl": "https://www.victoria-miro.com/visit/",
+      "evidence": "Official visit page states admission is free and no booking is required during exhibitions.",
+      "verifiedAt": "2026-10-06"
+    },
+    "david-zwirner-london": {
+      "priceStatus": "free",
+      "sourceUrl": "https://www.davidzwirner.com/news/2019/your-visitor-faqs-answered",
+      "evidence": "Official visitor FAQ states the gallery is free and open to the public and no tickets are required.",
+      "verifiedAt": "2026-10-06"
+    }
+  },
+  "exhibitionOverrides": {
+    "https://wellcomecollection.org/exhibitions/the-coming-of-age": {
+      "priceStatus": "free",
+      "evidence": "Official exhibition page labels the exhibition Free and states free admission.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://wellcomecollection.org/exhibitions/tenderness-and-rage": {
+      "priceStatus": "free",
+      "evidence": "Official exhibition page states free admission.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://wellcomecollection.org/exhibitions/audrey-amiss-the-surviving-exhibitions": {
+      "priceStatus": "free",
+      "evidence": "Official exhibition page labels the exhibition Free and states free admission.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://wellcomecollection.org/exhibitions/rudy-loewe-intimacies-of-care-spaces-of-grief-and-possibility": {
+      "priceStatus": "free",
+      "evidence": "Official exhibition page labels the exhibition Free and states free admission.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love": {
+      "priceStatus": "paid",
+      "evidence": "Official exhibition page lists standard admission at £20 off-peak and £25 peak.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://www.dulwichpicturegallery.org.uk/whats-on/curtain-up/": {
+      "priceStatus": "paid",
+      "evidence": "Official display page states entry is included with a Gallery admission ticket; the same page lists adult Gallery admission at £10.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://www.redfern-gallery.com/exhibitions/122-desmond-morris-1928-2026/": {
+      "priceStatus": "unknown",
+      "evidence": "Prices on the official page are artwork sale prices, not admission prices; no explicit admission status was found.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://www.mattsgallery.org/exhibitions/imogen-stidworthy-": {
+      "priceStatus": "unknown",
+      "evidence": "The £17.50 price on the official page is for a publication, not exhibition admission; the current exhibition page does not explicitly state admission status.",
+      "verifiedAt": "2026-10-06"
+    },
+    "https://courtauld.ac.uk/whats-on/exh-salman-toor-someone-like-you/": {
+      "priceStatus": "paid",
+      "evidence": "The official Courtauld visit page lists adult admission for Salman Toor: Someone Like You at £16 (£18 with donation); member and concession exceptions do not make general admission free.",
+      "verifiedAt": "2026-10-06"
+    }
+  }
+}

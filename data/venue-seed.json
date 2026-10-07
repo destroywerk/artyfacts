@@ -1,0 +1,846 @@
+{
+  "schemaVersion": 1,
+  "source": "London Exhibitions This Fortnight PRD.md",
+  "venues": [
+    {
+      "id": "the-photographers-gallery",
+      "name": "The Photographers' Gallery",
+      "type": "independent",
+      "website": "https://thephotographersgallery.org.uk/",
+      "whatsOnUrl": "https://thephotographersgallery.org.uk/whats-on",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "pilar-corrias",
+      "name": "Pilar Corrias",
+      "type": "commercial",
+      "website": "https://www.pilarcorrias.com/",
+      "whatsOnUrl": "https://www.pilarcorrias.com/exhibitions/",
+      "scrapeMethod": "website",
+      "sourceNote": "Two duplicate Maps entries merged into one institution record."
+    },
+    {
+      "id": "the-tagli",
+      "name": "THE TAGLI",
+      "type": "commercial",
+      "website": null,
+      "whatsOnUrl": null,
+      "scrapeMethod": "link-only",
+      "reviewStatus": "ambiguous",
+      "sourceNote": "Reported temporarily closed in the Maps list; an official site could not be identified confidently."
+    },
+    {
+      "id": "lisson-gallery",
+      "name": "Lisson Gallery",
+      "type": "commercial",
+      "website": "https://www.lissongallery.com/",
+      "whatsOnUrl": "https://www.lissongallery.com/exhibitions",
+      "scrapeMethod": "website",
+      "verifiedZero": {
+        "windowStart": "2026-10-06",
+        "windowEnd": "2026-11-06",
+        "evidence": "Official JavaScript-rendered London filter showed no current London gallery exhibition and the next London exhibitions open 19 November 2026."
+      }
+    },
+    {
+      "id": "william-hine",
+      "name": "William Hine",
+      "type": "commercial",
+      "website": "https://williamhine.com/",
+      "whatsOnUrl": "https://williamhine.com/",
+      "scrapeMethod": "website",
+      "reviewStatus": "unverified"
+    },
+    {
+      "id": "terrace-gallery",
+      "name": "Terrace Gallery",
+      "type": "independent",
+      "website": null,
+      "whatsOnUrl": null,
+      "scrapeMethod": "link-only",
+      "reviewStatus": "ambiguous",
+      "sourceNote": "The name matches multiple London spaces; no official source was selected without a reliable address."
+    },
+    {
+      "id": "three-rooms",
+      "name": "Three Rooms",
+      "type": "independent",
+      "website": null,
+      "whatsOnUrl": null,
+      "scrapeMethod": "link-only",
+      "reviewStatus": "instagram-only",
+      "sourceNote": "The PRD identifies Instagram as its only exhibition source. Instagram is intentionally not scraped."
+    },
+    {
+      "id": "chisenhale-gallery",
+      "name": "Chisenhale Gallery",
+      "type": "independent",
+      "website": "https://chisenhale.org.uk/",
+      "whatsOnUrl": "https://chisenhale.org.uk/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "soho-revue",
+      "name": "Soho Revue",
+      "type": "commercial",
+      "website": "https://sohorevue.com/",
+      "whatsOnUrl": "https://sohorevue.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "the-cob-gallery",
+      "name": "The Cob Gallery",
+      "type": "commercial",
+      "website": "https://www.thecobgallery.com/",
+      "whatsOnUrl": "https://www.thecobgallery.com/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "october-gallery",
+      "name": "October Gallery",
+      "type": "independent",
+      "website": "https://www.octobergallery.co.uk/",
+      "whatsOnUrl": "https://www.octobergallery.co.uk/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "mimosa-house",
+      "name": "Mimosa House",
+      "type": "independent",
+      "website": "https://www.mimosahouse.co.uk/",
+      "whatsOnUrl": "https://www.mimosahouse.co.uk/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "ginny-on-frederick",
+      "name": "Ginny on Frederick",
+      "type": "commercial",
+      "website": "https://www.ginnyonfrederick.com/",
+      "whatsOnUrl": "https://www.ginnyonfrederick.com/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "haricot-gallery",
+      "name": "Haricot Gallery",
+      "type": "commercial",
+      "website": "https://www.haricotgallery.com/",
+      "whatsOnUrl": "https://www.haricotgallery.com/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "hannah-barry-gallery",
+      "name": "Hannah Barry Gallery",
+      "type": "commercial",
+      "website": "https://hannahbarry.com/",
+      "whatsOnUrl": "https://hannahbarry.com/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "sprueth-magers-london",
+      "name": "Sprüth Magers London",
+      "type": "commercial",
+      "website": "https://spruethmagers.com/",
+      "whatsOnUrl": "https://spruethmagers.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "kristin-hjellegjerde-gallery",
+      "name": "Kristin Hjellegjerde Gallery",
+      "type": "commercial",
+      "website": "https://kristinhjellegjerde.com/",
+      "whatsOnUrl": "https://kristinhjellegjerde.com/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "matts-gallery",
+      "name": "Matt's Gallery",
+      "type": "independent",
+      "website": "https://www.mattsgallery.org/",
+      "whatsOnUrl": "https://www.mattsgallery.org/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "maureen-paley",
+      "name": "Maureen Paley",
+      "type": "commercial",
+      "website": "https://www.maureenpaley.com/",
+      "whatsOnUrl": "https://www.maureenpaley.com/exhibitions",
+      "scrapeMethod": "website",
+      "reviewStatus": "temporarily-closed-unverified",
+      "sourceNote": "Maps reported this venue temporarily closed; the official programme is still checked without assuming the physical site is open."
+    },
+    {
+      "id": "flowers-gallery",
+      "name": "Flowers Gallery",
+      "type": "commercial",
+      "website": "https://www.flowersgallery.com/",
+      "whatsOnUrl": "https://www.flowersgallery.com/exhibitions/",
+      "scrapeMethod": "website",
+      "reviewStatus": "location-closed-unverified",
+      "sourceNote": "The saved Maps place was reported closed; the continuing gallery programme is checked for a current London location."
+    },
+    {
+      "id": "kate-macgarry",
+      "name": "Kate MacGarry",
+      "type": "commercial",
+      "website": "https://www.katemacgarry.com/",
+      "whatsOnUrl": "https://www.katemacgarry.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "hales-gallery",
+      "name": "Hales Gallery",
+      "type": "commercial",
+      "website": "https://halesgallery.com/",
+      "whatsOnUrl": "https://halesgallery.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "serpentine-south",
+      "name": "Serpentine South Gallery",
+      "type": "public",
+      "website": "https://www.serpentinegalleries.org/",
+      "whatsOnUrl": "https://www.serpentinegalleries.org/whats-on/",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with the starter-list entry 'Serpentine'; only the explicitly listed South site is represented."
+    },
+    {
+      "id": "victoria-miro",
+      "name": "Victoria Miro",
+      "type": "commercial",
+      "website": "https://www.victoria-miro.com/",
+      "whatsOnUrl": "https://www.victoria-miro.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "tate-britain",
+      "name": "Tate Britain",
+      "type": "national",
+      "website": "https://www.tate.org.uk/visit/tate-britain",
+      "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-britain",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "saatchi-gallery",
+      "name": "Saatchi Gallery",
+      "type": "independent",
+      "website": "https://www.saatchigallery.com/",
+      "whatsOnUrl": "https://www.saatchigallery.com/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "barbican-art-gallery",
+      "name": "Barbican Art Gallery",
+      "type": "public",
+      "website": "https://www.barbican.org.uk/whats-on/art-design",
+      "whatsOnUrl": "https://www.barbican.org.uk/whats-on/art-design",
+      "scrapeMethod": "link-only",
+      "reviewStatus": "temporarily-closed-unverified",
+      "sourceNote": "Maps reported a temporary closure. Kept as link-only until reopening is confirmed."
+    },
+    {
+      "id": "whitechapel-gallery",
+      "name": "Whitechapel Gallery",
+      "type": "public",
+      "website": "https://www.whitechapelgallery.org/",
+      "whatsOnUrl": "https://www.whitechapelgallery.org/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "white-cube-bermondsey",
+      "name": "White Cube Bermondsey",
+      "type": "commercial",
+      "website": "https://www.whitecube.com/",
+      "whatsOnUrl": "https://www.whitecube.com/gallery-exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "pippy-houldsworth-gallery",
+      "name": "Pippy Houldsworth Gallery",
+      "type": "commercial",
+      "website": "https://www.houldsworth.co.uk/",
+      "whatsOnUrl": "https://www.houldsworth.co.uk/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "gagosian-britannia-street",
+      "name": "Gagosian Britannia Street",
+      "type": "commercial",
+      "website": "https://gagosian.com/locations/london-britannia-street/",
+      "whatsOnUrl": "https://gagosian.com/exhibitions/?locations=london",
+      "scrapeMethod": "website",
+      "sourceNote": "Kept separate from Gagosian Grosvenor Hill."
+    },
+    {
+      "id": "gagosian-grosvenor-hill",
+      "name": "Gagosian Grosvenor Hill",
+      "type": "commercial",
+      "website": "https://gagosian.com/locations/london-grosvenor-hill/",
+      "whatsOnUrl": "https://gagosian.com/exhibitions/?locations=london",
+      "scrapeMethod": "website",
+      "sourceNote": "Kept separate from Gagosian Britannia Street."
+    },
+    {
+      "id": "saatchi-yates",
+      "name": "Saatchi Yates",
+      "type": "commercial",
+      "website": "https://saatchiyates.com/",
+      "whatsOnUrl": "https://saatchiyates.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "huxley-parlour",
+      "name": "Huxley-Parlour",
+      "type": "commercial",
+      "website": "https://huxley-parlour.com/",
+      "whatsOnUrl": "https://huxley-parlour.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "no-9-cork-street",
+      "name": "No.9 Cork Street",
+      "type": "commercial",
+      "website": "https://www.no9corkstreet.com/",
+      "whatsOnUrl": "https://www.no9corkstreet.com/programme/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "john-martin-gallery",
+      "name": "John Martin Gallery",
+      "type": "commercial",
+      "website": "https://www.jmlondon.com/",
+      "whatsOnUrl": "https://www.jmlondon.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "timothy-taylor",
+      "name": "Timothy Taylor",
+      "type": "commercial",
+      "website": "https://www.timothytaylor.com/",
+      "whatsOnUrl": "https://www.timothytaylor.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "ben-brown-fine-arts",
+      "name": "Ben Brown Fine Arts",
+      "type": "commercial",
+      "website": "https://www.benbrownfinearts.com/",
+      "whatsOnUrl": "https://www.benbrownfinearts.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "thaddaeus-ropac-london",
+      "name": "Thaddaeus Ropac London",
+      "type": "commercial",
+      "website": "https://ropac.net/",
+      "whatsOnUrl": "https://ropac.net/gallery-documents/3/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "hayward-gallery",
+      "name": "Hayward Gallery",
+      "type": "public",
+      "website": "https://www.southbankcentre.co.uk/venues/hayward-gallery/",
+      "whatsOnUrl": "https://www.southbankcentre.co.uk/whats-on/?artform=art-exhibitions",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with starter-list entry 'Southbank Centre (Hayward Gallery)'."
+    },
+    {
+      "id": "st-art-gallery",
+      "name": "ST.ART Gallery",
+      "type": "commercial",
+      "website": null,
+      "whatsOnUrl": null,
+      "scrapeMethod": "link-only",
+      "reviewStatus": "ambiguous",
+      "sourceNote": "No official London venue source could be identified confidently."
+    },
+    {
+      "id": "sadie-coles-hq",
+      "name": "Sadie Coles HQ",
+      "type": "commercial",
+      "website": "https://www.sadiecoles.com/",
+      "whatsOnUrl": "https://www.sadiecoles.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "the-redfern-gallery",
+      "name": "The Redfern Gallery",
+      "type": "commercial",
+      "website": "https://www.redfern-gallery.com/",
+      "whatsOnUrl": "https://www.redfern-gallery.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "unit-london",
+      "name": "Unit London",
+      "type": "commercial",
+      "website": "https://theunitldn.com/",
+      "whatsOnUrl": "https://theunitldn.com/exhibitions/",
+      "scrapeMethod": "website",
+      "reviewStatus": "temporarily-closed-unverified",
+      "sourceNote": "The saved Maps location was reported temporarily closed; the official programme is checked for a current location."
+    },
+    {
+      "id": "david-zwirner-london",
+      "name": "David Zwirner London",
+      "type": "commercial",
+      "website": "https://www.davidzwirner.com/locations/london",
+      "whatsOnUrl": "https://www.davidzwirner.com/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "white-cube-masons-yard",
+      "name": "White Cube Mason's Yard",
+      "type": "commercial",
+      "website": "https://www.whitecube.com/",
+      "whatsOnUrl": "https://www.whitecube.com/gallery-exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "rhodes-contemporary-art",
+      "name": "Rhodes Contemporary Art Gallery",
+      "type": "commercial",
+      "website": "https://rhodescontemporaryart.com/",
+      "whatsOnUrl": "https://rhodescontemporaryart.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "the-courtauld-gallery",
+      "name": "The Courtauld Gallery",
+      "type": "national",
+      "website": "https://courtauld.ac.uk/gallery/",
+      "whatsOnUrl": "https://courtauld.ac.uk/whats-on/",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with starter-list entry 'Courtauld Gallery'."
+    },
+    {
+      "id": "maddox-gallery",
+      "name": "Maddox Gallery",
+      "type": "commercial",
+      "website": "https://maddoxgallery.com/",
+      "whatsOnUrl": "https://maddoxgallery.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "pace-gallery-london",
+      "name": "Pace Gallery London",
+      "type": "commercial",
+      "website": "https://www.pacegallery.com/locations/london/",
+      "whatsOnUrl": "https://www.pacegallery.com/exhibitions/?location=london",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with starter-list entry 'Pace'."
+    },
+    {
+      "id": "institute-of-contemporary-arts",
+      "name": "Institute of Contemporary Arts",
+      "type": "independent",
+      "website": "https://www.ica.art/",
+      "whatsOnUrl": "https://www.ica.art/exhibitions",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with starter-list entry 'ICA'."
+    },
+    {
+      "id": "royal-academy",
+      "name": "Royal Academy of Arts",
+      "type": "public",
+      "website": "https://www.royalacademy.org.uk/",
+      "whatsOnUrl": "https://www.royalacademy.org.uk/exhibitions-and-events",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with starter-list entry 'Royal Academy'."
+    },
+    {
+      "id": "national-gallery",
+      "name": "The National Gallery",
+      "type": "national",
+      "website": "https://www.nationalgallery.org.uk/",
+      "whatsOnUrl": "https://www.nationalgallery.org.uk/exhibitions",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with starter-list entry 'National Gallery'."
+    },
+    {
+      "id": "union-pacific",
+      "name": "Union Pacific",
+      "type": "commercial",
+      "website": "https://www.unionpacific.co.uk/",
+      "whatsOnUrl": "https://www.unionpacific.co.uk/exhibitions/",
+      "scrapeMethod": "website",
+      "reviewStatus": "temporarily-closed-unverified",
+      "sourceNote": "Maps reported this venue temporarily closed; the official programme is checked without assuming the site is open."
+    },
+    {
+      "id": "lbf-contemporary",
+      "name": "LBF Contemporary",
+      "type": "commercial",
+      "website": "https://www.lbfcontemporary.com/",
+      "whatsOnUrl": "https://www.lbfcontemporary.com/exhibitions",
+      "scrapeMethod": "website",
+      "reviewStatus": "unverified"
+    },
+    {
+      "id": "british-museum",
+      "name": "British Museum",
+      "type": "national",
+      "website": "https://www.britishmuseum.org/",
+      "whatsOnUrl": "https://www.britishmuseum.org/exhibitions-events",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "vam",
+      "name": "V&A South Kensington",
+      "type": "national",
+      "website": "https://www.vam.ac.uk/south-kensington",
+      "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+      "scrapeMethod": "website",
+      "sourceNote": "The starter-list entry 'V&A' is represented by its South Kensington site."
+    },
+    {
+      "id": "vam-east",
+      "name": "V&A East",
+      "type": "national",
+      "website": "https://www.vam.ac.uk/east",
+      "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "young-vam",
+      "name": "Young V&A",
+      "type": "national",
+      "website": "https://www.vam.ac.uk/young/",
+      "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+      "scrapeMethod": "website",
+      "sourceNote": "Dedicated Bethnal Green site; branch-scoped independently from South Kensington and V&A East."
+    },
+    {
+      "id": "tate-modern",
+      "name": "Tate Modern",
+      "type": "national",
+      "website": "https://www.tate.org.uk/visit/tate-modern",
+      "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-modern",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "national-portrait-gallery",
+      "name": "National Portrait Gallery",
+      "type": "national",
+      "website": "https://www.npg.org.uk/",
+      "whatsOnUrl": "https://www.npg.org.uk/whatson/events-calendar/?what=exhibition",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "science-museum",
+      "name": "Science Museum",
+      "type": "national",
+      "website": "https://www.sciencemuseum.org.uk/",
+      "whatsOnUrl": "https://www.sciencemuseum.org.uk/see-and-do",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "natural-history-museum",
+      "name": "Natural History Museum",
+      "type": "national",
+      "website": "https://www.nhm.ac.uk/",
+      "whatsOnUrl": "https://www.nhm.ac.uk/visit/exhibitions.html",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "design-museum",
+      "name": "Design Museum",
+      "type": "independent",
+      "website": "https://designmuseum.org/",
+      "whatsOnUrl": "https://designmuseum.org/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "wellcome-collection",
+      "name": "Wellcome Collection",
+      "type": "independent",
+      "website": "https://wellcomecollection.org/",
+      "whatsOnUrl": "https://wellcomecollection.org/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "somerset-house",
+      "name": "Somerset House",
+      "type": "public",
+      "website": "https://www.somersethouse.org.uk/",
+      "whatsOnUrl": "https://www.somersethouse.org.uk/whats-on",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "imperial-war-museum-london",
+      "name": "Imperial War Museum London",
+      "type": "national",
+      "website": "https://www.iwm.org.uk/visits/iwm-london",
+      "whatsOnUrl": "https://www.iwm.org.uk/events",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "london-museum",
+      "name": "London Museum",
+      "type": "public",
+      "website": "https://www.londonmuseum.org.uk/",
+      "whatsOnUrl": "https://www.londonmuseum.org.uk/whats-on/",
+      "scrapeMethod": "website",
+      "reviewStatus": "unverified",
+      "sourceNote": "The former Museum of London has been renamed and is moving; opening and site details require current confirmation."
+    },
+    {
+      "id": "royal-museums-greenwich",
+      "name": "Royal Museums Greenwich",
+      "type": "national",
+      "website": "https://www.rmg.co.uk/",
+      "whatsOnUrl": "https://www.rmg.co.uk/whats-on",
+      "scrapeMethod": "website",
+      "sourceNote": "The starter list names the umbrella institution, so its shared programme is represented once."
+    },
+    {
+      "id": "horniman-museum",
+      "name": "Horniman Museum and Gardens",
+      "type": "public",
+      "website": "https://www.horniman.ac.uk/",
+      "whatsOnUrl": "https://www.horniman.ac.uk/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "dulwich-picture-gallery",
+      "name": "Dulwich Picture Gallery",
+      "type": "independent",
+      "website": "https://www.dulwichpicturegallery.org.uk/",
+      "whatsOnUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "wallace-collection",
+      "name": "Wallace Collection",
+      "type": "national",
+      "website": "https://www.wallacecollection.org/",
+      "whatsOnUrl": "https://www.wallacecollection.org/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "the-kings-gallery",
+      "name": "The King's Gallery",
+      "type": "national",
+      "website": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
+      "whatsOnUrl": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
+      "scrapeMethod": "website",
+      "sourceNote": "Merged with starter-list entry 'Royal Collection Trust (King's Gallery)'."
+    },
+    {
+      "id": "fashion-and-textile-museum",
+      "name": "Fashion and Textile Museum",
+      "type": "independent",
+      "website": "https://fashiontextilemuseum.org/",
+      "whatsOnUrl": "https://fashiontextilemuseum.org/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "museum-of-the-home",
+      "name": "Museum of the Home",
+      "type": "public",
+      "website": "https://www.museumofthehome.org.uk/",
+      "whatsOnUrl": "https://www.museumofthehome.org.uk/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "foundling-museum",
+      "name": "Foundling Museum",
+      "type": "independent",
+      "website": "https://foundlingmuseum.org.uk/",
+      "whatsOnUrl": "https://foundlingmuseum.org.uk/event/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "sir-john-soanes-museum",
+      "name": "Sir John Soane's Museum",
+      "type": "national",
+      "website": "https://www.soane.org/",
+      "whatsOnUrl": "https://www.soane.org/whats-on",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "jewish-museum-london",
+      "name": "Jewish Museum London",
+      "type": "independent",
+      "website": "https://jewishmuseum.org.uk/",
+      "whatsOnUrl": "https://jewishmuseum.org.uk/",
+      "scrapeMethod": "link-only",
+      "reviewStatus": "closed",
+      "sourceNote": "Its Camden building closed in 2023; retained as a closed/link-only starter-list record."
+    },
+    {
+      "id": "estorick-collection",
+      "name": "Estorick Collection",
+      "type": "independent",
+      "website": "https://www.estorickcollection.com/",
+      "whatsOnUrl": "https://www.estorickcollection.com/exhibitions",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "garden-museum",
+      "name": "Garden Museum",
+      "type": "independent",
+      "website": "https://gardenmuseum.org.uk/",
+      "whatsOnUrl": "https://gardenmuseum.org.uk/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "newport-street-gallery",
+      "name": "Newport Street Gallery",
+      "type": "independent",
+      "website": "https://www.newportstreetgallery.com/",
+      "whatsOnUrl": "https://www.newportstreetgallery.com/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "camden-art-centre",
+      "name": "Camden Art Centre",
+      "type": "independent",
+      "website": "https://camdenartcentre.org/",
+      "whatsOnUrl": "https://camdenartcentre.org/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "south-london-gallery",
+      "name": "South London Gallery",
+      "type": "independent",
+      "website": "https://www.southlondongallery.org/",
+      "whatsOnUrl": "https://www.southlondongallery.org/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "gasworks",
+      "name": "Gasworks",
+      "type": "independent",
+      "website": "https://www.gasworks.org.uk/",
+      "whatsOnUrl": "https://www.gasworks.org.uk/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "studio-voltaire",
+      "name": "Studio Voltaire",
+      "type": "independent",
+      "website": "https://studiovoltaire.org/",
+      "whatsOnUrl": "https://studiovoltaire.org/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "zabludowicz-collection",
+      "name": "Zabludowicz Collection",
+      "type": "independent",
+      "website": "https://www.zabludowiczcollection.com/",
+      "whatsOnUrl": "https://www.zabludowiczcollection.com/",
+      "scrapeMethod": "link-only",
+      "reviewStatus": "closed",
+      "sourceNote": "The London project space closed in 2023; retained as a closed/link-only starter-list record."
+    },
+    {
+      "id": "raven-row",
+      "name": "Raven Row",
+      "type": "independent",
+      "website": "https://www.ravenrow.org/",
+      "whatsOnUrl": "https://www.ravenrow.org/exhibition/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "cubitt",
+      "name": "Cubitt",
+      "type": "independent",
+      "website": "https://www.cubittartists.org.uk/",
+      "whatsOnUrl": "https://www.cubittartists.org.uk/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "delfina-foundation",
+      "name": "Delfina Foundation",
+      "type": "independent",
+      "website": "https://www.delfinafoundation.com/",
+      "whatsOnUrl": "https://www.delfinafoundation.com/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "pump-house-gallery",
+      "name": "Pump House Gallery",
+      "type": "public",
+      "website": "https://www.pumphousegallery.org.uk/",
+      "whatsOnUrl": "https://www.pumphousegallery.org.uk/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "goldsmiths-cca",
+      "name": "Goldsmiths CCA",
+      "type": "public",
+      "website": "https://www.goldsmithscca.art/",
+      "whatsOnUrl": "https://www.goldsmithscca.art/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "peckham-platform",
+      "name": "Peckham Platform",
+      "type": "independent",
+      "website": "https://www.peckhamplatform.com/",
+      "whatsOnUrl": "https://www.peckhamplatform.com/whats-on/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "auto-italia",
+      "name": "Auto Italia",
+      "type": "independent",
+      "website": "https://autoitaliasoutheast.org/",
+      "whatsOnUrl": "https://autoitaliasoutheast.org/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "hauser-and-wirth-london",
+      "name": "Hauser & Wirth London",
+      "type": "commercial",
+      "website": "https://www.hauserwirth.com/locations/10069-london/",
+      "whatsOnUrl": "https://www.hauserwirth.com/hauser-wirth-exhibitions/?location=london",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "marian-goodman-gallery-london",
+      "name": "Marian Goodman Gallery London",
+      "type": "commercial",
+      "website": "https://www.mariangoodman.com/",
+      "whatsOnUrl": "https://www.mariangoodman.com/exhibitions/",
+      "scrapeMethod": "website",
+      "reviewStatus": "unverified",
+      "sourceNote": "The London location has changed over time; current location metadata must come from the official site."
+    },
+    {
+      "id": "stephen-friedman-gallery",
+      "name": "Stephen Friedman Gallery",
+      "type": "commercial",
+      "website": "https://www.stephenfriedman.com/",
+      "whatsOnUrl": "https://www.stephenfriedman.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "herald-st",
+      "name": "Herald St",
+      "type": "commercial",
+      "website": "https://www.heraldst.com/",
+      "whatsOnUrl": "https://www.heraldst.com/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "annely-juda-fine-art",
+      "name": "Annely Juda Fine Art",
+      "type": "commercial",
+      "website": "https://www.annelyjudafineart.co.uk/",
+      "whatsOnUrl": "https://www.annelyjudafineart.co.uk/exhibitions/",
+      "scrapeMethod": "website"
+    },
+    {
+      "id": "blueshop-cottage",
+      "name": "Blue Shop Cottage",
+      "type": "commercial",
+      "website": "https://www.blueshopcottage.com/",
+      "whatsOnUrl": "https://www.blueshopcottage.com/exhibitions",
+      "scrapeMethod": "website",
+      "sourceNote": "The official site brands the physical venue as Blue Shop Gallery."
+    }
+  ]
+}

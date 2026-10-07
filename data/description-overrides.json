@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "description": "Official exhibition-specific summary text used when structured metadata omits or supplies an unusable description.",
+  "overrides": [
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/gathering-ground",
+      "description": "Explore the power of art to inspire change in today’s ecological crisis.",
+      "evidence": "Official Tate exhibition intro."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
+      "description": "Explore Zineb Sedira's monumental and intimate installation, bridging the political and the poetic.",
+      "evidence": "Official Tate exhibition intro."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-now-mohammed-z-rahman",
+      "description": "A new body of paintings exploring notions of home and love, displayed alongside Tate works The Lovers and The Spaghetti House.",
+      "evidence": "Official Tate exhibition intro."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc",
+      "description": "Discover seven decades of joyful works by Argentinian artist Julio Le Parc, turning visitors into active participants.",
+      "evidence": "Concise rendering of the official Tate exhibition intro."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon",
+      "description": "Step into the life and legacy of Frida Kahlo: revolutionary artist and global icon.",
+      "evidence": "Official Tate exhibition intro."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/ana-mendieta",
+      "description": "Experience the powerful work of Ana Mendieta, whose legacy changed the course of contemporary art.",
+      "evidence": "Official Tate exhibition intro."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
+      "description": "Explore a decade characterised by its bold creativity and rebellious spirit.",
+      "evidence": "Official Tate exhibition intro."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/tarek-atoui",
+      "description": "Tarek Atoui creates a new work for Tate Modern’s Turbine Hall, drawing on his innovative performances and installations exploring sound.",
+      "evidence": "Concise rendering of the official Tate exhibition intro and opening paragraph."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
+      "description": "Discover the untold global story of art photography.",
+      "evidence": "Official Tate exhibition intro."
+    }
+  ]
+}

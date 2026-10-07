@@ -1,0 +1,21 @@
+{
+  "name": "london-exhibitions",
+  "version": "1.0.0",
+  "description": "A fast, static guide to exhibitions open in London over the next fortnight.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "start": "astro dev --host 127.0.0.1",
+    "build": "astro check && astro build",
+    "check": "astro check",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.3.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
+}

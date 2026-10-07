@@ -1,0 +1,1136 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { AREAS } from "../types";
+import { addDays, asUtcDate, catalog, toIsoDate } from "../lib/catalog";
+import registryVenues from "../../data/venues.json";
+
+const today = new Date();
+today.setUTCHours(12, 0, 0, 0);
+
+const todayIso = toIsoDate(today);
+const DAY_MS = 86_400_000;
+
+const formatDate = (iso: string, options: Intl.DateTimeFormatOptions) =>
+  new Intl.DateTimeFormat("en-GB", options).format(asUtcDate(iso));
+
+const formatCompactDate = (iso: string) => {
+  const [, month, day] = iso.split("-").map(Number);
+  return `${day}/${month}`;
+};
+
+const dayOffset = (iso: string) =>
+  Math.round((asUtcDate(iso).getTime() - asUtcDate(todayIso).getTime()) / DAY_MS);
+
+const horizonEnd = new Date(today);
+horizonEnd.setUTCMonth(horizonEnd.getUTCMonth() + 1);
+const horizonEndIso = toIsoDate(horizonEnd);
+const horizonDayCount = dayOffset(horizonEndIso) + 1;
+
+const venuePriority = [
+  "The Photographers' Gallery", "Pilar Corrias", "THE TAGLI", "Lisson Gallery", "William Hine",
+  "Terrace Gallery", "Chisenhale Gallery", "Soho Revue", "The Cob Gallery", "October Gallery",
+  "Mimosa House", "Ginny on Frederick", "Haricot Gallery", "Hannah Barry Gallery",
+  "Sprüth Magers Gallery", "Kristin Hjellegjerde Gallery", "Matt's Gallery", "Maureen Paley",
+  "Kate MacGarry", "Hales Gallery", "Serpentine South Gallery", "Victoria Miro", "Tate Britain",
+  "Saatchi Gallery", "Barbican Art Gallery", "Whitechapel Gallery", "White Cube Bermondsey",
+  "Pippy Houldsworth Gallery", "Gagosian", "Saatchi Yates", "Huxley-Parlour", "No.9 Cork Street",
+  "John Martin Gallery", "Timothy Taylor", "Ben Brown Fine Arts", "Thaddaeus Ropac",
+  "Hayward Gallery", "ST.ART Gallery", "Sadie Coles HQ", "The Redfern Gallery", "Unit",
+  "David Zwirner", "White Cube Mason's Yard", "Rhodes Contemporary Art Gallery",
+  "The Courtauld Gallery", "Maddox Gallery", "Pace Gallery", "Institute of Contemporary Arts",
+  "Royal Academy of Arts", "The National Gallery", "Union Pacific", "LBF Contemporary",
+];
+
+const normaliseVenue = (name: string) =>
+  name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\b(the|gallery|london)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const normalisedPriority = venuePriority.map(normaliseVenue);
+const venueRank = (name: string) => {
+  const normalised = normaliseVenue(name);
+  const rank = normalisedPriority.findIndex(
+    (priority) => normalised === priority || normalised.includes(priority) || priority.includes(normalised),
+  );
+  return rank === -1 ? Number.POSITIVE_INFINITY : rank;
+};
+
+const days = Array.from({ length: horizonDayCount }, (_, index) => {
+  const date = addDays(today, index);
+  const iso = toIsoDate(date);
+  return {
+    iso,
+    weekday: formatDate(iso, { weekday: "short" }),
+    day: formatDate(iso, { day: "numeric" }),
+    month: formatDate(iso, { month: "short" }),
+    isToday: index === 0,
+    isWeekend: [0, 6].includes(date.getUTCDay()),
+  };
+});
+
+const catalogue = catalog
+  .filter((exhibition) => exhibition.startDate <= horizonEndIso && exhibition.endDate >= todayIso)
+  .map((exhibition) => {
+    const startOffset = dayOffset(exhibition.startDate);
+    const endOffset = dayOffset(exhibition.endDate);
+    const startColumn = Math.max(0, startOffset) + 1;
+    const endColumn = Math.min(2, endOffset) + 1;
+    return {
+      ...exhibition,
+      startOffset,
+      endOffset,
+      startColumn,
+      span: Math.max(1, endColumn - startColumn + 1),
+      continuesBefore: exhibition.startDate < todayIso,
+      continuesAfter: endOffset >= 3,
+    };
+  })
+  .sort(
+    (a, b) =>
+      venueRank(a.venue.name) - venueRank(b.venue.name) ||
+      a.startColumn - b.startColumn ||
+      a.endDate.localeCompare(b.endDate) ||
+      a.title.localeCompare(b.title),
+  );
+
+const institutionSearchText = (venue: (typeof registryVenues)[number]) =>
+  [
+    venue.name,
+    venue.id.replaceAll("-", " "),
+    venue.website,
+    venue.whatsOnUrl,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+const pilotVenues = registryVenues.slice().sort((a, b) => a.name.localeCompare(b.name));
+const venueTypes = [
+  { value: "commercial", label: "Commercial" },
+  { value: "national", label: "National" },
+  { value: "public", label: "Public" },
+  { value: "independent", label: "Independent" },
+] as const;
+const priceLabels = {
+  free: "Free entry",
+  paid: "Ticketed",
+  unknown: "Price not found",
+};
+
+const calendarData = catalogue.map((exhibition) => ({
+  id: exhibition.id,
+  title: exhibition.title,
+  venue: exhibition.venue.name,
+  venueType: exhibition.venue.type,
+  area: exhibition.venue.area,
+  address: `${exhibition.venue.address}, ${exhibition.venue.postcode}`,
+  startDate: exhibition.startDate,
+  endDate: exhibition.endDate,
+  description: exhibition.shortDescription,
+  image: exhibition.cachedThumbnail ?? exhibition.imageUrl,
+  imagePosition: exhibition.imagePosition ?? "center",
+  sourceUrl: exhibition.sourceUrl,
+  price: priceLabels[exhibition.priceStatus],
+  confidence: exhibition.confidenceScore,
+  accent: exhibition.accent,
+}));
+
+const tickerStyles = ["accent-on-white", "white-on-black", "black-on-accent"];
+const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
+  style: tickerStyles[index % tickerStyles.length],
+  text: "LONDON IS OPEN",
+}));
+---
+
+<BaseLayout
+  title="Artyfacts - Art open in London"
+  description="A visual calendar of exhibitions open across London."
+>
+  <div class="site-shell">
+    <div class="open-ticker" role="region" aria-label="London is open">
+      <div class="open-ticker-track" aria-hidden="true">
+        {
+          [0, 1].map(() => (
+            <div class="open-ticker-group">
+              {tickerSegments.map((segment) => (
+                <span class:list={["open-ticker-segment", segment.style]}>
+                  <span>{segment.text}</span>
+                  <span class="open-ticker-star" aria-hidden="true">*</span>
+                </span>
+              ))}
+            </div>
+          ))
+        }
+      </div>
+      <span class="sr-only">LONDON IS OPEN</span>
+    </div>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title">Artyfacts</h1>
+      </section>
+
+      <section class="calendar-section" aria-label="Exhibition calendar">
+        <div class="calendar-toolbar">
+          <div class="calendar-actions">
+            <div class="zoom-controls" role="group" aria-label="Visible calendar days">
+              <button id="remove-day" type="button" aria-label="Show one fewer day">−</button>
+              <output id="visible-days" aria-live="polite">3 days</output>
+              <button id="add-day" type="button" aria-label="Show one more day">+</button>
+            </div>
+            <div class="range-navigation">
+              <div class="range-controls" role="group" aria-label="Calendar date range">
+                <button id="previous-range" type="button" aria-label="Previous date range">
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M12.5 4.5 7 10l5.5 5.5M7.5 10H16" />
+                  </svg>
+                </button>
+                <button id="next-range" type="button" aria-label="Next date range">
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="m7.5 4.5 5.5 5.5-5.5 5.5M4 10h8.5" />
+                  </svg>
+                </button>
+              </div>
+              <button id="today-range" class="toolbar-clear today-control" type="button" aria-label="Today">
+                Today
+              </button>
+            </div>
+            <button class="mobile-filter-button" id="open-filters" type="button">
+              Filters <span id="mobile-filter-count" hidden>0</span>
+            </button>
+            <aside class="filter-panel" id="filters" aria-label="Exhibition filters" aria-hidden="false">
+              <div class="mobile-filter-header">
+                <strong>Filters</strong>
+                <button id="close-filters" class="close-button" type="button" aria-label="Close filters">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" /></svg>
+                </button>
+              </div>
+
+              <label class="toolbar-toggle">
+                <span>Free entry</span>
+                <input id="free-only" type="checkbox" role="switch" />
+                <span class="toggle-track" aria-hidden="true"></span>
+              </label>
+
+              <details class="filter-menu" id="area-menu">
+                <summary>Area <span id="area-filter-count"></span></summary>
+                <fieldset class="filter-menu-content">
+                  <legend class="sr-only">Filter by area</legend>
+                  <div class="area-options">
+                    {
+                      AREAS.map((area) => (
+                        <label class="chip">
+                          <input type="checkbox" name="area" value={area} />
+                          <span>{area}</span>
+                        </label>
+                      ))
+                    }
+                  </div>
+                </fieldset>
+              </details>
+
+              <div class="filter-menu institution-menu" id="institution-menu">
+                <button class="mobile-institution-trigger" id="mobile-institution-trigger" type="button" aria-expanded="false" aria-controls="institution-popover">
+                  Institution <span id="venue-filter-count"></span>
+                </button>
+                <label class="search-field desktop-institution-search">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="10" cy="10" r="6.5" vector-effect="non-scaling-stroke"></circle>
+                    <path d="M14.75 14.75L20 20" vector-effect="non-scaling-stroke"></path>
+                  </svg>
+                  <span class="sr-only">Search institutions</span>
+                  <input id="institution-search" type="search" placeholder="Search institutions" autocomplete="off" aria-expanded="false" aria-controls="institution-popover" />
+                  <button class="search-clear" id="institution-search-clear" type="button" aria-label="Clear institution search" hidden>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+                  </button>
+                </label>
+                <div class="filter-menu-content institution-popover" id="institution-popover" hidden>
+                  <fieldset class="institution-type-filter">
+                    <legend class="sr-only">Institution type</legend>
+                    <div class="area-options institution-type-options">
+                      {
+                        venueTypes.map((type) => (
+                          <label class="chip">
+                            <input type="checkbox" name="venue-type" value={type.value} />
+                            <span>{type.label}</span>
+                          </label>
+                        ))
+                      }
+                    </div>
+                  </fieldset>
+                  <label class="search-field mobile-institution-search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="10" cy="10" r="6.5" vector-effect="non-scaling-stroke"></circle>
+                      <path d="M14.75 14.75L20 20" vector-effect="non-scaling-stroke"></path>
+                    </svg>
+                    <span class="sr-only">Search institutions</span>
+                    <input id="mobile-institution-search" type="search" placeholder="Find a gallery or museum" autocomplete="off" />
+                    <button class="search-clear" id="mobile-institution-search-clear" type="button" aria-label="Clear institution search" hidden>
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+                    </button>
+                  </label>
+                  <div class="institution-options" id="institution-options">
+                    {
+                      pilotVenues.map((venue) => (
+                        <label data-institution-option data-search={institutionSearchText(venue)} data-venue-type={venue.type}>
+                          <input type="checkbox" name="venue" value={venue.id} />
+                          <span>{venue.name}</span>
+                          <small>{venue.type}</small>
+                        </label>
+                      ))
+                    }
+                  </div>
+                  <p class="institution-no-results" id="institution-no-results" hidden>No matching institutions</p>
+                </div>
+              </div>
+
+              <div class="filter-actions-row">
+                <button id="clear-filters" class="clear-button toolbar-clear" type="button">Clear</button>
+                <button id="apply-filters" class="apply-button mobile-apply" type="button">Apply</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="calendar-header-sentinel" id="calendar-header-sentinel" aria-hidden="true"></div>
+        <div class="calendar-header-scroll" id="calendar-header-scroll">
+          <div class="calendar-days" style="--visible-days:3" aria-hidden="true">
+            {
+              days.map((day, index) => (
+                <div
+                  class:list={["calendar-day", { today: day.isToday, weekend: day.isWeekend }]}
+                  data-date={day.iso}
+                  hidden={index > 2}
+                >
+                  <span>{day.weekday}</span>
+                  <strong>{day.day}</strong>
+                  <small>{day.month}</small>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="calendar-scroll" id="calendar-scroll" tabindex="0">
+          <div class="calendar-board" style="--visible-days:3">
+            <div class="timeline" id="timeline">
+              {
+                catalogue.map((exhibition) => (
+                  <div
+                    class="timeline-row"
+                    hidden={exhibition.endOffset < 0 || exhibition.startOffset >= 3}
+                    data-row
+                    data-area={exhibition.venue.area}
+                    data-venue={exhibition.venue.id}
+                    data-venue-type={exhibition.venue.type}
+                    data-price={exhibition.priceStatus}
+                    data-start-date={exhibition.startDate}
+                    data-start-offset={exhibition.startOffset}
+                    data-end-offset={exhibition.endOffset}
+                  >
+                    <button
+                      class:list={[
+                        "event-bar",
+                        {
+                          "continues-before": exhibition.continuesBefore,
+                          "continues-after": exhibition.continuesAfter,
+                          "starts-here": days.slice(0, 3).some((day) => day.iso === exhibition.startDate),
+                        },
+                      ]}
+                      type="button"
+                      data-event-id={exhibition.id}
+                      style={`--event-start:${exhibition.startColumn};--event-span:${exhibition.span}`}
+                      aria-label={`View details for ${exhibition.title} at ${exhibition.venue.name}`}
+                    >
+                      {
+                        exhibition.imageUrl ? (
+                          <img
+                            src={exhibition.cachedThumbnail ?? exhibition.imageUrl}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                            referrerpolicy="no-referrer"
+                            style={`object-position:${exhibition.imagePosition ?? "center"}`}
+                          />
+                        ) : (
+                          <span class="event-monogram" aria-hidden="true">
+                            {exhibition.venue.name.slice(0, 1)}
+                          </span>
+                        )
+                      }
+                      <span class="event-copy">
+                        <strong>{exhibition.venue.name}</strong>
+                        <small>{exhibition.title}</small>
+                      </span>
+                      <span
+                        class="event-dates"
+                        aria-label={`${formatDate(exhibition.startDate, { day: "numeric", month: "long", year: "numeric" })} to ${formatDate(exhibition.endDate, { day: "numeric", month: "long", year: "numeric" })}`}
+                      >
+                        <span class="event-date-full">
+                          <time datetime={exhibition.startDate}>
+                            {formatDate(exhibition.startDate, { day: "numeric", month: "short" })}
+                          </time>
+                          <i>—</i>
+                          <time datetime={exhibition.endDate}>
+                            {formatDate(exhibition.endDate, { day: "numeric", month: "short" })}
+                          </time>
+                        </span>
+                        <span class="event-date-compact" aria-hidden="true">
+                          <span>{formatCompactDate(exhibition.startDate)}</span>
+                          <i>—</i>
+                          <span>{formatCompactDate(exhibition.endDate)}</span>
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                ))
+              }
+            </div>
+
+            <div class="calendar-empty" id="calendar-empty" hidden>
+              <span>Nothing here yet.</span>
+              <button id="empty-clear" type="button">Clear filters</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="filter-backdrop" id="filter-backdrop" hidden></div>
+
+  <div class="hover-preview" id="hover-preview" hidden aria-hidden="true">
+    <div class="hover-preview-image">
+      <img alt="" />
+      <span></span>
+    </div>
+    <div>
+      <small></small>
+      <strong></strong>
+      <p></p>
+    </div>
+  </div>
+
+  <dialog class="event-modal" id="event-modal" aria-labelledby="modal-title">
+    <button class="modal-close close-button" id="modal-close" type="button" aria-label="Close exhibition details">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" /></svg>
+    </button>
+    <div class="modal-layout">
+      <div class="modal-visual" id="modal-visual">
+        <img id="modal-image" alt="" />
+        <div class="modal-monogram" id="modal-monogram" aria-hidden="true"></div>
+        <span id="modal-price"></span>
+      </div>
+      <div class="modal-copy">
+        <div>
+          <p class="modal-kicker" id="modal-venue"></p>
+          <h2 id="modal-title"></h2>
+          <p class="modal-description" id="modal-description"></p>
+        </div>
+        <dl class="modal-facts">
+          <div>
+            <dt>Dates</dt>
+            <dd id="modal-dates"></dd>
+          </div>
+          <div>
+            <dt>Where</dt>
+            <dd id="modal-address"></dd>
+          </div>
+          <div>
+            <dt>Area</dt>
+            <dd id="modal-area"></dd>
+          </div>
+        </dl>
+        <a class="venue-link" id="modal-link" href="#" target="_blank" rel="noreferrer">
+          Visit the venue website
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14L14 6M8 6h6v6" /></svg>
+        </a>
+        <p class="modal-confidence" id="modal-confidence" hidden>Check details on the venue site before travelling.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script id="calendar-data" type="application/json" is:inline set:html={JSON.stringify(calendarData)}></script>
+
+  <script is:inline>
+    const dataElement = document.querySelector("#calendar-data");
+    const events = new Map(JSON.parse(dataElement?.textContent ?? "[]").map((item) => [item.id, item]));
+    const rows = [...document.querySelectorAll("[data-row]")];
+    const eventBars = [...document.querySelectorAll("[data-event-id]")];
+    const areaInputs = [...document.querySelectorAll('input[name="area"]')];
+    const venueInputs = [...document.querySelectorAll('input[name="venue"]')];
+    const venueTypeInputs = [...document.querySelectorAll('input[name="venue-type"]')];
+    const freeInput = document.querySelector("#free-only");
+    const filters = document.querySelector("#filters");
+    const backdrop = document.querySelector("#filter-backdrop");
+    const hoverPreview = document.querySelector("#hover-preview");
+    document.body.append(hoverPreview);
+    const modal = document.querySelector("#event-modal");
+    const calendarBoard = document.querySelector(".calendar-board");
+    const calendarHeaderScroll = document.querySelector("#calendar-header-scroll");
+    const calendarHeaderSentinel = document.querySelector("#calendar-header-sentinel");
+    const calendarDaysGrid = document.querySelector(".calendar-days");
+    const calendarDays = [...document.querySelectorAll(".calendar-day")];
+    const removeDay = document.querySelector("#remove-day");
+    const addDay = document.querySelector("#add-day");
+    const previousRange = document.querySelector("#previous-range");
+    const nextRange = document.querySelector("#next-range");
+    const todayRange = document.querySelector("#today-range");
+    const areaMenu = document.querySelector("#area-menu");
+    const areaSummary = areaMenu.querySelector("summary");
+    const institutionMenu = document.querySelector("#institution-menu");
+    const institutionPopover = document.querySelector("#institution-popover");
+    const institutionSearch = document.querySelector("#institution-search");
+    const mobileInstitutionSearch = document.querySelector("#mobile-institution-search");
+    const mobileInstitutionTrigger = document.querySelector("#mobile-institution-trigger");
+    const institutionNoResults = document.querySelector("#institution-no-results");
+    const institutionSearchClear = document.querySelector("#institution-search-clear");
+    const mobileInstitutionSearchClear = document.querySelector("#mobile-institution-search-clear");
+    const isMobileFilterLayout = () => window.matchMedia("(max-width: 600px)").matches;
+    const dayBreakpoint = window.matchMedia("(max-width: 600px)");
+    const initialParams = new URLSearchParams(location.search);
+    const initialDaysParam = initialParams.get("days");
+    const parsedInitialDays = Number.parseInt(initialDaysParam ?? "", 10);
+    let hasExplicitDayChoice =
+      initialDaysParam !== null &&
+      Number.isInteger(parsedInitialDays) &&
+      parsedInitialDays >= 1 &&
+      parsedInitialDays <= 14;
+    let visibleDayCount = hasExplicitDayChoice ? parsedInitialDays : (dayBreakpoint.matches ? 1 : 5);
+    const initialStartIso = initialParams.get("start");
+    const initialOffsetParam = Number.parseInt(initialParams.get("offset") ?? "", 10);
+    const requestedStartOffset = initialStartIso
+      ? Math.round((new Date(`${initialStartIso}T12:00:00Z`).getTime() - new Date(`${calendarDays[0].dataset.date}T12:00:00Z`).getTime()) / 86_400_000)
+      : initialOffsetParam;
+    const maximumStartOffset = () => Math.max(0, calendarDays.length - visibleDayCount);
+    let calendarStartOffset = Number.isFinite(requestedStartOffset)
+      ? Math.min(maximumStartOffset(), Math.max(0, requestedStartOffset))
+      : 0;
+    const minimumCalendarCellWidth = 96;
+    let calendarMetricsFrame = 0;
+
+    const updateCalendarMetrics = () => {
+      cancelAnimationFrame(calendarMetricsFrame);
+      calendarMetricsFrame = requestAnimationFrame(() => {
+        const cellWidth = calendarBoard.getBoundingClientRect().width / visibleDayCount;
+        const numeralSize = Math.min(64, Math.max(32, cellWidth * 0.43));
+        calendarDaysGrid.style.setProperty("--date-number-size", `${numeralSize.toFixed(2)}px`);
+        calendarDaysGrid.style.setProperty(
+          "--date-number-compact-size",
+          `${(numeralSize * 0.74).toFixed(2)}px`,
+        );
+      });
+    };
+
+    const calendarResizeObserver = new ResizeObserver(updateCalendarMetrics);
+    calendarResizeObserver.observe(calendarBoard);
+
+    const prettyDate = (iso) =>
+      new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(
+        new Date(`${iso}T12:00:00Z`),
+      );
+    const venueTypeLabels = {
+      commercial: "Commercial",
+      independent: "Independent",
+      national: "National",
+      public: "Public",
+    };
+
+    const getSelected = (inputs) =>
+      new Set(inputs.filter((input) => input.checked).map((input) => input.value));
+
+    const syncUrl = (areas, venueIds, venueTypes, freeOnly, historyMode = "replace") => {
+      if (historyMode === "none") return;
+      const params = new URLSearchParams();
+      if (hasExplicitDayChoice) params.set("days", String(visibleDayCount));
+      if (calendarStartOffset > 0) {
+        params.set("start", calendarDays[calendarStartOffset].dataset.date);
+      }
+      if (areas.size) params.set("area", [...areas].join(","));
+      if (venueIds.size) params.set("venue", [...venueIds].join(","));
+      if (venueTypes.size) params.set("type", [...venueTypes].join(","));
+      if (freeOnly) params.set("free", "1");
+      const query = params.toString();
+      const nextUrl = query ? `${location.pathname}?${query}` : location.pathname;
+      if (historyMode === "push" && nextUrl !== `${location.pathname}${location.search}`) {
+        history.pushState({}, "", nextUrl);
+      } else {
+        history.replaceState({}, "", nextUrl);
+      }
+    };
+
+    const applyFilters = (historyMode = "replace") => {
+      const areas = getSelected(areaInputs);
+      const venueIds = getSelected(venueInputs);
+      const venueTypes = getSelected(venueTypeInputs);
+      const freeOnly = freeInput.checked;
+      let visible = 0;
+
+      rows.forEach((row) => {
+        const inVisibleRange =
+          Number(row.dataset.endOffset) >= calendarStartOffset &&
+          Number(row.dataset.startOffset) < calendarStartOffset + visibleDayCount;
+        const show =
+          inVisibleRange &&
+          (!areas.size || areas.has(row.dataset.area)) &&
+          (!venueIds.size || venueIds.has(row.dataset.venue)) &&
+          (!venueTypes.size || venueTypes.has(row.dataset.venueType)) &&
+          (!freeOnly || row.dataset.price === "free");
+        row.hidden = !show;
+        if (show) visible += 1;
+      });
+
+      const activeCount = areas.size + venueIds.size + venueTypes.size + (freeOnly ? 1 : 0);
+      document.querySelector("#calendar-empty").hidden = visible !== 0;
+      document.querySelector("#mobile-filter-count").hidden = activeCount === 0;
+      document.querySelector("#mobile-filter-count").textContent = String(activeCount);
+      document.querySelector("#area-filter-count").textContent = areas.size ? `(${areas.size})` : "";
+      const institutionFilterCount = venueIds.size + venueTypes.size;
+      document.querySelector("#venue-filter-count").textContent = institutionFilterCount ? `(${institutionFilterCount})` : "";
+
+      syncUrl(areas, venueIds, venueTypes, freeOnly, historyMode);
+    };
+
+    const updateCalendarRange = (nextCount, historyMode = "replace") => {
+      visibleDayCount = Math.min(14, Math.max(1, nextCount));
+      calendarStartOffset = Math.min(calendarStartOffset, maximumStartOffset());
+      calendarBoard.style.setProperty("--visible-days", String(visibleDayCount));
+      calendarDaysGrid.style.setProperty("--visible-days", String(visibleDayCount));
+      const calendarMinimumWidth = `${visibleDayCount * minimumCalendarCellWidth}px`;
+      calendarBoard.style.setProperty("--calendar-min-width", calendarMinimumWidth);
+      calendarDaysGrid.style.setProperty("--calendar-min-width", calendarMinimumWidth);
+      calendarDays.forEach((day, index) => {
+        day.hidden =
+          index < calendarStartOffset ||
+          index >= calendarStartOffset + visibleDayCount;
+      });
+
+      const visibleDates = calendarDays
+        .slice(calendarStartOffset, calendarStartOffset + visibleDayCount)
+        .map((day) => day.dataset.date);
+
+      rows.forEach((row) => {
+        const startOffset = Number(row.dataset.startOffset) - calendarStartOffset;
+        const endOffset = Number(row.dataset.endOffset) - calendarStartOffset;
+        const start = Math.max(0, startOffset);
+        const end = Math.min(visibleDayCount - 1, endOffset);
+        const bar = row.querySelector(".event-bar");
+        const span = Math.max(1, end - start + 1);
+        bar.style.setProperty("--event-start", String(start + 1));
+        bar.style.setProperty("--event-span", String(span));
+        bar.classList.toggle("continues-before", startOffset < 0);
+        bar.classList.toggle("continues-after", endOffset >= visibleDayCount);
+        bar.classList.toggle("starts-here", visibleDates.includes(row.dataset.startDate));
+      });
+
+      document.querySelector("#visible-days").textContent =
+        `${visibleDayCount} ${visibleDayCount === 1 ? "day" : "days"}`;
+      removeDay.disabled = visibleDayCount === 1;
+      addDay.disabled = visibleDayCount === 14;
+      previousRange.disabled = calendarStartOffset === 0;
+      nextRange.disabled = calendarStartOffset === maximumStartOffset();
+      todayRange.disabled = calendarStartOffset === 0;
+      document.querySelector("#calendar-scroll").scrollLeft = 0;
+      calendarHeaderScroll.scrollLeft = 0;
+      updateCalendarMetrics();
+      applyFilters(historyMode);
+    };
+
+    const restoreFilters = () => {
+      const params = new URLSearchParams(location.search);
+      const areas = new Set((params.get("area") ?? "").split(",").filter(Boolean));
+      const venueIds = new Set((params.get("venue") ?? "").split(",").filter(Boolean));
+      const venueTypes = new Set((params.get("type") ?? "").split(",").filter(Boolean));
+      areaInputs.forEach((input) => (input.checked = areas.has(input.value)));
+      venueInputs.forEach((input) => (input.checked = venueIds.has(input.value)));
+      venueTypeInputs.forEach((input) => (input.checked = venueTypes.has(input.value)));
+      freeInput.checked = params.get("free") === "1";
+    };
+
+    const restoreCalendarState = () => {
+      const params = new URLSearchParams(location.search);
+      const daysParam = params.get("days");
+      const parsedDays = Number.parseInt(daysParam ?? "", 10);
+      hasExplicitDayChoice =
+        daysParam !== null &&
+        Number.isInteger(parsedDays) &&
+        parsedDays >= 1 &&
+        parsedDays <= 14;
+      visibleDayCount = hasExplicitDayChoice ? parsedDays : (dayBreakpoint.matches ? 1 : 5);
+
+      const startIso = params.get("start");
+      const parsedOffset = Number.parseInt(params.get("offset") ?? "", 10);
+      const restoredOffset = startIso
+        ? Math.round(
+            (new Date(`${startIso}T12:00:00Z`).getTime() -
+              new Date(`${calendarDays[0].dataset.date}T12:00:00Z`).getTime()) /
+              86_400_000,
+          )
+        : parsedOffset;
+      calendarStartOffset = Number.isFinite(restoredOffset)
+        ? Math.min(maximumStartOffset(), Math.max(0, restoredOffset))
+        : 0;
+
+      restoreFilters();
+      filterInstitutions("");
+      updateCalendarRange(visibleDayCount, "none");
+    };
+
+    const clearFilters = () => {
+      areaInputs.forEach((input) => (input.checked = false));
+      venueInputs.forEach((input) => (input.checked = false));
+      venueTypeInputs.forEach((input) => (input.checked = false));
+      freeInput.checked = false;
+      filterInstitutions("");
+      applyFilters();
+    };
+
+    const setInstitutionOpen = (open) => {
+      if (open) hoverPreview.hidden = true;
+      institutionMenu.classList.toggle("is-open", open);
+      institutionPopover.hidden = !open;
+      institutionSearch.setAttribute("aria-expanded", String(open));
+      mobileInstitutionTrigger.setAttribute("aria-expanded", String(open));
+      if (open && !isMobileFilterLayout()) areaMenu.open = false;
+    };
+
+    const filterInstitutions = (query) => {
+      const normalizedQuery = query.trim().toLowerCase();
+      institutionSearch.value = query;
+      mobileInstitutionSearch.value = query;
+      institutionSearchClear.hidden = normalizedQuery.length === 0;
+      mobileInstitutionSearchClear.hidden = normalizedQuery.length === 0;
+      const selectedTypes = getSelected(venueTypeInputs);
+      let matches = 0;
+      document.querySelectorAll("[data-institution-option]").forEach((option) => {
+        const matchesQuery = option.dataset.search.includes(normalizedQuery);
+        const matchesType = !selectedTypes.size || selectedTypes.has(option.dataset.venueType);
+        const isMatch = matchesQuery && matchesType;
+        option.hidden = !isMatch;
+        if (isMatch) matches += 1;
+      });
+      institutionNoResults.hidden = matches !== 0;
+    };
+
+    removeDay.addEventListener("click", () => {
+      hasExplicitDayChoice = true;
+      updateCalendarRange(visibleDayCount - 1);
+    });
+    addDay.addEventListener("click", () => {
+      hasExplicitDayChoice = true;
+      updateCalendarRange(visibleDayCount + 1);
+    });
+    previousRange.addEventListener("click", () => {
+      calendarStartOffset = Math.max(0, calendarStartOffset - visibleDayCount);
+      updateCalendarRange(visibleDayCount, "push");
+    });
+    nextRange.addEventListener("click", () => {
+      calendarStartOffset = Math.min(
+        maximumStartOffset(),
+        calendarStartOffset + visibleDayCount,
+      );
+      updateCalendarRange(visibleDayCount, "push");
+    });
+    todayRange.addEventListener("click", () => {
+      calendarStartOffset = 0;
+      updateCalendarRange(visibleDayCount, "push");
+    });
+
+    dayBreakpoint.addEventListener("change", (event) => {
+      if (hasExplicitDayChoice) return;
+      updateCalendarRange(event.matches ? 1 : 5);
+    });
+
+    window.addEventListener("popstate", restoreCalendarState);
+
+    const openFilters = () => {
+      hoverPreview.hidden = true;
+      filters.classList.add("is-open");
+      filters.setAttribute("aria-hidden", "false");
+      backdrop.hidden = false;
+      document.body.classList.add("overlay-open");
+      if (isMobileFilterLayout()) {
+        areaMenu.open = true;
+        areaSummary.tabIndex = -1;
+        areaSummary.setAttribute("aria-disabled", "true");
+        mobileInstitutionTrigger.disabled = true;
+        setInstitutionOpen(true);
+      }
+      document.querySelector("#close-filters").focus();
+    };
+
+    const closeFilters = () => {
+      if (isMobileFilterLayout()) {
+        areaMenu.open = false;
+        areaSummary.removeAttribute("tabindex");
+        areaSummary.removeAttribute("aria-disabled");
+        mobileInstitutionTrigger.disabled = false;
+        setInstitutionOpen(false);
+      }
+      filters.classList.remove("is-open");
+      filters.setAttribute("aria-hidden", window.matchMedia("(max-width: 600px)").matches ? "true" : "false");
+      backdrop.hidden = true;
+      document.body.classList.remove("overlay-open");
+      document.querySelector("#open-filters").focus();
+    };
+
+    const setVisual = (event) => {
+      const image = document.querySelector("#modal-image");
+      const monogram = document.querySelector("#modal-monogram");
+      const visual = document.querySelector("#modal-visual");
+      visual.style.setProperty("--modal-accent", "#C33100");
+      if (event.image) {
+        image.src = event.image;
+        image.style.objectPosition = event.imagePosition;
+        image.hidden = false;
+        monogram.hidden = true;
+      } else {
+        image.removeAttribute("src");
+        image.hidden = true;
+        monogram.hidden = false;
+        monogram.textContent = event.venue.slice(0, 1);
+      }
+    };
+
+    const modalLayout = modal.querySelector(".modal-layout");
+    const modalCloseButton = document.querySelector("#modal-close");
+    const modalMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let modalAnimating = false;
+    let modalOriginBar = null;
+    let modalOriginRect = null;
+    let modalCloseQueued = false;
+
+    const populateModal = (event) => {
+      setVisual(event);
+      document.querySelector("#modal-title").textContent = event.title;
+      const venueTypeLabel = venueTypeLabels[event.venueType] ?? event.venueType;
+      document.querySelector("#modal-venue").textContent = `${event.venue} · ${venueTypeLabel}`;
+      document.querySelector("#modal-description").textContent = event.description;
+      document.querySelector("#modal-dates").textContent =
+        `${prettyDate(event.startDate)} — ${prettyDate(event.endDate)}`;
+      document.querySelector("#modal-address").textContent = event.address;
+      document.querySelector("#modal-area").textContent = event.area;
+      document.querySelector("#modal-price").textContent = event.price;
+      document.querySelector("#modal-link").href = event.sourceUrl;
+      document.querySelector("#modal-confidence").hidden = event.confidence >= 0.95;
+    };
+
+    const finishModalOpen = () => {
+      modal.removeAttribute("inert");
+      modalCloseButton.focus({ preventScroll: true });
+      modalAnimating = false;
+      if (modalCloseQueued) {
+        modalCloseQueued = false;
+        closeModal();
+      }
+    };
+
+    const openModal = async (id, originBar) => {
+      if (modalAnimating || modal.open) return;
+      const event = events.get(id);
+      if (!event) return;
+      modalAnimating = true;
+      modalOriginBar = originBar;
+      modalOriginRect = hoverPreview.hidden ? null : hoverPreview.getBoundingClientRect();
+      populateModal(event);
+
+      const useSharedTransition =
+        !modalMotion.matches &&
+        modalOriginRect &&
+        window.matchMedia("(hover: hover)").matches &&
+        typeof document.startViewTransition === "function";
+
+      if (!useSharedTransition) {
+        hoverPreview.hidden = true;
+        modal.setAttribute("inert", "");
+        modal.showModal();
+        document.body.classList.add("overlay-open");
+        if (!modalMotion.matches) {
+          await modal.animate(
+            [
+              { opacity: 0, transform: "scale(0.97) translateY(8px)" },
+              { opacity: 1, transform: "scale(1) translateY(0)" },
+            ],
+            { duration: 260, easing: "cubic-bezier(.22,1,.36,1)" },
+          ).finished.catch(() => {});
+        }
+        finishModalOpen();
+        return;
+      }
+
+      hoverPreview.style.viewTransitionName = "exhibition-card";
+      modal.setAttribute("inert", "");
+      const transition = document.startViewTransition(() => {
+        hoverPreview.hidden = true;
+        hoverPreview.style.viewTransitionName = "";
+        modal.showModal();
+        document.body.classList.add("overlay-open");
+        modalLayout.style.viewTransitionName = "exhibition-card";
+      });
+      await transition.finished.catch(() => {});
+      modalLayout.style.viewTransitionName = "";
+      finishModalOpen();
+    };
+
+    const closeModal = async () => {
+      if (!modal.open) return;
+      if (modalAnimating) {
+        modalCloseQueued = true;
+        return;
+      }
+      modalAnimating = true;
+      const originRect = modalOriginBar?.getBoundingClientRect();
+      const originInView =
+        originRect &&
+        originRect.bottom > 0 &&
+        originRect.top < window.innerHeight &&
+        originRect.right > 0 &&
+        originRect.left < window.innerWidth;
+      const useSharedTransition =
+        !modalMotion.matches &&
+        modalOriginRect &&
+        originInView &&
+        typeof document.startViewTransition === "function";
+
+      if (!useSharedTransition) {
+        if (!modalMotion.matches) {
+          await modal.animate(
+            [
+              { opacity: 1, transform: "scale(1)" },
+              { opacity: 0, transform: "scale(0.985)" },
+            ],
+            { duration: 180, easing: "cubic-bezier(.4,0,1,1)" },
+          ).finished.catch(() => {});
+        }
+        modal.close();
+        document.body.classList.remove("overlay-open");
+      } else {
+        modal.classList.add("shared-transition");
+        modalLayout.style.viewTransitionName = "exhibition-card";
+        const transition = document.startViewTransition(() => {
+          modal.close();
+          document.body.classList.remove("overlay-open");
+          modalLayout.style.viewTransitionName = "";
+          hoverPreview.style.left = `${modalOriginRect.left}px`;
+          hoverPreview.style.top = `${modalOriginRect.top}px`;
+          hoverPreview.style.viewTransitionName = "exhibition-card";
+          hoverPreview.hidden = false;
+        });
+        await transition.finished.catch(() => {});
+        hoverPreview.style.viewTransitionName = "";
+        hoverPreview.hidden = true;
+        modal.classList.remove("shared-transition");
+      }
+
+      modalOriginBar?.focus({ preventScroll: true });
+      modalOriginBar = null;
+      modalOriginRect = null;
+      modalAnimating = false;
+    };
+
+    const hideHoverPreview = () => {
+      hoverPreview.hidden = true;
+    };
+
+    const positionHoverPreview = (pointerEvent) => {
+      if (hoverPreview.hidden || !pointerEvent) return;
+      const margin = 16;
+      const gap = 14;
+      const preview = hoverPreview.getBoundingClientRect();
+      let left = pointerEvent.clientX - preview.width / 2;
+      left = Math.max(margin, Math.min(left, window.innerWidth - preview.width - margin));
+      let top = pointerEvent.clientY - preview.height - gap;
+      top = Math.max(margin, Math.min(top, window.innerHeight - preview.height - margin));
+
+      hoverPreview.style.left = `${left}px`;
+      hoverPreview.style.top = `${top}px`;
+    };
+
+    const showHover = (bar, pointerEvent) => {
+      if (!window.matchMedia("(hover: hover)").matches || pointerEvent.pointerType === "touch") return;
+      const event = events.get(bar.dataset.eventId);
+      if (!event) return;
+      const image = hoverPreview.querySelector("img");
+      const placeholder = hoverPreview.querySelector(".hover-preview-image span");
+      if (event.image) {
+        image.src = event.image;
+        image.style.objectPosition = event.imagePosition;
+        image.hidden = false;
+        placeholder.hidden = true;
+      } else {
+        image.hidden = true;
+        placeholder.hidden = false;
+        placeholder.textContent = event.venue.slice(0, 1);
+        hoverPreview.style.setProperty("--preview-accent", "#C33100");
+      }
+      hoverPreview.querySelector("small").textContent = event.venue;
+      hoverPreview.querySelector("strong").textContent = event.title;
+      hoverPreview.querySelector("p").textContent = event.description;
+      hoverPreview.hidden = false;
+      positionHoverPreview(pointerEvent);
+    };
+
+    eventBars.forEach((bar) => {
+      bar.addEventListener("click", () => openModal(bar.dataset.eventId, bar));
+      bar.addEventListener("pointerenter", (event) => showHover(bar, event));
+      bar.addEventListener("pointermove", positionHoverPreview);
+      bar.addEventListener("pointerleave", hideHoverPreview);
+    });
+
+    window.addEventListener("resize", hideHoverPreview);
+    document.addEventListener("scroll", hideHoverPreview, true);
+
+    [...areaInputs, ...venueInputs, freeInput].forEach((input) =>
+      input.addEventListener("change", applyFilters),
+    );
+    venueTypeInputs.forEach((input) =>
+      input.addEventListener("change", () => {
+        filterInstitutions(institutionSearch.value);
+        applyFilters();
+      }),
+    );
+
+    institutionSearch.addEventListener("focus", () => setInstitutionOpen(true));
+    institutionSearch.addEventListener("click", () => setInstitutionOpen(true));
+    institutionSearch.addEventListener("input", (event) => {
+      setInstitutionOpen(true);
+      filterInstitutions(event.target.value);
+    });
+    mobileInstitutionSearch.addEventListener("input", (event) => filterInstitutions(event.target.value));
+    [
+      [institutionSearchClear, institutionSearch],
+      [mobileInstitutionSearchClear, mobileInstitutionSearch],
+    ].forEach(([button, input]) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        filterInstitutions("");
+        input.focus();
+      });
+    });
+    mobileInstitutionTrigger.addEventListener("click", () => {
+      if (isMobileFilterLayout()) return;
+      const nextOpen = !institutionMenu.classList.contains("is-open");
+      setInstitutionOpen(nextOpen);
+      if (nextOpen) mobileInstitutionSearch.focus();
+    });
+    areaMenu.addEventListener("toggle", () => {
+      if (areaMenu.open) hoverPreview.hidden = true;
+      if (areaMenu.open && !isMobileFilterLayout()) setInstitutionOpen(false);
+    });
+    document.addEventListener("pointerdown", (event) => {
+      if (isMobileFilterLayout()) return;
+      if (!institutionMenu.contains(event.target)) setInstitutionOpen(false);
+      if (!areaMenu.contains(event.target)) areaMenu.open = false;
+    });
+
+    document.querySelector("#open-filters").addEventListener("click", openFilters);
+    document.querySelector("#close-filters").addEventListener("click", closeFilters);
+    document.querySelector("#apply-filters").addEventListener("click", closeFilters);
+    backdrop.addEventListener("click", closeFilters);
+    ["#clear-filters", "#empty-clear"].forEach((selector) =>
+      document.querySelector(selector).addEventListener("click", clearFilters),
+    );
+
+    document.querySelector("#modal-close").addEventListener("click", closeModal);
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) closeModal();
+    });
+    modal.addEventListener("cancel", (event) => {
+      event.preventDefault();
+      closeModal();
+    });
+    modal.addEventListener("close", () => document.body.classList.remove("overlay-open"));
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        if (filters.classList.contains("is-open") && isMobileFilterLayout()) {
+          closeFilters();
+        } else if (institutionMenu.classList.contains("is-open") || areaMenu.open) {
+          setInstitutionOpen(false);
+          areaMenu.open = false;
+        } else if (filters.classList.contains("is-open")) {
+          closeFilters();
+        }
+      }
+      if (event.key === "Tab" && filters.classList.contains("is-open")) {
+        const focusable = [...filters.querySelectorAll('button, input, summary, [href], [tabindex]:not([tabindex="-1"])')]
+          .filter((element) => !element.disabled && !element.hidden);
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const calendarScroll = document.querySelector("#calendar-scroll");
+    let synchronizingCalendarScroll = false;
+
+    const syncCalendarScroll = (source, target) => {
+      if (synchronizingCalendarScroll || target.scrollLeft === source.scrollLeft) return;
+      synchronizingCalendarScroll = true;
+      target.scrollLeft = source.scrollLeft;
+      requestAnimationFrame(() => {
+        synchronizingCalendarScroll = false;
+      });
+    };
+
+    calendarScroll.addEventListener("scroll", () => {
+      syncCalendarScroll(calendarScroll, calendarHeaderScroll);
+    });
+    calendarHeaderScroll.addEventListener("scroll", () => {
+      syncCalendarScroll(calendarHeaderScroll, calendarScroll);
+    });
+
+    const handleCalendarWheel = (scrollElement) => (event) => {
+        if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+        const maxScroll = scrollElement.scrollWidth - scrollElement.clientWidth;
+        if (maxScroll <= 0) return;
+        const next = Math.max(0, Math.min(maxScroll, scrollElement.scrollLeft + event.deltaY * 0.8));
+        if (next !== scrollElement.scrollLeft) {
+          event.preventDefault();
+          scrollElement.scrollLeft = next;
+        }
+    };
+
+    [calendarScroll, calendarHeaderScroll].forEach((scrollElement) => {
+      scrollElement.addEventListener("wheel", handleCalendarWheel(scrollElement), { passive: false });
+    });
+
+    const calendarHeaderObserver = new IntersectionObserver(
+      ([entry]) => {
+        const compact = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+        calendarHeaderScroll.classList.toggle("is-compact", compact);
+      },
+      { threshold: 0 },
+    );
+    calendarHeaderObserver.observe(calendarHeaderSentinel);
+
+    calendarScroll.addEventListener("keydown", (event) => {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      event.preventDefault();
+      calendarScroll.scrollBy({
+        left: event.key === "ArrowRight" ? 180 : -180,
+        behavior: reducedMotion ? "auto" : "smooth",
+      });
+    });
+
+    restoreFilters();
+    filterInstitutions(institutionSearch.value);
+    filters.setAttribute("aria-hidden", window.matchMedia("(max-width: 600px)").matches ? "true" : "false");
+    updateCalendarRange(visibleDayCount);
+  </script>
+</BaseLayout>

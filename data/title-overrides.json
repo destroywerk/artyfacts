@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "description": "Official-page title corrections used when generic metadata omits artists, duplicates names, or substitutes a venue/site title.",
+  "overrides": [
+    {
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/inside-aardman-wallace-gromit-and-friends",
+      "title": "Inside Aardman: Wallace & Gromit and Friends",
+      "evidence": "Official exhibition H1 supplies the show title; the page-title suffix naming Young V&A and V&A is site metadata."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
+      "title": "Tate Britain Commission 2026: Zineb Sedira — When Words Fall Silent, Cinema Speaks",
+      "evidence": "Official exhibition H1 supplies the commission title, artist and subtitle."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc",
+      "title": "Julio Le Parc: Light. Colour. Action.",
+      "evidence": "Official exhibition H1 supplies the subtitle omitted by Open Graph metadata."
+    },
+    {
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/recent-work",
+      "title": "Catherine Murphy — Recent Work",
+      "evidence": "Official H1 identifies Catherine Murphy as the artist and Recent Work as the exhibition title."
+    },
+    {
+      "sourceUrl": "https://camdenartcentre.org/whats-on/a-hard-line-to-bend",
+      "title": "Liz Larner — A hard line to bend",
+      "evidence": "Official page identifies Liz Larner as the artist and A hard line to bend as the exhibition."
+    },
+    {
+      "sourceUrl": "https://www.redfern-gallery.com/exhibitions/122-desmond-morris-1928-2026/",
+      "title": "Desmond Morris (1928–2026)",
+      "evidence": "Official H1 is Desmond Morris (1928-2026); the Artlogic suffix Works is not part of the exhibition title."
+    },
+    {
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
+      "title": "Martine Syms — Knot Eye",
+      "evidence": "Official H1 identifies Martine Syms as the artist and Knot Eye as the exhibition."
+    },
+    {
+      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/louis-fratino",
+      "title": "Louis Fratino: Prose",
+      "evidence": "Official page title and H1 supply the exhibition subtitle Prose."
+    },
+    {
+      "sourceUrl": "https://lbfcontemporary.com/exhibitions/careless-rapture/",
+      "title": "Lawrence Perry: Careless Rapture",
+      "evidence": "Official H1 omits the site-name suffix present in Open Graph metadata."
+    },
+    {
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/nicole-eisenman-2",
+      "title": "Nicole Eisenman",
+      "evidence": "Official H1 contains the artist name once; Open Graph metadata duplicates it."
+    },
+    {
+      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/daichi-takagi-suchness",
+      "title": "Daichi Takagi: Suchness",
+      "evidence": "Official page title and H1 supply the exhibition subtitle Suchness."
+    },
+    {
+      "sourceUrl": "https://www.mattsgallery.org/exhibitions/doorway-guardians",
+      "title": "Annie Whiles — Doorway Guardians",
+      "evidence": "Official page names Annie Whiles as the artist; Matt’s Gallery is the venue, not the artist."
+    },
+    {
+      "sourceUrl": "https://www.mattsgallery.org/exhibitions/imogen-stidworthy-",
+      "title": "Imogen Stidworthy — Skydde",
+      "evidence": "Official page names Imogen Stidworthy as the artist; Matt’s Gallery is the venue, not the artist."
+    },
+    {
+      "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/405-nicola-turner-i-tear-secrets-from-your-yielding-flesh/overview/",
+      "title": "Nicola Turner: I Tear Secrets From Your Yielding Flesh",
+      "evidence": "Official H1 supplies the artist and full exhibition title."
+    },
+    {
+      "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/406-what-remains-within-curated-by-paola-lucente-chloe-bonfield-kate-lyddon-zulfiya-spowart/overview/",
+      "title": "Chloe Bonfield, Kate Lyddon and Zulfiya Spowart — What Remains Within",
+      "evidence": "Official H1 supplies the three exhibiting artists and exhibition title."
+    },
+    {
+      "sourceUrl": "https://hannahbarry.com/exhibition/stevie-dix-vyvyan-1-october-14-november-2026/",
+      "title": "Stevie Dix — Vyvyan",
+      "evidence": "Official page title identifies the artist and exhibition; dates and site name are metadata suffixes."
+    },
+    {
+      "sourceUrl": "https://chisenhale.org.uk/project/wakaliga-uganda/",
+      "title": "Wakaliga Uganda — Kibuuka Omumbaale",
+      "evidence": "Official H1 identifies the artist collective and commission title."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/tarek-atoui",
+      "title": "Hyundai Commission: Tarek Atoui",
+      "evidence": "Official H1 identifies the Hyundai Commission title."
+    },
+    {
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
+      "title": "Light and Magic: The Birth of Art Photography",
+      "evidence": "Official H1 supplies the exhibition subtitle omitted by Open Graph metadata."
+    },
+    {
+      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/isabel-munoz-newsome",
+      "title": "Isabel Muñoz-Newsome — The Other Place",
+      "evidence": "Official page heading supplies the artist and exhibition title; Gallery 1 and the site name are metadata."
+    },
+    {
+      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/lucy-ray",
+      "title": "Lucy Ray — I’ll have to remember it differently",
+      "evidence": "Official page heading supplies the artist and exhibition title; Gallery 2 and the site name are metadata."
+    },
+    {
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/this-must-be-the-place-artists-for-whitechapel-gallery/",
+      "title": "This Must Be the Place: Artists for Whitechapel Gallery",
+      "evidence": "Official display title genuinely includes “Artists for Whitechapel Gallery”; only the duplicated SEO site-name suffix is excluded."
+    },
+    {
+      "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/the-wallace-collection-at-war/",
+      "title": "The Wallace Collection at War",
+      "evidence": "Official display title genuinely names the Wallace Collection as its subject, so that wording is retained."
+    }
+  ],
+  "supplementalExhibitions": [
+    {
+      "venueId": "pilar-corrias",
+      "title": "Mary Ramsden: The Feeling of What Happens",
+      "startDate": "2026-09-10",
+      "endDate": "2026-11-07",
+      "shortDescription": "A new body of work approaching painting as a form of enquiry into consciousness and embodied states of attention.",
+      "imageUrl": "https://static-assets.artlogic.net/w_3000,h_2000,c_limit,f_auto,fl_lossy,q_auto:best,dpr_2.0/ws-pilarcorrias/usr/images/exhibitions/hero_image/items/47/478f5e64c7c64125bbb32cf92fef53ea/rams-2026012-image-1-.jpg?focal=50,15",
+      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
+      "priceStatus": "unknown",
+      "confidenceScore": 0.9,
+      "branchEvidence": "Official rendered exhibition header: Conduit Street, London W1S 2YT.",
+      "evidence": "Official rendered detail page identifies the Conduit Street branch, exact title, dates, exhibition summary and image."
+    },
+    {
+      "venueId": "pilar-corrias",
+      "title": "Rirkrit Tiravanija: (situational awareness)",
+      "startDate": "2026-10-09",
+      "endDate": "2026-11-14",
+      "shortDescription": "New paintings and performance connect British military history with histories of labour, craft and production embedded in Savile Row.",
+      "imageUrl": "https://static-assets.artlogic.net/w_3000,h_2000,c_limit,f_auto,fl_lossy,q_auto:best,dpr_2.0/ws-pilarcorrias/usr/images/exhibitions/hero_image/items/f0/f0f50088dafa4fe59407f64a6535fd96/helutrans-artmove_rirkrit-tiravanija_artwork-1_003.jpg?focal=74,65",
+      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/538-rirkrit-tiravanija-situational-awareness/",
+      "priceStatus": "unknown",
+      "confidenceScore": 0.9,
+      "branchEvidence": "Official rendered exhibition header: Savile Row, London W1S 3PA.",
+      "evidence": "Official rendered detail page identifies the Savile Row branch, exact title, dates, exhibition summary and image."
+    }
+  ]
+}
