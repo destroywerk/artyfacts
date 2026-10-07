@@ -644,7 +644,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const updateCalendarMetrics = () => {
       cancelAnimationFrame(calendarMetricsFrame);
       calendarMetricsFrame = requestAnimationFrame(() => {
-        const cellWidth = calendarBoard.getBoundingClientRect().width / visibleDayCount;
+        const cellWidth = calendarDaysGrid.getBoundingClientRect().width / visibleDayCount;
         const numeralSize = Math.min(64, Math.max(32, cellWidth * 0.43));
         calendarDaysGrid.style.setProperty("--date-number-size", `${numeralSize.toFixed(2)}px`);
         calendarDaysGrid.style.setProperty(
@@ -655,7 +655,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     };
 
     const calendarResizeObserver = new ResizeObserver(updateCalendarMetrics);
-    calendarResizeObserver.observe(calendarBoard);
+    calendarResizeObserver.observe(calendarHeaderScroll);
 
     const prettyDate = (iso) =>
       new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(
