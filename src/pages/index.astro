@@ -132,16 +132,13 @@ const calendarData = catalogue.map((exhibition) => ({
   venueType: exhibition.venue.type,
   area: exhibition.venue.area,
   address: [exhibition.venue.address, exhibition.venue.postcode].filter(Boolean).join(", "),
-  mapsQuery: exhibition.venue.coordinates
-    ? `${exhibition.venue.coordinates.lat},${exhibition.venue.coordinates.lng}`
-    : [
-        exhibition.venue.name,
-        exhibition.venue.address,
-        exhibition.venue.postcode,
-        "London",
-      ]
-        .filter(Boolean)
-        .join(", "),
+  mapsQuery: [
+    exhibition.venue.name,
+    exhibition.venue.address,
+    exhibition.venue.postcode,
+  ]
+    .filter(Boolean)
+    .join(", "),
   startDate: exhibition.startDate,
   endDate: exhibition.endDate,
   description: exhibition.shortDescription,
