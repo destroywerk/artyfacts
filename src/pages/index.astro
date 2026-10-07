@@ -124,6 +124,12 @@ const priceLabels = {
   paid: "Ticketed",
   unknown: "Price not found",
 };
+const venueAddress = (venue: (typeof catalogue)[number]["venue"]) =>
+  [venue.address, venue.postcode].filter(Boolean).join(", ");
+const venueMapsUrl = (venue: (typeof catalogue)[number]["venue"]) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    [venue.name, venue.address, venue.postcode].filter(Boolean).join(", "),
+  )}`;
 
 const calendarData = catalogue.map((exhibition) => ({
   id: exhibition.id,
@@ -131,14 +137,8 @@ const calendarData = catalogue.map((exhibition) => ({
   venue: exhibition.venue.name,
   venueType: exhibition.venue.type,
   area: exhibition.venue.area,
-  address: [exhibition.venue.address, exhibition.venue.postcode].filter(Boolean).join(", "),
-  mapsQuery: [
-    exhibition.venue.name,
-    exhibition.venue.address,
-    exhibition.venue.postcode,
-  ]
-    .filter(Boolean)
-    .join(", "),
+  address: venueAddress(exhibition.venue),
+  mapsUrl: venueMapsUrl(exhibition.venue),
   startDate: exhibition.startDate,
   endDate: exhibition.endDate,
   description: exhibition.shortDescription,
@@ -184,13 +184,27 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
         <h1 id="page-title">Artyfacts</h1>
       </section>
 
-      <section class="calendar-section" aria-label="Exhibition calendar">
+      <section class="calendar-section" data-view-mode="images" aria-label="Exhibition calendar">
         <div class="calendar-toolbar">
           <div class="calendar-actions">
-            <div class="zoom-controls" role="group" aria-label="Visible calendar days">
-              <button id="remove-day" type="button" aria-label="Show one fewer day">−</button>
-              <output id="visible-days" aria-live="polite">3 days</output>
-              <button id="add-day" type="button" aria-label="Show one more day">+</button>
+            <div class="calendar-scale-controls">
+              <div class="view-mode-controls" role="group" aria-label="Calendar view">
+                <button id="view-images" type="button" aria-label="Expanded image view" aria-pressed="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="5.5" y="5.5" width="13" height="13" vector-effect="non-scaling-stroke" />
+                  </svg>
+                </button>
+                <button id="view-list" type="button" aria-label="Compact list view" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 7.5h14M5 12h14M5 16.5h14" vector-effect="non-scaling-stroke" />
+                  </svg>
+                </button>
+              </div>
+              <div class="zoom-controls" role="group" aria-label="Visible calendar days">
+                <button id="remove-day" type="button" aria-label="Show one fewer day">−</button>
+                <output id="visible-days" aria-live="polite">3 days</output>
+                <button id="add-day" type="button" aria-label="Show one more day">+</button>
+              </div>
             </div>
             <div class="range-navigation">
               <div class="range-controls" role="group" aria-label="Calendar date range">
@@ -328,7 +342,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
           </div>
         </div>
 
-        <div class="calendar-scroll" id="calendar-scroll" tabindex="0">
+        <div class="calendar-scroll" id="calendar-scroll" tabindex="0" hidden>
           <div class="calendar-board" style="--visible-days:3">
             <div class="timeline" id="timeline">
               {
@@ -404,12 +418,91 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
                 ))
               }
             </div>
-
-            <div class="calendar-empty" id="calendar-empty" hidden>
-              <span>Nothing here yet.</span>
-              <button id="empty-clear" type="button">Clear filters</button>
-            </div>
           </div>
+        </div>
+
+        <div class="expanded-events" id="expanded-events">
+          {
+            catalogue.map((exhibition, index) => (
+              <article
+                class="expanded-card"
+                hidden={exhibition.endOffset < 0 || exhibition.startOffset >= 3}
+                data-expanded-card
+                data-expanded-event-id={exhibition.id}
+                data-area={exhibition.venue.area}
+                data-venue={exhibition.venue.id}
+                data-venue-type={exhibition.venue.type}
+                data-price={exhibition.priceStatus}
+                data-not-explicitly-paid={isNotExplicitlyPaid(exhibition) ? "true" : "false"}
+                data-start-offset={exhibition.startOffset}
+                data-end-offset={exhibition.endOffset}
+                data-priority-rank={venueRank(exhibition.venue.name)}
+                data-event-title={exhibition.title}
+                data-catalog-index={index}
+              >
+                <button
+                  class="expanded-card-open"
+                  type="button"
+                  aria-label={`View details for ${exhibition.title} at ${exhibition.venue.name}`}
+                ></button>
+                <div class="expanded-card-image">
+                  {
+                    exhibition.cachedThumbnail ?? exhibition.imageUrl ? (
+                      <img
+                        src={exhibition.cachedThumbnail ?? exhibition.imageUrl}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="no-referrer"
+                        style={`object-position:${exhibition.imagePosition ?? "center"}`}
+                      />
+                    ) : (
+                      <span aria-hidden="true">{exhibition.venue.name.slice(0, 1)}</span>
+                    )
+                  }
+                </div>
+                <div class="expanded-card-copy">
+                  <div class="expanded-card-heading">
+                    <p>
+                      {exhibition.venue.name}
+                      <span aria-hidden="true"> · </span>
+                      <span>{venueTypeLabel(exhibition.venue.type)}</span>
+                    </p>
+                    <p class="expanded-card-dates">
+                      <time datetime={exhibition.startDate}>
+                        {formatDate(exhibition.startDate, { day: "numeric", month: "short", year: "numeric" })}
+                      </time>
+                      <span aria-hidden="true"> — </span>
+                      <time datetime={exhibition.endDate}>
+                        {formatDate(exhibition.endDate, { day: "numeric", month: "short", year: "numeric" })}
+                      </time>
+                    </p>
+                  </div>
+                  <h2>{exhibition.title}</h2>
+                  <p class="expanded-card-description">{exhibition.shortDescription}</p>
+                  <div class="expanded-card-location">
+                    <p>{venueAddress(exhibition.venue)}</p>
+                    <a
+                      class="expanded-map-link"
+                      href={venueMapsUrl(exhibition.venue)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${exhibition.venue.name} in Google Maps`}
+                    >
+                      <svg viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M5 15 15 5M8 5h7v7" vector-effect="non-scaling-stroke" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+
+        <div class="calendar-empty" id="calendar-empty" hidden>
+          <span>Nothing here yet.</span>
+          <button id="empty-clear" type="button">Clear filters</button>
         </div>
       </section>
 
@@ -487,6 +580,11 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const events = new Map(JSON.parse(dataElement?.textContent ?? "[]").map((item) => [item.id, item]));
     const rows = [...document.querySelectorAll("[data-row]")];
     const eventBars = [...document.querySelectorAll("[data-event-id]")];
+    const expandedCards = [...document.querySelectorAll("[data-expanded-card]")];
+    const expandedEvents = document.querySelector("#expanded-events");
+    const calendarSection = document.querySelector(".calendar-section");
+    const viewImages = document.querySelector("#view-images");
+    const viewList = document.querySelector("#view-list");
     const areaInputs = [...document.querySelectorAll('input[name="area"]')];
     const venueInputs = [...document.querySelectorAll('input[name="venue"]')];
     const venueTypeInputs = [...document.querySelectorAll('input[name="venue-type"]')];
@@ -497,6 +595,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     document.body.append(hoverPreview);
     const modal = document.querySelector("#event-modal");
     const calendarBoard = document.querySelector(".calendar-board");
+    const calendarScroll = document.querySelector("#calendar-scroll");
     const calendarHeaderScroll = document.querySelector("#calendar-header-scroll");
     const calendarHeaderSentinel = document.querySelector("#calendar-header-sentinel");
     const calendarDaysGrid = document.querySelector(".calendar-days");
@@ -519,6 +618,9 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const isMobileFilterLayout = () => window.matchMedia("(max-width: 600px)").matches;
     const dayBreakpoint = window.matchMedia("(max-width: 600px)");
     const initialParams = new URLSearchParams(location.search);
+    const initialViewParam = initialParams.get("view");
+    let hasExplicitViewChoice = initialViewParam === "images" || initialViewParam === "list";
+    let currentViewMode = initialViewParam === "list" ? "list" : "images";
     const initialDaysParam = initialParams.get("days");
     const parsedInitialDays = Number.parseInt(initialDaysParam ?? "", 10);
     let hasExplicitDayChoice =
@@ -569,6 +671,43 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const getSelected = (inputs) =>
       new Set(inputs.filter((input) => input.checked).map((input) => input.value));
 
+    const updateViewModeUi = () => {
+      const imagesActive = currentViewMode === "images";
+      calendarSection.dataset.viewMode = currentViewMode;
+      viewImages.setAttribute("aria-pressed", String(imagesActive));
+      viewList.setAttribute("aria-pressed", String(!imagesActive));
+      calendarScroll.hidden = imagesActive;
+      expandedEvents.hidden = !imagesActive;
+      hoverPreview.hidden = true;
+    };
+
+    const matchesCurrentFilters = (element, areas, venueIds, venueTypes, freeOnly) =>
+      Number(element.dataset.endOffset) >= calendarStartOffset &&
+      Number(element.dataset.startOffset) < calendarStartOffset + visibleDayCount &&
+      (!areas.size || areas.has(element.dataset.area)) &&
+      (!venueIds.size || venueIds.has(element.dataset.venue)) &&
+      (!venueTypes.size || venueTypes.has(element.dataset.venueType)) &&
+      (!freeOnly || element.dataset.notExplicitlyPaid === "true");
+
+    const sortExpandedCards = () => {
+      const compareCards = (a, b) => {
+        const aStart = Number(a.dataset.startOffset);
+        const bStart = Number(b.dataset.startOffset);
+        const aOngoing = aStart <= calendarStartOffset;
+        const bOngoing = bStart <= calendarStartOffset;
+        if (aOngoing !== bOngoing) return aOngoing ? -1 : 1;
+        if (!aOngoing && aStart !== bStart) return aStart - bStart;
+        const priorityDifference =
+          Number(a.dataset.priorityRank) - Number(b.dataset.priorityRank);
+        if (priorityDifference) return priorityDifference;
+        const titleDifference = a.dataset.eventTitle.localeCompare(b.dataset.eventTitle);
+        if (titleDifference) return titleDifference;
+        return Number(a.dataset.catalogIndex) - Number(b.dataset.catalogIndex);
+      };
+
+      expandedCards.sort(compareCards).forEach((card) => expandedEvents.append(card));
+    };
+
     const syncUrl = (areas, venueIds, venueTypes, freeOnly, historyMode = "replace") => {
       if (historyMode === "none") return;
       const params = new URLSearchParams();
@@ -580,6 +719,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       if (venueIds.size) params.set("venue", [...venueIds].join(","));
       if (venueTypes.size) params.set("type", [...venueTypes].join(","));
       if (freeOnly) params.set("free", "1");
+      if (hasExplicitViewChoice) params.set("view", currentViewMode);
       const query = params.toString();
       const nextUrl = query ? `${location.pathname}?${query}` : location.pathname;
       if (historyMode === "push" && nextUrl !== `${location.pathname}${location.search}`) {
@@ -597,18 +737,15 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       let visible = 0;
 
       rows.forEach((row) => {
-        const inVisibleRange =
-          Number(row.dataset.endOffset) >= calendarStartOffset &&
-          Number(row.dataset.startOffset) < calendarStartOffset + visibleDayCount;
-        const show =
-          inVisibleRange &&
-          (!areas.size || areas.has(row.dataset.area)) &&
-          (!venueIds.size || venueIds.has(row.dataset.venue)) &&
-          (!venueTypes.size || venueTypes.has(row.dataset.venueType)) &&
-          (!freeOnly || row.dataset.notExplicitlyPaid === "true");
+        const show = matchesCurrentFilters(row, areas, venueIds, venueTypes, freeOnly);
         row.hidden = !show;
         if (show) visible += 1;
       });
+
+      expandedCards.forEach((card) => {
+        card.hidden = !matchesCurrentFilters(card, areas, venueIds, venueTypes, freeOnly);
+      });
+      sortExpandedCards();
 
       const activeCount = areas.size + venueIds.size + venueTypes.size + (freeOnly ? 1 : 0);
       document.querySelector("#calendar-empty").hidden = visible !== 0;
@@ -679,6 +816,10 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
     const restoreCalendarState = () => {
       const params = new URLSearchParams(location.search);
+      const viewParam = params.get("view");
+      hasExplicitViewChoice = viewParam === "images" || viewParam === "list";
+      currentViewMode = viewParam === "list" ? "list" : "images";
+      updateViewModeUi();
       const daysParam = params.get("days");
       const parsedDays = Number.parseInt(daysParam ?? "", 10);
       hasExplicitDayChoice =
@@ -704,6 +845,14 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       restoreFilters();
       filterInstitutions("");
       updateCalendarRange(visibleDayCount, "none");
+    };
+
+    const setViewMode = (mode, historyMode = "push") => {
+      if (mode !== "images" && mode !== "list") return;
+      hasExplicitViewChoice = true;
+      currentViewMode = mode;
+      updateViewModeUi();
+      applyFilters(historyMode);
     };
 
     const clearFilters = () => {
@@ -765,6 +914,8 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       calendarStartOffset = 0;
       updateCalendarRange(visibleDayCount, "push");
     });
+    viewImages.addEventListener("click", () => setViewMode("images"));
+    viewList.addEventListener("click", () => setViewMode("list"));
 
     dayBreakpoint.addEventListener("change", (event) => {
       if (hasExplicitDayChoice) return;
@@ -840,7 +991,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
         `${prettyDate(event.startDate)} — ${prettyDate(event.endDate)}`;
       document.querySelector("#modal-address").textContent = event.address;
       const mapLink = document.querySelector("#modal-map-link");
-      mapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.mapsQuery)}`;
+      mapLink.href = event.mapsUrl;
       mapLink.setAttribute("aria-label", `Open ${event.venue} in Google Maps`);
       document.querySelector("#modal-area").textContent = event.area;
       document.querySelector("#modal-price").textContent = event.price;
@@ -1010,6 +1161,12 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       bar.addEventListener("pointerleave", hideHoverPreview);
     });
 
+    expandedCards.forEach((card) => {
+      card.querySelector(".expanded-card-open").addEventListener("click", () => {
+        openModal(card.dataset.expandedEventId, card);
+      });
+    });
+
     window.addEventListener("resize", hideHoverPreview);
     document.addEventListener("scroll", hideHoverPreview, true);
 
@@ -1103,7 +1260,6 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     });
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const calendarScroll = document.querySelector("#calendar-scroll");
     let synchronizingCalendarScroll = false;
 
     const syncCalendarScroll = (source, target) => {
@@ -1158,6 +1314,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     restoreFilters();
     filterInstitutions(institutionSearch.value);
     filters.setAttribute("aria-hidden", window.matchMedia("(max-width: 600px)").matches ? "true" : "false");
+    updateViewModeUi();
     updateCalendarRange(visibleDayCount);
   </script>
 </BaseLayout>
