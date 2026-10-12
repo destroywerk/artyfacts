@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "description": "Curated private-view occurrences backed by explicit official or source evidence.",
+  "overrides": [
+    {
+      "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+      "privateViews": [
+        {
+          "date": "2026-10-08",
+          "label": "Opening reception",
+          "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/"
+        }
+      ],
+      "evidence": "The official @r.efuses source for Soft Tissue explicitly announces the 8 October 2026 opening reception; no reliable reception time was published in the accessible source evidence."
+    }
+  ]
+}

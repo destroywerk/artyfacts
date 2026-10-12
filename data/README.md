@@ -4,7 +4,8 @@
 Priority-list institutions are ordered first. Aliases are merged, while
 explicitly distinct physical sites such as Gagosian and White Cube locations
 remain separate. `venue-overrides.json` contains venue-sourced metadata that
-should survive regeneration.
+should survive regeneration. `private-view-overrides.json` contains curated
+opening occurrences supported by explicit source evidence.
 
 Run the structured-data-first crawler and validator with:
 
@@ -23,6 +24,8 @@ Generated files:
 - `venues.json`: every normalized venue record, with `null` for facts that have
   not been verified.
 - `exhibitions.json`: accepted exhibitions overlapping the 14-day window.
+  An exhibition can include `privateViews`, an array of explicit one-day
+  opening occurrences with a date, optional times and label, and source URL.
 - `coverage.json` and `coverage.csv`: one result per venue, including status,
   last success, extraction method, errors, and show count.
 - `location-audit.json`: London-location evidence and status for every venue.

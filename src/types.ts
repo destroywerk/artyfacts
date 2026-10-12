@@ -53,6 +53,14 @@ export interface Venue {
   priorityRank?: number | null;
 }
 
+export interface PrivateView {
+  date: string;
+  startTime?: string;
+  endTime?: string;
+  label?: string;
+  sourceUrl?: string;
+}
+
 export interface Exhibition {
   id: string;
   venueId: string;
@@ -68,6 +76,7 @@ export interface Exhibition {
   confidenceScore: number;
   lastVerified: string;
   imagePosition?: string;
+  privateViews?: PrivateView[];
   accent: string;
 }
 

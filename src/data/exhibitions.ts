@@ -14,7 +14,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/gathering-ground",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#334737"
   },
   {
@@ -29,23 +29,8 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/american-photographs",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#385448"
-  },
-  {
-    "id": "dulwich-picture-gallery-mini-masterpieces-2025-06-26",
-    "venueId": "dulwich-picture-gallery",
-    "title": "Mini Masterpieces",
-    "startDate": "2025-06-26",
-    "endDate": "2027-01-08",
-    "shortDescription": "Spark your child's imagination through playful painting.",
-    "imageUrl": "https://assets.dulwich-gallery.substrakt.net/images/mini_masters_mrznDg8.2e16d0ba.fill-300x300.jpg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/mini-masterpieces/",
-    "priceStatus": "free",
-    "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
-    "accent": "#6b5b73"
   },
   {
     "id": "vam-dimensions-contemporary-chinese-studio-crafts-2025-10-28",
@@ -59,7 +44,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/dimensions-contemporary-chinese-studio-crafts",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -74,7 +59,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-adobe-creative-residents-on-display",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -89,7 +74,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/fine-rooms-open",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#277f8e"
   },
   {
@@ -104,7 +89,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/inside-aardman-wallace-gromit-and-friends",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
   },
   {
@@ -119,7 +104,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://wellcomecollection.org/exhibitions/the-coming-of-age",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -134,7 +119,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/schiaparelli",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#7a7863"
   },
   {
@@ -149,7 +134,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/the-wallace-collection-at-war/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#8c704d"
   },
   {
@@ -164,7 +149,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.wallacecollection.org/whats-on/events/winston-churchill-the-painter/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -179,23 +164,8 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/urushi-now-contemporary-japanese-lacquer",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
-  },
-  {
-    "id": "dulwich-picture-gallery-friends-circle-special-the-year-ahead-2026-05-08",
-    "venueId": "dulwich-picture-gallery",
-    "title": "Friends Circle Special: The Year Ahead",
-    "startDate": "2026-05-08",
-    "endDate": "2027-01-22",
-    "shortDescription": "Be among the first to hear what’s coming next at Dulwich Picture Gallery at this exclusive Friends Circle preview event.",
-    "imageUrl": "https://assets.dulwich-gallery.substrakt.net/images/collezione.original.jpg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/friends-circle-special-the-year-ahead/",
-    "priceStatus": "paid",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
-    "accent": "#334737"
   },
   {
     "id": "tate-britain-tate-britain-commission-2026-zineb-sedira-when-words-fall-silent-cinema-speaks-2026-05-13",
@@ -209,7 +179,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -224,7 +194,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/rising-voices-contemporary-art-from-asia-australia-and-the-pacific",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#8c704d"
   },
   {
@@ -238,8 +208,8 @@ export const exhibitions: Exhibition[] = [
     "cachedThumbnail": null,
     "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/curtain-up/",
     "priceStatus": "paid",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "confidenceScore": 0.96,
+    "lastVerified": "2026-10-12",
     "accent": "#433e79"
   },
   {
@@ -254,7 +224,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://wellcomecollection.org/exhibitions/tenderness-and-rage",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#277f8e"
   },
   {
@@ -269,7 +239,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/lost-music-venues",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -284,7 +254,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-now-mohammed-z-rahman",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
   },
   {
@@ -299,23 +269,8 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
-  },
-  {
-    "id": "national-portrait-gallery-herbert-smith-freehills-kramer-portrait-award-2026-2026-06-25",
-    "venueId": "national-portrait-gallery",
-    "title": "Herbert Smith Freehills Kramer Portrait Award 2026",
-    "startDate": "2026-06-25",
-    "endDate": "2026-10-07",
-    "shortDescription": "Free exhibition celebrating the very best in contemporary portraiture painting",
-    "imageUrl": "https://www.npg.org.uk/assets/image-cache/assets/uploads/images/2026_HSFK_Portrait_Award_20488_Jean_Denis_Marc_Dalessio.e0879bf5.jpg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/hsf-kramer-portrait-award-2026/",
-    "priceStatus": "free",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
-    "accent": "#433e79"
   },
   {
     "id": "tate-modern-frida-the-making-of-an-icon-2026-06-25",
@@ -329,7 +284,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#433e79"
   },
   {
@@ -344,7 +299,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://wellcomecollection.org/exhibitions/audrey-amiss-the-surviving-exhibitions",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
   },
   {
@@ -359,7 +314,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://wellcomecollection.org/exhibitions/rudy-loewe-intimacies-of-care-spaces-of-grief-and-possibility",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#4f7694"
   },
   {
@@ -374,7 +329,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/ana-mendieta",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -383,13 +338,13 @@ export const exhibitions: Exhibition[] = [
     "title": "Sensual / Mutual",
     "startDate": "2026-07-17",
     "endDate": "2026-10-25",
-    "shortDescription": "",
+    "shortDescription": "Surfacing unseen bodies of work from the 1970s and 80s, the exhibition focuses on Volcano’s time in San Francisco and Santa Fe, tracing queer, feminist, leather dyke, gender-variant, and land-based communities in the process of making themselves visible. Often described as a leg…",
     "imageUrl": "https://autoitaliasoutheast.org/wp-content/uploads/2026/06/1.jpg",
     "cachedThumbnail": null,
     "sourceUrl": "https://autoitaliasoutheast.org/projects/sensual-mutual/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#433e79"
   },
   {
@@ -404,7 +359,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/bharti-kher-at-the-va",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -419,7 +374,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/richard-dadd",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#334737"
   },
   {
@@ -434,23 +389,8 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.sadiecoles.com/exhibitions/recent-work",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
-  },
-  {
-    "id": "maddox-gallery-touils-between-landscape-and-memory-2026-09-03",
-    "venueId": "maddox-gallery",
-    "title": "Touils: Between Landscape and Memory",
-    "startDate": "2026-09-03",
-    "endDate": "2026-10-09",
-    "shortDescription": "3 Sep – 9 Oct 2026 at Maddox Street in Mayfair, London. ‘Touils: Between Landscape and Memory’ transforms landscapes encountered across Africa into emotionally charged recollections, showing how places change in memory.",
-    "imageUrl": "https://maddoxgallery.com/cdn/shop/files/TLS0041ThePathOfTheStars.jpg?v=1786975875&width=320",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://maddoxgallery.com/pages/exhibition/touils-between-landscape-and-memory",
-    "priceStatus": "unknown",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
-    "accent": "#b75534"
   },
   {
     "id": "hales-gallery-staging-resistance-2026-09-10",
@@ -464,7 +404,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://halesgallery.com/exhibitions/268-staging-resistance-tessa-boffin-rotimi-fani-kayode-and-sunil-gupta-in/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#277f8e"
   },
   {
@@ -479,7 +419,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
     "priceStatus": "unknown",
     "confidenceScore": 0.9,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#334737"
   },
   {
@@ -494,7 +434,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.southlondongallery.org/exhibitions/monika-sosnowska-weight-of-matter/",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -509,7 +449,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://camdenartcentre.org/whats-on/a-hard-line-to-bend",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#334737"
   },
   {
@@ -524,7 +464,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/sacred-treasures-from-kyiv",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -533,13 +473,13 @@ export const exhibitions: Exhibition[] = [
     "title": "Desmond Morris (1928–2026)",
     "startDate": "2026-09-16",
     "endDate": "2026-10-24",
-    "shortDescription": "View the e-catalogue This exhibition celebrates the life and work of Desmond Morris (1928–2026), bringing together works from across an extraordinary artistic career spanning eight decades. The exhibition coincides with the publication and launch of Morris’s final book, The Surr…",
+    "shortDescription": "View the e-catalogue Please pre-view a selection of work below. This exhibition celebrates the life and work of Desmond Morris (1928–2026), bringing together works from across an extraordinary artistic career spanning eight decades. The exhibition coincides with the publication…",
     "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy/ws-redfern-gallery/usr/images/artworks/main_image/13935/5270-20-08-26-3000.jpg",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.redfern-gallery.com/exhibitions/122-desmond-morris-1928-2026/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -554,7 +494,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -569,7 +509,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.victoria-miro.com/exhibitions/685/",
     "priceStatus": "free",
     "confidenceScore": 0.92,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#385448"
   },
   {
@@ -584,7 +524,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/louis-fratino",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -599,7 +539,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/raschools-day-2026",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -608,13 +548,13 @@ export const exhibitions: Exhibition[] = [
     "title": "Lawrence Perry: Careless Rapture",
     "startDate": "2026-09-19",
     "endDate": "2026-10-22",
-    "shortDescription": "",
+    "shortDescription": "For Perry, many of these new works belong to what he has called ‘transitional periods of loss or reinvention, moments where something was either slipping away or just arriving’, as he has sought to remain present enough to ‘recognise the raptures’ as they happen, in which ‘a pro…",
     "imageUrl": "https://lbfcontemporary.com/wp-content/uploads/2026/08/LBF-Contemporary-Lawrence-Perry-Installs_003-e1789819720120.jpg?v=1789478015",
     "cachedThumbnail": null,
     "sourceUrl": "https://lbfcontemporary.com/exhibitions/careless-rapture/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#b75534"
   },
   {
@@ -629,7 +569,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -644,7 +584,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-burberry-trench-crafting-an-icon",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#277f8e"
   },
   {
@@ -659,7 +599,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/nicole-eisenman-courtyard-sculpture",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#8c704d"
   },
   {
@@ -674,7 +614,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.sadiecoles.com/exhibitions/nicole-eisenman-2",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -689,7 +629,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/metamorphoses-porcelain-sculpture-by-rachel-kneebone/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#8c704d"
   },
   {
@@ -704,7 +644,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/daichi-takagi-suchness",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -719,7 +659,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-emmanuel-awuni",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#4f7694"
   },
   {
@@ -734,7 +674,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-barbara-rae-ra",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#7a7863"
   },
   {
@@ -744,12 +684,21 @@ export const exhibitions: Exhibition[] = [
     "startDate": "2026-09-30",
     "endDate": "2026-11-22",
     "shortDescription": "Matt's Gallery, London: PV Sunday 27 September, 2-5pm Continues 30 September- 22 November 2026 Flatland, Bexhill-on-Sea: PV Saturday 3 October, 3-7pm Continues 4 October 2026 - 17 January 2027 KARST, Plymouth: PV Thursday 15 October, 6-9pm Continues 16 October - 12 December 2026…",
+    "privateViews": [
+      {
+        "date": "2026-09-27",
+        "startTime": "14:00",
+        "endTime": "17:00",
+        "label": "Private view",
+        "sourceUrl": "https://www.mattsgallery.org/exhibitions/doorway-guardians"
+      }
+    ],
     "imageUrl": "https://cdn.sanity.io/images/zje7y6w0/production/ef811ab0eeee6e76fdec409893d4851f4cc78bd4-2548x1876.jpg?w=1200&h=800&fit=crop&crop=entropy",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.mattsgallery.org/exhibitions/doorway-guardians",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#334737"
   },
   {
@@ -764,7 +713,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.mattsgallery.org/exhibitions/imogen-stidworthy-",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
   },
   {
@@ -779,7 +728,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/406-what-remains-within-curated-by-paola-lucente-chloe-bonfield-kate-lyddon-zulfiya-spowart/overview/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#433e79"
   },
   {
@@ -794,7 +743,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/405-nicola-turner-i-tear-secrets-from-your-yielding-flesh/overview/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#385448"
   },
   {
@@ -809,7 +758,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://hannahbarry.com/exhibition/stevie-dix-vyvyan-1-october-14-november-2026/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -824,7 +773,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://chisenhale.org.uk/project/wakaliga-uganda/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#4f7694"
   },
   {
@@ -839,7 +788,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -854,7 +803,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -869,7 +818,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://courtauld.ac.uk/whats-on/exh-salman-toor-someone-like-you/",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#b75534"
   },
   {
@@ -884,7 +833,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#385448"
   },
   {
@@ -899,7 +848,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-white-cube",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#433e79"
   },
   {
@@ -909,12 +858,12 @@ export const exhibitions: Exhibition[] = [
     "startDate": "2026-10-07",
     "endDate": "2026-10-31",
     "shortDescription": "",
-    "imageUrl": "http://static1.squarespace.com/static/62165cc62f0f7a66c5d2c1c5/62165d2ece08f34f4ca76414/6ab4ec1ed3f1551dcd8c2dd8/1790942375534/IsabelMunozNewsome_Website.jpg?format=1500w",
+    "imageUrl": "http://static1.squarespace.com/static/62165cc62f0f7a66c5d2c1c5/t/6ac7c1f2ec1dfb0e49f3af90/1791476210465/IsabelMunozNewsome_edit.jpg?format=1500w",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.blueshopcottage.com/exhibitions/isabel-munoz-newsome",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#277f8e"
   },
   {
@@ -929,7 +878,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.blueshopcottage.com/exhibitions/lucy-ray",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -944,7 +893,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/cecilia-vicuna-foraging-quipu/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#433e79"
   },
   {
@@ -959,7 +908,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/cecilia-vicuna/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -974,7 +923,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.gardenmuseum.org.uk/whats-on/sabine-moritz/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#277f8e"
   },
   {
@@ -984,12 +933,21 @@ export const exhibitions: Exhibition[] = [
     "startDate": "2026-10-08",
     "endDate": "2026-11-07",
     "shortDescription": "Private View: Wednesday, 7th October 2026, 6-8pm London (Tower Bridge) Candy for Crocodiles Ralf Kokke In a tropical landscape a female figure sits nestled within a tree. In her hand she holds a bunch of flowers – a gift or an offering to the jaws that creep perilously close to.…",
+    "privateViews": [
+      {
+        "date": "2026-10-07",
+        "startTime": "18:00",
+        "endTime": "20:00",
+        "label": "Private view",
+        "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/"
+      }
+    ],
     "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-kh/usr/images/exhibitions/main_image_override/581/ralf-kokke_blues-tiger-2026-chalk-paint-on-canvas-100-x-120-cm.jpeg",
     "cachedThumbnail": null,
     "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/",
     "priceStatus": "unknown",
     "confidenceScore": 0.92,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -1004,7 +962,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.octobergallery.co.uk/exhibitions/romuald-hazoume-my-blue-period",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#385448"
   },
   {
@@ -1019,7 +977,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#b75534"
   },
   {
@@ -1029,12 +987,12 @@ export const exhibitions: Exhibition[] = [
     "startDate": "2026-10-08",
     "endDate": "2026-11-07",
     "shortDescription": "In these new paintings, Thompson invites viewers into the everyday lives of his subjects through vibrant domestic scenes, creating scenarios from his own childhood growing up in Brooklyn and today.",
-    "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-victoriamiro3/usr/images/exhibitions/main_image_override/683/kt-arch-diner-2026.jpg",
+    "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/artlogicstorage/victoriamiro/images/view/3d0533ecf3a3bb12d6493499798233dej.jpg",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.victoria-miro.com/exhibitions/683/",
     "priceStatus": "free",
     "confidenceScore": 0.92,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
   },
   {
@@ -1049,7 +1007,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/this-must-be-the-place-artists-for-whitechapel-gallery/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#9e2026"
   },
   {
@@ -1059,12 +1017,12 @@ export const exhibitions: Exhibition[] = [
     "startDate": "2026-10-09",
     "endDate": "2027-02-07",
     "shortDescription": "Tim Walker’s Fairyland is an exploration of queer identity, community, and love through the lens of one of Britain’s foremost photographers",
-    "imageUrl": "https://www.npg.org.uk/assets/image-cache/npg-image-crops/mobile.93740933.tim_walker_d_22_flower_fairy_collage_ii_shot_05_0007_square.e850b67e.webp",
+    "imageUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/assets/uploads/images/tim_walker_floorplan.png",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/tim-walkers-fairyland-love-and-legends",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#7a7863"
   },
   {
@@ -1079,7 +1037,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.pilarcorrias.com/exhibitions/538-rirkrit-tiravanija-situational-awareness/",
     "priceStatus": "unknown",
     "confidenceScore": 0.9,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#385448"
   },
   {
@@ -1089,15 +1047,22 @@ export const exhibitions: Exhibition[] = [
     "startDate": "2026-10-09",
     "endDate": "2026-11-27",
     "shortDescription": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
+    "privateViews": [
+      {
+        "date": "2026-10-08",
+        "label": "Opening reception",
+        "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/"
+      }
+    ],
     "imageUrl": "https://www.artyfacts.london/images/soft-tissue-elspeth-vince.jpg",
-    "cachedThumbnail": "/images/soft-tissue-elspeth-vince.jpg",
+    "cachedThumbnail": null,
     "imageAlt": "Poster for Soft Tissue by Elspeth Vince at Refusés, in amber and dark brown.",
+    "imagePosition": "center",
     "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
     "priceStatus": "free",
     "confidenceScore": 0.99,
-    "lastVerified": "2026-10-07",
-    "imagePosition": "center",
-    "accent": "#7b2b0d"
+    "lastVerified": "2026-10-12",
+    "accent": "#385448"
   },
   {
     "id": "gasworks-umi-ishihara-nocturnal-melody-2026-10-10",
@@ -1105,13 +1070,13 @@ export const exhibitions: Exhibition[] = [
     "title": "Umi Ishihara: Nocturnal Melody",
     "startDate": "2026-10-10",
     "endDate": "2027-01-17",
-    "shortDescription": "",
+    "shortDescription": "The exhibition is presented in partnership with esea contemporary , Manchester, where it will tour from 10 October 2026 to 17 January 2027. -- The headline supporters for Umi Ishihara’s exhibition are Japan House London Trust and Arts Council England.",
     "imageUrl": "https://www.gasworks.org.uk/CACHE/images/2026/01/29/GW-EXH-2026-umi_ishihara_install_19_LO/215ac4d160d553ef05f4c14d408ee836.jpg",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.gasworks.org.uk/exhibitions/umi-ishihara/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#7a7863"
   },
   {
@@ -1120,13 +1085,13 @@ export const exhibitions: Exhibition[] = [
     "title": "Samuel Palmer and Modern Art",
     "startDate": "2026-10-10",
     "endDate": "2027-09-26",
-    "shortDescription": "",
+    "shortDescription": "A display marking 200 years since Samuel Palmer's visionary Shoreham period and the V&A exhibition that introduced his work to modern British artists.",
     "imageUrl": "https://vanda-production-assets.s3.amazonaws.com/2026/09/22/12/26/26/e10038b1-4976-4020-a2c4-bf044a939f0b/960.jpg",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/samuel-palmer-and-modern-art",
-    "priceStatus": "unknown",
+    "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#805440"
   },
   {
@@ -1141,7 +1106,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/tarek-atoui",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#433e79"
   },
   {
@@ -1156,7 +1121,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://maddoxgallery.com/pages/exhibition/bibi-lei-where-light-blooms",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -1171,7 +1136,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.soane.org/exhibitions/michael-landy-future-ruins",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -1186,7 +1151,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#476d9b"
   },
   {
@@ -1201,8 +1166,23 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/yinka-shonibare-and-thomas-gainsborough-a-conversation",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#b75534"
+  },
+  {
+    "id": "vam-degrees-of-disruption-vera-molnar-and-generative-art-2026-10-16",
+    "venueId": "vam",
+    "title": "Degrees of Disruption: Vera Molnar and Generative Art",
+    "startDate": "2026-10-16",
+    "endDate": "2027-05-30",
+    "shortDescription": "",
+    "imageUrl": "https://vanda-production-assets.s3.amazonaws.com/2026/08/26/10/24/40/61ab6661-ed18-4a25-80a9-bb979184b047/960.jpg",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.vam.ac.uk/exhibitions/degrees-of-disruption-vera-molnar-and-generative-art",
+    "priceStatus": "unknown",
+    "confidenceScore": 0.96,
+    "lastVerified": "2026-10-12",
+    "accent": "#433e79"
   },
   {
     "id": "dulwich-picture-gallery-charlie-mackesy-the-boy-the-mole-the-fox-the-horse-and-you-2026-11-03",
@@ -1216,7 +1196,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/charlie-mackesy-the-boy-the-fox-the-mole-the-horse-and-you/",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#334737"
   },
   {
@@ -1231,7 +1211,7 @@ export const exhibitions: Exhibition[] = [
     "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/no-plan-at-all-prints-from-borch-editions",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#6b5b73"
   },
   {
@@ -1241,12 +1221,27 @@ export const exhibitions: Exhibition[] = [
     "startDate": "2026-11-05",
     "endDate": "2027-01-17",
     "shortDescription": "The Winston Taylor Photo Portrait Prize showcases the work of talented young photographers, gifted amateurs and established professionals in the very best of contemporary photography.",
-    "imageUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/assets/assets/uploads/images/wtppp_2026_neisser_james_clifford_kent_13873.jpg",
+    "imageUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026/assets/assets/uploads/images/wtppp_2026_neisser_james_clifford_kent_13873.jpg",
     "cachedThumbnail": null,
-    "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026",
+    "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026/",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-12",
     "accent": "#4f7694"
+  },
+  {
+    "id": "vam-constantinople-to-istanbul-one-city-two-empires-2026-11-07",
+    "venueId": "vam",
+    "title": "Constantinople to Istanbul: One City, Two Empires",
+    "startDate": "2026-11-07",
+    "endDate": "2027-05-09",
+    "shortDescription": "",
+    "imageUrl": "https://vanda-production-assets.s3.amazonaws.com/2026/06/09/08/47/24/1456d19a-53fa-4c61-8201-94ecaaa9b64b/960.jpg",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.vam.ac.uk/exhibitions/constantinople-to-istanbul-one-city-two-empires",
+    "priceStatus": "paid",
+    "confidenceScore": 0.96,
+    "lastVerified": "2026-10-12",
+    "accent": "#476d9b"
   }
 ];

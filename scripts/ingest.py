@@ -43,6 +43,7 @@ OVERRIDES_PATH = DATA_DIR / "venue-overrides.json"
 PRICE_OVERRIDES_PATH = DATA_DIR / "price-overrides.json"
 TITLE_OVERRIDES_PATH = DATA_DIR / "title-overrides.json"
 DESCRIPTION_OVERRIDES_PATH = DATA_DIR / "description-overrides.json"
+PRIVATE_VIEW_OVERRIDES_PATH = DATA_DIR / "private-view-overrides.json"
 VENUES_JSON_PATH = DATA_DIR / "venues.json"
 EXHIBITIONS_JSON_PATH = DATA_DIR / "exhibitions.json"
 COVERAGE_JSON_PATH = DATA_DIR / "coverage.json"
@@ -115,6 +116,27 @@ MONTH_DAY_RANGE_RE = re.compile(
     rf"({MONTH_PATTERN})\s+(\d{{1,2}})(?:st|nd|rd|th)?,?\s+(\d{{4}})\b",
     re.IGNORECASE,
 )
+PRIVATE_VIEW_MARKER_RE = re.compile(
+    r"\b(private\s+view(?:ing)?|opening\s+reception|opening\s+night|"
+    r"drinks\s+reception|preview|PV)\b",
+    re.IGNORECASE,
+)
+PRIVATE_VIEW_DATE_RE = re.compile(
+    rf"\b(?:(?:Mon(?:day)?|Tue(?:sday)?|Wed(?:nesday)?|"
+    rf"Thu(?:rsday)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?),?\s+)?"
+    rf"(\d{{1,2}})(?:st|nd|rd|th)?\s+({MONTH_PATTERN})(?:,?\s+(\d{{4}}))?\b",
+    re.IGNORECASE,
+)
+PRIVATE_VIEW_MONTH_FIRST_DATE_RE = re.compile(
+    rf"\b({MONTH_PATTERN})\s+(\d{{1,2}})(?:st|nd|rd|th)?"
+    rf"(?:,?\s+(\d{{4}}))?\b",
+    re.IGNORECASE,
+)
+PRIVATE_VIEW_TIME_RANGE_RE = re.compile(
+    r"\b(\d{1,2}(?::\d{2})?)\s*(am|pm)?\s*(?:–|—|-|to)\s*"
+    r"(\d{1,2}(?::\d{2})?)\s*(am|pm)?\b",
+    re.IGNORECASE,
+)
 DETAIL_PATH_RE = re.compile(
     r"/(?:exhibitions?(?:displays)?|whats?-on|whatson|programme|program|"
     r"projects?|shows?)(?:/|$)",
@@ -135,7 +157,9 @@ NON_EXHIBITION_RE = re.compile(
 )
 KNOWN_EVENT_TITLE_RE = re.compile(
     r"^(?:club origami|creative tales|halloween mask making|"
-    r"wild life drawing:\s*owls)$",
+    r"wild life drawing:\s*owls|mini masterpieces|"
+    r"friends circle special:\s*the year ahead|wordplay:\s*ages 0\s*[–—-]\s*2|"
+    r"the collection)$",
     re.IGNORECASE,
 )
 EXHIBITION_HINT_RE = re.compile(
@@ -561,7 +585,173 @@ def page_description(probe: "PageProbe", title: str) -> str:
     }
     if fallback and any(word in fallback.casefold() for word in title_words):
         return fallback
+    # Some official exhibition pages (notably Tate) expose no description
+    # metadata even though the body starts with a concise editorial intro.
+    # Keep this deliberately narrow so navigation and mixed listings do not
+    # become exhibition descriptions.
+    sentences = re.split(r"(?<=[.!?])\s+", probe.text)
+    for index, sentence in enumerate(sentences):
+        if not re.search(
+            r"\b(?:this|the)\s+(?:major\s+)?exhibition\b",
+            sentence,
+            re.IGNORECASE,
+        ):
+            continue
+        candidate = clean_text(
+            [sentence, sentences[index + 1] if index + 1 < len(sentences) else ""],
+            280,
+        )
+        if len(candidate) >= 60:
+            return candidate
     return ""
+
+
+def normalize_clock_time(value: str, meridiem: str | None) -> str | None:
+    parts = value.split(":", 1)
+    try:
+        hour = int(parts[0])
+        minute = int(parts[1]) if len(parts) > 1 else 0
+    except ValueError:
+        return None
+    if not 0 <= minute <= 59:
+        return None
+    if meridiem:
+        if not 1 <= hour <= 12:
+            return None
+        if meridiem.casefold() == "pm" and hour != 12:
+            hour += 12
+        elif meridiem.casefold() == "am" and hour == 12:
+            hour = 0
+    elif not 0 <= hour <= 23:
+        return None
+    return f"{hour:02d}:{minute:02d}"
+
+
+def private_view_label(marker: str) -> str:
+    normalized = marker.casefold()
+    if normalized == "pv" or normalized.startswith("private"):
+        return "Private view"
+    if normalized.startswith("preview"):
+        return "Preview"
+    if normalized.startswith("opening night"):
+        return "Opening night"
+    if normalized.startswith("drinks"):
+        return "Drinks reception"
+    return "Opening reception"
+
+
+def private_view_date(
+    segment: str,
+    exhibition_start: date,
+) -> date | None:
+    match = PRIVATE_VIEW_DATE_RE.search(segment)
+    month_first = False
+    if not match:
+        match = PRIVATE_VIEW_MONTH_FIRST_DATE_RE.search(segment)
+        month_first = True
+    if not match:
+        return None
+    if month_first:
+        month_name, day_value, year_value = match.groups()
+    else:
+        day_value, month_name, year_value = match.groups()
+    candidate_years = (
+        [int(year_value)]
+        if year_value
+        else [exhibition_start.year - 1, exhibition_start.year, exhibition_start.year + 1]
+    )
+    candidates: list[date] = []
+    for year in candidate_years:
+        try:
+            candidates.append(
+                date(year, MONTH_NUMBER[month_name.casefold()], int(day_value))
+            )
+        except ValueError:
+            continue
+    return min(
+        candidates,
+        key=lambda candidate: (
+            abs((candidate - exhibition_start).days),
+            candidate > exhibition_start,
+            candidate,
+        ),
+        default=None,
+    )
+
+
+def extract_private_views(
+    value: str,
+    source_url: str,
+    exhibition_start: date,
+    exhibition_end: date,
+) -> list[dict[str, Any]]:
+    """Extract one conservative opening occurrence from explicit source text."""
+    text = clean_text(value)
+    matches = list(PRIVATE_VIEW_MARKER_RE.finditer(text))
+    candidates: list[tuple[int, dict[str, Any]]] = []
+    for index, marker in enumerate(matches):
+        segment_end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        segment = text[marker.start() : min(segment_end, marker.start() + 220)]
+        occurrence_date = private_view_date(segment, exhibition_start)
+        if not occurrence_date:
+            continue
+        distance = (occurrence_date - exhibition_start).days
+        if distance < -14 or occurrence_date > exhibition_end or distance > 14:
+            continue
+        occurrence: dict[str, Any] = {
+            "date": occurrence_date.isoformat(),
+            "label": private_view_label(marker.group(1)),
+            "sourceUrl": source_url,
+        }
+        time_match = PRIVATE_VIEW_TIME_RANGE_RE.search(segment)
+        if time_match:
+            start_value, start_meridiem, end_value, end_meridiem = time_match.groups()
+            inferred_start_meridiem = start_meridiem or end_meridiem
+            start_time = normalize_clock_time(start_value, inferred_start_meridiem)
+            end_time = normalize_clock_time(end_value, end_meridiem)
+            if start_time and end_time:
+                occurrence["startTime"] = start_time
+                occurrence["endTime"] = end_time
+        candidates.append((abs(distance), occurrence))
+    if not candidates:
+        return []
+    # A page can mention openings at several branches or tour venues. The
+    # occurrence nearest the exhibition start is the only safe automatic link;
+    # verified additional occurrences belong in curated overrides.
+    candidates.sort(
+        key=lambda item: (
+            item[0],
+            item[1]["date"] > exhibition_start.isoformat(),
+            item[1]["date"],
+        )
+    )
+    return [candidates[0][1]]
+
+
+def merge_private_views(
+    preferred: list[dict[str, Any]] | None,
+    alternate: list[dict[str, Any]] | None,
+) -> list[dict[str, Any]]:
+    merged: dict[tuple[str, str | None, str | None], dict[str, Any]] = {}
+    for occurrence in [*(preferred or []), *(alternate or [])]:
+        if not isinstance(occurrence, dict):
+            continue
+        key = (
+            clean_text(occurrence.get("date")),
+            clean_text(occurrence.get("startTime")) or None,
+            clean_text(occurrence.get("endTime")) or None,
+        )
+        if not key[0]:
+            continue
+        merged[key] = {
+            field: occurrence[field]
+            for field in ("date", "startTime", "endTime", "label", "sourceUrl")
+            if occurrence.get(field)
+        }
+    return [
+        merged[key]
+        for key in sorted(merged)
+    ]
 
 
 def parse_date(value: Any) -> date | None:
@@ -1379,6 +1569,12 @@ def event_from_item(
         "startDate": start.isoformat(),
         "endDate": end.isoformat(),
         "shortDescription": description,
+        "privateViews": extract_private_views(
+            description,
+            source,
+            start,
+            end,
+        ),
         "imageUrl": image_url(item.get("image") or item.get("thumbnailUrl"), page_url),
         "cachedThumbnail": None,
         "sourceUrl": source,
@@ -1510,6 +1706,12 @@ def generic_page_event(
             "startDate": start.isoformat(),
             "endDate": end.isoformat(),
             "shortDescription": description,
+            "privateViews": extract_private_views(
+                description,
+                source,
+                start,
+                end,
+            ),
             "imageUrl": page_image(probe, page_url),
             "cachedThumbnail": None,
             "sourceUrl": source,
@@ -1944,9 +2146,25 @@ def dedupe_records(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     def merge_missing(
         preferred: dict[str, Any], alternate: dict[str, Any]
     ) -> dict[str, Any]:
-        for field in ("imageUrl", "cachedThumbnail", "shortDescription"):
+        for field in (
+            "imageUrl",
+            "cachedThumbnail",
+            "imageAlt",
+            "imagePosition",
+            "shortDescription",
+            "_curatedLocationEvidence",
+            "_titleAudit",
+        ):
             if not preferred.get(field) and alternate.get(field):
                 preferred[field] = alternate[field]
+        private_views = merge_private_views(
+            preferred.get("privateViews"),
+            alternate.get("privateViews"),
+        )
+        if private_views:
+            preferred["privateViews"] = private_views
+        else:
+            preferred.pop("privateViews", None)
         return preferred
 
     by_key: dict[tuple[str, str, str], dict[str, Any]] = {}
@@ -2116,31 +2334,40 @@ def apply_title_overrides(
         record_id = slugify(
             f"{item['venueId']}-{item['title']}-{item['startDate']}"
         )
-        records.append(
-            {
-                "id": record_id,
-                "venueId": item["venueId"],
-                "title": item["title"],
-                "startDate": item["startDate"],
-                "endDate": item["endDate"],
-                "shortDescription": clean_text(
-                    item.get("shortDescription") or item.get("description"), 280
-                ),
-                "imageUrl": item.get("imageUrl"),
-                "cachedThumbnail": None,
-                "sourceUrl": item["sourceUrl"],
-                "priceStatus": item.get("priceStatus", "unknown"),
-                "confidenceScore": item.get("confidenceScore", 0.8),
-                "lastVerified": today.isoformat(),
-                "accent": accent_for(record_id),
-                "_branchEvidence": clean_text(item.get("branchEvidence")),
-                "_titleAudit": {
-                    "titleBeforeOverride": None,
-                    "reasonCode": "official-listing-supplement",
-                    "evidence": item["evidence"],
-                },
-            }
-        )
+        record = {
+            "id": record_id,
+            "venueId": item["venueId"],
+            "title": item["title"],
+            "startDate": item["startDate"],
+            "endDate": item["endDate"],
+            "shortDescription": clean_text(
+                item.get("shortDescription") or item.get("description"), 280
+            ),
+            "privateViews": merge_private_views(
+                item.get("privateViews"),
+                [],
+            ),
+            "imageUrl": item.get("imageUrl"),
+            "cachedThumbnail": item.get("cachedThumbnail"),
+            "sourceUrl": item["sourceUrl"],
+            "priceStatus": item.get("priceStatus", "unknown"),
+            "confidenceScore": item.get("confidenceScore", 0.8),
+            "lastVerified": today.isoformat(),
+            "accent": accent_for(record_id),
+            "_branchEvidence": clean_text(item.get("branchEvidence")),
+            "_curatedLocationEvidence": clean_text(
+                item.get("locationEvidence")
+            ),
+            "_titleAudit": {
+                "titleBeforeOverride": None,
+                "reasonCode": "official-listing-supplement",
+                "evidence": item["evidence"],
+            },
+        }
+        for field in ("imageAlt", "imagePosition"):
+            if item.get(field):
+                record[field] = item[field]
+        records.append(record)
     return dedupe_records(records)
 
 
@@ -2174,6 +2401,66 @@ def apply_description_overrides(
                     else "No concise exhibition-specific description was reliably extracted."
                 ),
             }
+
+
+def apply_private_view_overrides(
+    records: list[dict[str, Any]], config: dict[str, Any]
+) -> None:
+    overrides = {
+        row["sourceUrl"]: row for row in config.get("overrides", [])
+    }
+    for record in records:
+        decision = overrides.get(record["sourceUrl"])
+        curated = decision.get("privateViews", []) if decision else []
+        merged = merge_private_views(
+            curated,
+            record.get("privateViews"),
+        )
+        if merged:
+            record["privateViews"] = merged
+        else:
+            record.pop("privateViews", None)
+
+
+def reject_records_missing_required_descriptions(
+    records: list[dict[str, Any]],
+    venues: dict[str, dict[str, Any]],
+) -> list[dict[str, Any]]:
+    accepted: list[dict[str, Any]] = []
+    for record in records:
+        if (
+            record.get("venueId") in {"tate-modern", "tate-britain"}
+            and not clean_text(record.get("shortDescription"))
+        ):
+            reject_candidate(
+                venues[record["venueId"]],
+                record["title"],
+                record["sourceUrl"],
+                "missing-required-description",
+                "Tate exhibition has no reliable exhibition-specific description",
+            )
+            continue
+        accepted.append(record)
+    return accepted
+
+
+def reject_known_non_exhibition_records(
+    records: list[dict[str, Any]],
+    venues: dict[str, dict[str, Any]],
+) -> list[dict[str, Any]]:
+    accepted: list[dict[str, Any]] = []
+    for record in records:
+        if KNOWN_EVENT_TITLE_RE.fullmatch(clean_text(record.get("title"))):
+            reject_candidate(
+                venues[record["venueId"]],
+                record["title"],
+                record["sourceUrl"],
+                "excluded-event-type",
+                "Known event or permanent-collection page is not a temporary exhibition",
+            )
+            continue
+        accepted.append(record)
+    return accepted
 
 
 def apply_price_overrides(
@@ -2702,6 +2989,7 @@ def retained_record_is_eligible(
         still_in_window(record, today, window_end)
         and title
         and not NON_EXHIBITION_RE.search(title)
+        and not KNOWN_EVENT_TITLE_RE.search(title)
         and not OUT_OF_SCOPE_TITLE_RE.search(title)
         and not generic_listing_reason(
             title, source_url, description, venue["name"]
@@ -2737,6 +3025,12 @@ def audit_exhibition_location(
             False,
             "venue-location-unverified",
             "Venue lacks an official-source postcode verified to the London region",
+        )
+    if record.get("_curatedLocationEvidence"):
+        return (
+            True,
+            "verified-london",
+            clean_text(record["_curatedLocationEvidence"]),
         )
     page = fetcher.fetch(record["sourceUrl"])
     if not page.ok:
@@ -2956,6 +3250,7 @@ def main() -> int:
     price_overrides = read_json(PRICE_OVERRIDES_PATH, {})
     title_overrides = read_json(TITLE_OVERRIDES_PATH, {})
     description_overrides = read_json(DESCRIPTION_OVERRIDES_PATH, {})
+    private_view_overrides = read_json(PRIVATE_VIEW_OVERRIDES_PATH, {})
     previous_venues = {
         venue["id"]: venue for venue in read_json(VENUES_JSON_PATH, [])
     }
@@ -3049,6 +3344,7 @@ def main() -> int:
         if not coverage.get("lastSuccess") and not args.no_retain:
             coverage["lastSuccess"] = prior_coverage.get("lastSuccess")
         records = result["records"]
+        coverage["freshShowCount"] = len(records)
         verified_zero = seed.get("verifiedZero", {})
         if (
             not records
@@ -3064,7 +3360,15 @@ def main() -> int:
                 | {"browser-rendered-official"}
             )
             successful = True
-        if not successful:
+        if (
+            successful
+            and coverage["status"] == "success"
+            and not args.no_retain
+        ):
+            records = dedupe_records(
+                [*records, *previous_by_venue.get(seed["id"], [])]
+            )
+        elif not successful:
             retained = [] if args.no_retain else previous_by_venue.get(seed["id"], [])
             records = retained
             coverage["showCount"] = len(retained)
@@ -3097,10 +3401,19 @@ def main() -> int:
         normalize_title_site_affixes(record, seed_by_id_for_retention[record["venueId"]])
         for record in all_records
     ]
+    all_records = reject_known_non_exhibition_records(
+        all_records,
+        {seed["id"]: seed for seed in seeds},
+    )
     all_records = resolve_cross_venue_duplicates(
         all_records, {seed["id"]: seed for seed in seeds}
     )
     apply_description_overrides(all_records, description_overrides)
+    apply_private_view_overrides(all_records, private_view_overrides)
+    all_records = reject_records_missing_required_descriptions(
+        all_records,
+        {seed["id"]: seed for seed in seeds},
+    )
     coverage_by_id = {row["venueId"]: row for row in coverage_rows}
     venue_by_id = {row["id"]: row for row in venue_rows}
     occurrence_groups: dict[tuple[str, str, str], list[dict[str, Any]]] = {}
@@ -3245,6 +3558,7 @@ def main() -> int:
     description_audits: list[dict[str, Any]] = []
     for record in all_records:
         record.pop("_branchEvidence", None)
+        record.pop("_curatedLocationEvidence", None)
         description_audit = record.pop(
             "_descriptionAudit",
             {
@@ -3323,7 +3637,7 @@ def main() -> int:
             record for record in all_records if record["venueId"] == venue_id
         ]
         coverage["showCount"] = show_count
-        coverage["freshShowCount"] = show_count
+        coverage["freshShowCount"] = coverage.get("freshShowCount", show_count)
         coverage["freeShowCount"] = sum(
             record["priceStatus"] == "free" for record in venue_records
         )
@@ -3354,7 +3668,21 @@ def main() -> int:
                     "candidate record(s), but none passed the London venue/address and "
                     "event-location audits; see location-audit.json and rejections.json"
                 )
-        if not coverage["locationVerified"]:
+        if (
+            not coverage["locationVerified"]
+            or coverage["status"]
+            in {
+                "blocked",
+                "failed",
+                "ambiguous",
+                "closed",
+                "instagram-only",
+                "unverified",
+                "unresolved",
+                "temporarily-closed-unverified",
+                "location-closed-unverified",
+            }
+        ):
             venue_by_id[venue_id]["scrapeMethod"] = "link-only"
 
     coverage_rows.sort(
@@ -3507,6 +3835,9 @@ def main() -> int:
         ),
         "exhibitionsMissingImages": sum(
             not record.get("imageUrl") for record in all_records
+        ),
+        "privateViewCount": sum(
+            len(record.get("privateViews", [])) for record in all_records
         ),
         "openTodayPriceCountsBeforePolicy": open_today_price_counts_before,
         "openTodayPriceCounts": open_today_price_counts,

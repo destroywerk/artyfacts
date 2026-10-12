@@ -10,7 +10,7 @@
     "build": "astro check && astro build",
     "check": "astro check",
     "preview": "astro preview",
-    "test": "node --test"
+    "test": "node --test && python3 -m unittest discover -s tests -p 'test_*.py'"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T01:31:04.111284+00:00",
-  "windowStart": "2026-10-06",
-  "windowEnd": "2026-11-06",
+  "generatedAt": "2026-10-12T15:52:05.517770+00:00",
+  "windowStart": "2026-10-12",
+  "windowEnd": "2026-11-12",
   "windowKind": "calendar-month-inclusive",
   "windowInclusiveDays": 32,
   "userAgent": "LondonExhibitionsBot/1.0 (private non-commercial exhibition index; contact: Tim Green)",
   "totalVenues": 100,
-  "successfulScrapes": 45,
-  "linkOnlyBlockedFailedOrUnverified": 55,
-  "exhibitionsFound": 83,
+  "successfulScrapes": 43,
+  "linkOnlyBlockedFailedOrUnverified": 57,
+  "exhibitionsFound": 81,
   "activeLondonVenues": 35,
-  "rejectedCandidates": 1264,
-  "rejectedNonLondonRecords": 214,
-  "rejectedLocationUnverifiedRecords": 36,
+  "rejectedCandidates": 1227,
+  "rejectedNonLondonRecords": 209,
+  "rejectedLocationUnverifiedRecords": 43,
   "priorityInstitutionCount": 53,
   "priorityVenueRecordCount": 54,
   "priorityInstitutionsWithVerifiedShows": 19,
@@ -21,18 +21,19 @@
   "addressVerifiedVenues": 53,
   "addressUnresolvedVenues": 47,
   "titleOverridesApplied": 29,
-  "independentPolicyFreeExhibitions": 6,
-  "exhibitionsWithImages": 83,
+  "independentPolicyFreeExhibitions": 4,
+  "exhibitionsWithImages": 81,
   "exhibitionsMissingImages": 0,
+  "privateViewCount": 3,
   "openTodayPriceCountsBeforePolicy": {
-    "free": 15,
+    "free": 23,
     "paid": 14,
-    "unknown": 31
+    "unknown": 34
   },
   "openTodayPriceCounts": {
-    "free": 26,
-    "paid": 14,
-    "unknown": 20
+    "free": 32,
+    "paid": 15,
+    "unknown": 24
   },
   "priorityGaps": [
     {
@@ -64,7 +65,7 @@
         "lisson-gallery"
       ],
       "statuses": [
-        "no-current-shows"
+        "unresolved"
       ],
       "locationVerified": true
     },
@@ -174,7 +175,7 @@
         "kate-macgarry"
       ],
       "statuses": [
-        "no-current-shows"
+        "unresolved"
       ],
       "locationVerified": true
     },
@@ -185,7 +186,7 @@
         "serpentine-south"
       ],
       "statuses": [
-        "no-current-shows"
+        "unresolved"
       ],
       "locationVerified": true
     },
@@ -229,7 +230,7 @@
         "pippy-houldsworth-gallery"
       ],
       "statuses": [
-        "no-current-shows"
+        "unresolved"
       ],
       "locationVerified": true
     },
@@ -307,7 +308,7 @@
         "ben-brown-fine-arts"
       ],
       "statuses": [
-        "no-current-shows"
+        "unresolved"
       ],
       "locationVerified": true
     },
@@ -329,7 +330,7 @@
         "hayward-gallery"
       ],
       "statuses": [
-        "no-current-shows"
+        "unresolved"
       ],
       "locationVerified": true
     },
@@ -416,11 +417,11 @@
     "blocked": 7,
     "closed": 2,
     "failed": 2,
-    "instagram-only": 2,
-    "no-current-shows": 11,
-    "success": 34,
+    "instagram-only": 1,
+    "no-current-shows": 8,
+    "success": 35,
     "temporarily-closed-unverified": 1,
-    "unresolved": 38
+    "unresolved": 41
   },
   "accuracyClaim": null,
   "accuracyNote": "No accuracy percentage is claimed; spot-check measurement has not been run."

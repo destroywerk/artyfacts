@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T01:31:04.121684+00:00",
-  "windowStart": "2026-10-06",
-  "windowEnd": "2026-11-06",
+  "generatedAt": "2026-10-12T12:44:30.232106+00:00",
+  "windowStart": "2026-10-12",
+  "windowEnd": "2026-11-12",
   "windowKind": "calendar-month-inclusive",
   "totalVenues": 100,
   "verified": 53,
@@ -493,8 +493,8 @@
       },
       "sourceUrl": "https://gagosian.com/locations/london-britannia-street/",
       "evidence": "Official venue address 6–24 Britannia Street, WC1X 9JD; postcode resolves to Camden, London",
-      "previousAddress": "20 Grosvenor Hill London",
-      "previousPostcode": "W1K 3QD"
+      "previousAddress": "6–24 Britannia Street",
+      "previousPostcode": "WC1X 9JD"
     },
     {
       "venueId": "gagosian-grosvenor-hill",
@@ -961,7 +961,7 @@
       },
       "sourceUrl": "https://www.npg.org.uk/visit",
       "evidence": "Official venue address St Martin's Place, WC2H 0HE; postcode resolves to Westminster, London",
-      "previousAddress": "National Portrait Gallery St Martin's Place London, +44(0)20 7306 0055",
+      "previousAddress": "St Martin's Place",
       "previousPostcode": "WC2H 0HE"
     },
     {
@@ -1198,7 +1198,7 @@
       },
       "sourceUrl": "https://foundlingmuseum.org.uk/visit/",
       "evidence": "Official venue address 40 Brunswick Square, WC1N 1AZ; postcode resolves to Camden, London",
-      "previousAddress": "40 Brunswick Square London 40 Brunswick Square London +44 (0)20 7841 3600 Email enquiries",
+      "previousAddress": "40 Brunswick Square",
       "previousPostcode": "WC1N 1AZ"
     },
     {
@@ -1563,9 +1563,9 @@
         "lng": -0.268658
       },
       "sourceUrl": "https://queensrollahouse.com/Contact/",
-      "evidence": "Official Queensrollahouse contact page gives 18 Trading Estate Road, NW10 7LU.",
-      "previousAddress": null,
-      "previousPostcode": null
+      "evidence": "Official venue address 18 Trading Estate Road, NW10 7LU; postcode resolves to Ealing, London",
+      "previousAddress": "18 Trading Estate Road",
+      "previousPostcode": "NW10 7LU"
     }
   ]
 }

@@ -15,10 +15,11 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.pilarcorrias.com/",
     "whatsOnUrl": "https://www.pilarcorrias.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 2
   },
   {
@@ -34,6 +35,7 @@ export const venues: Venue[] = [
     "area": "City & East",
     "website": "https://chisenhale.org.uk/",
     "whatsOnUrl": "https://chisenhale.org.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": {
       "wednesday": {
         "open": "12:00",
@@ -58,7 +60,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 7
   },
   {
@@ -74,6 +76,7 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.octobergallery.co.uk/",
     "whatsOnUrl": "https://www.octobergallery.co.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "12:30",
@@ -96,9 +99,9 @@ export const venues: Venue[] = [
         "close": "17:30"
       }
     },
-    "hoursLastChecked": "2026-10-06",
+    "hoursLastChecked": "2026-10-12",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 10
   },
   {
@@ -114,10 +117,11 @@ export const venues: Venue[] = [
     "area": "South East",
     "website": "https://hannahbarry.com/",
     "whatsOnUrl": "https://hannahbarry.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 14
   },
   {
@@ -133,6 +137,7 @@ export const venues: Venue[] = [
     "area": "South Bank & Bankside",
     "website": "https://kristinhjellegjerde.com/",
     "whatsOnUrl": "https://kristinhjellegjerde.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "11:00",
@@ -161,7 +166,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 16
   },
   {
@@ -177,6 +182,7 @@ export const venues: Venue[] = [
     "area": "South West & Lambeth",
     "website": "https://www.mattsgallery.org/",
     "whatsOnUrl": "https://www.mattsgallery.org/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "wednesday": {
         "open": "12:00",
@@ -201,7 +207,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 17
   },
   {
@@ -217,10 +223,11 @@ export const venues: Venue[] = [
     "area": "City & East",
     "website": "https://halesgallery.com/",
     "whatsOnUrl": "https://halesgallery.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 20
   },
   {
@@ -236,6 +243,7 @@ export const venues: Venue[] = [
     "area": "North",
     "website": "https://www.victoria-miro.com/",
     "whatsOnUrl": "https://www.victoria-miro.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -260,7 +268,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 22
   },
   {
@@ -276,6 +284,7 @@ export const venues: Venue[] = [
     "area": "South West & Lambeth",
     "website": "https://www.tate.org.uk/visit/tate-britain",
     "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-britain",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -308,7 +317,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 23
   },
   {
@@ -324,6 +333,7 @@ export const venues: Venue[] = [
     "area": "City & East",
     "website": "https://www.whitechapelgallery.org/",
     "whatsOnUrl": "https://www.whitechapelgallery.org/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "11:00",
@@ -352,7 +362,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 26
   },
   {
@@ -368,6 +378,7 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.sadiecoles.com/",
     "whatsOnUrl": "https://www.sadiecoles.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "11:00",
@@ -392,7 +403,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 39
   },
   {
@@ -408,10 +419,11 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.redfern-gallery.com/",
     "whatsOnUrl": "https://www.redfern-gallery.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 40
   },
   {
@@ -427,6 +439,7 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.davidzwirner.com/locations/london",
     "whatsOnUrl": "https://www.davidzwirner.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -449,9 +462,9 @@ export const venues: Venue[] = [
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-06",
+    "hoursLastChecked": "2026-10-12",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 42
   },
   {
@@ -467,6 +480,7 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://courtauld.ac.uk/gallery/",
     "whatsOnUrl": "https://courtauld.ac.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -499,7 +513,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 45
   },
   {
@@ -515,6 +529,7 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://maddoxgallery.com/",
     "whatsOnUrl": "https://maddoxgallery.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -537,9 +552,9 @@ export const venues: Venue[] = [
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-06",
+    "hoursLastChecked": "2026-10-12",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 46
   },
   {
@@ -555,6 +570,7 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.royalacademy.org.uk/",
     "whatsOnUrl": "https://www.royalacademy.org.uk/exhibitions-and-events",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -583,7 +599,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 49
   },
   {
@@ -599,6 +615,7 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.nationalgallery.org.uk/",
     "whatsOnUrl": "https://www.nationalgallery.org.uk/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -631,7 +648,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 50
   },
   {
@@ -647,10 +664,11 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.lbfcontemporary.com/",
     "whatsOnUrl": "https://www.lbfcontemporary.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 52
   },
   {
@@ -666,6 +684,7 @@ export const venues: Venue[] = [
     "area": "South West & Lambeth",
     "website": "https://www.blueshopcottage.com/",
     "whatsOnUrl": "https://www.blueshopcottage.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "thursday": {
         "open": "12:00",
@@ -682,7 +701,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 53
   },
   {
@@ -698,10 +717,11 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.annelyjudafineart.co.uk/",
     "whatsOnUrl": "https://www.annelyjudafineart.co.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -717,6 +737,7 @@ export const venues: Venue[] = [
     "area": "City & East",
     "website": "https://autoitaliasoutheast.org/",
     "whatsOnUrl": "https://autoitaliasoutheast.org/",
+    "instagramUrl": null,
     "openingHours": {
       "thursday": {
         "open": "12:00",
@@ -737,7 +758,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -753,6 +774,7 @@ export const venues: Venue[] = [
     "area": "North",
     "website": "https://camdenartcentre.org/",
     "whatsOnUrl": "https://camdenartcentre.org/whats-on/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -781,7 +803,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -797,10 +819,11 @@ export const venues: Venue[] = [
     "area": "South Kensington & West",
     "website": "https://designmuseum.org/",
     "whatsOnUrl": "https://designmuseum.org/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -816,10 +839,11 @@ export const venues: Venue[] = [
     "area": "South East",
     "website": "https://www.dulwichpicturegallery.org.uk/",
     "whatsOnUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -835,10 +859,11 @@ export const venues: Venue[] = [
     "area": "South Bank & Bankside",
     "website": "https://gardenmuseum.org.uk/",
     "whatsOnUrl": "https://gardenmuseum.org.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -854,10 +879,11 @@ export const venues: Venue[] = [
     "area": "South West & Lambeth",
     "website": "https://www.gasworks.org.uk/",
     "whatsOnUrl": "https://www.gasworks.org.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -873,10 +899,31 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.npg.org.uk/",
     "whatsOnUrl": "https://www.npg.org.uk/whatson/events-calendar/?what=exhibition",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
+    "priorityRank": null
+  },
+  {
+    "id": "refuses-at-queensrollahouse",
+    "name": "Refusés at Queensrollahouse",
+    "type": "independent",
+    "address": "18 Trading Estate Road",
+    "postcode": "NW10 7LU",
+    "coordinates": {
+      "lat": 51.526479,
+      "lng": -0.268658
+    },
+    "area": "South Kensington & West",
+    "website": "https://refuses.info/",
+    "whatsOnUrl": "https://refuses.info/Archive",
+    "instagramUrl": "https://www.instagram.com/r.efuses/",
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
     "priorityRank": null
   },
   {
@@ -892,10 +939,11 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.soane.org/",
     "whatsOnUrl": "https://www.soane.org/whats-on",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -911,10 +959,11 @@ export const venues: Venue[] = [
     "area": "South East",
     "website": "https://www.southlondongallery.org/",
     "whatsOnUrl": "https://www.southlondongallery.org/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -930,6 +979,7 @@ export const venues: Venue[] = [
     "area": "South Bank & Bankside",
     "website": "https://www.tate.org.uk/visit/tate-modern",
     "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-modern",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -962,7 +1012,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -978,6 +1028,7 @@ export const venues: Venue[] = [
     "area": "South Kensington & West",
     "website": "https://www.vam.ac.uk/south-kensington",
     "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -1010,7 +1061,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1026,10 +1077,11 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://www.wallacecollection.org/",
     "whatsOnUrl": "https://www.wallacecollection.org/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1045,10 +1097,11 @@ export const venues: Venue[] = [
     "area": "Central",
     "website": "https://wellcomecollection.org/",
     "whatsOnUrl": "https://wellcomecollection.org/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1064,6 +1117,7 @@ export const venues: Venue[] = [
     "area": "City & East",
     "website": "https://www.vam.ac.uk/young/",
     "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -1096,27 +1150,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
-    "priorityRank": null
-  },
-  {
-    "id": "refuses-at-queensrollahouse",
-    "name": "Refusés at Queensrollahouse",
-    "type": "independent",
-    "address": "18 Trading Estate Road",
-    "postcode": "NW10 7LU",
-    "coordinates": {
-      "lat": 51.526479,
-      "lng": -0.268658
-    },
-    "area": "South Kensington & West",
-    "website": "https://refuses.info/",
-    "whatsOnUrl": "https://refuses.info/Archive",
-    "instagramUrl": "https://www.instagram.com/r.efuses/",
-    "openingHours": null,
-    "hoursLastChecked": null,
-    "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": null,
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   }
 ];

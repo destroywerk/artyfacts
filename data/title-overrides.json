@@ -144,6 +144,65 @@
       "confidenceScore": 0.9,
       "branchEvidence": "Official rendered exhibition header: Savile Row, London W1S 3PA.",
       "evidence": "Official rendered detail page identifies the Savile Row branch, exact title, dates, exhibition summary and image."
+    },
+    {
+      "venueId": "refuses-at-queensrollahouse",
+      "title": "Elspeth Vince: Soft Tissue",
+      "startDate": "2026-10-09",
+      "endDate": "2026-11-27",
+      "shortDescription": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
+      "imageUrl": "https://www.artyfacts.london/images/soft-tissue-elspeth-vince.jpg",
+      "cachedThumbnail": null,
+      "imageAlt": "Poster for Soft Tissue by Elspeth Vince at Refusés, in amber and dark brown.",
+      "imagePosition": "center",
+      "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+      "priceStatus": "free",
+      "confidenceScore": 0.99,
+      "branchEvidence": "Official @r.efuses post identifies Queensrollahouse, 18 Trading Estate Road, London NW10 7LU.",
+      "locationEvidence": "Official @r.efuses post identifies Queensrollahouse, 18 Trading Estate Road, London NW10 7LU.",
+      "evidence": "Official @r.efuses source names Soft Tissue as Elspeth Vince's solo exhibition and gives its London venue and run dates."
+    },
+    {
+      "venueId": "dulwich-picture-gallery",
+      "title": "Curtain Up!",
+      "startDate": "2026-05-19",
+      "endDate": "2026-10-25",
+      "shortDescription": "What can theatre portraits tell us about performance, costume and identity, both on stage and beyond it?",
+      "imageUrl": "https://assets.dulwich-gallery.substrakt.net/images/DPG385_Nathan_field.original.jpg",
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/curtain-up/",
+      "priceStatus": "paid",
+      "confidenceScore": 0.96,
+      "branchEvidence": "Official exhibition page gives Dulwich Picture Gallery, 14 Gallery Road, London SE21 7AD.",
+      "locationEvidence": "Official exhibition page gives Dulwich Picture Gallery, 14 Gallery Road, London SE21 7AD.",
+      "evidence": "Official detail page identifies Curtain Up! as a temporary display with its exact London dates and venue."
+    },
+    {
+      "venueId": "dulwich-picture-gallery",
+      "title": "Charlie Mackesy: The Boy, the Mole, the Fox, the Horse...and You",
+      "startDate": "2026-11-03",
+      "endDate": "2027-02-07",
+      "shortDescription": "This winter, Dulwich Picture Gallery welcomes Charlie Mackesy's original drawings in a one-room exhibition exploring his creative process.",
+      "imageUrl": "https://assets.dulwich-gallery.substrakt.net/images/The_Boy_the_Mole_the_Fox_the_Horse.2e16d0ba.fill-300x300.jpg",
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/charlie-mackesy-the-boy-the-fox-the-mole-the-horse-and-you/",
+      "priceStatus": "paid",
+      "confidenceScore": 0.96,
+      "branchEvidence": "Official exhibition page gives Dulwich Picture Gallery, 14 Gallery Road, London SE21 7AD.",
+      "locationEvidence": "Official exhibition page gives Dulwich Picture Gallery, 14 Gallery Road, London SE21 7AD.",
+      "evidence": "Official detail page identifies the one-room exhibition, exact dates and Dulwich Picture Gallery venue."
+    },
+    {
+      "venueId": "vam",
+      "title": "Samuel Palmer and Modern Art",
+      "startDate": "2026-10-10",
+      "endDate": "2027-09-26",
+      "shortDescription": "A display marking 200 years since Samuel Palmer's visionary Shoreham period and the V&A exhibition that introduced his work to modern British artists.",
+      "imageUrl": "https://vanda-production-assets.s3.amazonaws.com/2026/09/22/12/26/26/e10038b1-4976-4020-a2c4-bf044a939f0b/960.jpg",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/samuel-palmer-and-modern-art",
+      "priceStatus": "free",
+      "confidenceScore": 0.96,
+      "branchEvidence": "Official display page identifies V&A South Kensington, Cromwell Road, London SW7 2RL.",
+      "locationEvidence": "Official display page identifies V&A South Kensington, Cromwell Road, London SW7 2RL.",
+      "evidence": "Official V&A page identifies this as a South Kensington display and gives its closing date."
     }
   ]
 }

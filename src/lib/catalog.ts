@@ -49,6 +49,20 @@ function assertCatalogIntegrity(): void {
     if (exhibition.confidenceScore < 0 || exhibition.confidenceScore > 1) {
       throw new Error(`Invalid confidence score on ${exhibition.id}`);
     }
+    const privateViewKeys = new Set<string>();
+    for (const privateView of exhibition.privateViews ?? []) {
+      if (!ISO_DATE.test(privateView.date)) {
+        throw new Error(`Invalid private-view date on ${exhibition.id}`);
+      }
+      if (privateView.endTime && !privateView.startTime) {
+        throw new Error(`Private-view end time has no start time on ${exhibition.id}`);
+      }
+      const key = `${privateView.date}:${privateView.startTime ?? ""}:${privateView.endTime ?? ""}`;
+      if (privateViewKeys.has(key)) {
+        throw new Error(`Duplicate private view on ${exhibition.id}`);
+      }
+      privateViewKeys.add(key);
+    }
   }
 }
 

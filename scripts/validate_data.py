@@ -114,7 +114,9 @@ GENERIC_LISTING_PATH_RE = re.compile(
 )
 KNOWN_NON_EXHIBITION_TITLE_RE = re.compile(
     r"^(?:club origami|creative tales|halloween mask making|"
-    r"wild life drawing:\s*owls)$",
+    r"wild life drawing:\s*owls|mini masterpieces|"
+    r"friends circle special:\s*the year ahead|wordplay:\s*ages 0\s*[–—-]\s*2|"
+    r"the collection)$",
     re.IGNORECASE,
 )
 GENERIC_DESCRIPTION_RE = re.compile(
@@ -199,6 +201,7 @@ def validate() -> list[str]:
         DATA_DIR / "title-overrides.json",
         DATA_DIR / "title-audit.json",
         DATA_DIR / "description-overrides.json",
+        DATA_DIR / "private-view-overrides.json",
         DATA_DIR / "description-audit.json",
         DATA_DIR / "address-audit.json",
         DATA_DIR / "image-audit.json",
@@ -417,6 +420,60 @@ def validate() -> list[str]:
                 errors.append(f"{exhibition_id}: does not overlap the generated window")
             if window_start and start > window_start + timedelta(days=730):
                 errors.append(f"{exhibition_id}: starts more than two years away")
+        private_views = exhibition.get("privateViews", [])
+        if not isinstance(private_views, list):
+            errors.append(f"{exhibition_id}: privateViews must be an array")
+            private_views = []
+        elif "privateViews" in exhibition and not private_views:
+            errors.append(f"{exhibition_id}: empty privateViews must be omitted")
+        private_view_keys: set[tuple[str, str, str]] = set()
+        for index, private_view in enumerate(private_views):
+            prefix = f"{exhibition_id}.privateViews[{index}]"
+            if not isinstance(private_view, dict):
+                errors.append(f"{prefix} must be an object")
+                continue
+            private_view_date = parse_iso(
+                private_view.get("date"), f"{prefix}.date", errors
+            )
+            if (
+                private_view_date
+                and start
+                and end
+                and not (start - timedelta(days=30) <= private_view_date <= end)
+            ):
+                errors.append(
+                    f"{prefix}.date must fall near or during the exhibition run"
+                )
+            start_time = private_view.get("startTime")
+            end_time = private_view.get("endTime")
+            if start_time is not None and not TIME_RE.fullmatch(str(start_time)):
+                errors.append(f"{prefix}.startTime must be HH:MM")
+            if end_time is not None and not TIME_RE.fullmatch(str(end_time)):
+                errors.append(f"{prefix}.endTime must be HH:MM")
+            if end_time is not None and start_time is None:
+                errors.append(f"{prefix}.endTime requires startTime")
+            label = private_view.get("label")
+            if label is not None and (
+                not isinstance(label, str) or not label.strip()
+            ):
+                errors.append(f"{prefix}.label must be a non-empty string")
+            private_view_source = private_view.get("sourceUrl")
+            if not valid_http_url(private_view_source):
+                errors.append(f"{prefix}.sourceUrl is required and must be HTTP(S)")
+            elif valid_http_url(exhibition.get("sourceUrl")) and not same_organisation(
+                private_view_source, exhibition.get("sourceUrl")
+            ):
+                errors.append(
+                    f"{prefix}.sourceUrl must match the exhibition source organisation"
+                )
+            key = (
+                str(private_view.get("date")),
+                str(start_time or ""),
+                str(end_time or ""),
+            )
+            if key in private_view_keys:
+                errors.append(f"{prefix} duplicates another private view")
+            private_view_keys.add(key)
         key = (
             str(venue_id),
             re.sub(r"[^a-z0-9]+", "", title.casefold()),
@@ -523,10 +580,13 @@ def validate() -> list[str]:
     price_audit = load_json(DATA_DIR / "price-audit.json")
     title_audit = load_json(DATA_DIR / "title-audit.json")
     description_audit = load_json(DATA_DIR / "description-audit.json")
+    private_view_overrides = load_json(DATA_DIR / "private-view-overrides.json")
     address_audit = load_json(DATA_DIR / "address-audit.json")
     image_audit = load_json(DATA_DIR / "image-audit.json")
     if not isinstance(rejections.get("records"), list):
         errors.append("rejections.json must contain a records array")
+    if not isinstance(private_view_overrides.get("overrides"), list):
+        errors.append("private-view-overrides.json must contain an overrides array")
     generic_rejections = [
         row
         for row in rejections.get("records", [])
@@ -682,6 +742,11 @@ def validate() -> list[str]:
         errors.append("Summary exhibitionsFound does not match exhibitions.json")
     if summary.get("activeLondonVenues") != len(active_venue_ids):
         errors.append("Summary activeLondonVenues does not match exhibitions.json")
+    private_view_count = sum(
+        len(exhibition.get("privateViews", [])) for exhibition in exhibitions
+    )
+    if summary.get("privateViewCount") != private_view_count:
+        errors.append("Summary privateViewCount does not match exhibitions.json")
     rejection_rows = rejections.get("records", [])
     if summary.get("rejectedCandidates") != len(rejection_rows):
         errors.append("Summary rejectedCandidates does not match rejections.json")

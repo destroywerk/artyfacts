@@ -9,10 +9,11 @@
     "area": null,
     "website": "https://thephotographersgallery.org.uk/",
     "whatsOnUrl": "https://thephotographersgallery.org.uk/whats-on",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 1
   },
   {
@@ -28,10 +29,11 @@
     "area": "Central",
     "website": "https://www.pilarcorrias.com/",
     "whatsOnUrl": "https://www.pilarcorrias.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 2
   },
   {
@@ -44,6 +46,7 @@
     "area": null,
     "website": null,
     "whatsOnUrl": null,
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -63,6 +66,7 @@
     "area": "Central",
     "website": "https://www.lissongallery.com/",
     "whatsOnUrl": "https://www.lissongallery.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -90,7 +94,7 @@
       }
     },
     "hoursLastChecked": "2026-10-06",
-    "scrapeMethod": "website",
+    "scrapeMethod": "link-only",
     "lastSuccessfulScrape": "2026-10-06",
     "priorityRank": 4
   },
@@ -104,6 +108,7 @@
     "area": null,
     "website": "https://williamhine.com/",
     "whatsOnUrl": "https://williamhine.com/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -120,6 +125,7 @@
     "area": null,
     "website": null,
     "whatsOnUrl": null,
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -139,6 +145,7 @@
     "area": "City & East",
     "website": "https://chisenhale.org.uk/",
     "whatsOnUrl": "https://chisenhale.org.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": {
       "wednesday": {
         "open": "12:00",
@@ -163,7 +170,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 7
   },
   {
@@ -176,6 +183,7 @@
     "area": null,
     "website": "https://sohorevue.com/",
     "whatsOnUrl": "https://sohorevue.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -192,6 +200,7 @@
     "area": null,
     "website": "https://www.thecobgallery.com/",
     "whatsOnUrl": "https://www.thecobgallery.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -211,6 +220,7 @@
     "area": "Central",
     "website": "https://www.octobergallery.co.uk/",
     "whatsOnUrl": "https://www.octobergallery.co.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "12:30",
@@ -233,9 +243,9 @@
         "close": "17:30"
       }
     },
-    "hoursLastChecked": "2026-10-06",
+    "hoursLastChecked": "2026-10-12",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 10
   },
   {
@@ -248,6 +258,7 @@
     "area": null,
     "website": "https://www.mimosahouse.co.uk/",
     "whatsOnUrl": "https://www.mimosahouse.co.uk/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -264,6 +275,7 @@
     "area": null,
     "website": "https://www.ginnyonfrederick.com/",
     "whatsOnUrl": "https://www.ginnyonfrederick.com/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -283,6 +295,7 @@
     "area": "City & East",
     "website": "https://www.haricotgallery.com/",
     "whatsOnUrl": "https://www.haricotgallery.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -302,10 +315,11 @@
     "area": "South East",
     "website": "https://hannahbarry.com/",
     "whatsOnUrl": "https://hannahbarry.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 14
   },
   {
@@ -318,10 +332,11 @@
     "area": null,
     "website": "https://spruethmagers.com/",
     "whatsOnUrl": "https://spruethmagers.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 15
   },
   {
@@ -337,6 +352,7 @@
     "area": "South Bank & Bankside",
     "website": "https://kristinhjellegjerde.com/",
     "whatsOnUrl": "https://kristinhjellegjerde.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "11:00",
@@ -365,7 +381,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 16
   },
   {
@@ -381,6 +397,7 @@
     "area": "South West & Lambeth",
     "website": "https://www.mattsgallery.org/",
     "whatsOnUrl": "https://www.mattsgallery.org/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "wednesday": {
         "open": "12:00",
@@ -405,7 +422,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 17
   },
   {
@@ -418,6 +435,7 @@
     "area": null,
     "website": "https://www.maureenpaley.com/",
     "whatsOnUrl": "https://www.maureenpaley.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -437,6 +455,7 @@
     "area": "City & East",
     "website": "https://www.katemacgarry.com/",
     "whatsOnUrl": "https://www.katemacgarry.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "11:00",
@@ -460,8 +479,8 @@
       }
     },
     "hoursLastChecked": "2026-10-06",
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 19
   },
   {
@@ -477,10 +496,11 @@
     "area": "City & East",
     "website": "https://halesgallery.com/",
     "whatsOnUrl": "https://halesgallery.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 20
   },
   {
@@ -496,10 +516,11 @@
     "area": "South Kensington & West",
     "website": "https://www.serpentinegalleries.org/",
     "whatsOnUrl": "https://www.serpentinegalleries.org/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 21
   },
   {
@@ -515,6 +536,7 @@
     "area": "North",
     "website": "https://www.victoria-miro.com/",
     "whatsOnUrl": "https://www.victoria-miro.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -539,7 +561,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 22
   },
   {
@@ -555,6 +577,7 @@
     "area": "South West & Lambeth",
     "website": "https://www.tate.org.uk/visit/tate-britain",
     "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-britain",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -587,7 +610,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 23
   },
   {
@@ -600,10 +623,11 @@
     "area": null,
     "website": "https://www.saatchigallery.com/",
     "whatsOnUrl": "https://www.saatchigallery.com/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 24
   },
   {
@@ -616,6 +640,7 @@
     "area": null,
     "website": "https://www.barbican.org.uk/whats-on/art-design",
     "whatsOnUrl": "https://www.barbican.org.uk/whats-on/art-design",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -635,6 +660,7 @@
     "area": "City & East",
     "website": "https://www.whitechapelgallery.org/",
     "whatsOnUrl": "https://www.whitechapelgallery.org/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "11:00",
@@ -663,7 +689,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 26
   },
   {
@@ -679,6 +705,7 @@
     "area": "South East",
     "website": "https://www.whitecube.com/",
     "whatsOnUrl": "https://www.whitecube.com/gallery-exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -719,6 +746,7 @@
     "area": "Central",
     "website": "https://www.houldsworth.co.uk/",
     "whatsOnUrl": "https://www.houldsworth.co.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -742,8 +770,8 @@
       }
     },
     "hoursLastChecked": "2026-10-06",
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 28
   },
   {
@@ -759,10 +787,11 @@
     "area": "Central",
     "website": "https://gagosian.com/locations/london-britannia-street/",
     "whatsOnUrl": "https://gagosian.com/exhibitions/?locations=london",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 29
   },
   {
@@ -778,10 +807,11 @@
     "area": "Central",
     "website": "https://gagosian.com/locations/london-grosvenor-hill/",
     "whatsOnUrl": "https://gagosian.com/exhibitions/?locations=london",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 29
   },
   {
@@ -794,10 +824,11 @@
     "area": null,
     "website": "https://saatchiyates.com/",
     "whatsOnUrl": "https://saatchiyates.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 30
   },
   {
@@ -810,6 +841,7 @@
     "area": null,
     "website": "https://huxley-parlour.com/",
     "whatsOnUrl": "https://huxley-parlour.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -826,6 +858,7 @@
     "area": null,
     "website": "https://www.no9corkstreet.com/",
     "whatsOnUrl": "https://www.no9corkstreet.com/programme/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -842,10 +875,11 @@
     "area": null,
     "website": "https://www.jmlondon.com/",
     "whatsOnUrl": "https://www.jmlondon.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 33
   },
   {
@@ -858,10 +892,11 @@
     "area": null,
     "website": "https://www.timothytaylor.com/",
     "whatsOnUrl": "https://www.timothytaylor.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 34
   },
   {
@@ -877,6 +912,7 @@
     "area": "Central",
     "website": "https://www.benbrownfinearts.com/",
     "whatsOnUrl": "https://www.benbrownfinearts.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "11:00",
@@ -904,8 +940,8 @@
       }
     },
     "hoursLastChecked": "2026-10-06",
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 35
   },
   {
@@ -918,6 +954,7 @@
     "area": null,
     "website": "https://ropac.net/",
     "whatsOnUrl": "https://ropac.net/gallery-documents/3/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -937,10 +974,11 @@
     "area": "South Bank & Bankside",
     "website": "https://www.southbankcentre.co.uk/venues/hayward-gallery/",
     "whatsOnUrl": "https://www.southbankcentre.co.uk/whats-on/?artform=art-exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 37
   },
   {
@@ -953,6 +991,7 @@
     "area": null,
     "website": null,
     "whatsOnUrl": null,
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -972,6 +1011,7 @@
     "area": "Central",
     "website": "https://www.sadiecoles.com/",
     "whatsOnUrl": "https://www.sadiecoles.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "11:00",
@@ -996,7 +1036,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 39
   },
   {
@@ -1012,10 +1052,11 @@
     "area": "Central",
     "website": "https://www.redfern-gallery.com/",
     "whatsOnUrl": "https://www.redfern-gallery.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 40
   },
   {
@@ -1028,6 +1069,7 @@
     "area": null,
     "website": "https://theunitldn.com/",
     "whatsOnUrl": "https://theunitldn.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1047,6 +1089,7 @@
     "area": "Central",
     "website": "https://www.davidzwirner.com/locations/london",
     "whatsOnUrl": "https://www.davidzwirner.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -1069,9 +1112,9 @@
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-06",
+    "hoursLastChecked": "2026-10-12",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 42
   },
   {
@@ -1084,6 +1127,7 @@
     "area": null,
     "website": "https://www.whitecube.com/",
     "whatsOnUrl": "https://www.whitecube.com/gallery-exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1100,10 +1144,11 @@
     "area": null,
     "website": "https://rhodescontemporaryart.com/",
     "whatsOnUrl": "https://rhodescontemporaryart.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 44
   },
   {
@@ -1119,6 +1164,7 @@
     "area": "Central",
     "website": "https://courtauld.ac.uk/gallery/",
     "whatsOnUrl": "https://courtauld.ac.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -1151,7 +1197,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 45
   },
   {
@@ -1167,6 +1213,7 @@
     "area": "Central",
     "website": "https://maddoxgallery.com/",
     "whatsOnUrl": "https://maddoxgallery.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -1189,9 +1236,9 @@
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-06",
+    "hoursLastChecked": "2026-10-12",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 46
   },
   {
@@ -1204,10 +1251,11 @@
     "area": null,
     "website": "https://www.pacegallery.com/locations/london/",
     "whatsOnUrl": "https://www.pacegallery.com/exhibitions/?location=london",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 47
   },
   {
@@ -1220,10 +1268,11 @@
     "area": null,
     "website": "https://www.ica.art/",
     "whatsOnUrl": "https://www.ica.art/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 48
   },
   {
@@ -1239,6 +1288,7 @@
     "area": "Central",
     "website": "https://www.royalacademy.org.uk/",
     "whatsOnUrl": "https://www.royalacademy.org.uk/exhibitions-and-events",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -1267,7 +1317,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 49
   },
   {
@@ -1283,6 +1333,7 @@
     "area": "Central",
     "website": "https://www.nationalgallery.org.uk/",
     "whatsOnUrl": "https://www.nationalgallery.org.uk/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -1315,7 +1366,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 50
   },
   {
@@ -1328,6 +1379,7 @@
     "area": null,
     "website": "https://www.unionpacific.co.uk/",
     "whatsOnUrl": "https://www.unionpacific.co.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1347,10 +1399,11 @@
     "area": "Central",
     "website": "https://www.lbfcontemporary.com/",
     "whatsOnUrl": "https://www.lbfcontemporary.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 52
   },
   {
@@ -1366,6 +1419,7 @@
     "area": "South West & Lambeth",
     "website": "https://www.blueshopcottage.com/",
     "whatsOnUrl": "https://www.blueshopcottage.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": {
       "thursday": {
         "open": "12:00",
@@ -1382,7 +1436,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": 53
   },
   {
@@ -1398,10 +1452,11 @@
     "area": "Central",
     "website": "https://www.annelyjudafineart.co.uk/",
     "whatsOnUrl": "https://www.annelyjudafineart.co.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1417,6 +1472,7 @@
     "area": "City & East",
     "website": "https://autoitaliasoutheast.org/",
     "whatsOnUrl": "https://autoitaliasoutheast.org/",
+    "instagramUrl": null,
     "openingHours": {
       "thursday": {
         "open": "12:00",
@@ -1437,7 +1493,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1450,10 +1506,11 @@
     "area": null,
     "website": "https://www.britishmuseum.org/",
     "whatsOnUrl": "https://www.britishmuseum.org/exhibitions-events",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1469,6 +1526,7 @@
     "area": "North",
     "website": "https://camdenartcentre.org/",
     "whatsOnUrl": "https://camdenartcentre.org/whats-on/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "10:00",
@@ -1497,7 +1555,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1510,6 +1568,7 @@
     "area": null,
     "website": "https://www.cubittartists.org.uk/",
     "whatsOnUrl": "https://www.cubittartists.org.uk/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1526,6 +1585,7 @@
     "area": null,
     "website": "https://www.delfinafoundation.com/",
     "whatsOnUrl": "https://www.delfinafoundation.com/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1545,10 +1605,11 @@
     "area": "South Kensington & West",
     "website": "https://designmuseum.org/",
     "whatsOnUrl": "https://designmuseum.org/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1564,10 +1625,11 @@
     "area": "South East",
     "website": "https://www.dulwichpicturegallery.org.uk/",
     "whatsOnUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1583,10 +1645,11 @@
     "area": "City & East",
     "website": "https://www.estorickcollection.com/",
     "whatsOnUrl": "https://www.estorickcollection.com/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1602,6 +1665,7 @@
     "area": "South East",
     "website": "https://fashiontextilemuseum.org/",
     "whatsOnUrl": "https://fashiontextilemuseum.org/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "11:00",
@@ -1642,6 +1706,7 @@
     "area": "Central",
     "website": "https://www.flowersgallery.com/",
     "whatsOnUrl": "https://www.flowersgallery.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": {
       "tuesday": {
         "open": "11:00",
@@ -1665,8 +1730,8 @@
       }
     },
     "hoursLastChecked": "2026-10-06",
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1682,6 +1747,7 @@
     "area": "Central",
     "website": "https://foundlingmuseum.org.uk/",
     "whatsOnUrl": "https://foundlingmuseum.org.uk/event/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1701,10 +1767,11 @@
     "area": "South Bank & Bankside",
     "website": "https://gardenmuseum.org.uk/",
     "whatsOnUrl": "https://gardenmuseum.org.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1720,10 +1787,11 @@
     "area": "South West & Lambeth",
     "website": "https://www.gasworks.org.uk/",
     "whatsOnUrl": "https://www.gasworks.org.uk/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1736,10 +1804,11 @@
     "area": null,
     "website": "https://www.goldsmithscca.art/",
     "whatsOnUrl": "https://www.goldsmithscca.art/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1752,6 +1821,7 @@
     "area": null,
     "website": "https://www.hauserwirth.com/locations/10069-london/",
     "whatsOnUrl": "https://www.hauserwirth.com/hauser-wirth-exhibitions/?location=london",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1768,6 +1838,7 @@
     "area": null,
     "website": "https://www.heraldst.com/",
     "whatsOnUrl": "https://www.heraldst.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1784,6 +1855,7 @@
     "area": null,
     "website": "https://www.horniman.ac.uk/",
     "whatsOnUrl": "https://www.horniman.ac.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1803,10 +1875,11 @@
     "area": "South Bank & Bankside",
     "website": "https://www.iwm.org.uk/visits/iwm-london",
     "whatsOnUrl": "https://www.iwm.org.uk/events",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1819,6 +1892,7 @@
     "area": null,
     "website": "https://jewishmuseum.org.uk/",
     "whatsOnUrl": "https://jewishmuseum.org.uk/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1835,10 +1909,11 @@
     "area": null,
     "website": "https://www.londonmuseum.org.uk/",
     "whatsOnUrl": "https://www.londonmuseum.org.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1851,10 +1926,11 @@
     "area": null,
     "website": "https://www.mariangoodman.com/",
     "whatsOnUrl": "https://www.mariangoodman.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1870,6 +1946,7 @@
     "area": "City & East",
     "website": "https://www.museumofthehome.org.uk/",
     "whatsOnUrl": "https://www.museumofthehome.org.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1889,10 +1966,11 @@
     "area": "Central",
     "website": "https://www.npg.org.uk/",
     "whatsOnUrl": "https://www.npg.org.uk/whatson/events-calendar/?what=exhibition",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1905,10 +1983,11 @@
     "area": null,
     "website": "https://www.nhm.ac.uk/",
     "whatsOnUrl": "https://www.nhm.ac.uk/visit/exhibitions.html",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -1921,6 +2000,7 @@
     "area": null,
     "website": "https://www.newportstreetgallery.com/",
     "whatsOnUrl": "https://www.newportstreetgallery.com/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1937,6 +2017,7 @@
     "area": null,
     "website": "https://www.peckhamplatform.com/",
     "whatsOnUrl": "https://www.peckhamplatform.com/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1953,6 +2034,7 @@
     "area": null,
     "website": "https://www.pumphousegallery.org.uk/",
     "whatsOnUrl": "https://www.pumphousegallery.org.uk/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1969,6 +2051,27 @@
     "area": null,
     "website": "https://www.ravenrow.org/",
     "whatsOnUrl": "https://www.ravenrow.org/exhibition/",
+    "instagramUrl": null,
+    "openingHours": null,
+    "hoursLastChecked": null,
+    "scrapeMethod": "link-only",
+    "lastSuccessfulScrape": null,
+    "priorityRank": null
+  },
+  {
+    "id": "refuses-at-queensrollahouse",
+    "name": "Refusés at Queensrollahouse",
+    "type": "independent",
+    "address": "18 Trading Estate Road",
+    "postcode": "NW10 7LU",
+    "coordinates": {
+      "lat": 51.526479,
+      "lng": -0.268658
+    },
+    "area": "South Kensington & West",
+    "website": "https://refuses.info/",
+    "whatsOnUrl": "https://refuses.info/Archive",
+    "instagramUrl": "https://www.instagram.com/r.efuses/",
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -1985,10 +2088,11 @@
     "area": null,
     "website": "https://www.rmg.co.uk/",
     "whatsOnUrl": "https://www.rmg.co.uk/whats-on",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2004,6 +2108,7 @@
     "area": "South Kensington & West",
     "website": "https://www.sciencemuseum.org.uk/",
     "whatsOnUrl": "https://www.sciencemuseum.org.uk/see-and-do",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -2023,10 +2128,11 @@
     "area": "Central",
     "website": "https://www.soane.org/",
     "whatsOnUrl": "https://www.soane.org/whats-on",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2039,10 +2145,11 @@
     "area": null,
     "website": "https://www.somersethouse.org.uk/",
     "whatsOnUrl": "https://www.somersethouse.org.uk/whats-on",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2058,10 +2165,11 @@
     "area": "South East",
     "website": "https://www.southlondongallery.org/",
     "whatsOnUrl": "https://www.southlondongallery.org/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2074,6 +2182,7 @@
     "area": null,
     "website": "https://www.stephenfriedman.com/",
     "whatsOnUrl": "https://www.stephenfriedman.com/exhibitions/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -2090,6 +2199,7 @@
     "area": null,
     "website": "https://studiovoltaire.org/",
     "whatsOnUrl": "https://studiovoltaire.org/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -2109,6 +2219,7 @@
     "area": "South Bank & Bankside",
     "website": "https://www.tate.org.uk/visit/tate-modern",
     "whatsOnUrl": "https://www.tate.org.uk/whats-on/tate-modern",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -2141,7 +2252,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2154,10 +2265,11 @@
     "area": null,
     "website": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
     "whatsOnUrl": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2170,6 +2282,7 @@
     "area": null,
     "website": null,
     "whatsOnUrl": null,
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -2189,6 +2302,7 @@
     "area": "Stratford & East",
     "website": "https://www.vam.ac.uk/east",
     "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
@@ -2208,6 +2322,7 @@
     "area": "South Kensington & West",
     "website": "https://www.vam.ac.uk/south-kensington",
     "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -2240,7 +2355,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2256,10 +2371,11 @@
     "area": "Central",
     "website": "https://www.wallacecollection.org/",
     "whatsOnUrl": "https://www.wallacecollection.org/whats-on/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2275,10 +2391,11 @@
     "area": "Central",
     "website": "https://wellcomecollection.org/",
     "whatsOnUrl": "https://wellcomecollection.org/exhibitions",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2294,6 +2411,7 @@
     "area": "City & East",
     "website": "https://www.vam.ac.uk/young/",
     "whatsOnUrl": "https://www.vam.ac.uk/whatson",
+    "instagramUrl": null,
     "openingHours": {
       "monday": {
         "open": "10:00",
@@ -2326,7 +2444,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-06",
+    "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
   {
@@ -2339,26 +2457,7 @@
     "area": null,
     "website": "https://www.zabludowiczcollection.com/",
     "whatsOnUrl": "https://www.zabludowiczcollection.com/",
-    "openingHours": null,
-    "hoursLastChecked": null,
-    "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": null,
-    "priorityRank": null
-  },
-  {
-    "id": "refuses-at-queensrollahouse",
-    "name": "Refusés at Queensrollahouse",
-    "type": "independent",
-    "address": "18 Trading Estate Road",
-    "postcode": "NW10 7LU",
-    "coordinates": {
-      "lat": 51.526479,
-      "lng": -0.268658
-    },
-    "area": "South Kensington & West",
-    "website": "https://refuses.info/",
-    "whatsOnUrl": "https://refuses.info/Archive",
-    "instagramUrl": "https://www.instagram.com/r.efuses/",
+    "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",

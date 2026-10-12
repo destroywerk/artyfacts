@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T01:31:04.120976+00:00",
-  "windowStart": "2026-10-06",
-  "windowEnd": "2026-11-06",
+  "generatedAt": "2026-10-12T12:44:30.231433+00:00",
+  "windowStart": "2026-10-12",
+  "windowEnd": "2026-11-12",
   "windowKind": "calendar-month-inclusive",
-  "missingDescriptionCount": 14,
+  "missingDescriptionCount": 13,
   "records": [
     {
       "exhibitionId": "pilar-corrias-mary-ramsden-the-feeling-of-what-happens-2026-09-10",
@@ -15,7 +15,7 @@
       "sourceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "pilar-corrias-rirkrit-tiravanija-situational-awareness-2026-10-09",
@@ -26,7 +26,7 @@
       "sourceUrl": "https://www.pilarcorrias.com/exhibitions/538-rirkrit-tiravanija-situational-awareness/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "chisenhale-gallery-wakaliga-uganda-kibuuka-omumbaale-2026-10-02",
@@ -37,7 +37,7 @@
       "sourceUrl": "https://chisenhale.org.uk/project/wakaliga-uganda/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "october-gallery-romuald-hazoume-my-blue-period-2026-10-08",
@@ -48,7 +48,7 @@
       "sourceUrl": "https://www.octobergallery.co.uk/exhibitions/romuald-hazoume-my-blue-period",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "hannah-barry-gallery-stevie-dix-vyvyan-2026-10-01",
@@ -59,7 +59,7 @@
       "sourceUrl": "https://hannahbarry.com/exhibition/stevie-dix-vyvyan-1-october-14-november-2026/",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "kristin-hjellegjerde-gallery-ralf-kokke-candy-for-crocodiles-2026-10-08",
@@ -70,7 +70,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "matts-gallery-annie-whiles-doorway-guardians-2026-09-30",
@@ -81,7 +81,7 @@
       "sourceUrl": "https://www.mattsgallery.org/exhibitions/doorway-guardians",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "matts-gallery-imogen-stidworthy-skydde-2026-09-30",
@@ -92,7 +92,7 @@
       "sourceUrl": "https://www.mattsgallery.org/exhibitions/imogen-stidworthy-",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "hales-gallery-staging-resistance-2026-09-10",
@@ -103,7 +103,7 @@
       "sourceUrl": "https://halesgallery.com/exhibitions/268-staging-resistance-tessa-boffin-rotimi-fani-kayode-and-sunil-gupta-in/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "victoria-miro-hernan-bas-time-to-shine-the-salesmen-2026-09-17",
@@ -114,7 +114,7 @@
       "sourceUrl": "https://www.victoria-miro.com/exhibitions/685/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "victoria-miro-khalif-tahir-thompson-send-in-the-clowns-2026-10-08",
@@ -125,40 +125,40 @@
       "sourceUrl": "https://www.victoria-miro.com/exhibitions/683/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-britain-art-now-mohammed-z-rahman-2026-06-05",
       "venueId": "tate-britain",
       "title": "Art Now: Mohammed Z Rahman",
       "description": "A new body of paintings exploring notions of home and love, displayed alongside Tate works The Lovers and The Spaghetti House.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "Rahman builds on this work to explore love in its many forms, from sorrow to celebration, in paintings made for the exhibition. In one work, a figure weeps on a bed surrounded by the belongings of ex-lovers, while elsewhere, a humble crate is transformed into a box of chocolates…",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-now-mohammed-z-rahman",
       "reasonCode": "official-description-override",
       "evidence": "Official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-britain-tate-britain-commission-2026-zineb-sedira-when-words-fall-silent-cinema-speaks-2026-05-13",
       "venueId": "tate-britain",
       "title": "Tate Britain Commission 2026: Zineb Sedira — When Words Fall Silent, Cinema Speaks",
       "description": "Explore Zineb Sedira's monumental and intimate installation, bridging the political and the poetic.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "The exhibition is on the Upper Floor of the gallery. To help plan your visit to Tate Britain, have a look at our visual story .",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
       "reasonCode": "official-description-override",
       "evidence": "Official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-britain-the-90s-art-and-fashion-2026-10-08",
       "venueId": "tate-britain",
       "title": "The 90s: Art and Fashion",
       "description": "Explore a decade characterised by its bold creativity and rebellious spirit.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "Tate Modern Until 3 May 2027 FREE FOR MEMBERS Become a Member if(typeof(window.tatePopulateBasket)!=='undefined')window.tatePopulateBasket(); Now booking Tate Britain Exhibition The 90 s : Art and Fashion Until 14 February 2027 Free for Members Book tickets Become a Member Juerg…",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
       "reasonCode": "official-description-override",
       "evidence": "Official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "whitechapel-gallery-cecilia-vicuna-foraging-quipu-2026-10-07",
@@ -169,7 +169,7 @@
       "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/cecilia-vicuna-foraging-quipu/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "whitechapel-gallery-cecilia-vicuna-living-threads-2026-10-07",
@@ -180,7 +180,7 @@
       "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/cecilia-vicuna/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "whitechapel-gallery-this-must-be-the-place-artists-for-whitechapel-gallery-2026-10-08",
@@ -191,7 +191,7 @@
       "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/this-must-be-the-place-artists-for-whitechapel-gallery/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "sadie-coles-hq-catherine-murphy-recent-work-2026-09-02",
@@ -202,7 +202,7 @@
       "sourceUrl": "https://www.sadiecoles.com/exhibitions/recent-work",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "sadie-coles-hq-martine-syms-knot-eye-2026-09-17",
@@ -213,7 +213,7 @@
       "sourceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "sadie-coles-hq-nicole-eisenman-2026-09-23",
@@ -224,18 +224,18 @@
       "sourceUrl": "https://www.sadiecoles.com/exhibitions/nicole-eisenman-2",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "the-redfern-gallery-desmond-morris-19282026-2026-09-16",
       "venueId": "the-redfern-gallery",
       "title": "Desmond Morris (1928–2026)",
-      "description": "View the e-catalogue This exhibition celebrates the life and work of Desmond Morris (1928–2026), bringing together works from across an extraordinary artistic career spanning eight decades. The exhibition coincides with the publication and launch of Morris’s final book, The Surr…",
-      "descriptionBeforeOverride": "View the e-catalogue This exhibition celebrates the life and work of Desmond Morris (1928–2026), bringing together works from across an extraordinary artistic career spanning eight decades. The exhibition coincides with the publication and launch of Morris’s final book, The Surr…",
+      "description": "View the e-catalogue Please pre-view a selection of work below. This exhibition celebrates the life and work of Desmond Morris (1928–2026), bringing together works from across an extraordinary artistic career spanning eight decades. The exhibition coincides with the publication…",
+      "descriptionBeforeOverride": "View the e-catalogue Please pre-view a selection of work below. This exhibition celebrates the life and work of Desmond Morris (1928–2026), bringing together works from across an extraordinary artistic career spanning eight decades. The exhibition coincides with the publication…",
       "sourceUrl": "https://www.redfern-gallery.com/exhibitions/122-desmond-morris-1928-2026/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "david-zwirner-london-daichi-takagi-suchness-2026-09-24",
@@ -246,7 +246,7 @@
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/daichi-takagi-suchness",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "david-zwirner-london-louis-fratino-prose-2026-09-18",
@@ -257,7 +257,7 @@
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/louis-fratino",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "david-zwirner-london-no-plan-at-all-prints-from-borch-editions-2026-11-05",
@@ -268,7 +268,7 @@
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/no-plan-at-all-prints-from-borch-editions",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "the-courtauld-gallery-salman-toor-someone-like-you-2026-10-02",
@@ -279,7 +279,7 @@
       "sourceUrl": "https://courtauld.ac.uk/whats-on/exh-salman-toor-someone-like-you/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "maddox-gallery-bibi-lei-where-light-blooms-2026-10-14",
@@ -290,18 +290,7 @@
       "sourceUrl": "https://maddoxgallery.com/pages/exhibition/bibi-lei-where-light-blooms",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "exhibitionId": "maddox-gallery-touils-between-landscape-and-memory-2026-09-03",
-      "venueId": "maddox-gallery",
-      "title": "Touils: Between Landscape and Memory",
-      "description": "3 Sep – 9 Oct 2026 at Maddox Street in Mayfair, London. ‘Touils: Between Landscape and Memory’ transforms landscapes encountered across Africa into emotionally charged recollections, showing how places change in memory.",
-      "descriptionBeforeOverride": "3 Sep – 9 Oct 2026 at Maddox Street in Mayfair, London. ‘Touils: Between Landscape and Memory’ transforms landscapes encountered across Africa into emotionally charged recollections, showing how places change in memory.",
-      "sourceUrl": "https://maddoxgallery.com/pages/exhibition/touils-between-landscape-and-memory",
-      "reasonCode": "official-source-description",
-      "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-day-2026-09-18",
@@ -312,7 +301,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/raschools-day-2026",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-emmanuel-awuni-2026-09-29",
@@ -323,7 +312,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-emmanuel-awuni",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-in-provence-and-southern-france-2026-09-29",
@@ -334,7 +323,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-barbara-rae-ra",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-nicole-eisenman-2026-09-22",
@@ -345,7 +334,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/nicole-eisenman-courtyard-sculpture",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-painting-the-french-riviera-2026-10-02",
@@ -356,7 +345,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-richard-dadd-2026-07-25",
@@ -367,7 +356,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/richard-dadd",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-the-john-madejski-fine-rooms-2025-12-16",
@@ -378,7 +367,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/fine-rooms-open",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "royal-academy-white-cube-x-ra-2026-10-06",
@@ -389,7 +378,7 @@
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-white-cube",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "national-gallery-renoir-and-love-2026-10-03",
@@ -400,7 +389,7 @@
       "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "national-gallery-yinka-shonibare-and-thomas-gainsborough-a-conversation-2026-10-15",
@@ -411,18 +400,18 @@
       "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/yinka-shonibare-and-thomas-gainsborough-a-conversation",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "lbf-contemporary-lawrence-perry-careless-rapture-2026-09-19",
       "venueId": "lbf-contemporary",
       "title": "Lawrence Perry: Careless Rapture",
-      "description": "",
-      "descriptionBeforeOverride": "",
+      "description": "For Perry, many of these new works belong to what he has called ‘transitional periods of loss or reinvention, moments where something was either slipping away or just arriving’, as he has sought to remain present enough to ‘recognise the raptures’ as they happen, in which ‘a pro…",
+      "descriptionBeforeOverride": "For Perry, many of these new works belong to what he has called ‘transitional periods of loss or reinvention, moments where something was either slipping away or just arriving’, as he has sought to remain present enough to ‘recognise the raptures’ as they happen, in which ‘a pro…",
       "sourceUrl": "https://lbfcontemporary.com/exhibitions/careless-rapture/",
-      "reasonCode": "missing-official-description",
-      "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "reasonCode": "official-source-description",
+      "evidence": "Description extracted from official exhibition metadata.",
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "blueshop-cottage-isabel-munoz-newsome-the-other-place-2026-10-07",
@@ -433,7 +422,7 @@
       "sourceUrl": "https://www.blueshopcottage.com/exhibitions/isabel-munoz-newsome",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "blueshop-cottage-lucy-ray-ill-have-to-remember-it-differently-2026-10-07",
@@ -444,7 +433,7 @@
       "sourceUrl": "https://www.blueshopcottage.com/exhibitions/lucy-ray",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "annely-juda-fine-art-chloe-bonfield-kate-lyddon-and-zulfiya-spowart-what-remains-within-2026-10-01",
@@ -455,7 +444,7 @@
       "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/406-what-remains-within-curated-by-paola-lucente-chloe-bonfield-kate-lyddon-zulfiya-spowart/overview/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "annely-juda-fine-art-nicola-turner-i-tear-secrets-from-your-yielding-flesh-2026-10-01",
@@ -466,18 +455,18 @@
       "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/405-nicola-turner-i-tear-secrets-from-your-yielding-flesh/overview/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "auto-italia-sensual-mutual-2026-07-17",
       "venueId": "auto-italia",
       "title": "Sensual / Mutual",
-      "description": "",
-      "descriptionBeforeOverride": "",
+      "description": "Surfacing unseen bodies of work from the 1970s and 80s, the exhibition focuses on Volcano’s time in San Francisco and Santa Fe, tracing queer, feminist, leather dyke, gender-variant, and land-based communities in the process of making themselves visible. Often described as a leg…",
+      "descriptionBeforeOverride": "Surfacing unseen bodies of work from the 1970s and 80s, the exhibition focuses on Volcano’s time in San Francisco and Santa Fe, tracing queer, feminist, leather dyke, gender-variant, and land-based communities in the process of making themselves visible. Often described as a leg…",
       "sourceUrl": "https://autoitaliasoutheast.org/projects/sensual-mutual/",
-      "reasonCode": "missing-official-description",
-      "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "reasonCode": "official-source-description",
+      "evidence": "Description extracted from official exhibition metadata.",
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "camden-art-centre-liz-larner-a-hard-line-to-bend-2026-09-11",
@@ -488,7 +477,7 @@
       "sourceUrl": "https://camdenartcentre.org/whats-on/a-hard-line-to-bend",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "design-museum-es-devlin-other-worlds-2026-10-02",
@@ -499,7 +488,7 @@
       "sourceUrl": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "dulwich-picture-gallery-charlie-mackesy-the-boy-the-mole-the-fox-the-horse-and-you-2026-11-03",
@@ -510,7 +499,7 @@
       "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/charlie-mackesy-the-boy-the-fox-the-mole-the-horse-and-you/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "dulwich-picture-gallery-curtain-up-2026-05-19",
@@ -521,29 +510,7 @@
       "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/curtain-up/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "exhibitionId": "dulwich-picture-gallery-friends-circle-special-the-year-ahead-2026-05-08",
-      "venueId": "dulwich-picture-gallery",
-      "title": "Friends Circle Special: The Year Ahead",
-      "description": "Be among the first to hear what’s coming next at Dulwich Picture Gallery at this exclusive Friends Circle preview event.",
-      "descriptionBeforeOverride": "Be among the first to hear what’s coming next at Dulwich Picture Gallery at this exclusive Friends Circle preview event.",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/friends-circle-special-the-year-ahead/",
-      "reasonCode": "official-source-description",
-      "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "exhibitionId": "dulwich-picture-gallery-mini-masterpieces-2025-06-26",
-      "venueId": "dulwich-picture-gallery",
-      "title": "Mini Masterpieces",
-      "description": "Spark your child's imagination through playful painting.",
-      "descriptionBeforeOverride": "Spark your child's imagination through playful painting.",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/mini-masterpieces/",
-      "reasonCode": "official-source-description",
-      "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "garden-museum-sabine-moritz-2026-10-08",
@@ -554,29 +521,18 @@
       "sourceUrl": "https://www.gardenmuseum.org.uk/whats-on/sabine-moritz/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "gasworks-umi-ishihara-nocturnal-melody-2026-10-10",
       "venueId": "gasworks",
       "title": "Umi Ishihara: Nocturnal Melody",
-      "description": "",
-      "descriptionBeforeOverride": "",
+      "description": "The exhibition is presented in partnership with esea contemporary , Manchester, where it will tour from 10 October 2026 to 17 January 2027. -- The headline supporters for Umi Ishihara’s exhibition are Japan House London Trust and Arts Council England.",
+      "descriptionBeforeOverride": "The exhibition is presented in partnership with esea contemporary , Manchester, where it will tour from 10 October 2026 to 17 January 2027. -- The headline supporters for Umi Ishihara’s exhibition are Japan House London Trust and Arts Council England.",
       "sourceUrl": "https://www.gasworks.org.uk/exhibitions/umi-ishihara/",
-      "reasonCode": "missing-official-description",
-      "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "exhibitionId": "national-portrait-gallery-herbert-smith-freehills-kramer-portrait-award-2026-2026-06-25",
-      "venueId": "national-portrait-gallery",
-      "title": "Herbert Smith Freehills Kramer Portrait Award 2026",
-      "description": "Free exhibition celebrating the very best in contemporary portraiture painting",
-      "descriptionBeforeOverride": "Free exhibition celebrating the very best in contemporary portraiture painting",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/hsf-kramer-portrait-award-2026/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "national-portrait-gallery-tim-walker-s-fairyland-love-and-legends-2026-10-09",
@@ -587,7 +543,7 @@
       "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/tim-walkers-fairyland-love-and-legends",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "national-portrait-gallery-winston-taylor-photo-portrait-prize-2026-2026-11-05",
@@ -595,10 +551,21 @@
       "title": "Winston Taylor Photo Portrait Prize 2026",
       "description": "The Winston Taylor Photo Portrait Prize showcases the work of talented young photographers, gifted amateurs and established professionals in the very best of contemporary photography.",
       "descriptionBeforeOverride": "The Winston Taylor Photo Portrait Prize showcases the work of talented young photographers, gifted amateurs and established professionals in the very best of contemporary photography.",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026",
+      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
+    },
+    {
+      "exhibitionId": "refuses-at-queensrollahouse-elspeth-vince-soft-tissue-2026-10-09",
+      "venueId": "refuses-at-queensrollahouse",
+      "title": "Elspeth Vince: Soft Tissue",
+      "description": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
+      "descriptionBeforeOverride": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
+      "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
+      "reasonCode": "official-source-description",
+      "evidence": "Description extracted from official exhibition metadata.",
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "sir-john-soanes-museum-michael-landy-future-ruins-2026-10-14",
@@ -609,7 +576,7 @@
       "sourceUrl": "https://www.soane.org/exhibitions/michael-landy-future-ruins",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "south-london-gallery-monika-sosnowska-weight-of-matter-2026-09-10",
@@ -620,73 +587,73 @@
       "sourceUrl": "https://www.southlondongallery.org/exhibitions/monika-sosnowska-weight-of-matter/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-modern-ana-mendieta-2026-07-14",
       "venueId": "tate-modern",
       "title": "Ana Mendieta",
       "description": "Experience the powerful work of Ana Mendieta, whose legacy changed the course of contemporary art.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "Audio guide Exhibition guide Accessibility Related events Experience the powerful work of Ana Mendieta, whose legacy changed the course of contemporary art This major exhibition dedicated to Ana Mendieta presents many of her iconic works alongside newly remastered films, early p…",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/ana-mendieta",
       "reasonCode": "official-description-override",
       "evidence": "Official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-modern-frida-the-making-of-an-icon-2026-06-25",
       "venueId": "tate-modern",
       "title": "Frida: The Making of an Icon",
       "description": "Step into the life and legacy of Frida Kahlo: revolutionary artist and global icon.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "The exhibition is in partnership with Lead Global Supporter, Bank of America. Supported by John J.",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon",
       "reasonCode": "official-description-override",
       "evidence": "Official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-modern-gathering-ground-2025-01-29",
       "venueId": "tate-modern",
       "title": "Gathering Ground",
       "description": "Explore the power of art to inspire change in today’s ecological crisis.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "Explore the power of art to inspire change in today’s ecological crisis Bringing together art from across Tate’s Collection, this exhibition highlights the connection between environmental and social justice, inviting us to reimagine our relationships with the natural world and…",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/gathering-ground",
       "reasonCode": "official-description-override",
       "evidence": "Official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-modern-hyundai-commission-tarek-atoui-2026-10-13",
       "venueId": "tate-modern",
       "title": "Hyundai Commission: Tarek Atoui",
       "description": "Tarek Atoui creates a new work for Tate Modern’s Turbine Hall, drawing on his innovative performances and installations exploring sound.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "Tarek Atoui creates a new work for Tate Modern’s Turbine Hall, drawing on his innovative performances and installations exploring sound.",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/tarek-atoui",
       "reasonCode": "official-description-override",
       "evidence": "Concise rendering of the official Tate exhibition intro and opening paragraph.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-modern-julio-le-parc-light-colour-action-2026-06-08",
       "venueId": "tate-modern",
       "title": "Julio Le Parc: Light. Colour. Action.",
       "description": "Discover seven decades of joyful works by Argentinian artist Julio Le Parc, turning visitors into active participants.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "Left Right Julio Le Parc, installation view, Blue Sphere , photo: Owen Harvey Julio Le Parc, Screen with Reflective Blades , installation view, Hermes, Tokyo, 2021 DEP01 2021 HERMES TOKYO _B4A0484 Julio Le Parc, installation view, Screen with Refracted Blades , photo: Owen Harve…",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc",
       "reasonCode": "official-description-override",
       "evidence": "Concise rendering of the official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "tate-modern-light-and-magic-the-birth-of-art-photography-2026-10-14",
       "venueId": "tate-modern",
       "title": "Light and Magic: The Birth of Art Photography",
       "description": "Discover the untold global story of art photography.",
-      "descriptionBeforeOverride": "",
+      "descriptionBeforeOverride": "The Royal Photographic Society Collection at the V&A, acquired with the generous assistance of the National Lottery Heritage Fund and Art Fund © Estate of Lang Jingshan Lionel Wendt, Untitled , c.1933-1938, Tate, Purchased with funds provided by the South Asia Acquisitions Commi…",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
       "reasonCode": "official-description-override",
       "evidence": "Official Tate exhibition intro.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-adobe-creative-residents-on-display-2025-12-02",
@@ -697,7 +664,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-adobe-creative-residents-on-display",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-american-photographs-2025-06-14",
@@ -708,7 +675,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/american-photographs",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-bharti-kher-at-the-v-a-2026-07-20",
@@ -719,7 +686,29 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/bharti-kher-at-the-va",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
+    },
+    {
+      "exhibitionId": "vam-constantinople-to-istanbul-one-city-two-empires-2026-11-07",
+      "venueId": "vam",
+      "title": "Constantinople to Istanbul: One City, Two Empires",
+      "description": "",
+      "descriptionBeforeOverride": "",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/constantinople-to-istanbul-one-city-two-empires",
+      "reasonCode": "missing-official-description",
+      "evidence": "No concise exhibition-specific description was reliably extracted.",
+      "verifiedAt": "2026-10-12"
+    },
+    {
+      "exhibitionId": "vam-degrees-of-disruption-vera-molnar-and-generative-art-2026-10-16",
+      "venueId": "vam",
+      "title": "Degrees of Disruption: Vera Molnar and Generative Art",
+      "description": "",
+      "descriptionBeforeOverride": "",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/degrees-of-disruption-vera-molnar-and-generative-art",
+      "reasonCode": "missing-official-description",
+      "evidence": "No concise exhibition-specific description was reliably extracted.",
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-dimensions-contemporary-chinese-studio-crafts-2025-10-28",
@@ -730,7 +719,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/dimensions-contemporary-chinese-studio-crafts",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-henri-cartier-bresson-self-published-photobook-award-shortlist-2026-09-21",
@@ -741,7 +730,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-lost-music-venues-2026-05-30",
@@ -752,7 +741,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/lost-music-venues",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-rising-voices-contemporary-art-from-asia-australia-and-the-pacific-2026-05-16",
@@ -763,7 +752,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/rising-voices-contemporary-art-from-asia-australia-and-the-pacific",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-sacred-treasures-from-kyiv-2026-09-14",
@@ -774,18 +763,18 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/sacred-treasures-from-kyiv",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-samuel-palmer-and-modern-art-2026-10-10",
       "venueId": "vam",
       "title": "Samuel Palmer and Modern Art",
-      "description": "",
-      "descriptionBeforeOverride": "",
+      "description": "A display marking 200 years since Samuel Palmer's visionary Shoreham period and the V&A exhibition that introduced his work to modern British artists.",
+      "descriptionBeforeOverride": "A display marking 200 years since Samuel Palmer's visionary Shoreham period and the V&A exhibition that introduced his work to modern British artists.",
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/samuel-palmer-and-modern-art",
-      "reasonCode": "missing-official-description",
-      "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "reasonCode": "official-source-description",
+      "evidence": "Description extracted from official exhibition metadata.",
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-schiaparelli-fashion-becomes-art-2026-03-28",
@@ -796,7 +785,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/schiaparelli",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-the-burberry-trench-crafting-an-icon-2026-09-21",
@@ -807,7 +796,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-burberry-trench-crafting-an-icon",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "vam-urushi-now-contemporary-japanese-lacquer-2026-04-30",
@@ -818,7 +807,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/urushi-now-contemporary-japanese-lacquer",
       "reasonCode": "missing-official-description",
       "evidence": "No concise exhibition-specific description was reliably extracted.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "wallace-collection-metamorphoses-porcelain-sculpture-by-rachel-kneebone-2026-09-23",
@@ -829,7 +818,7 @@
       "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/metamorphoses-porcelain-sculpture-by-rachel-kneebone/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "wallace-collection-the-wallace-collection-at-war-2026-04-15",
@@ -840,7 +829,7 @@
       "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/the-wallace-collection-at-war/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "wallace-collection-winston-churchill-the-painter-2026-04-15",
@@ -851,7 +840,7 @@
       "sourceUrl": "https://www.wallacecollection.org/whats-on/events/winston-churchill-the-painter/",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "wellcome-collection-audrey-amiss-the-surviving-exhibitions-2026-07-10",
@@ -862,7 +851,7 @@
       "sourceUrl": "https://wellcomecollection.org/exhibitions/audrey-amiss-the-surviving-exhibitions",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "wellcome-collection-rudy-loewe-intimacies-of-care-spaces-of-grief-and-possibility-2026-07-10",
@@ -873,7 +862,7 @@
       "sourceUrl": "https://wellcomecollection.org/exhibitions/rudy-loewe-intimacies-of-care-spaces-of-grief-and-possibility",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "wellcome-collection-tenderness-and-rage-2026-05-29",
@@ -884,7 +873,7 @@
       "sourceUrl": "https://wellcomecollection.org/exhibitions/tenderness-and-rage",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "wellcome-collection-the-coming-of-age-2026-03-26",
@@ -895,7 +884,7 @@
       "sourceUrl": "https://wellcomecollection.org/exhibitions/the-coming-of-age",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
+      "verifiedAt": "2026-10-12"
     },
     {
       "exhibitionId": "young-vam-inside-aardman-wallace-gromit-and-friends-2026-02-12",
@@ -906,18 +895,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/inside-aardman-wallace-gromit-and-friends",
       "reasonCode": "official-source-description",
       "evidence": "Description extracted from official exhibition metadata.",
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "exhibitionId": "refuses-at-queensrollahouse-elspeth-vince-soft-tissue-2026-10-09",
-      "venueId": "refuses-at-queensrollahouse",
-      "title": "Elspeth Vince: Soft Tissue",
-      "description": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
-      "descriptionBeforeOverride": "A new body of paintings and site-specific interventions exploring memory, dreams, anticipation and the traces left by half-remembered experiences.",
-      "sourceUrl": "https://www.instagram.com/p/Dd4SAcair6M/",
-      "reasonCode": "official-source-description",
-      "evidence": "Official gallery caption and contemporaneous FAD coverage describe the new paintings and site-specific installation.",
-      "verifiedAt": "2026-10-07"
+      "verifiedAt": "2026-10-12"
     }
   ]
 }

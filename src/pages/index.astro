@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { AREAS } from "../types";
 import { addDays, asUtcDate, catalog, isNotExplicitlyPaid, toIsoDate } from "../lib/catalog";
+import { compareCalendarOccurrences } from "../../public/calendar-order.mjs";
 import registryVenues from "../../data/venues.json";
 import runSummary from "../../data/run-summary.json";
 
@@ -91,10 +92,88 @@ const catalogue = catalog
   })
   .sort(
     (a, b) =>
+      Math.max(a.startOffset, 0) - Math.max(b.startOffset, 0) ||
+      Number(b.startDate < fallbackTodayIso) - Number(a.startDate < fallbackTodayIso) ||
+      (a.startDate < fallbackTodayIso && b.startDate < fallbackTodayIso
+        ? b.startDate.localeCompare(a.startDate)
+        : 0) ||
       venueRank(a.venue.name) - venueRank(b.venue.name) ||
-      a.startColumn - b.startColumn ||
       a.endDate.localeCompare(b.endDate) ||
-      a.title.localeCompare(b.title),
+      a.title.localeCompare(b.title) ||
+      a.id.localeCompare(b.id),
+  );
+
+const privateViewTime = (privateView: NonNullable<(typeof catalogue)[number]["privateViews"]>[number]) => {
+  if (!privateView.startTime) return "";
+  return privateView.endTime
+    ? `${privateView.startTime}–${privateView.endTime}`
+    : privateView.startTime;
+};
+
+const calendarOccurrenceSortValue = (occurrence: {
+  occurrenceId: string;
+  occurrenceKind: string;
+  occurrenceStartDate: string;
+  title: string;
+  catalogIndex: number;
+  venue: { name: string };
+}) => ({
+  id: occurrence.occurrenceId,
+  kind: occurrence.occurrenceKind,
+  startDate: occurrence.occurrenceStartDate,
+  priorityRank: venueRank(occurrence.venue.name),
+  title: occurrence.title,
+  catalogIndex: occurrence.catalogIndex,
+});
+
+const calendarOccurrences = catalogue
+  .flatMap((exhibition, catalogIndex) => [
+    {
+      ...exhibition,
+      occurrenceId: `${exhibition.id}::run`,
+      occurrenceKind: "run",
+      occurrenceDate: exhibition.startDate,
+      occurrenceStartDate: exhibition.startDate,
+      occurrenceEndDate: exhibition.endDate,
+      privateView: null,
+      catalogIndex,
+    },
+    ...(exhibition.privateViews ?? []).map((privateView, privateViewIndex) => ({
+      ...exhibition,
+      occurrenceId: `${exhibition.id}::private-view::${privateView.date}::${privateViewIndex}`,
+      occurrenceKind: "private-view",
+      occurrenceDate: privateView.date,
+      occurrenceStartDate: privateView.date,
+      occurrenceEndDate: privateView.date,
+      privateView,
+      catalogIndex,
+    })),
+  ])
+  .map((occurrence) => {
+    const startOffset = dayOffset(occurrence.occurrenceStartDate);
+    const endOffset = dayOffset(occurrence.occurrenceEndDate);
+    const startColumn = Math.max(0, startOffset) + 1;
+    const endColumn = Math.min(2, endOffset) + 1;
+    return {
+      ...occurrence,
+      startOffset,
+      endOffset,
+      startColumn,
+      span: Math.max(1, endColumn - startColumn + 1),
+      continuesBefore:
+        occurrence.occurrenceKind === "run" &&
+        occurrence.occurrenceStartDate < fallbackTodayIso,
+      continuesAfter:
+        occurrence.occurrenceKind === "run" &&
+        endOffset >= 3,
+    };
+  })
+  .sort((a, b) =>
+    compareCalendarOccurrences(
+      calendarOccurrenceSortValue(a),
+      calendarOccurrenceSortValue(b),
+      fallbackTodayIso,
+    ),
   );
 
 const institutionSearchText = (venue: (typeof registryVenues)[number]) =>
@@ -145,6 +224,7 @@ const calendarData = catalogue.map((exhibition) => ({
   imageAlt: exhibition.imageAlt ?? "",
   imagePosition: exhibition.imagePosition ?? "center",
   sourceUrl: exhibition.sourceUrl,
+  privateViews: exhibition.privateViews ?? [],
   price: priceLabels[exhibition.priceStatus],
   confidence: exhibition.confidenceScore,
   accent: exhibition.accent,
@@ -362,73 +442,117 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
           <div class="calendar-board" style="--visible-days:3">
             <div class="timeline" id="timeline">
               {
-                catalogue.map((exhibition) => (
+                calendarOccurrences.map((occurrence) => (
                   <div
                     class="timeline-row"
-                    hidden={exhibition.endOffset < 0 || exhibition.startOffset >= 3}
+                    hidden={occurrence.endOffset < 0 || occurrence.startOffset >= 3}
                     data-row
-                    data-area={exhibition.venue.area}
-                    data-venue={exhibition.venue.id}
-                    data-venue-type={exhibition.venue.type}
-                    data-price={exhibition.priceStatus}
-                    data-not-explicitly-paid={isNotExplicitlyPaid(exhibition) ? "true" : "false"}
-                    data-start-date={exhibition.startDate}
-                    data-end-date={exhibition.endDate}
-                    data-start-offset={exhibition.startOffset}
-                    data-end-offset={exhibition.endOffset}
+                    data-area={occurrence.venue.area}
+                    data-venue={occurrence.venue.id}
+                    data-venue-type={occurrence.venue.type}
+                    data-price={occurrence.priceStatus}
+                    data-not-explicitly-paid={isNotExplicitlyPaid(occurrence) ? "true" : "false"}
+                    data-start-date={occurrence.occurrenceStartDate}
+                    data-end-date={occurrence.occurrenceEndDate}
+                    data-start-offset={occurrence.startOffset}
+                    data-end-offset={occurrence.endOffset}
+                    data-occurrence-kind={occurrence.occurrenceKind}
+                    data-priority-rank={venueRank(occurrence.venue.name)}
+                    data-event-title={occurrence.title}
+                    data-event-stable-id={occurrence.occurrenceId}
+                    data-catalog-index={occurrence.catalogIndex}
                   >
                     <button
                       class:list={[
                         "event-bar",
                         {
-                          "continues-before": exhibition.continuesBefore,
-                          "continues-after": exhibition.continuesAfter,
-                          "starts-here": days.slice(0, 3).some((day) => day.iso === exhibition.startDate),
+                          "continues-before": occurrence.continuesBefore,
+                          "continues-after": occurrence.continuesAfter,
+                          "starts-here":
+                            occurrence.occurrenceKind === "run" &&
+                            days.slice(0, 3).some((day) => day.iso === occurrence.startDate),
+                          "private-view": occurrence.occurrenceKind === "private-view",
                         },
                       ]}
                       type="button"
-                      data-event-id={exhibition.id}
-                      style={`--event-start:${exhibition.startColumn};--event-span:${exhibition.span}`}
-                      aria-label={`View details for ${exhibition.title} at ${exhibition.venue.name}`}
-                    >
-                      {
-                        exhibition.imageUrl ? (
-                          <img
-                            src={exhibition.cachedThumbnail ?? exhibition.imageUrl}
-                            alt={exhibition.imageAlt ?? ""}
-                            loading="lazy"
-                            decoding="async"
-                            referrerpolicy="no-referrer"
-                            style={`object-position:${exhibition.imagePosition ?? "center"}`}
-                          />
-                        ) : (
-                          <span class="event-monogram" aria-hidden="true">
-                            {exhibition.venue.name.slice(0, 1)}
-                          </span>
-                        )
+                      data-event-id={occurrence.id}
+                      data-occurrence-kind={occurrence.occurrenceKind}
+                      data-private-view-date={occurrence.privateView?.date}
+                      data-private-view-start-time={occurrence.privateView?.startTime}
+                      data-private-view-end-time={occurrence.privateView?.endTime}
+                      data-private-view-label={occurrence.privateView?.label}
+                      style={`--event-start:${occurrence.startColumn};--event-span:${occurrence.span}`}
+                      aria-label={
+                        occurrence.privateView
+                          ? `Private view for ${occurrence.title} at ${occurrence.venue.name} on ${formatDate(occurrence.privateView.date, { day: "numeric", month: "long", year: "numeric" })}${privateViewTime(occurrence.privateView) ? `, ${privateViewTime(occurrence.privateView)}` : ""}. View exhibition details`
+                          : `View details for ${occurrence.title} at ${occurrence.venue.name}`
                       }
+                    >
+                      <span class="event-media">
+                        {
+                          occurrence.imageUrl ? (
+                            <img
+                              src={occurrence.cachedThumbnail ?? occurrence.imageUrl}
+                              alt={occurrence.imageAlt ?? ""}
+                              loading="lazy"
+                              decoding="async"
+                              referrerpolicy="no-referrer"
+                              style={`object-position:${occurrence.imagePosition ?? "center"}`}
+                            />
+                          ) : (
+                            <span class="event-monogram" aria-hidden="true">
+                              {occurrence.venue.name.slice(0, 1)}
+                            </span>
+                          )
+                        }
+                        {occurrence.privateView && <span class="private-view-badge" aria-hidden="true">PV</span>}
+                      </span>
                       <span class="event-copy">
-                        <strong>{exhibition.venue.name}</strong>
-                        <small>{exhibition.title}</small>
+                        <strong>
+                          {occurrence.privateView ? `${occurrence.privateView.label ?? "Private view"} · ${occurrence.venue.name}` : occurrence.venue.name}
+                        </strong>
+                        <small>{occurrence.title}</small>
                       </span>
                       <span
                         class="event-dates"
-                        aria-label={`${formatDate(exhibition.startDate, { day: "numeric", month: "long", year: "numeric" })} to ${formatDate(exhibition.endDate, { day: "numeric", month: "long", year: "numeric" })}`}
+                        aria-label={
+                          occurrence.privateView
+                            ? `${formatDate(occurrence.privateView.date, { day: "numeric", month: "long", year: "numeric" })}${privateViewTime(occurrence.privateView) ? `, ${privateViewTime(occurrence.privateView)}` : ""}`
+                            : `${formatDate(occurrence.startDate, { day: "numeric", month: "long", year: "numeric" })} to ${formatDate(occurrence.endDate, { day: "numeric", month: "long", year: "numeric" })}`
+                        }
                       >
-                        <span class="event-date-full">
-                          <time datetime={exhibition.startDate}>
-                            {formatDate(exhibition.startDate, { day: "numeric", month: "short" })}
-                          </time>
-                          <i>—</i>
-                          <time datetime={exhibition.endDate}>
-                            {formatDate(exhibition.endDate, { day: "numeric", month: "short" })}
-                          </time>
-                        </span>
-                        <span class="event-date-compact" aria-hidden="true">
-                          <span>{formatCompactDate(exhibition.startDate)}</span>
-                          <i>—</i>
-                          <span>{formatCompactDate(exhibition.endDate)}</span>
-                        </span>
+                        {
+                          occurrence.privateView ? (
+                            <>
+                              <span class="event-date-full">
+                                <time datetime={occurrence.privateView.date}>
+                                  {formatDate(occurrence.privateView.date, { day: "numeric", month: "short" })}
+                                </time>
+                                {privateViewTime(occurrence.privateView) && <span>{privateViewTime(occurrence.privateView)}</span>}
+                              </span>
+                              <span class="event-date-compact" aria-hidden="true">
+                                <span>{formatCompactDate(occurrence.privateView.date)}</span>
+                              </span>
+                            </>
+                          ) : (
+                            <>
+                              <span class="event-date-full">
+                                <time datetime={occurrence.startDate}>
+                                  {formatDate(occurrence.startDate, { day: "numeric", month: "short" })}
+                                </time>
+                                <i>—</i>
+                                <time datetime={occurrence.endDate}>
+                                  {formatDate(occurrence.endDate, { day: "numeric", month: "short" })}
+                                </time>
+                              </span>
+                              <span class="event-date-compact" aria-hidden="true">
+                                <span>{formatCompactDate(occurrence.startDate)}</span>
+                                <i>—</i>
+                                <span>{formatCompactDate(occurrence.endDate)}</span>
+                              </span>
+                            </>
+                          )
+                        }
                       </span>
                     </button>
                   </div>
@@ -440,73 +564,103 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
 
         <div class="expanded-events" id="expanded-events">
           {
-            catalogue.map((exhibition, index) => (
+            calendarOccurrences.map((occurrence, index) => (
               <article
-                class="expanded-card"
-                hidden={exhibition.endOffset < 0 || exhibition.startOffset >= 3}
+                class:list={[
+                  "expanded-card",
+                  { "private-view": occurrence.occurrenceKind === "private-view" },
+                ]}
+                hidden={occurrence.endOffset < 0 || occurrence.startOffset >= 3}
                 data-expanded-card
-                data-expanded-event-id={exhibition.id}
-                data-area={exhibition.venue.area}
-                data-venue={exhibition.venue.id}
-                data-venue-type={exhibition.venue.type}
-                data-price={exhibition.priceStatus}
-                data-not-explicitly-paid={isNotExplicitlyPaid(exhibition) ? "true" : "false"}
-                data-start-date={exhibition.startDate}
-                data-end-date={exhibition.endDate}
-                data-start-offset={exhibition.startOffset}
-                data-end-offset={exhibition.endOffset}
-                data-priority-rank={venueRank(exhibition.venue.name)}
-                data-event-title={exhibition.title}
+                data-expanded-event-id={occurrence.id}
+                data-area={occurrence.venue.area}
+                data-venue={occurrence.venue.id}
+                data-venue-type={occurrence.venue.type}
+                data-price={occurrence.priceStatus}
+                data-not-explicitly-paid={isNotExplicitlyPaid(occurrence) ? "true" : "false"}
+                data-start-date={occurrence.occurrenceStartDate}
+                data-end-date={occurrence.occurrenceEndDate}
+                data-start-offset={occurrence.startOffset}
+                data-end-offset={occurrence.endOffset}
+                data-occurrence-kind={occurrence.occurrenceKind}
+                data-priority-rank={venueRank(occurrence.venue.name)}
+                data-event-title={occurrence.title}
+                data-event-stable-id={occurrence.occurrenceId}
                 data-catalog-index={index}
+                data-private-view-date={occurrence.privateView?.date}
+                data-private-view-start-time={occurrence.privateView?.startTime}
+                data-private-view-end-time={occurrence.privateView?.endTime}
+                data-private-view-label={occurrence.privateView?.label}
               >
                 <button
                   class="expanded-card-open"
                   type="button"
-                  aria-label={`View details for ${exhibition.title} at ${exhibition.venue.name}`}
+                  aria-label={
+                    occurrence.privateView
+                      ? `Private view for ${occurrence.title} at ${occurrence.venue.name} on ${formatDate(occurrence.privateView.date, { day: "numeric", month: "long", year: "numeric" })}${privateViewTime(occurrence.privateView) ? `, ${privateViewTime(occurrence.privateView)}` : ""}. View exhibition details`
+                      : `View details for ${occurrence.title} at ${occurrence.venue.name}`
+                  }
                 ></button>
                 <div class="expanded-card-image">
                   {
-                    exhibition.cachedThumbnail ?? exhibition.imageUrl ? (
+                    occurrence.cachedThumbnail ?? occurrence.imageUrl ? (
                       <img
-                        src={exhibition.cachedThumbnail ?? exhibition.imageUrl}
-                        alt={exhibition.imageAlt ?? ""}
+                        src={occurrence.cachedThumbnail ?? occurrence.imageUrl}
+                        alt={occurrence.imageAlt ?? ""}
                         loading="lazy"
                         decoding="async"
                         referrerpolicy="no-referrer"
-                        style={`object-position:${exhibition.imagePosition ?? "center"}`}
+                        style={`object-position:${occurrence.imagePosition ?? "center"}`}
                       />
                     ) : (
-                      <span aria-hidden="true">{exhibition.venue.name.slice(0, 1)}</span>
+                      <span aria-hidden="true">{occurrence.venue.name.slice(0, 1)}</span>
                     )
                   }
+                  {occurrence.privateView && <span class="private-view-badge" aria-hidden="true">PV</span>}
                 </div>
                 <div class="expanded-card-copy">
                   <div class="expanded-card-heading">
                     <p>
-                      {exhibition.venue.name}
+                      {occurrence.privateView && <strong>{occurrence.privateView.label ?? "Private view"} · </strong>}
+                      {occurrence.venue.name}
                       <span aria-hidden="true"> · </span>
-                      <span>{venueTypeLabel(exhibition.venue.type)}</span>
+                      <span>{venueTypeLabel(occurrence.venue.type)}</span>
                     </p>
                     <p class="expanded-card-dates">
-                      <time datetime={exhibition.startDate}>
-                        {formatDate(exhibition.startDate, { day: "numeric", month: "short", year: "numeric" })}
-                      </time>
-                      <span aria-hidden="true"> — </span>
-                      <time datetime={exhibition.endDate}>
-                        {formatDate(exhibition.endDate, { day: "numeric", month: "short", year: "numeric" })}
-                      </time>
+                      {
+                        occurrence.privateView ? (
+                          <>
+                            <time datetime={occurrence.privateView.date}>
+                              {formatDate(occurrence.privateView.date, { day: "numeric", month: "short", year: "numeric" })}
+                            </time>
+                            {privateViewTime(occurrence.privateView) && <span> · {privateViewTime(occurrence.privateView)}</span>}
+                          </>
+                        ) : (
+                          <>
+                            <time datetime={occurrence.startDate}>
+                              {formatDate(occurrence.startDate, { day: "numeric", month: "short", year: "numeric" })}
+                            </time>
+                            <span aria-hidden="true"> — </span>
+                            <time datetime={occurrence.endDate}>
+                              {formatDate(occurrence.endDate, { day: "numeric", month: "short", year: "numeric" })}
+                            </time>
+                          </>
+                        )
+                      }
                     </p>
                   </div>
-                  <h2>{exhibition.title}</h2>
-                  <p class="expanded-card-description">{exhibition.shortDescription}</p>
+                  <h2>{occurrence.title}</h2>
+                  <p class="expanded-card-description">
+                    {occurrence.privateView ? `Private view for this exhibition${privateViewTime(occurrence.privateView) ? `, ${privateViewTime(occurrence.privateView)}` : ""}.` : occurrence.shortDescription}
+                  </p>
                   <div class="expanded-card-location">
-                    <p>{venueAddress(exhibition.venue)}</p>
+                    <p>{venueAddress(occurrence.venue)}</p>
                     <a
                       class="expanded-map-link"
-                      href={venueMapsUrl(exhibition.venue)}
+                      href={venueMapsUrl(occurrence.venue)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`Open ${exhibition.venue.name} in Google Maps`}
+                      aria-label={`Open ${occurrence.venue.name} in Google Maps`}
                     >
                       <svg viewBox="0 0 20 20" aria-hidden="true">
                         <path d="M5 15 15 5M8 5h7v7" vector-effect="non-scaling-stroke" />
@@ -534,6 +688,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     <div class="hover-preview-image">
       <img alt="" />
       <span></span>
+      <b class="private-view-badge" hidden>PV</b>
     </div>
     <div>
       <small></small>
@@ -550,6 +705,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       <div class="modal-visual" id="modal-visual">
         <img id="modal-image" alt="" />
         <div class="modal-monogram" id="modal-monogram" aria-hidden="true"></div>
+        <b class="private-view-badge" id="modal-private-view-badge" hidden>PV</b>
         <span id="modal-price"></span>
       </div>
       <div class="modal-copy">
@@ -562,6 +718,10 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
           <div>
             <dt>Dates</dt>
             <dd id="modal-dates"></dd>
+          </div>
+          <div id="modal-private-view-fact" hidden>
+            <dt>Private view</dt>
+            <dd id="modal-private-view"></dd>
           </div>
           <div class="modal-where-fact">
             <dt>Where</dt>
@@ -602,6 +762,10 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       londonDateIso,
       millisecondsUntilLondonDateChange,
     } from "/london-date.mjs";
+    import {
+      compareCalendarOccurrences,
+      occurrenceGroupDate,
+    } from "/calendar-order.mjs";
 
     const dataElement = document.querySelector("#calendar-data");
     const events = new Map(JSON.parse(dataElement?.textContent ?? "[]").map((item) => [item.id, item]));
@@ -628,6 +792,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     const mobileFilterButton = document.querySelector(".mobile-filter-button");
     const visibleDaysOutput = document.querySelector("#visible-days");
     const calendarBoard = document.querySelector(".calendar-board");
+    const timeline = document.querySelector("#timeline");
     const calendarScroll = document.querySelector("#calendar-scroll");
     const calendarHeaderScroll = document.querySelector("#calendar-header-scroll");
     const calendarHeaderSentinel = document.querySelector("#calendar-header-sentinel");
@@ -799,6 +964,18 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(
         new Date(`${iso}T12:00:00Z`),
       );
+    const privateViewText = (privateView) => {
+      const time = privateView.startTime
+        ? privateView.endTime
+          ? `${privateView.startTime}–${privateView.endTime}`
+          : privateView.startTime
+        : "";
+      const label =
+        privateView.label && privateView.label !== "Private view"
+          ? `${privateView.label}: `
+          : "";
+      return `${label}${prettyDate(privateView.date)}${time ? `, ${time}` : ""}`;
+    };
     const venueTypeLabels = {
       commercial: "Commercial",
       independent: "Independent",
@@ -869,9 +1046,13 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
         calendarStartOffset,
         calendarStartOffset + visibleDayCount,
       );
-      const startOffset = Number(card.dataset.startOffset);
-      const groupDate =
-        startOffset <= calendarStartOffset ? firstVisibleDay?.dataset.date : card.dataset.startDate;
+      const groupDate = occurrenceGroupDate(
+        {
+          kind: card.dataset.occurrenceKind,
+          startDate: card.dataset.startDate,
+        },
+        firstVisibleDay?.dataset.date,
+      );
       return visibleDays.some((day) => day.dataset.date === groupDate) ? groupDate : null;
     };
 
@@ -957,27 +1138,27 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       (!venueTypes.size || venueTypes.has(element.dataset.venueType)) &&
       (!freeOnly || element.dataset.notExplicitlyPaid === "true");
 
-    const sortExpandedCards = () => {
-      const compareCards = (a, b) => {
-        const aStart = Number(a.dataset.startOffset);
-        const bStart = Number(b.dataset.startOffset);
-        const aGroupStart = Math.max(aStart, calendarStartOffset);
-        const bGroupStart = Math.max(bStart, calendarStartOffset);
-        if (aGroupStart !== bGroupStart) return aGroupStart - bGroupStart;
-        const aOpensOnRangeStart = aStart === calendarStartOffset;
-        const bOpensOnRangeStart = bStart === calendarStartOffset;
-        if (aOpensOnRangeStart !== bOpensOnRangeStart) {
-          return aOpensOnRangeStart ? -1 : 1;
-        }
-        const priorityDifference =
-          Number(a.dataset.priorityRank) - Number(b.dataset.priorityRank);
-        if (priorityDifference) return priorityDifference;
-        const titleDifference = a.dataset.eventTitle.localeCompare(b.dataset.eventTitle);
-        if (titleDifference) return titleDifference;
-        return Number(a.dataset.catalogIndex) - Number(b.dataset.catalogIndex);
-      };
+    const occurrenceSortValue = (element) => ({
+      id: element.dataset.eventStableId,
+      kind: element.dataset.occurrenceKind,
+      startDate: element.dataset.startDate,
+      priorityRank: Number(element.dataset.priorityRank),
+      title: element.dataset.eventTitle,
+      catalogIndex: Number(element.dataset.catalogIndex),
+    });
 
-      expandedCards.sort(compareCards).forEach((card) => expandedEvents.append(card));
+    const compareOccurrenceElements = (a, b) =>
+      compareCalendarOccurrences(
+        occurrenceSortValue(a),
+        occurrenceSortValue(b),
+        calendarDays[calendarStartOffset]?.dataset.date ?? liveTodayIso,
+      );
+
+    const sortOccurrenceElements = () => {
+      rows.sort(compareOccurrenceElements).forEach((row) => timeline.append(row));
+      expandedCards
+        .sort(compareOccurrenceElements)
+        .forEach((card) => expandedEvents.append(card));
     };
 
     const syncUrl = (areas, venueIds, venueTypes, freeOnly, historyMode = "replace") => {
@@ -1017,7 +1198,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       expandedCards.forEach((card) => {
         card.hidden = !matchesCurrentFilters(card, areas, venueIds, venueTypes, freeOnly);
       });
-      sortExpandedCards();
+      sortOccurrenceElements();
       refreshExpandedDayGroups();
 
       const activeCount = areas.size + venueIds.size + venueTypes.size + (freeOnly ? 1 : 0);
@@ -1060,7 +1241,11 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
         bar.style.setProperty("--event-span", String(span));
         bar.classList.toggle("continues-before", startOffset < 0);
         bar.classList.toggle("continues-after", endOffset >= visibleDayCount);
-        bar.classList.toggle("starts-here", visibleDates.includes(row.dataset.startDate));
+        bar.classList.toggle(
+          "starts-here",
+          row.dataset.occurrenceKind === "run" &&
+            visibleDates.includes(row.dataset.startDate),
+        );
       });
 
       visibleDaysOutput.textContent =
@@ -1280,14 +1465,36 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
     let modalOriginRect = null;
     let modalCloseQueued = false;
 
-    const populateModal = (event) => {
+    const occurrencePrivateView = (origin) => {
+      const date = origin?.dataset.privateViewDate;
+      if (!date) return null;
+      return {
+        date,
+        startTime: origin.dataset.privateViewStartTime || undefined,
+        endTime: origin.dataset.privateViewEndTime || undefined,
+        label: origin.dataset.privateViewLabel || "Private view",
+      };
+    };
+
+    const populateModal = (event, origin) => {
       setVisual(event);
+      const selectedPrivateView = occurrencePrivateView(origin);
       document.querySelector("#modal-title").textContent = event.title;
       const venueTypeLabel = venueTypeLabels[event.venueType] ?? event.venueType;
       document.querySelector("#modal-venue").textContent = `${event.venue} · ${venueTypeLabel}`;
       document.querySelector("#modal-description").textContent = event.description;
       document.querySelector("#modal-dates").textContent =
         `${prettyDate(event.startDate)} — ${prettyDate(event.endDate)}`;
+      const privateViewFact = document.querySelector("#modal-private-view-fact");
+      const privateViewValue = document.querySelector("#modal-private-view");
+      const privateViews = selectedPrivateView
+        ? [selectedPrivateView]
+        : event.privateViews ?? [];
+      privateViewFact.hidden = privateViews.length === 0;
+      privateViewValue.textContent = privateViews
+        .map(privateViewText)
+        .join("; ");
+      document.querySelector("#modal-private-view-badge").hidden = !selectedPrivateView;
       document.querySelector("#modal-address").textContent = event.address;
       const mapLink = document.querySelector("#modal-map-link");
       mapLink.href = event.mapsUrl;
@@ -1315,7 +1522,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       modalAnimating = true;
       modalOriginBar = originBar;
       modalOriginRect = hoverPreview.hidden ? null : hoverPreview.getBoundingClientRect();
-      populateModal(event);
+      populateModal(event, originBar);
 
       const useSharedTransition =
         !modalMotion.matches &&
@@ -1435,6 +1642,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       if (!event) return;
       const image = hoverPreview.querySelector("img");
       const placeholder = hoverPreview.querySelector(".hover-preview-image span");
+      const privateViewBadge = hoverPreview.querySelector(".private-view-badge");
       if (event.image) {
         image.src = event.image;
         image.style.objectPosition = event.imagePosition;
@@ -1449,6 +1657,7 @@ const tickerSegments = Array.from({ length: 12 }, (_, index) => ({
       hoverPreview.querySelector("small").textContent = event.venue;
       hoverPreview.querySelector("strong").textContent = event.title;
       hoverPreview.querySelector("p").textContent = event.description;
+      privateViewBadge.hidden = bar.dataset.occurrenceKind !== "private-view";
       hoverPreview.hidden = false;
       positionHoverPreview(pointerEvent);
     };
