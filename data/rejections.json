@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T12:44:30.223453+00:00",
-  "windowStart": "2026-10-12",
-  "windowEnd": "2026-11-12",
+  "generatedAt": "2026-10-19T09:10:35.987179+00:00",
+  "windowStart": "2026-10-19",
+  "windowEnd": "2026-11-19",
   "windowKind": "calendar-month-inclusive",
-  "total": 1227,
+  "total": 1074,
   "records": [
     {
       "venueId": "the-photographers-gallery",
@@ -45,14 +45,6 @@
       "reasonCode": "excluded-event-type",
       "reason": "Page is a non-exhibition event",
       "evidence": null
-    },
-    {
-      "venueId": "the-photographers-gallery",
-      "title": "Japanese Women Photographers: From 1950s to Now",
-      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/japanese-women-photographers-1950s-now",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-06-24 to 2026-09-27"
     },
     {
       "venueId": "the-photographers-gallery",
@@ -137,6 +129,14 @@
     {
       "venueId": "pilar-corrias",
       "title": "Exhibitions",
+      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/all/forthcoming/",
+      "reasonCode": "generic-listing-not-exhibition",
+      "reason": "Title identifies a calendar or listing page, not a named exhibition",
+      "evidence": "Exhibitions"
+    },
+    {
+      "venueId": "pilar-corrias",
+      "title": "Exhibitions",
       "sourceUrl": "https://www.pilarcorrias.com/exhibitions/all/past/",
       "reasonCode": "generic-listing-not-exhibition",
       "reason": "Title identifies a calendar or listing page, not a named exhibition",
@@ -170,6 +170,14 @@
       "venueId": "pilar-corrias",
       "title": "Mary Ramsden | The Feeling of What Happens",
       "sourceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "pilar-corrias",
+      "title": "Ragna Bley | Oyster",
+      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/539-ragna-bley-oyster/",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -840,19 +848,19 @@
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Amy Dury",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/602/overview/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-02-11 to 2027-03-13"
+    },
+    {
+      "venueId": "kristin-hjellegjerde-gallery",
       "title": "Amy Dury: Always, Everything",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/557/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2026-03-27 to 2026-04-25"
-    },
-    {
-      "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Amy Dury: West Palm Beach | Salon",
-      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/602/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-01-29 to 2027-02-27"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -892,7 +900,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/605/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-05 to 2027-01-23"
+      "evidence": "2027-01-30 to 2027-02-27"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -909,14 +917,6 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2027-11-05 to 2027-12-18"
-    },
-    {
-      "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Ben Edge: The Pretty, the Ugly, and the Pretty Ugly",
-      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/596/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-01-09 to 2027-02-06"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -940,7 +940,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/633/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-05 to 2027-04-10"
+      "evidence": "2027-01-30 to 2027-04-10"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1076,7 +1076,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/613/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-01-29 to 2027-02-27"
+      "evidence": "2027-01-30 to 2027-02-27"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1085,14 +1085,6 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2026-03-08 to 2026-04-11"
-    },
-    {
-      "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Gabriela Giroletti",
-      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/622/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-08-27 to 2027-09-25"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1164,7 +1156,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/621/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-09-16 to 2027-10-23"
+      "evidence": "2027-04-23 to 2027-05-22"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1172,7 +1164,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/608/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-01-29 to 2027-02-27"
+      "evidence": "2026-12-05 to 2027-01-23"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1252,7 +1244,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/625/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-01-15 to 2027-02-20"
+      "evidence": "2027-01-06 to 2027-02-06"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1260,7 +1252,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/615/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-05 to 2027-04-10"
+      "evidence": "2027-03-05 to 2027-04-17"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1332,7 +1324,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/631/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-06 to 2027-04-10"
+      "evidence": "2027-03-06 to 2027-04-17"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1396,7 +1388,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/616/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-04-17 to 2027-05-22"
+      "evidence": "2027-09-17 to 2027-10-23"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1448,14 +1440,6 @@
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Makiko Harris: WEST PALM BEACH | SALON",
-      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/496/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-03-15 to 2025-05-17"
-    },
-    {
-      "venueId": "kristin-hjellegjerde-gallery",
       "title": "Manuela Benaim, Makiko Harris, Emily Pope: Body Archive",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/522/overview/",
       "reasonCode": "outside-window",
@@ -1492,7 +1476,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/548/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-27 to 2027-03-27"
+      "evidence": "2027-04-09 to 2027-05-08"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1500,7 +1484,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/572/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-04-02 to 2027-05-01"
+      "evidence": "2027-05-14 to 2027-06-12"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1636,7 +1620,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/634/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-05 to 2027-04-10"
+      "evidence": "2027-03-05 to 2027-04-17"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1644,7 +1628,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/634/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-05 to 2027-04-10"
+      "evidence": "2027-03-05 to 2027-04-17"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1664,14 +1648,6 @@
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Ruth Speer: the village",
-      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/600/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-13 to 2027-01-09"
-    },
-    {
-      "venueId": "kristin-hjellegjerde-gallery",
       "title": "Sabrina Bockler: West Palm Beach | Salon",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/592/overview/",
       "reasonCode": "missing-london-branch-evidence",
@@ -1684,7 +1660,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/630/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-06-11 to 2027-07-10"
+      "evidence": "2027-08-27 to 2027-09-25"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1708,7 +1684,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/623/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-06 to 2027-04-10"
+      "evidence": "2027-03-06 to 2027-04-17"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1716,7 +1692,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/552/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-05-07 to 2027-06-06"
+      "evidence": "2027-06-18 to 2027-07-17"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1780,7 +1756,15 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/609/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-07-16 to 2027-08-21"
+      "evidence": "2027-07-23 to 2027-08-21"
+    },
+    {
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Tuan Vu",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/610/overview/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-11-05 to 2027-12-04"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -2312,6 +2296,14 @@
     },
     {
       "venueId": "hales-gallery",
+      "title": "Staging Resistance",
+      "sourceUrl": "https://halesgallery.com/exhibitions/268-staging-resistance-tessa-boffin-rotimi-fani-kayode-and-sunil-gupta-in/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-09-10 to 2026-10-17"
+    },
+    {
+      "venueId": "hales-gallery",
       "title": "Tessa Boffin: 1989-1993",
       "sourceUrl": "https://halesgallery.com/exhibitions/204-tessa-boffin-1989-1993/",
       "reasonCode": "invalid-date-range",
@@ -2341,6 +2333,14 @@
       "reasonCode": "invalid-date-range",
       "reason": "Dates are reversed or outside the two-year validation boundary",
       "evidence": "2022-09-10 to 2022-10-22"
+    },
+    {
+      "venueId": "serpentine-south",
+      "title": "Adrian Piper, I'm This Space: Selected Works 1967 - 2027",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/adrian-piper-im-this-space-selected-works-1967-2027/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-05-26 to 2027-09-05"
     },
     {
       "venueId": "serpentine-south",
@@ -2408,6 +2408,14 @@
     },
     {
       "venueId": "serpentine-south",
+      "title": "Gozo Yoshimasu | Free Exhibition | Serpentine",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/serpentine-x-the-flag-foundation-prize-gozo-yoshimasu/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "Gozo Yoshimasu | Free Exhibition | Serpentine"
+    },
+    {
+      "venueId": "serpentine-south",
       "title": "How We Hold | Rehearsals for Art & Social Change | Resource | Serpentine",
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/how-we-hold-rehearsals-for-art-and-social-change-resource/",
       "reasonCode": "location-branch-mismatch",
@@ -2448,19 +2456,35 @@
     },
     {
       "venueId": "serpentine-south",
-      "title": "Legal Lab",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/legal-lab/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "{\"@type\": \"Place\", \"name\": \"Online Event\"}"
+      "title": "Lisa Brice",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/lisa-brice/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-10-08 to 2028-02-06"
     },
     {
       "venueId": "serpentine-south",
-      "title": "Legal Lab - Serpentine Galleries",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/legal-lab/",
+      "title": "Matt Copson",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/matt-copson/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Event is not explicitly assigned to this London branch",
+      "evidence": "{\"@type\": \"Place\", \"name\": \"Serpentine North Gallery\"}"
+    },
+    {
+      "venueId": "serpentine-south",
+      "title": "Matt Copson | Free Exhibition | Serpentine",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/matt-copson/",
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Legal Lab - Serpentine Galleries"
+      "evidence": "Matt Copson | Free Exhibition | Serpentine"
+    },
+    {
+      "venueId": "serpentine-south",
+      "title": "Pierre Alechinksy",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/pierre-alechinksy/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-02-11 to 2027-04-18"
     },
     {
       "venueId": "serpentine-south",
@@ -2474,14 +2498,6 @@
       "venueId": "serpentine-south",
       "title": "Saturday Talks | Kit Gurnos on Amar Kanwar | Serpentine",
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-kit-gurnos-on-amar-kanwar/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "serpentine-south",
-      "title": "Saturday Talks | Liz Stumpf on LANZA atelier's Pavilion | Serpentine",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-liz-stumpf-on-lanza-ateliers-2026-serpentine-pavilion-2/",
       "reasonCode": "excluded-event-type",
       "reason": "Page is a non-exhibition event",
       "evidence": null
@@ -2506,14 +2522,6 @@
       "venueId": "serpentine-south",
       "title": "Saturday Talks: Kit Gurnos on Amar Kanwar",
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-kit-gurnos-on-amar-kanwar/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "serpentine-south",
-      "title": "Saturday Talks: Liz Stumpf on LANZA atelier's 2026 Serpentine Pavilion",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-liz-stumpf-on-lanza-ateliers-2026-serpentine-pavilion-2/",
       "reasonCode": "excluded-event-type",
       "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
       "evidence": null
@@ -2560,6 +2568,14 @@
     },
     {
       "venueId": "serpentine-south",
+      "title": "Serpentine x The Flag Foundation Prize: Gozo Yoshimasu",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/serpentine-x-the-flag-foundation-prize-gozo-yoshimasu/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Event is not explicitly assigned to this London branch",
+      "evidence": "{\"@type\": \"Place\", \"name\": \"Serpentine North Gallery\"}"
+    },
+    {
+      "venueId": "serpentine-south",
       "title": "Support Structures for Support Structures",
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/support-structures-for-support-structures/",
       "reasonCode": "location-branch-mismatch",
@@ -2576,27 +2592,27 @@
     },
     {
       "venueId": "serpentine-south",
-      "title": "THE DELUSION",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/the-delusion/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "{\"@type\": \"Place\", \"name\": \"Serpentine Gallery\"}"
-    },
-    {
-      "venueId": "serpentine-south",
-      "title": "THE DELUSION | Serpentine",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/the-delusion/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "THE DELUSION | Serpentine"
-    },
-    {
-      "venueId": "serpentine-south",
       "title": "What’s On - Serpentine Galleries",
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/archive/",
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
       "evidence": "What’s On - Serpentine Galleries"
+    },
+    {
+      "venueId": "serpentine-south",
+      "title": "Zaha Hadid: The World is Not a Rectangle",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/zaha-hadid-the-world-is-not-a-rectangle/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Event is not explicitly assigned to this London branch",
+      "evidence": "{\"@type\": \"Place\", \"name\": \"The Magazine\"}"
+    },
+    {
+      "venueId": "serpentine-south",
+      "title": "Zaha Hadid: The World is Not a Rectangle - Serpentine Galleries",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/zaha-hadid-the-world-is-not-a-rectangle/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "Zaha Hadid: The World is Not a Rectangle - Serpentine Galleries"
     },
     {
       "venueId": "victoria-miro",
@@ -2613,22 +2629,6 @@
       "reasonCode": "non-london-location",
       "reason": "Rejected by the London location audit",
       "evidence": "Official event title/location assigns the exhibition to venice, not London"
-    },
-    {
-      "venueId": "victoria-miro",
-      "title": "Alchemies: May Cockcroft, Nour Malas, Sarah Martin-Nuss",
-      "sourceUrl": "https://www.victoria-miro.com/exhibitions/684/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-13 to 2027-01-23"
-    },
-    {
-      "venueId": "victoria-miro",
-      "title": "Alchemies: May Cockcroft, Nour Malas, Sarah Martin-Nuss | 13 November 2026 – 23 January 2027",
-      "sourceUrl": "https://www.victoria-miro.com/exhibitions/684/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-13 to 2027-01-23"
     },
     {
       "venueId": "victoria-miro",
@@ -3396,7 +3396,7 @@
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/sonia-boyce",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-24 to 2027-08-22"
+      "evidence": "2027-03-26 to 2027-08-22"
     },
     {
       "venueId": "tate-britain",
@@ -3424,6 +3424,14 @@
     },
     {
       "venueId": "saatchi-gallery",
+      "title": "FOCUS Asian Contemporary Art: Cultural Dialogue » Saatchi Gallery",
+      "sourceUrl": "https://www.saatchigallery.com/exhibition/focus-asian-contemporary-art-cultural-dialogue",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "saatchi-gallery",
       "title": "Past » Saatchi Gallery",
       "sourceUrl": "https://www.saatchigallery.com/whats-on/past",
       "reasonCode": "outside-window",
@@ -3440,14 +3448,6 @@
     },
     {
       "venueId": "whitechapel-gallery",
-      "title": "Backyard Biennial: East - Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/backyard-biennial-east/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "whitechapel-gallery",
       "title": "East End Voices Film Programme - Whitechapel Gallery",
       "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/east-end-voices-film-programme/",
       "reasonCode": "excluded-event-type",
@@ -3456,19 +3456,27 @@
     },
     {
       "venueId": "whitechapel-gallery",
-      "title": "East of the Aldgate Pump - Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/east-of-the-aldgate-pump/",
+      "title": "Fozia Ismail: A Song for the Xeedho – The Knot Makers - Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/fozia-ismail-a-song-for-the-xeedho-the-knot-makers/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2026-07-15 to 2026-09-06"
     },
     {
       "venueId": "whitechapel-gallery",
-      "title": "Gabriel Chaile: Archaeology of Memory - Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/gabriel-chaile-archaeology-of-memory/",
+      "title": "John Smith Film Programme - Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/john-smith-film-programme/",
+      "reasonCode": "excluded-event-type",
+      "reason": "Page is a non-exhibition event",
+      "evidence": null
+    },
+    {
+      "venueId": "whitechapel-gallery",
+      "title": "OITIJ-JO Collective: TUFAN - Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/oitij-jo-collective-tufan/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-04-01 to 2026-09-06"
+      "evidence": "2026-07-15 to 2026-09-06"
     },
     {
       "venueId": "whitechapel-gallery",
@@ -3536,6 +3544,14 @@
     },
     {
       "venueId": "gagosian-britannia-street",
+      "title": "Dan Flavin: European Couples, Le Bourget, October 18, 2026–April 3, 2027",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/dan-flavin-european-couples/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "Dan Flavin: European Couples, Le Bourget, October 18, 2026–April 3, 2027"
+    },
+    {
+      "venueId": "gagosian-britannia-street",
       "title": "Deana Lawson, 541 West 24th Street, New York, September 10–October 24, 2026",
       "sourceUrl": "https://gagosian.com/exhibitions/2026/deana-lawson/",
       "reasonCode": "location-branch-mismatch",
@@ -3557,6 +3573,14 @@
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
       "evidence": "Jordan Wolfson, 555 West 24th Street, New York, September 18–October 24, 2026"
+    },
+    {
+      "venueId": "gagosian-britannia-street",
+      "title": "Lee Krasner: Works from the 1960s, rue de Ponthieu, Paris, October 19–December 18, 2026",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/lee-krasner/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "Lee Krasner: Works from the 1960s, rue de Ponthieu, Paris, October 19–December 18, 2026"
     },
     {
       "venueId": "gagosian-britannia-street",
@@ -3602,9 +3626,9 @@
       "venueId": "gagosian-grosvenor-hill",
       "title": "Bea Scaccia: Groomed, Park & 75, New York, September 22–December 23, 2026",
       "sourceUrl": "https://gagosian.com/exhibitions/2026/bea-scaccia-groomed/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Bea Scaccia: Groomed, Park & 75, New York, September 22–December 23, 2026"
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "gagosian-grosvenor-hill",
@@ -3624,11 +3648,19 @@
     },
     {
       "venueId": "gagosian-grosvenor-hill",
+      "title": "Dan Flavin: European Couples, Le Bourget, October 18, 2026–April 3, 2027",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/dan-flavin-european-couples/",
+      "reasonCode": "missing-london-branch-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "venueId": "gagosian-grosvenor-hill",
       "title": "Deana Lawson, 541 West 24th Street, New York, September 10–October 24, 2026",
       "sourceUrl": "https://gagosian.com/exhibitions/2026/deana-lawson/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Deana Lawson, 541 West 24th Street, New York, September 10–October 24, 2026"
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "gagosian-grosvenor-hill",
@@ -3645,6 +3677,14 @@
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
       "evidence": "Jordan Wolfson, 555 West 24th Street, New York, September 18–October 24, 2026"
+    },
+    {
+      "venueId": "gagosian-grosvenor-hill",
+      "title": "Lee Krasner: Works from the 1960s, rue de Ponthieu, Paris, October 19–December 18, 2026",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/lee-krasner/",
+      "reasonCode": "non-london-location",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official event title/location assigns the exhibition to Paris, not London"
     },
     {
       "venueId": "gagosian-grosvenor-hill",
@@ -3882,9 +3922,9 @@
       "venueId": "john-martin-gallery",
       "title": "Richard Cartwright, Younger Than That Now",
       "sourceUrl": "https://jmlondon.com/exhibitions/160-richard-cartwright-younger-than-that-now/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-18 to 2026-12-19"
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "timothy-taylor",
@@ -4207,718 +4247,6 @@
       "evidence": "2025-03-22 to 2025-06-21"
     },
     {
-      "venueId": "hayward-gallery",
-      "title": "Anish Kapoor",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-13 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Anish Kapoor",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-14 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Anish Kapoor",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-15 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Anish Kapoor",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-16 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Anish Kapoor",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-17 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Anish Kapoor",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-18 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Anish Kapoor | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "British Art Show 10: A Chorus of Strangers | Hayward Gallery Touring | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/british-art-show-10-a-chorus-of-strangers/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Creative Encounters: Poetry and Ink",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/creative-encounters-poetry-and-ink/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Creative Encounters: Poetry and Ink | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/creative-encounters-poetry-and-ink/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Georgia O'Keeffe: Memories of Drawings | Hayward Gallery Touring | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/georgia-okeeffe-memories-of-drawings/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Joan Miró: Painting and Poetry | Hayward Gallery Touring | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/joan-miro-painting-and-poetry/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-13 to 2026-11-13"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-14 to 2026-11-14"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-15 to 2026-11-15"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-17 to 2026-11-17"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-18 to 2026-11-18"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-19 to 2026-11-19"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-20 to 2026-11-20"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-21 to 2026-11-21"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-22 to 2026-11-22"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-24 to 2026-11-24"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-25 to 2026-11-25"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-26 to 2026-11-26"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-27 to 2026-11-27"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-28 to 2026-11-28"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-29 to 2026-11-29"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-16 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-17 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-18 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-20 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-21 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-22 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-23 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-24 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-25 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-27 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-28 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-29 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-30 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-31 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-01 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-03 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-04 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-05 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-06 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-07 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-08 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-10 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-11 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-12 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Koestler Arts: Rock, Paper, Scissors | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Paula Rego: Visions of English Literature | Hayward Gallery Touring | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/paula-rego-visions-of-english-literature/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-13 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-14 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-15 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-16 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-17 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-18 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-20 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-21 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-22 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-23 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-24 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-25 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-27 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-28 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-29 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-30 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-10-31 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-01 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-03 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-04 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-05 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-06 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-07 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "recurring-occurrence-not-exhibition-range",
-      "reason": "Daily occurrence dates do not establish the exhibition's full run",
-      "evidence": "2026-11-08 occurrence"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Quentin Blake: The Southbank Parade | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/quentin-blake-the-southbank-parade/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Who Let the Gods Out?",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/who-let-the-gods-out/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-16 to 2027-02-16"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Who Let the Gods Out?",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/who-let-the-gods-out/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-17 to 2027-02-17"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Who Let the Gods Out?",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/who-let-the-gods-out/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-18 to 2027-02-18"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Who Let the Gods Out?",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/who-let-the-gods-out/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-19 to 2027-02-19"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "Who Let the Gods Out?",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/who-let-the-gods-out/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-20 to 2027-02-20"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "WordPlay: Ages 0 – 2",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/wordplay-ages-0-2/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "WordPlay: Ages 0 – 2 | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/wordplay-ages-0-2/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "futuretense: Fisaya + P Wavey",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/futuretense-fisaya-p-wavey/",
-      "reasonCode": "out-of-scope",
-      "reason": "Event is outside the London temporary-exhibition scope",
-      "evidence": "futuretense: Fisaya + P Wavey"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "futuretense: Fisaya + P Wavey | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/futuretense-fisaya-p-wavey/",
-      "reasonCode": "out-of-scope",
-      "reason": "Page is outside the London temporary-exhibition scope",
-      "evidence": "futuretense: Fisaya + P Wavey | Southbank Centre"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "futuretense: Ssadcharlie + Yuneki",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/futuretense-ssadcharlie-yuneki/",
-      "reasonCode": "out-of-scope",
-      "reason": "Event is outside the London temporary-exhibition scope",
-      "evidence": "futuretense: Ssadcharlie + Yuneki"
-    },
-    {
-      "venueId": "hayward-gallery",
-      "title": "futuretense: Ssadcharlie + Yuneki | Southbank Centre",
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/futuretense-ssadcharlie-yuneki/",
-      "reasonCode": "out-of-scope",
-      "reason": "Page is outside the London temporary-exhibition scope",
-      "evidence": "futuretense: Ssadcharlie + Yuneki | Southbank Centre"
-    },
-    {
       "venueId": "sadie-coles-hq",
       "title": "BAM! BAM! BAM! EENWERK HELLO | Alex Da Corte",
       "sourceUrl": "https://www.sadiecoles.com/exhibitions/bam-bam-bam-eenwerk-hello",
@@ -5224,6 +4552,14 @@
     },
     {
       "venueId": "the-redfern-gallery",
+      "title": "Centenary Exhibition: Part 1 - Paintings, Drawings, Prints & Sculpture - Works",
+      "sourceUrl": "https://www.redfern-gallery.com/exhibitions/94-centenary-exhibition-part-1-paintings-drawings-prints-sculpture/",
+      "reasonCode": "invalid-date-range",
+      "reason": "Dates are reversed or outside the two-year validation boundary",
+      "evidence": "2023-06-21 to 2023-09-07"
+    },
+    {
+      "venueId": "the-redfern-gallery",
       "title": "Centenary Exhibition: Part 2 - The Red Studio - Works",
       "sourceUrl": "https://www.redfern-gallery.com/exhibitions/95-centenary-exhibition-part-2-the-red-studio/",
       "reasonCode": "invalid-date-range",
@@ -5258,14 +4594,6 @@
       "venueId": "the-redfern-gallery",
       "title": "London Art Fair 2026 - Works",
       "sourceUrl": "https://www.redfern-gallery.com/exhibitions/117-london-art-fair-2026/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "the-redfern-gallery",
-      "title": "Lydia Corbett | Sylvette David - My Dance With Picasso - A Retrospective - Works",
-      "sourceUrl": "https://www.redfern-gallery.com/exhibitions/121-lydia-corbett-sylvette-david-my-dance-a-retrospective/",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -5416,11 +4744,11 @@
     },
     {
       "venueId": "david-zwirner-london",
-      "title": "Frank Walter: The World Through | Los Angeles | Opening November 13, 2026 | David Zwirner",
+      "title": "Frank Walter: The World Through | Los Angeles | November 13, 2026—February 6, 2027 | David Zwirner",
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/frank-walter",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
+      "reasonCode": "non-london-location",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official event title/location assigns the exhibition to Los Angeles, not London"
     },
     {
       "venueId": "david-zwirner-london",
@@ -5537,23 +4865,7 @@
     {
       "venueId": "david-zwirner-london",
       "title": "Opening Reception",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/scott-kahn",
-      "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "david-zwirner-london",
-      "title": "Opening Reception",
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/nate-lowman",
-      "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "david-zwirner-london",
-      "title": "Opening Reception",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/thomas-ruff-jpegs-ny",
       "reasonCode": "excluded-event-type",
       "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
       "evidence": null
@@ -5568,11 +4880,11 @@
     },
     {
       "venueId": "david-zwirner-london",
-      "title": "Oscar Murillo: Unfinished thinking: Paintings and Social Maps | Paris | Opening October 19, 2026 | David Zwirner",
+      "title": "Oscar Murillo: Unfinished thinking: Paintings and Social Maps | Paris | October 19–December 19, 2026 | David Zwirner",
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/oscar-murillo-unfinished-thinking-paintings-and-social-maps",
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Oscar Murillo: Unfinished thinking: Paintings and Social Maps | Paris | Opening October 19, 2026 | David Zwirner"
+      "evidence": "Oscar Murillo: Unfinished thinking: Paintings and Social Maps | Paris | October 19–December 19, 2026 | David Zwirner"
     },
     {
       "venueId": "david-zwirner-london",
@@ -5616,38 +4928,6 @@
     },
     {
       "venueId": "david-zwirner-london",
-      "title": "Scott Kahn",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/scott-kahn",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "[{\"@type\": \"Place\", \"name\": \"New York: 20th Street\"}]"
-    },
-    {
-      "venueId": "david-zwirner-london",
-      "title": "Scott Kahn: Silent Night",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/scott-kahn",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "{\"@type\": \"Place\", \"name\": \"David Zwirner New York: 20th Street\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"537 West 20th Street\", \"addressLocality\": \"New York\", \"addressRegion\": \"NY\", \"postalCode\": \"10011\", \"addressCountry\": \"US\"}, \"openingHoursSpecification\": {\"@type\": \"OpeningHoursSpecification\", \"dayOfWeek\": [\"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"], \"opens\": \"1…"
-    },
-    {
-      "venueId": "david-zwirner-london",
-      "title": "Scott Kahn: Silent Night | New York: 20th Street | September 10—October 17, 2026 | David Zwirner",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/scott-kahn",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Scott Kahn: Silent Night | New York: 20th Street | September 10—October 17, 2026 | David Zwirner"
-    },
-    {
-      "venueId": "david-zwirner-london",
-      "title": "Thomas Ruff",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/thomas-ruff-jpegs-ny",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "[{\"@type\": \"Place\", \"name\": \"New York: 19th Street\"}]"
-    },
-    {
-      "venueId": "david-zwirner-london",
       "title": "Thomas Ruff",
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/thomas-ruff",
       "reasonCode": "location-branch-mismatch",
@@ -5658,25 +4938,9 @@
       "venueId": "david-zwirner-london",
       "title": "Thomas Ruff: In Series, 1979–2024 | Los Angeles | November 13, 2026—February 6, 2027 | David Zwirner",
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/thomas-ruff",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-13 to 2027-02-06"
-    },
-    {
-      "venueId": "david-zwirner-london",
-      "title": "Thomas Ruff: jpegs ny",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/thomas-ruff-jpegs-ny",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "{\"@type\": \"Place\", \"name\": \"David Zwirner New York: 19th Street\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"533 West 19th Street\", \"addressLocality\": \"New York\", \"addressRegion\": \"NY\", \"postalCode\": \"10011\", \"addressCountry\": \"US\"}, \"openingHoursSpecification\": {\"@type\": \"OpeningHoursSpecification\", \"dayOfWeek\": [\"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"], \"opens\": \"1…"
-    },
-    {
-      "venueId": "david-zwirner-london",
-      "title": "Thomas Ruff: jpegs ny | New York: 19th Street | September 10—October 17, 2026 | David Zwirner",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/thomas-ruff-jpegs-ny",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Thomas Ruff: jpegs ny | New York: 19th Street | September 10—October 17, 2026 | David Zwirner"
+      "reasonCode": "non-london-location",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official event title/location assigns the exhibition to Los Angeles, not London"
     },
     {
       "venueId": "david-zwirner-london",
@@ -5776,14 +5040,6 @@
     },
     {
       "venueId": "rhodes-contemporary-art",
-      "title": "Project Room: CTRL+Paint",
-      "sourceUrl": "https://rhodescontemporaryart.com/exhibitions/144-project-room-ctrl-paint-lino-lago/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "rhodes-contemporary-art",
       "title": "Project Room: Extraction & Equilibrium",
       "sourceUrl": "https://rhodescontemporaryart.com/exhibitions/162-project-room-extraction-equilibrium-carsten-beck/",
       "reasonCode": "outside-window",
@@ -5821,6 +5077,14 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2025-10-30 to 2025-11-22"
+    },
+    {
+      "venueId": "rhodes-contemporary-art",
+      "title": "Project Room: The Stillness of the Garden",
+      "sourceUrl": "https://rhodescontemporaryart.com/exhibitions/176-project-room-the-stillness-of-the-garden-camilla-perkins/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "rhodes-contemporary-art",
@@ -6024,11 +5288,19 @@
     },
     {
       "venueId": "pace-gallery-london",
+      "title": "Alicja Kwade: La Pêche miraculeuse | Pace Gallery",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/alicja-kwade-la-peche-miraculeuse/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2025-01-10 to 2025-05-23"
+    },
+    {
+      "venueId": "pace-gallery-london",
       "title": "Arlene Shechet: She Said She Said | Pace Gallery",
       "sourceUrl": "https://www.pacegallery.com/exhibitions/arlene-shechet-she-said-she-said/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-08-04 to 2026-10-02"
+      "evidence": "2026-08-07 to 2026-10-16"
     },
     {
       "venueId": "pace-gallery-london",
@@ -6108,7 +5380,7 @@
       "sourceUrl": "https://www.pacegallery.com/exhibitions/jackson-pollock-intimate-legacy/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-07-06 to 2026-09-02"
+      "evidence": "2026-08-04 to 2026-10-16"
     },
     {
       "venueId": "pace-gallery-london",
@@ -6128,19 +5400,11 @@
     },
     {
       "venueId": "pace-gallery-london",
-      "title": "Lee Kun-Yong | Pace Gallery",
-      "sourceUrl": "https://www.pacegallery.com/exhibitions/lee-kun-yong/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "pace-gallery-london",
       "title": "Li Hei Di: the year of mud | Pace Gallery",
       "sourceUrl": "https://www.pacegallery.com/exhibitions/li-hei-di-the-year-of-mud/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-07-06 to 2026-09-02"
+      "evidence": "2026-08-04 to 2026-10-16"
     },
     {
       "venueId": "pace-gallery-london",
@@ -6168,11 +5432,11 @@
     },
     {
       "venueId": "pace-gallery-london",
-      "title": "Richard Pousette-Dart | Pace Gallery",
-      "sourceUrl": "https://www.pacegallery.com/exhibitions/richard-pousette-dart/",
-      "reasonCode": "invalid-date-range",
-      "reason": "Dates are reversed or outside the two-year validation boundary",
-      "evidence": "2019-05-10 to 2019-06-22"
+      "title": "Rothko/Gottlieb: The Surrealist Years | Pace Gallery",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/rothko-gottlieb-surrealist-years/",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "pace-gallery-london",
@@ -6616,155 +5880,11 @@
     },
     {
       "venueId": "lbf-contemporary",
-      "title": "Annice Fell: Under Matter - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/annice-fell-under-matter/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-10-10 to 2025-11-13"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Benjamin Levy: Keeping Up With The Corbies - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/benjamin-levy-keeping-up-with-the-corbies/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-04-04 to 2025-05-08"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Frida Wannerberger: The Dinosaur Tree - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/frida-wannerberger-the-dinosaur-tree/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-01-09 to 2026-02-05"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Gaia Ozwyn: Incantations to a Vague Borderland - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/gaia-ozwyn-incantations-to-a-vague-borderland/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-05-22 to 2025-06-19"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "H.E. Morris: Songs of War - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/h-e-morris-songs-of-war/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-06-05 to 2026-07-09"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Jake Vanden Berge: I Made My Bed Of Flowers And Now I Have To Step In It - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/jake-vanden-berge-i-made-my-bed-of-flowers-and-now-i-have-to-step-in-it/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2024-11-15 to 2024-12-14"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Joe Grieve: One’s Own Mystery - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/joe-grieve-ones-own-mystery/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-09-05 to 2025-10-02"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "LBF at the Lake II - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/lbf-at-the-lake-ii/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-06-12 to 2025-09-14"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "LBF at the Lake III - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/lbf-at-the-lake-iii/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-06-12 to 2026-09-14"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Lawrence Perry: They Shoot Horses, Don’t They? - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/lawrence-perry-they-shoot-horses-dont-they/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-01-10 to 2025-02-12"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Like a Beacon Against the Cold - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/like-a-beacon-against-the-cold/",
-      "reasonCode": "invalid-date-range",
-      "reason": "Dates are reversed or outside the two-year validation boundary",
-      "evidence": "2024-10-04 to 2024-11-07"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "London Writes Itself - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/london-writes-itself/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-07-17 to 2026-08-08"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Min Woo Nam: The Aftermath - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/min-woo-nam-the-aftermath/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-02-20 to 2026-03-19"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Mircea Teleaga: Paradise - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/mircea-teleaga-paradise/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-11-21 to 2025-12-18"
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Pale Fires: Annice Fell, H.E. Morris, and Tianyue Zhong - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/pale-fires-annice-fell-h-e-morris-and-tianyue-zhong/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Pour aujourd'hui et pour l'avenir: Absher, Bonnard, Fell - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/pour-aujourdhui-et-pour-lavenir/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Rob Ball: Everything Beautiful is Far Away - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/rob-ball-everything-beautiful-is-far-away/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "The Torrent & The Fold - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/the-torrent-the-fold/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "lbf-contemporary",
-      "title": "Tianyue Zhong: Between Earth and Tide - LBF",
-      "sourceUrl": "https://lbfcontemporary.com/exhibitions/tianyue-zhong-between-earth-and-tide/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-02-21 to 2025-03-27"
+      "title": "Lawrence Perry: Careless Rapture",
+      "sourceUrl": "https://lbfcontemporary.com/exhibitions/careless-rapture/",
+      "reasonCode": "event-location-unverifiable",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official exhibition page could not be read: robots-disallowed"
     },
     {
       "venueId": "blueshop-cottage",
@@ -6853,70 +5973,6 @@
       "reasonCode": "out-of-scope",
       "reason": "Page is outside the London temporary-exhibition scope",
       "evidence": "Past exhibitions"
-    },
-    {
-      "venueId": "british-museum",
-      "title": "Declaring independence: USA 250",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/declaring-independence-usa-250",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "british-museum",
-      "title": "Declaring independence: USA 250",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/declaring-independence-usa-250",
-      "reasonCode": "venue-location-unverified",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "venueId": "british-museum",
-      "title": "Korea",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/korea",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "british-museum",
-      "title": "Korea",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/korea",
-      "reasonCode": "venue-location-unverified",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "venueId": "british-museum",
-      "title": "Multiplied wonders: Italian Renaissance woodcuts",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/multiplied-wonders-italian-renaissance-woodcuts",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "british-museum",
-      "title": "Multiplied wonders: Italian Renaissance woodcuts",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/multiplied-wonders-italian-renaissance-woodcuts",
-      "reasonCode": "venue-location-unverified",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "venueId": "british-museum",
-      "title": "The Bayeux Tapestry",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/bayeux-tapestry",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "british-museum",
-      "title": "The Bayeux Tapestry",
-      "sourceUrl": "https://www.britishmuseum.org/exhibitions/bayeux-tapestry",
-      "reasonCode": "venue-location-unverified",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "camden-art-centre",
@@ -7160,6 +6216,14 @@
     },
     {
       "venueId": "design-museum",
+      "title": "LAIKA presents Wildwood: The Exhibition",
+      "sourceUrl": "https://designmuseum.org/exhibitions/laika-presents-wildwood-the-exhibition",
+      "reasonCode": "missing-london-event-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
+    },
+    {
+      "venueId": "design-museum",
       "title": "PLATFORM: Simone Brewster",
       "sourceUrl": "https://designmuseum.org/exhibitions/platform-simone-brewster",
       "reasonCode": "missing-dates",
@@ -7188,158 +6252,6 @@
       "sourceUrl": "https://designmuseum.org/exhibitions/touring-exhibitions",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/collection/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/charlie-mackesy-the-boy-the-fox-the-mole-the-horse-and-you/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/sahara-longe/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/david-shrigley/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/club-origami/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/halloween-mask-making/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/wild-life-drawing-owls/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/online-introduction-to-hokusai-thirty-six-views-of-mount-fuji/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/charlie-mackesy-live-drawing-stories-and-conversation/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": null,
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/hokusai-and-the-art-of-transformation/",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "Charlie Mackesy Live: Drawing, Stories and Conversation",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/charlie-mackesy-live-drawing-stories-and-conversation/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-05 to 2026-12-05"
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "Club Origami",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/club-origami/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "David Shrigley",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/david-shrigley/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-05-25 to 2027-09-05"
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "Halloween Mask Making",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/halloween-mask-making/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "Hokusai and the Art of Transformation",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/hokusai-and-the-art-of-transformation/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-01-14 to 2027-01-14"
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "Online Introduction to Hokusai: Thirty-six Views of Mount Fuji",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/online-introduction-to-hokusai-thirty-six-views-of-mount-fuji/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-01 to 2026-12-01"
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "Sahara Longe",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/sahara-longe/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-16 to 2027-06-13"
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "The Collection",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/collection/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Known event or permanent-collection page is not a temporary exhibition",
-      "evidence": null
-    },
-    {
-      "venueId": "dulwich-picture-gallery",
-      "title": "Wild Life Drawing: Owls",
-      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/whats-on/wild-life-drawing-owls/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
       "evidence": null
     },
     {
@@ -7450,9 +6362,9 @@
       "venueId": "flowers-gallery",
       "title": "IN FOCUS | Patrick Hughes",
       "sourceUrl": "https://www.flowersgallery.com/exhibitions/649-in-focus-patrick-hughes/",
-      "reasonCode": "missing-london-branch-evidence",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-09-17 to 2026-10-17"
     },
     {
       "venueId": "flowers-gallery",
@@ -7842,17 +6754,17 @@
       "venueId": "london-museum",
       "title": "Great Fire of London family walk",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/great-fire-of-london-family-walk/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "london-museum",
       "title": "In & around Smithfield Market",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/in-around-smithfield-market/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "london-museum",
@@ -7866,17 +6778,9 @@
       "venueId": "london-museum",
       "title": "Mudlarks family gallery",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/mudlarks-family-gallery/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "london-museum",
-      "title": "Not as Sweet as You Think",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/not-sweet-you-think/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "london-museum",
@@ -7885,14 +6789,6 @@
       "reasonCode": "venue-location-unverified",
       "reason": "Rejected by the London location audit",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "venueId": "london-museum",
-      "title": "Second World War family walk",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/second-world-war-family-walk/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
     },
     {
       "venueId": "london-museum",
@@ -7906,6 +6802,14 @@
       "venueId": "london-museum",
       "title": "Superstitious sailors",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/superstitious-sailors/",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "venueId": "london-museum",
+      "title": "Tots at the docks",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/tots-at-the-docks/",
       "reasonCode": "venue-location-unverified",
       "reason": "Rejected by the London location audit",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
@@ -8104,91 +7008,19 @@
     },
     {
       "venueId": "national-portrait-gallery",
-      "title": "100 Writers",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2027/100-writers",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-07-15 to 2027-09-12"
+      "title": "Tim Walker's Fairyland: Love and Legends",
+      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/tim-walkers-fairyland-love-and-legends",
+      "reasonCode": "event-location-unverifiable",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official exhibition page could not be read: HTTP 403"
     },
     {
       "venueId": "national-portrait-gallery",
-      "title": "Events and exhibitions calendar",
-      "sourceUrl": "https://www.npg.org.uk/whatson/events-calendar/?what=exhibition",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "National Portrait Gallery London art exhibitions, displays, events, programmes and workshops"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Events and exhibitions calendar",
-      "sourceUrl": "https://www.npg.org.uk/whatson/events-calendar/?when=&what=event&who=",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "National Portrait Gallery London art exhibitions, displays, events, programmes and workshops"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Events and exhibitions calendar",
-      "sourceUrl": "https://www.npg.org.uk/whatson/events-calendar/?when=&what=display&who=",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "National Portrait Gallery London art exhibitions, displays, events, programmes and workshops"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Events and exhibitions calendar",
-      "sourceUrl": "https://www.npg.org.uk/whatson/events-calendar/?when=&what=national-and-international&who=",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "National Portrait Gallery London art exhibitions, displays, events, programmes and workshops"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Events and exhibitions calendar",
-      "sourceUrl": "https://www.npg.org.uk/whatson/events-calendar/",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "National Portrait Gallery London art exhibitions, displays, events, programmes and workshops"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Frank Auerbach",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2027/frank-auerbach",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-10-14 to 2028-01-09"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Herbert Smith Freehills Kramer Portrait Award 2027",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2027/herbert-smith-freehills-kramer-portrait-award-2027",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-06-24 to 2027-10-10"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Mary Cassatt: Radical Impressionist",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2027/mary-cassatt-radical-impressionist",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-11 to 2027-06-13"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Peter Blake: Pop Art Life",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2027/peter-blake-pop-art-life",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-11 to 2027-05-23"
-    },
-    {
-      "venueId": "national-portrait-gallery",
-      "title": "Winston Taylor Photo Portrait Prize 2027",
-      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2027/winston-taylor-photo-portrait-prize",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-11-04 to 2028-02-06"
+      "title": "Winston Taylor Photo Portrait Prize 2026",
+      "sourceUrl": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026/",
+      "reasonCode": "event-location-unverifiable",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official exhibition page could not be read: HTTP 403"
     },
     {
       "venueId": "natural-history-museum",
@@ -8312,11 +7144,11 @@
     },
     {
       "venueId": "royal-museums-greenwich",
-      "title": "An Introduction to Life in the Universe",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/astronomy-courses/life-universe",
-      "reasonCode": "out-of-scope",
-      "reason": "Page is outside the London temporary-exhibition scope",
-      "evidence": "An Introduction to Life in the Universe"
+      "title": "Afternoon Frequencies",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/queens-house/afternoon-frequencies",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "royal-museums-greenwich",
@@ -8376,27 +7208,11 @@
     },
     {
       "venueId": "royal-museums-greenwich",
-      "title": "Experimental Saturdays",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/prince-philip-maritime-collections-centre/experimental-saturdays",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "royal-museums-greenwich",
       "title": "In conversation with Richard Wright: celebrating 10 years of the Great Hall ceiling",
       "sourceUrl": "https://www.rmg.co.uk/whats-on/queens-house/conversation-richard-wright-celebrating-10-years-great-hall-ceiling",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
-    },
-    {
-      "venueId": "royal-museums-greenwich",
-      "title": "Introduction to Astrophotography Online",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/astronomy-courses/introduction-astrophotography",
-      "reasonCode": "out-of-scope",
-      "reason": "Page is outside the London temporary-exhibition scope",
-      "evidence": "Introduction to Astrophotography Online"
     },
     {
       "venueId": "royal-museums-greenwich",
@@ -8408,6 +7224,22 @@
     },
     {
       "venueId": "royal-museums-greenwich",
+      "title": "October half term at the Royal Observatory",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/royal-observatory/october-half-term",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "venueId": "royal-museums-greenwich",
+      "title": "Remembrance: A Call to Mind",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/remembrance-call-mind",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "venueId": "royal-museums-greenwich",
       "title": "SENsory Sailors",
       "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/sensory-sailors",
       "reasonCode": "venue-location-unverified",
@@ -8416,8 +7248,16 @@
     },
     {
       "venueId": "royal-museums-greenwich",
-      "title": "Santa's Grotto at the Queen's House relaxed sessions",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/queens-house/santas-grotto-queens-house-relaxed-sessions",
+      "title": "Shipkeeping Wednesdays",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/cutty-sark/shipkeeping-wednesdays",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "royal-museums-greenwich",
+      "title": "Sip and Paint: Experimental Saturdays",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/prince-philip-maritime-collections-centre/sip-paint-experimental-saturdays",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -8512,34 +7352,18 @@
     },
     {
       "venueId": "somerset-house",
-      "title": "1-54 Contemporary African Art Fair 2026",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/1-54-contemporary-african-art-fair-2026",
+      "title": "Enclosure: Jenkin van Zyl in conversation with Adam Alston",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/jenkin-van-zyl-enclosure-in-conversation",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-04 to 2027-04-18"
+      "evidence": "2027-02-27 to 2027-05-09"
     },
     {
       "venueId": "somerset-house",
-      "title": "1-54 Contemporary African Art Fair 2026: Talks and Events",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/1-54-2026-talks-and-events",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "somerset-house",
-      "title": "10 Years of Addis Fine Art | 1-54 2026 Talk",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/1-54-2026-talk-10-years-addis-fine-art",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "somerset-house",
-      "title": "African Modernists and the Winds of Change | 1-54 2026 Talk",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/1-54-2026-talk-african-modernists-and-the-winds-of-change",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
+      "title": "Extended Skate Sessions | Ice Skating London",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-extended-sessions",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
       "evidence": null
     },
     {
@@ -8568,8 +7392,16 @@
     },
     {
       "venueId": "somerset-house",
-      "title": "Seyni Awa Camara: Magician of our Earth | 1-54 2026 Talk",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/1-54-2026-talk-seyni-awa-camara-magician-of-our-earth",
+      "title": "Jenkin van Zyl: Enclosure | Relaxed Session",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/jenkin-van-zyl-enclosure-relaxed-session",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-02-27 to 2027-05-09"
+    },
+    {
+      "venueId": "somerset-house",
+      "title": "Skate Lates with Aperol Spritz | Ice Skating London",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-lates-26-27",
       "reasonCode": "excluded-event-type",
       "reason": "Page is a non-exhibition event",
       "evidence": null
@@ -8592,19 +7424,27 @@
     },
     {
       "venueId": "somerset-house",
-      "title": "The Future of African Art Collecting - Strauss & Co | 1-54 2026 Talk",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/1-54-2026-talk-future-of-african-art-collecting-strauss-and-co",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "somerset-house",
       "title": "There Are No Honest Poems About Dead Women: Jemma Desai",
       "sourceUrl": "https://www.somersethouse.org.uk",
       "reasonCode": "venue-location-unverified",
       "reason": "Rejected by the London location audit",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "venueId": "somerset-house",
+      "title": "Through Our Eyes: Sámi Art and Culture",
+      "sourceUrl": "https://www.somersethouse.org.uk",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "venueId": "somerset-house",
+      "title": "Upgrade Yourself Monthly | How to Grow Sustainable Materials Through Biodesign",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/upgrade-yourself-monthly-sessions/upgrade-yourself-monthly-how-to-grow-sustainable-materials-biodesign",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "south-london-gallery",
@@ -8640,6 +7480,14 @@
     },
     {
       "venueId": "studio-voltaire",
+      "title": "Anthony Chin T W Artist Talk - Studio Voltaire",
+      "sourceUrl": "https://studiovoltaire.org/whats-on/anthony-chin-tw-artist-talk/",
+      "reasonCode": "excluded-event-type",
+      "reason": "Page is a non-exhibition event",
+      "evidence": null
+    },
+    {
+      "venueId": "studio-voltaire",
       "title": "Bill Walton, A Form Of Honesty - Studio Voltaire",
       "sourceUrl": "https://studiovoltaire.org/whats-on/bill-walton-a-form-of-honesty/",
       "reasonCode": "missing-dates",
@@ -8650,14 +7498,6 @@
       "venueId": "studio-voltaire",
       "title": "Bod Mellor: George Michael TV Outside - Studio Voltaire",
       "sourceUrl": "https://studiovoltaire.org/whats-on/bod-mellor-george-michael-tv-outside/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "studio-voltaire",
-      "title": "Christine Hazell, Different Faces - Studio Voltaire",
-      "sourceUrl": "https://studiovoltaire.org/whats-on/christine-hazell-different-faces/",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -8829,54 +7669,6 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2027-07-01 to 2028-01-09"
-    },
-    {
-      "venueId": "the-kings-gallery",
-      "title": "Queen Elizabeth II: Her Life in Style: The King’s Gallery, Buckingham Palace",
-      "sourceUrl": "https://www.rct.uk/collection/exhibitions/queen-elizabeth-ii-her-life-in-style",
-      "reasonCode": "venue-location-unverified",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "venueId": "the-kings-gallery",
-      "title": "What's on",
-      "sourceUrl": "https://www.rct.uk/whatson/type/253",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "Explore our rich programme of exhibitions, courses, lectures, activities, and private tours"
-    },
-    {
-      "venueId": "the-kings-gallery",
-      "title": "What's on",
-      "sourceUrl": "https://www.rct.uk/whatson/type/68164",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "Explore our rich programme of exhibitions, courses, lectures, activities, and private tours"
-    },
-    {
-      "venueId": "the-kings-gallery",
-      "title": "What's on",
-      "sourceUrl": "https://www.rct.uk/whatson/type/96340",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "Explore our rich programme of exhibitions, courses, lectures, activities, and private tours"
-    },
-    {
-      "venueId": "the-kings-gallery",
-      "title": "What's on",
-      "sourceUrl": "https://www.rct.uk/whatson/london",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "What's on"
-    },
-    {
-      "venueId": "the-kings-gallery",
-      "title": "What's on",
-      "sourceUrl": "https://www.rct.uk/whatson/type/96308,86",
-      "reasonCode": "generic-listing-not-exhibition",
-      "reason": "Title identifies a calendar or listing page, not a named exhibition",
-      "evidence": "Explore our rich programme of exhibitions, courses, lectures, activities, and private tours"
     },
     {
       "venueId": "vam",
@@ -9096,19 +7888,19 @@
     },
     {
       "venueId": "vam-east",
-      "title": "Henri Cartier-Bresson Self-Published PhotoBook Award Shortlist",
-      "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
+      "title": "Freddie Mercury | Splendid Things",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
       "reasonCode": "location-branch-mismatch",
       "reason": "Event is not explicitly assigned to this London branch",
       "evidence": "{\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAddress\": \"Cromwell Road\"}}"
     },
     {
       "venueId": "vam-east",
-      "title": "Henri Cartier-Bresson Self-Published PhotoBook Award Shortlist - Display at V&A South Kensington · V&A",
-      "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
+      "title": "Freddie Mercury | Splendid Things - Display at V&A South Kensington · V&A",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Henri Cartier-Bresson Self-Published PhotoBook Award Shortlist - Display at V&A South Kensington · V&A"
+      "evidence": "Freddie Mercury | Splendid Things - Display at V&A South Kensington · V&A"
     },
     {
       "venueId": "vam-east",
@@ -9288,11 +8080,19 @@
     },
     {
       "venueId": "wallace-collection",
-      "title": "Cosimo I de’ Medici: Art and Dynasty",
-      "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/cosimo-i-de-medici-art-and-dynasty/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-11-18 to 2027-03-21"
+      "title": "A Simpler Time: The Rediscovery of the Middle Ages",
+      "sourceUrl": "https://www.wallacecollection.org/whats-on/events/a-simpler-time-the-rediscovery-of-the-middle-ages/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "wallace-collection",
+      "title": "Arms and Armour of the Medici",
+      "sourceUrl": "https://www.wallacecollection.org/whats-on/events/arms-and-armour-of-the-medici/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "wallace-collection",
@@ -9336,14 +8136,6 @@
     },
     {
       "venueId": "wallace-collection",
-      "title": "Library and Archive Tour: Hidden Treasures",
-      "sourceUrl": "https://www.wallacecollection.org/whats-on/events/library-and-archive-tour-hidden-treasures-3/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "wallace-collection",
       "title": "Library and Archive Tour: Women of the Wallace Collection",
       "sourceUrl": "https://www.wallacecollection.org/whats-on/events/library-and-archive-tour-women-of-the-wallace-collection/",
       "reasonCode": "excluded-event-type",
@@ -9353,23 +8145,7 @@
     {
       "venueId": "wallace-collection",
       "title": "Life Drawing Club",
-      "sourceUrl": "https://www.wallacecollection.org/whats-on/events/life-drawing-club-2/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "wallace-collection",
-      "title": "Life Drawing Club",
       "sourceUrl": "https://www.wallacecollection.org/whats-on/events/life-drawing-club-3/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "wallace-collection",
-      "title": "Painting Italy",
-      "sourceUrl": "https://www.wallacecollection.org/whats-on/events/painting-italy/",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -9648,19 +8424,19 @@
     },
     {
       "venueId": "young-vam",
-      "title": "Henri Cartier-Bresson Self-Published PhotoBook Award Shortlist",
-      "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
+      "title": "Freddie Mercury | Splendid Things",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
       "reasonCode": "location-branch-mismatch",
       "reason": "Event is not explicitly assigned to this London branch",
       "evidence": "{\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAddress\": \"Cromwell Road\"}}"
     },
     {
       "venueId": "young-vam",
-      "title": "Henri Cartier-Bresson Self-Published PhotoBook Award Shortlist - Display at V&A South Kensington · V&A",
-      "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
+      "title": "Freddie Mercury | Splendid Things - Display at V&A South Kensington · V&A",
+      "sourceUrl": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Henri Cartier-Bresson Self-Published PhotoBook Award Shortlist - Display at V&A South Kensington · V&A"
+      "evidence": "Freddie Mercury | Splendid Things - Display at V&A South Kensington · V&A"
     },
     {
       "venueId": "young-vam",

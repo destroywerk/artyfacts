@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T15:52:05.517770+00:00",
-  "windowStart": "2026-10-12",
-  "windowEnd": "2026-11-12",
+  "generatedAt": "2026-10-19T09:10:35.982934+00:00",
+  "windowStart": "2026-10-19",
+  "windowEnd": "2026-11-19",
   "windowKind": "calendar-month-inclusive",
   "windowInclusiveDays": 32,
   "userAgent": "LondonExhibitionsBot/1.0 (private non-commercial exhibition index; contact: Tim Green)",
   "totalVenues": 100,
-  "successfulScrapes": 43,
-  "linkOnlyBlockedFailedOrUnverified": 57,
-  "exhibitionsFound": 81,
-  "activeLondonVenues": 35,
-  "rejectedCandidates": 1227,
-  "rejectedNonLondonRecords": 209,
-  "rejectedLocationUnverifiedRecords": 43,
+  "successfulScrapes": 35,
+  "linkOnlyBlockedFailedOrUnverified": 65,
+  "exhibitionsFound": 86,
+  "activeLondonVenues": 32,
+  "rejectedCandidates": 1074,
+  "rejectedNonLondonRecords": 208,
+  "rejectedLocationUnverifiedRecords": 52,
   "priorityInstitutionCount": 53,
   "priorityVenueRecordCount": 54,
-  "priorityInstitutionsWithVerifiedShows": 19,
-  "priorityExhibitionsFound": 40,
+  "priorityInstitutionsWithVerifiedShows": 17,
+  "priorityExhibitionsFound": 42,
   "addressVerifiedVenues": 53,
   "addressUnresolvedVenues": 47,
-  "titleOverridesApplied": 29,
-  "independentPolicyFreeExhibitions": 4,
-  "exhibitionsWithImages": 81,
+  "titleOverridesApplied": 25,
+  "independentPolicyFreeExhibitions": 2,
+  "exhibitionsWithImages": 86,
   "exhibitionsMissingImages": 0,
-  "privateViewCount": 3,
+  "privateViewCount": 5,
   "openTodayPriceCountsBeforePolicy": {
     "free": 23,
-    "paid": 14,
-    "unknown": 34
+    "paid": 15,
+    "unknown": 36
   },
   "openTodayPriceCounts": {
-    "free": 32,
+    "free": 33,
     "paid": 15,
-    "unknown": 24
+    "unknown": 26
   },
   "priorityGaps": [
     {
@@ -180,6 +180,17 @@
       "locationVerified": true
     },
     {
+      "rank": 20,
+      "name": "Hales Gallery",
+      "venueIds": [
+        "hales-gallery"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
       "rank": 21,
       "name": "Serpentine South Gallery",
       "venueIds": [
@@ -242,7 +253,8 @@
         "gagosian-grosvenor-hill"
       ],
       "statuses": [
-        "no-current-shows"
+        "no-current-shows",
+        "unresolved"
       ],
       "locationVerified": true
     },
@@ -330,7 +342,7 @@
         "hayward-gallery"
       ],
       "statuses": [
-        "unresolved"
+        "blocked"
       ],
       "locationVerified": true
     },
@@ -410,18 +422,29 @@
         "unresolved"
       ],
       "locationVerified": false
+    },
+    {
+      "rank": 52,
+      "name": "LBF Contemporary",
+      "venueIds": [
+        "lbf-contemporary"
+      ],
+      "statuses": [
+        "blocked"
+      ],
+      "locationVerified": true
     }
   ],
   "statusCounts": {
     "ambiguous": 3,
-    "blocked": 7,
+    "blocked": 12,
     "closed": 2,
     "failed": 2,
     "instagram-only": 1,
-    "no-current-shows": 8,
-    "success": 35,
+    "no-current-shows": 3,
+    "success": 32,
     "temporarily-closed-unverified": 1,
-    "unresolved": 41
+    "unresolved": 44
   },
   "accuracyClaim": null,
   "accuracyNote": "No accuracy percentage is claimed; spot-check measurement has not been run."

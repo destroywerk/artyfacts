@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T12:44:30.232106+00:00",
-  "windowStart": "2026-10-12",
-  "windowEnd": "2026-11-12",
+  "generatedAt": "2026-10-19T09:10:35.995890+00:00",
+  "windowStart": "2026-10-19",
+  "windowEnd": "2026-11-19",
   "windowKind": "calendar-month-inclusive",
   "totalVenues": 100,
   "verified": 53,
@@ -626,7 +626,7 @@
         "lat": 51.50705,
         "lng": -0.11767
       },
-      "sourceUrl": "https://www.southbankcentre.co.uk/whats-on/anish-kapoor/",
+      "sourceUrl": "https://www.southbankcentre.co.uk/venues/hayward-gallery/",
       "evidence": "Official venue address Belvedere Road London, SE1 8XZ; postcode resolves to Lambeth, London",
       "previousAddress": "Belvedere Road London",
       "previousPostcode": "SE1 8XZ"

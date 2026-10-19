@@ -19,7 +19,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 2
   },
   {
@@ -60,7 +60,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 7
   },
   {
@@ -99,9 +99,9 @@ export const venues: Venue[] = [
         "close": "17:30"
       }
     },
-    "hoursLastChecked": "2026-10-12",
+    "hoursLastChecked": "2026-10-19",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 10
   },
   {
@@ -121,7 +121,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 14
   },
   {
@@ -166,7 +166,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 16
   },
   {
@@ -207,28 +207,8 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 17
-  },
-  {
-    "id": "hales-gallery",
-    "name": "Hales Gallery",
-    "type": "commercial",
-    "address": "7 Bethnal Green Road",
-    "postcode": "E1 6LA",
-    "coordinates": {
-      "lat": 51.524203,
-      "lng": -0.073614
-    },
-    "area": "City & East",
-    "website": "https://halesgallery.com/",
-    "whatsOnUrl": "https://halesgallery.com/exhibitions/",
-    "instagramUrl": null,
-    "openingHours": null,
-    "hoursLastChecked": null,
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
-    "priorityRank": 20
   },
   {
     "id": "victoria-miro",
@@ -268,7 +248,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 22
   },
   {
@@ -317,7 +297,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 23
   },
   {
@@ -362,7 +342,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 26
   },
   {
@@ -403,7 +383,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 39
   },
   {
@@ -423,7 +403,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 40
   },
   {
@@ -462,9 +442,9 @@ export const venues: Venue[] = [
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-12",
+    "hoursLastChecked": "2026-10-19",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 42
   },
   {
@@ -513,7 +493,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 45
   },
   {
@@ -552,9 +532,9 @@ export const venues: Venue[] = [
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-12",
+    "hoursLastChecked": "2026-10-19",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 46
   },
   {
@@ -599,7 +579,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 49
   },
   {
@@ -648,28 +628,8 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 50
-  },
-  {
-    "id": "lbf-contemporary",
-    "name": "LBF Contemporary",
-    "type": "commercial",
-    "address": "13 Tottenham Mews",
-    "postcode": "W1T 4AQ",
-    "coordinates": {
-      "lat": 51.520512,
-      "lng": -0.137367
-    },
-    "area": "Central",
-    "website": "https://www.lbfcontemporary.com/",
-    "whatsOnUrl": "https://www.lbfcontemporary.com/exhibitions",
-    "instagramUrl": null,
-    "openingHours": null,
-    "hoursLastChecked": null,
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
-    "priorityRank": 52
   },
   {
     "id": "blueshop-cottage",
@@ -701,7 +661,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": 53
   },
   {
@@ -721,7 +681,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -758,7 +718,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -803,7 +763,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -823,7 +783,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -842,7 +802,7 @@ export const venues: Venue[] = [
     "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
-    "scrapeMethod": "website",
+    "scrapeMethod": "link-only",
     "lastSuccessfulScrape": "2026-10-12",
     "priorityRank": null
   },
@@ -863,7 +823,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -883,27 +843,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
-    "priorityRank": null
-  },
-  {
-    "id": "national-portrait-gallery",
-    "name": "National Portrait Gallery",
-    "type": "national",
-    "address": "St Martin's Place",
-    "postcode": "WC2H 0HE",
-    "coordinates": {
-      "lat": 51.509399,
-      "lng": -0.128453
-    },
-    "area": "Central",
-    "website": "https://www.npg.org.uk/",
-    "whatsOnUrl": "https://www.npg.org.uk/whatson/events-calendar/?what=exhibition",
-    "instagramUrl": null,
-    "openingHours": null,
-    "hoursLastChecked": null,
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -943,7 +883,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -963,7 +903,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -1012,7 +952,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -1061,7 +1001,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -1081,7 +1021,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -1101,7 +1041,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   },
   {
@@ -1150,7 +1090,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-12",
+    "lastSuccessfulScrape": "2026-10-19",
     "priorityRank": null
   }
 ];
