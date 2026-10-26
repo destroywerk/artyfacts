@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T09:10:35.982934+00:00",
-  "windowStart": "2026-10-19",
-  "windowEnd": "2026-11-19",
+  "generatedAt": "2026-10-26T09:12:38.948158+00:00",
+  "windowStart": "2026-10-26",
+  "windowEnd": "2026-11-26",
   "windowKind": "calendar-month-inclusive",
   "windowInclusiveDays": 32,
   "userAgent": "LondonExhibitionsBot/1.0 (private non-commercial exhibition index; contact: Tim Green)",
   "totalVenues": 100,
-  "successfulScrapes": 35,
-  "linkOnlyBlockedFailedOrUnverified": 65,
-  "exhibitionsFound": 86,
+  "successfulScrapes": 37,
+  "linkOnlyBlockedFailedOrUnverified": 63,
+  "exhibitionsFound": 91,
   "activeLondonVenues": 32,
-  "rejectedCandidates": 1074,
-  "rejectedNonLondonRecords": 208,
-  "rejectedLocationUnverifiedRecords": 52,
+  "rejectedCandidates": 1061,
+  "rejectedNonLondonRecords": 199,
+  "rejectedLocationUnverifiedRecords": 51,
   "priorityInstitutionCount": 53,
   "priorityVenueRecordCount": 54,
   "priorityInstitutionsWithVerifiedShows": 17,
-  "priorityExhibitionsFound": 42,
+  "priorityExhibitionsFound": 48,
   "addressVerifiedVenues": 53,
   "addressUnresolvedVenues": 47,
-  "titleOverridesApplied": 25,
-  "independentPolicyFreeExhibitions": 2,
-  "exhibitionsWithImages": 86,
+  "titleOverridesApplied": 22,
+  "independentPolicyFreeExhibitions": 1,
+  "exhibitionsWithImages": 91,
   "exhibitionsMissingImages": 0,
   "privateViewCount": 5,
   "openTodayPriceCountsBeforePolicy": {
-    "free": 23,
-    "paid": 15,
+    "free": 21,
+    "paid": 13,
     "unknown": 36
   },
   "openTodayPriceCounts": {
-    "free": 33,
-    "paid": 15,
+    "free": 30,
+    "paid": 14,
     "unknown": 26
   },
   "priorityGaps": [
@@ -197,7 +197,7 @@
         "serpentine-south"
       ],
       "statuses": [
-        "unresolved"
+        "no-current-shows"
       ],
       "locationVerified": true
     },
@@ -231,17 +231,6 @@
       ],
       "statuses": [
         "failed"
-      ],
-      "locationVerified": true
-    },
-    {
-      "rank": 28,
-      "name": "Pippy Houldsworth Gallery",
-      "venueIds": [
-        "pippy-houldsworth-gallery"
-      ],
-      "statuses": [
-        "unresolved"
       ],
       "locationVerified": true
     },
@@ -358,6 +347,17 @@
       "locationVerified": false
     },
     {
+      "rank": 40,
+      "name": "The Redfern Gallery",
+      "venueIds": [
+        "the-redfern-gallery"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
+    },
+    {
       "rank": 41,
       "name": "Unit London",
       "venueIds": [
@@ -441,10 +441,10 @@
     "closed": 2,
     "failed": 2,
     "instagram-only": 1,
-    "no-current-shows": 3,
+    "no-current-shows": 5,
     "success": 32,
     "temporarily-closed-unverified": 1,
-    "unresolved": 44
+    "unresolved": 42
   },
   "accuracyClaim": null,
   "accuracyNote": "No accuracy percentage is claimed; spot-check measurement has not been run."

@@ -13,7 +13,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 1
   },
   {
@@ -33,7 +33,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 2
   },
   {
@@ -170,7 +170,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 7
   },
   {
@@ -243,9 +243,9 @@
         "close": "17:30"
       }
     },
-    "hoursLastChecked": "2026-10-19",
+    "hoursLastChecked": "2026-10-26",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 10
   },
   {
@@ -319,7 +319,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 14
   },
   {
@@ -336,7 +336,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 15
   },
   {
@@ -381,7 +381,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 16
   },
   {
@@ -422,7 +422,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 17
   },
   {
@@ -480,7 +480,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 19
   },
   {
@@ -500,7 +500,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 20
   },
   {
@@ -519,8 +519,8 @@
     "instagramUrl": null,
     "openingHours": null,
     "hoursLastChecked": null,
-    "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 21
   },
   {
@@ -561,7 +561,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 22
   },
   {
@@ -610,7 +610,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 23
   },
   {
@@ -627,7 +627,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 24
   },
   {
@@ -689,7 +689,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 26
   },
   {
@@ -770,8 +770,8 @@
       }
     },
     "hoursLastChecked": "2026-10-06",
-    "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 28
   },
   {
@@ -791,7 +791,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 29
   },
   {
@@ -811,7 +811,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 29
   },
   {
@@ -828,7 +828,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 30
   },
   {
@@ -879,7 +879,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 33
   },
   {
@@ -896,7 +896,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 34
   },
   {
@@ -941,7 +941,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 35
   },
   {
@@ -1036,7 +1036,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 39
   },
   {
@@ -1056,7 +1056,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 40
   },
   {
@@ -1112,9 +1112,9 @@
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-19",
+    "hoursLastChecked": "2026-10-26",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 42
   },
   {
@@ -1148,7 +1148,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 44
   },
   {
@@ -1197,7 +1197,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 45
   },
   {
@@ -1236,9 +1236,9 @@
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-19",
+    "hoursLastChecked": "2026-10-26",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 46
   },
   {
@@ -1255,7 +1255,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 47
   },
   {
@@ -1272,7 +1272,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 48
   },
   {
@@ -1317,7 +1317,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 49
   },
   {
@@ -1366,7 +1366,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 50
   },
   {
@@ -1436,7 +1436,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 53
   },
   {
@@ -1456,7 +1456,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1493,7 +1493,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1555,7 +1555,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1609,7 +1609,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1649,7 +1649,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1731,7 +1731,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1771,7 +1771,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1791,7 +1791,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1808,7 +1808,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1879,7 +1879,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1913,7 +1913,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1930,7 +1930,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1987,7 +1987,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2092,7 +2092,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2132,7 +2132,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2149,7 +2149,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "link-only",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2169,7 +2169,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2252,7 +2252,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2355,7 +2355,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2375,7 +2375,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2395,7 +2395,7 @@
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -2444,7 +2444,7 @@
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {

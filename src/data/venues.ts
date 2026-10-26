@@ -19,7 +19,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 2
   },
   {
@@ -60,7 +60,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 7
   },
   {
@@ -99,9 +99,9 @@ export const venues: Venue[] = [
         "close": "17:30"
       }
     },
-    "hoursLastChecked": "2026-10-19",
+    "hoursLastChecked": "2026-10-26",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 10
   },
   {
@@ -121,7 +121,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 14
   },
   {
@@ -166,7 +166,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 16
   },
   {
@@ -207,7 +207,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 17
   },
   {
@@ -248,7 +248,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 22
   },
   {
@@ -297,7 +297,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 23
   },
   {
@@ -342,8 +342,49 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 26
+  },
+  {
+    "id": "pippy-houldsworth-gallery",
+    "name": "Pippy Houldsworth Gallery",
+    "type": "commercial",
+    "address": "6 Heddon Street",
+    "postcode": "W1B 4BT",
+    "coordinates": {
+      "lat": 51.511057,
+      "lng": -0.139396
+    },
+    "area": "Central",
+    "website": "https://www.houldsworth.co.uk/",
+    "whatsOnUrl": "https://www.houldsworth.co.uk/exhibitions/",
+    "instagramUrl": null,
+    "openingHours": {
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "18:00"
+      }
+    },
+    "hoursLastChecked": "2026-10-06",
+    "scrapeMethod": "website",
+    "lastSuccessfulScrape": "2026-10-26",
+    "priorityRank": 28
   },
   {
     "id": "sadie-coles-hq",
@@ -383,28 +424,8 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 39
-  },
-  {
-    "id": "the-redfern-gallery",
-    "name": "The Redfern Gallery",
-    "type": "commercial",
-    "address": "11–12 Pall Mall",
-    "postcode": "SW1Y 5LU",
-    "coordinates": {
-      "lat": 51.507043,
-      "lng": -0.133521
-    },
-    "area": "Central",
-    "website": "https://www.redfern-gallery.com/",
-    "whatsOnUrl": "https://www.redfern-gallery.com/exhibitions/",
-    "instagramUrl": null,
-    "openingHours": null,
-    "hoursLastChecked": null,
-    "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
-    "priorityRank": 40
   },
   {
     "id": "david-zwirner-london",
@@ -442,9 +463,9 @@ export const venues: Venue[] = [
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-19",
+    "hoursLastChecked": "2026-10-26",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 42
   },
   {
@@ -493,7 +514,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 45
   },
   {
@@ -532,9 +553,9 @@ export const venues: Venue[] = [
         "close": "18:00"
       }
     },
-    "hoursLastChecked": "2026-10-19",
+    "hoursLastChecked": "2026-10-26",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 46
   },
   {
@@ -579,7 +600,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 49
   },
   {
@@ -628,7 +649,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 50
   },
   {
@@ -661,7 +682,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": 53
   },
   {
@@ -681,7 +702,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -718,7 +739,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -763,7 +784,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -783,7 +804,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -823,7 +844,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -843,7 +864,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -883,7 +904,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -903,7 +924,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -952,7 +973,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1001,7 +1022,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1021,7 +1042,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1041,7 +1062,7 @@ export const venues: Venue[] = [
     "openingHours": null,
     "hoursLastChecked": null,
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   },
   {
@@ -1090,7 +1111,7 @@ export const venues: Venue[] = [
     },
     "hoursLastChecked": "2026-10-06",
     "scrapeMethod": "website",
-    "lastSuccessfulScrape": "2026-10-19",
+    "lastSuccessfulScrape": "2026-10-26",
     "priorityRank": null
   }
 ];
