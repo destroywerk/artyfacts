@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T09:12:38.965274+00:00",
-  "windowStart": "2026-10-26",
-  "windowEnd": "2026-11-26",
+  "generatedAt": "2026-11-02T11:23:09.703962+00:00",
+  "windowStart": "2026-11-02",
+  "windowEnd": "2026-12-02",
   "windowKind": "calendar-month-inclusive",
   "records": [
     {
@@ -16,7 +16,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -30,7 +30,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.pilarcorrias.com/exhibitions/538-rirkrit-tiravanija-situational-awareness/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -44,7 +44,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://chisenhale.org.uk/project/wakaliga-uganda/",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -58,7 +58,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.octobergallery.co.uk/exhibitions/rafael-trelles-caliban",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -72,7 +72,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.octobergallery.co.uk/exhibitions/romuald-hazoume-my-blue-period",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -86,7 +86,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://hannahbarry.com/exhibition/stevie-dix-vyvyan-1-october-14-november-2026/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -100,7 +100,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -114,7 +114,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://kristinhjellegjerde.com/exhibitions/600/overview/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -240,7 +240,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-now-mohammed-z-rahman",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -268,7 +268,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s/relaxed-hours-the-90s-art-and-fashion",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -282,7 +282,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -296,7 +296,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -310,7 +310,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-britain/vanessa-bell-and-duncan-grant",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -366,7 +366,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.houldsworth.co.uk/exhibitions/176-george-wilkin-ad-libidinum/press_release_text/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -394,7 +394,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -422,36 +422,8 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.sadiecoles.com/exhibitions/shaping-silence",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
-    },
-    {
-      "exhibitionId": "david-zwirner-london-daichi-takagi-suchness-2026-09-24",
-      "venueId": "david-zwirner-london",
-      "title": "Daichi Takagi: Suchness",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/daichi-takagi-suchness",
-      "priceStatusBeforeOverride": "unknown",
-      "priceStatus": "free",
-      "reasonCode": "official-free-admission",
-      "evidenceScope": "venue-policy",
-      "evidenceUrl": "https://www.davidzwirner.com/news/2019/your-visitor-faqs-answered",
-      "evidence": "Official visitor FAQ states the gallery is free and open to the public and no tickets are required.",
-      "verifiedAt": "2026-10-06",
-      "confidenceScore": 0.99
-    },
-    {
-      "exhibitionId": "david-zwirner-london-louis-fratino-prose-2026-09-18",
-      "venueId": "david-zwirner-london",
-      "title": "Louis Fratino: Prose",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/louis-fratino",
-      "priceStatusBeforeOverride": "unknown",
-      "priceStatus": "free",
-      "reasonCode": "official-free-admission",
-      "evidenceScope": "venue-policy",
-      "evidenceUrl": "https://www.davidzwirner.com/news/2019/your-visitor-faqs-answered",
-      "evidence": "Official visitor FAQ states the gallery is free and open to the public and no tickets are required.",
-      "verifiedAt": "2026-10-06",
-      "confidenceScore": 0.99
     },
     {
       "exhibitionId": "david-zwirner-london-no-plan-at-all-prints-from-borch-editions-2026-11-05",
@@ -492,7 +464,21 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://maddoxgallery.com/pages/exhibition/bibi-lei-where-light-blooms",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
+      "confidenceScore": 0.4
+    },
+    {
+      "exhibitionId": "maddox-gallery-cooper-in-good-company-2026-11-19",
+      "venueId": "maddox-gallery",
+      "title": "Cooper: In Good Company",
+      "sourceUrl": "https://maddoxgallery.com/pages/exhibition/cooper-in-good-company",
+      "priceStatusBeforeOverride": "unknown",
+      "priceStatus": "unknown",
+      "reasonCode": "no-explicit-admission-evidence",
+      "evidenceScope": "source-page",
+      "evidenceUrl": "https://maddoxgallery.com/pages/exhibition/cooper-in-good-company",
+      "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -506,7 +492,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/raschools-day-2026",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -520,7 +506,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-emmanuel-awuni",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -534,7 +520,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-barbara-rae-ra",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -548,7 +534,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/nicole-eisenman-courtyard-sculpture",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -562,7 +548,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -576,7 +562,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/peggy-guggenheim-in-london",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -590,7 +576,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/fine-rooms-open",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -604,7 +590,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-white-cube",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -612,7 +598,7 @@
       "venueId": "national-gallery",
       "title": "Renoir and Love",
       "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love",
-      "priceStatusBeforeOverride": "unknown",
+      "priceStatusBeforeOverride": "paid",
       "priceStatus": "paid",
       "reasonCode": "official-paid-admission",
       "evidenceScope": "exhibition",
@@ -632,7 +618,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.nationalgallery.org.uk/exhibitions/van-eyck-the-portraits",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -646,35 +632,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.nationalgallery.org.uk/exhibitions/yinka-shonibare-and-thomas-gainsborough-a-conversation",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
-      "confidenceScore": 0.4
-    },
-    {
-      "exhibitionId": "blueshop-cottage-isabel-munoz-newsome-the-other-place-2026-10-07",
-      "venueId": "blueshop-cottage",
-      "title": "Isabel Muñoz-Newsome — The Other Place",
-      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/isabel-munoz-newsome",
-      "priceStatusBeforeOverride": "unknown",
-      "priceStatus": "unknown",
-      "reasonCode": "no-explicit-admission-evidence",
-      "evidenceScope": "source-page",
-      "evidenceUrl": "https://www.blueshopcottage.com/exhibitions/isabel-munoz-newsome",
-      "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-12",
-      "confidenceScore": 0.4
-    },
-    {
-      "exhibitionId": "blueshop-cottage-lucy-ray-ill-have-to-remember-it-differently-2026-10-07",
-      "venueId": "blueshop-cottage",
-      "title": "Lucy Ray — I’ll have to remember it differently",
-      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/lucy-ray",
-      "priceStatusBeforeOverride": "unknown",
-      "priceStatus": "unknown",
-      "reasonCode": "no-explicit-admission-evidence",
-      "evidenceScope": "source-page",
-      "evidenceUrl": "https://www.blueshopcottage.com/exhibitions/lucy-ray",
-      "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-12",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -702,7 +660,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/407-leon-kossoff-trains-and-stations/overview/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -716,7 +674,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/405-nicola-turner-i-tear-secrets-from-your-yielding-flesh/overview/",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -730,7 +688,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://autoitaliasoutheast.org/projects/participation-artist-in-residence-rose-nordin/",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -744,7 +702,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://autoitaliasoutheast.org/projects/magic-system/",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -786,7 +744,21 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
+      "confidenceScore": 0.85
+    },
+    {
+      "exhibitionId": "design-museum-platform-simone-brewster-2026-02-13",
+      "venueId": "design-museum",
+      "title": "PLATFORM: Simone Brewster",
+      "sourceUrl": "https://designmuseum.org/exhibitions/platform-simone-brewster",
+      "priceStatusBeforeOverride": "free",
+      "priceStatus": "free",
+      "reasonCode": "source-price-extracted",
+      "evidenceScope": "source-page",
+      "evidenceUrl": "https://designmuseum.org/exhibitions/platform-simone-brewster",
+      "evidence": "Price status extracted from the official exhibition page.",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -802,6 +774,20 @@
       "evidence": "Price status extracted from the official exhibition page.",
       "verifiedAt": "2026-10-12",
       "confidenceScore": 0.85
+    },
+    {
+      "exhibitionId": "estorick-collection-exhibitions-tagged-with-intervention-2026-10-28",
+      "venueId": "estorick-collection",
+      "title": "Exhibitions tagged with Intervention",
+      "sourceUrl": "https://www.estorickcollection.com/exhibitions/tagged-with/intervention",
+      "priceStatusBeforeOverride": "unknown",
+      "priceStatus": "free",
+      "reasonCode": "user-policy-independent-default-free",
+      "evidenceScope": "user-policy",
+      "evidenceUrl": "https://www.estorickcollection.com/exhibitions/tagged-with/intervention",
+      "evidence": "User policy defaults independent venues to free when no official paid admission, ticket restriction, or members-only evidence is present.",
+      "verifiedAt": "2026-11-02",
+      "confidenceScore": 0.65
     },
     {
       "exhibitionId": "garden-museum-sabine-moritz-2026-10-08",
@@ -842,7 +828,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.gasworks.org.uk/exhibitions/umi-ishihara/",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -870,7 +856,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.soane.org/exhibitions/michael-landy-future-ruins",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -898,7 +884,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-modern/ana-mendieta",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -912,7 +898,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -926,7 +912,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-modern/gathering-ground",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -954,7 +940,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -968,22 +954,8 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
-    },
-    {
-      "exhibitionId": "vam-adobe-creative-residents-on-display-2025-12-02",
-      "venueId": "vam",
-      "title": "Adobe Creative Residents On Display",
-      "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-adobe-creative-residents-on-display",
-      "priceStatusBeforeOverride": "unknown",
-      "priceStatus": "unknown",
-      "reasonCode": "no-explicit-admission-evidence",
-      "evidenceScope": "source-page",
-      "evidenceUrl": "https://www.vam.ac.uk/exhibitions/the-adobe-creative-residents-on-display",
-      "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
-      "confidenceScore": 0.4
     },
     {
       "exhibitionId": "vam-american-photographs-2025-06-14",
@@ -996,7 +968,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/american-photographs",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1010,7 +982,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/bharti-kher-at-the-va",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1024,7 +996,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/constantinople-to-istanbul-one-city-two-empires",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -1038,7 +1010,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/degrees-of-disruption-vera-molnar-and-generative-art",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1052,7 +1024,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/dimensions-contemporary-chinese-studio-crafts",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1066,7 +1038,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1080,7 +1052,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-12",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1094,7 +1066,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/lost-music-venues",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1108,7 +1080,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/rising-voices-contemporary-art-from-asia-australia-and-the-pacific",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -1122,7 +1094,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/sacred-treasures-from-kyiv",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1150,7 +1122,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/schiaparelli",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -1164,7 +1136,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/the-burberry-trench-crafting-an-icon",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1178,7 +1150,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/urushi-now-contemporary-japanese-lacquer",
       "evidence": "Official exhibition page and verified venue policies provide no explicit admission price evidence.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.4
     },
     {
@@ -1192,7 +1164,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/cosimo-i-de-medici-art-and-dynasty/",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -1206,7 +1178,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/metamorphoses-porcelain-sculpture-by-rachel-kneebone/",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     },
     {
@@ -1276,7 +1248,7 @@
       "evidenceScope": "source-page",
       "evidenceUrl": "https://www.vam.ac.uk/exhibitions/inside-aardman-wallace-gromit-and-friends",
       "evidence": "Price status extracted from the official exhibition page.",
-      "verifiedAt": "2026-10-26",
+      "verifiedAt": "2026-11-02",
       "confidenceScore": 0.85
     }
   ]

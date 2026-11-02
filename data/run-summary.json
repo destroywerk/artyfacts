@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T09:12:38.948158+00:00",
-  "windowStart": "2026-10-26",
-  "windowEnd": "2026-11-26",
+  "generatedAt": "2026-11-02T11:23:09.690304+00:00",
+  "windowStart": "2026-11-02",
+  "windowEnd": "2026-12-02",
   "windowKind": "calendar-month-inclusive",
-  "windowInclusiveDays": 32,
+  "windowInclusiveDays": 31,
   "userAgent": "LondonExhibitionsBot/1.0 (private non-commercial exhibition index; contact: Tim Green)",
   "totalVenues": 100,
-  "successfulScrapes": 37,
-  "linkOnlyBlockedFailedOrUnverified": 63,
-  "exhibitionsFound": 91,
+  "successfulScrapes": 39,
+  "linkOnlyBlockedFailedOrUnverified": 61,
+  "exhibitionsFound": 89,
   "activeLondonVenues": 32,
-  "rejectedCandidates": 1061,
-  "rejectedNonLondonRecords": 199,
-  "rejectedLocationUnverifiedRecords": 51,
+  "rejectedCandidates": 1043,
+  "rejectedNonLondonRecords": 188,
+  "rejectedLocationUnverifiedRecords": 38,
   "priorityInstitutionCount": 53,
   "priorityVenueRecordCount": 54,
-  "priorityInstitutionsWithVerifiedShows": 17,
-  "priorityExhibitionsFound": 48,
+  "priorityInstitutionsWithVerifiedShows": 16,
+  "priorityExhibitionsFound": 45,
   "addressVerifiedVenues": 53,
   "addressUnresolvedVenues": 47,
-  "titleOverridesApplied": 22,
-  "independentPolicyFreeExhibitions": 1,
-  "exhibitionsWithImages": 91,
+  "titleOverridesApplied": 18,
+  "independentPolicyFreeExhibitions": 2,
+  "exhibitionsWithImages": 89,
   "exhibitionsMissingImages": 0,
   "privateViewCount": 5,
   "openTodayPriceCountsBeforePolicy": {
-    "free": 21,
-    "paid": 13,
-    "unknown": 36
+    "free": 22,
+    "paid": 14,
+    "unknown": 32
   },
   "openTodayPriceCounts": {
     "free": 30,
     "paid": 14,
-    "unknown": 26
+    "unknown": 24
   },
   "priorityGaps": [
     {
@@ -433,18 +433,29 @@
         "blocked"
       ],
       "locationVerified": true
+    },
+    {
+      "rank": 53,
+      "name": "Blue Shop Cottage",
+      "venueIds": [
+        "blueshop-cottage"
+      ],
+      "statuses": [
+        "no-current-shows"
+      ],
+      "locationVerified": true
     }
   ],
   "statusCounts": {
     "ambiguous": 3,
     "blocked": 12,
     "closed": 2,
-    "failed": 2,
+    "failed": 3,
     "instagram-only": 1,
-    "no-current-shows": 5,
+    "no-current-shows": 7,
     "success": 32,
     "temporarily-closed-unverified": 1,
-    "unresolved": 42
+    "unresolved": 39
   },
   "accuracyClaim": null,
   "accuracyNote": "No accuracy percentage is claimed; spot-check measurement has not been run."

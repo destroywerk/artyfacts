@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T09:12:38.969541+00:00",
-  "windowStart": "2026-10-26",
-  "windowEnd": "2026-11-26",
+  "generatedAt": "2026-11-02T11:23:09.707469+00:00",
+  "windowStart": "2026-11-02",
+  "windowEnd": "2026-12-02",
   "windowKind": "calendar-month-inclusive",
   "totalVenues": 100,
   "verified": 53,
@@ -65,7 +65,7 @@
         "lat": 51.520905,
         "lng": -0.168025
       },
-      "sourceUrl": "https://www.lissongallery.com/",
+      "sourceUrl": "https://lisson.com/exhibitions",
       "evidence": "Official venue address 67 Lisson Street, NW1 5DA; postcode resolves to Westminster, London",
       "previousAddress": "67 Lisson Street",
       "previousPostcode": "NW1 5DA"
@@ -339,13 +339,13 @@
       "status": "verified-official-london-address",
       "accepted": true,
       "address": "7 Bethnal Green Road",
-      "postcode": "E1 6LA",
+      "postcode": "NW1 4NR",
       "coordinates": {
-        "lat": 51.524203,
-        "lng": -0.073614
+        "lat": 51.528444,
+        "lng": -0.149917
       },
       "sourceUrl": "https://halesgallery.com/about/contact/",
-      "evidence": "Official venue address 7 Bethnal Green Road, E1 6LA; postcode resolves to Tower Hamlets, London",
+      "evidence": "Official venue address 7 Bethnal Green Road, NW1 4NR; postcode resolves to Westminster, London",
       "previousAddress": "7 Bethnal Green Road",
       "previousPostcode": "E1 6LA"
     },
@@ -705,7 +705,7 @@
         "lat": 51.509477,
         "lng": -0.143005
       },
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/louis-fratino",
+      "sourceUrl": "https://www.davidzwirner.com/locations/london",
       "evidence": "Official venue address 24 Grafton Street, W1S 4EZ; postcode resolves to Westminster, London",
       "previousAddress": "24 Grafton Street",
       "previousPostcode": "W1S 4EZ"

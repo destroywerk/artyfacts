@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T09:12:38.962560+00:00",
-  "windowStart": "2026-10-26",
-  "windowEnd": "2026-11-26",
+  "generatedAt": "2026-11-02T11:23:09.701880+00:00",
+  "windowStart": "2026-11-02",
+  "windowEnd": "2026-12-02",
   "windowKind": "calendar-month-inclusive",
   "venues": [
     {
@@ -251,11 +251,11 @@
       "priorityRank": 20,
       "accepted": true,
       "reasonCode": "verified-london-venue",
-      "evidence": "Official venue address 7 Bethnal Green Road, E1 6LA; postcode resolves to Tower Hamlets, London",
-      "postcode": "E1 6LA",
+      "evidence": "Official venue address 7 Bethnal Green Road, NW1 4NR; postcode resolves to Westminster, London",
+      "postcode": "NW1 4NR",
       "coordinates": {
-        "lat": 51.524203,
-        "lng": -0.073614
+        "lat": 51.528444,
+        "lng": -0.149917
       }
     },
     {
@@ -1185,15 +1185,6 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "the-photographers-gallery-open-call-future-of-archives-whose-archive-is-it-anyway-2026-08-04",
-      "venueId": "the-photographers-gallery",
-      "title": "Open Call | Future of Archives: Whose Archive is it Anyway?",
-      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/open-call-future-archives-whose-archive-it-anyway",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
       "exhibitionId": "the-photographers-gallery-roots-2026-09-18",
       "venueId": "the-photographers-gallery",
       "title": "Roots",
@@ -1302,15 +1293,6 @@
       "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
-      "exhibitionId": "kristin-hjellegjerde-gallery-bertram-hasenauer-trickster-2026-09-25",
-      "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Bertram Hasenauer: Trickster",
-      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/554/overview/",
-      "accepted": false,
-      "reasonCode": "missing-london-branch-evidence",
-      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
-    },
-    {
       "exhibitionId": "kristin-hjellegjerde-gallery-charmaine-watkiss-west-palm-beach-salon-2026-10-30",
       "venueId": "kristin-hjellegjerde-gallery",
       "title": "Charmaine Watkiss: WEST PALM BEACH | SALON",
@@ -1408,15 +1390,6 @@
       "accepted": false,
       "reasonCode": "missing-london-event-evidence",
       "evidence": "Official exhibition page contains no explicit London location or London postcode"
-    },
-    {
-      "exhibitionId": "victoria-miro-adriana-varejao-modernisms-2026-09-12",
-      "venueId": "victoria-miro",
-      "title": "Adriana Varejão: Modernisms",
-      "sourceUrl": "https://www.victoria-miro.com/exhibitions/adriana-varejao-venice-2026/",
-      "accepted": false,
-      "reasonCode": "non-london-location",
-      "evidence": "Official event title/location assigns the exhibition to venice, not London"
     },
     {
       "exhibitionId": "victoria-miro-alchemies-may-cockcroft-nour-malas-sarah-martin-nuss-2026-11-13",
@@ -1662,15 +1635,6 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "timothy-taylor-pierre-soulages-2026-11-05",
-      "venueId": "timothy-taylor",
-      "title": "Pierre Soulages",
-      "sourceUrl": "https://www.timothytaylor.com/exhibitions/266-pierre-soulages/",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
       "exhibitionId": "ben-brown-fine-arts-alighiero-boetti-curated-by-elena-geuna-2026-05-07",
       "venueId": "ben-brown-fine-arts",
       "title": "Alighiero Boetti: Curated by Elena Geuna",
@@ -1678,15 +1642,6 @@
       "accepted": false,
       "reasonCode": "non-london-location",
       "evidence": "Official event title/location assigns the exhibition to venice, not London"
-    },
-    {
-      "exhibitionId": "ben-brown-fine-arts-qi-lei-2026-09-12",
-      "venueId": "ben-brown-fine-arts",
-      "title": "Qi Lei",
-      "sourceUrl": "https://www.benbrownfinearts.com/exhibitions/234-qi-lei-echoes-of-day-and-night/",
-      "accepted": false,
-      "reasonCode": "missing-london-branch-evidence",
-      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "exhibitionId": "sadie-coles-hq-catherine-murphy-recent-work-2026-09-02",
@@ -1725,24 +1680,6 @@
       "evidence": "official page London evidence: SW1Y 6AB"
     },
     {
-      "exhibitionId": "david-zwirner-london-daichi-takagi-suchness-2026-09-24",
-      "venueId": "david-zwirner-london",
-      "title": "Daichi Takagi: Suchness",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/daichi-takagi-suchness",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "page title: Daichi Takagi: Suchness | London | September 24—October 31, 2026 | David Zwirner; page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
-    },
-    {
-      "exhibitionId": "david-zwirner-london-louis-fratino-prose-2026-09-18",
-      "venueId": "david-zwirner-london",
-      "title": "Louis Fratino: Prose",
-      "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/louis-fratino",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "page title: Louis Fratino: Prose | London | September 18—October 31, 2026 | David Zwirner; structured location: {\"@type\": \"Place\", \"name\": \"David Zwirner London\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"24 Grafton Street\", \"addressLocality\": \"London\", \"postalCode\": \"W1S 4EZ\"…; page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
-    },
-    {
       "exhibitionId": "david-zwirner-london-no-plan-at-all-prints-from-borch-editions-2026-11-05",
       "venueId": "david-zwirner-london",
       "title": "No Plan at All: Prints from BORCH Editions",
@@ -1779,6 +1716,15 @@
       "evidence": "item-scoped official listing assigns the exhibition to London"
     },
     {
+      "exhibitionId": "maddox-gallery-cooper-in-good-company-2026-11-19",
+      "venueId": "maddox-gallery",
+      "title": "Cooper: In Good Company",
+      "sourceUrl": "https://maddoxgallery.com/pages/exhibition/cooper-in-good-company",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
       "exhibitionId": "pace-gallery-london-david-byrne-pace-gallery-2025-04-10",
       "venueId": "pace-gallery-london",
       "title": "David Byrne | Pace Gallery",
@@ -1806,6 +1752,15 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
+      "exhibitionId": "pace-gallery-london-gottlieb-rothko-the-surrealist-years-pace-gallery-2026-11-13",
+      "venueId": "pace-gallery-london",
+      "title": "Gottlieb/Rothko: The Surrealist Years | Pace Gallery",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/rothko-gottlieb-surrealist-years/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
       "exhibitionId": "pace-gallery-london-kiki-smith-untethered-journey-pace-gallery-2026-10-30",
       "venueId": "pace-gallery-london",
       "title": "Kiki Smith: Untethered Journey | Pace Gallery",
@@ -1828,15 +1783,6 @@
       "venueId": "pace-gallery-london",
       "title": "Pam Evelyn: The Wild Asphalt | Pace Gallery",
       "sourceUrl": "https://www.pacegallery.com/exhibitions/pam-evelyn-the-wild-asphalt/",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "pace-gallery-london-rothko-gottlieb-the-surrealist-years-pace-gallery-2026-11-13",
-      "venueId": "pace-gallery-london",
-      "title": "Rothko/Gottlieb: The Surrealist Years | Pace Gallery",
-      "sourceUrl": "https://www.pacegallery.com/exhibitions/rothko-gottlieb-surrealist-years/",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
@@ -1941,24 +1887,6 @@
       "evidence": "structured location: {\"@type\": \"Place\", \"sameAs\": \"https://www.nationalgallery.org.uk/\", \"address\": \"Trafalgar Square, London, WC2N 5DN, UK\", \"name\": \"The National Gallery\"}; item-scoped official listing assigns the exhibition to London"
     },
     {
-      "exhibitionId": "blueshop-cottage-isabel-munoz-newsome-the-other-place-2026-10-07",
-      "venueId": "blueshop-cottage",
-      "title": "Isabel Muñoz-Newsome — The Other Place",
-      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/isabel-munoz-newsome",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "official page London evidence: London"
-    },
-    {
-      "exhibitionId": "blueshop-cottage-lucy-ray-ill-have-to-remember-it-differently-2026-10-07",
-      "venueId": "blueshop-cottage",
-      "title": "Lucy Ray — I’ll have to remember it differently",
-      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/lucy-ray",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "official page London evidence: London"
-    },
-    {
       "exhibitionId": "annely-juda-fine-art-chloe-bonfield-kate-lyddon-and-zulfiya-spowart-what-remains-within-2026-10-01",
       "venueId": "annely-juda-fine-art",
       "title": "Chloe Bonfield, Kate Lyddon and Zulfiya Spowart — What Remains Within",
@@ -2040,6 +1968,15 @@
       "evidence": "Official exhibition page contains no explicit London location or London postcode"
     },
     {
+      "exhibitionId": "design-museum-platform-simone-brewster-2026-02-13",
+      "venueId": "design-museum",
+      "title": "PLATFORM: Simone Brewster",
+      "sourceUrl": "https://designmuseum.org/exhibitions/platform-simone-brewster",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
       "exhibitionId": "dulwich-picture-gallery-charlie-mackesy-the-boy-the-mole-the-fox-the-horse-and-you-2026-11-03",
       "venueId": "dulwich-picture-gallery",
       "title": "Charlie Mackesy: The Boy, the Mole, the Fox, the Horse...and You",
@@ -2047,6 +1984,24 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "Official exhibition page gives Dulwich Picture Gallery, 14 Gallery Road, London SE21 7AD."
+    },
+    {
+      "exhibitionId": "estorick-collection-exhibitions-tagged-with-intervention-2026-10-28",
+      "venueId": "estorick-collection",
+      "title": "Exhibitions tagged with Intervention",
+      "sourceUrl": "https://www.estorickcollection.com/exhibitions/tagged-with/intervention",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "estorick-collection-tino-stefanoni-between-vision-and-memory-2026-10-28",
+      "venueId": "estorick-collection",
+      "title": "Tino Stefanoni: Between Vision and Memory",
+      "sourceUrl": "https://www.estorickcollection.com/exhibitions/tino-stefanoni-between-vision-and-memory",
+      "accepted": false,
+      "reasonCode": "missing-london-event-evidence",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
     },
     {
       "exhibitionId": "estorick-collection-wanda-and-marion-wulz-avant-garde-photography-in-20th-century-italy-2026-09-16",
@@ -2166,43 +2121,52 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "london-museum-beastly-bookmarks-2026-10-26",
+      "exhibitionId": "london-museum-big-fish-little-fish-pirate-snowball-family-rave-2026-11-11",
       "venueId": "london-museum",
-      "title": "Beastly bookmarks",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/beastly-bookmarks/",
+      "title": "Big Fish Little Fish pirate snowball family rave",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/snowball-family-rave/",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "london-museum-fairy-tales-gone-bad-with-joseph-coelho-obe-2026-10-26",
+      "exhibitionId": "london-museum-family-show-great-fire-of-london-2026-11-28",
       "venueId": "london-museum",
-      "title": "Fairy Tales Gone Bad with Joseph Coelho OBE",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/fairy-tales-gone-bad-joseph-coelho-obe/",
+      "title": "Family show: Great Fire of London",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/family-show-great-fire-of-london/",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "london-museum-great-fire-of-london-family-walk-2026-10-30",
+      "exhibitionId": "london-museum-friendly-snowman-craft-2026-11-20",
       "venueId": "london-museum",
-      "title": "Great Fire of London family walk",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/great-fire-of-london-family-walk/",
+      "title": "Friendly snowman craft",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/friendly-snowman-craft/",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "london-museum-make-a-mythical-creature-2026-10-26",
+      "exhibitionId": "london-museum-general-admission-2026-11-28",
       "venueId": "london-museum",
-      "title": "Make a mythical creature",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/make-mythical-creature/",
+      "title": "General admission",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/smithfield-general-admission/",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "london-museum-mudlarks-family-gallery-2026-10-26",
+      "exhibitionId": "london-museum-london-tastes-2026-11-28",
+      "venueId": "london-museum",
+      "title": "London Tastes",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/london-tastes/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "london-museum-mudlarks-family-gallery-2026-11-11",
       "venueId": "london-museum",
       "title": "Mudlarks family gallery",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/mudlarks-family-gallery/",
@@ -2211,46 +2175,19 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "london-museum-october-half-term-2026-10-26",
-      "venueId": "london-museum",
-      "title": "October half term",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/october-half-term/",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "london-museum-roman-london-family-walk-2026-10-27",
-      "venueId": "london-museum",
-      "title": "Roman London family walk",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/roman-london-family-walk/",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "london-museum-second-world-war-family-walk-2026-10-27",
-      "venueId": "london-museum",
-      "title": "Second World War family walk",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/second-world-war-family-walk/",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "london-museum-superstitious-sailors-2026-10-26",
-      "venueId": "london-museum",
-      "title": "Superstitious sailors",
-      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/superstitious-sailors/",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "london-museum-tots-at-the-docks-2026-10-26",
+      "exhibitionId": "london-museum-tots-at-the-docks-2026-11-20",
       "venueId": "london-museum",
       "title": "Tots at the docks",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/tots-at-the-docks/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "london-museum-victorian-santa-s-grotto-2026-11-20",
+      "venueId": "london-museum",
+      "title": "Victorian Santa's grotto",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/victorian-santas-grotto/",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
@@ -2283,64 +2220,10 @@
       "evidence": "Official @r.efuses post identifies Queensrollahouse, 18 Trading Estate Road, London NW10 7LU."
     },
     {
-      "exhibitionId": "royal-museums-greenwich-character-actors-at-the-queen-s-house-2026-10-24",
-      "venueId": "royal-museums-greenwich",
-      "title": "Character Actors at the Queen's House",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/queens-house/character-actors",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "royal-museums-greenwich-cutty-sark-characters-2026-10-24",
-      "venueId": "royal-museums-greenwich",
-      "title": "Cutty Sark Characters",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/cutty-sark/cutty-sark-characters",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "royal-museums-greenwich-discover-sundays-2026-10-24",
-      "venueId": "royal-museums-greenwich",
-      "title": "Discover Sundays",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/discover-sundays",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "royal-museums-greenwich-october-half-term-at-the-royal-observatory-2026-10-24",
-      "venueId": "royal-museums-greenwich",
-      "title": "October half term at the Royal Observatory",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/royal-observatory/october-half-term",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "royal-museums-greenwich-remembrance-a-call-to-mind-2026-10-10",
-      "venueId": "royal-museums-greenwich",
-      "title": "Remembrance: A Call to Mind",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/remembrance-call-mind",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
       "exhibitionId": "royal-museums-greenwich-sensory-sailors-2026-10-10",
       "venueId": "royal-museums-greenwich",
       "title": "SENsory Sailors",
       "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/sensory-sailors",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "royal-museums-greenwich-in-the-dark-2026-10-24",
-      "venueId": "royal-museums-greenwich",
-      "title": "in the dark",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/cutty-sark/in-the-dark",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
@@ -2353,42 +2236,6 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "official page London evidence: WC2A 3BP"
-    },
-    {
-      "exhibitionId": "somerset-house-jenkin-van-zyl-enclosure-2026-09-24",
-      "venueId": "somerset-house",
-      "title": "Jenkin van Zyl: Enclosure",
-      "sourceUrl": "https://www.somersethouse.org.uk",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "somerset-house-skate-at-somerset-house-ice-skating-london-2026-tickets-2026-11-11",
-      "venueId": "somerset-house",
-      "title": "Skate at Somerset House | Ice Skating London | 2026 Tickets",
-      "sourceUrl": "https://www.somersethouse.org.uk",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "somerset-house-there-are-no-honest-poems-about-dead-women-jemma-desai-2026-07-30",
-      "venueId": "somerset-house",
-      "title": "There Are No Honest Poems About Dead Women: Jemma Desai",
-      "sourceUrl": "https://www.somersethouse.org.uk",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "somerset-house-through-our-eyes-sami-art-and-culture-2026-11-06",
-      "venueId": "somerset-house",
-      "title": "Through Our Eyes: Sámi Art and Culture",
-      "sourceUrl": "https://www.somersethouse.org.uk",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "exhibitionId": "south-london-gallery-monika-sosnowska-weight-of-matter-2026-09-10",
@@ -2461,15 +2308,6 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "official location-specific branch URL"
-    },
-    {
-      "exhibitionId": "vam-adobe-creative-residents-on-display-2025-12-02",
-      "venueId": "vam",
-      "title": "Adobe Creative Residents On Display",
-      "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-adobe-creative-residents-on-display",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "structured location: {\"@type\": \"Place\", \"name\": \"V&A South Kensington\", \"address\": {\"@type\": \"PostalAddress\", \"addressLocality\": \"London\", \"addressRegion\": \"London\", \"postalCode\": \"SW7 2RL\", \"streetAd…; item-scoped official listing assigns the exhibition to London"
     },
     {
       "exhibitionId": "vam-american-photographs-2025-06-14",
