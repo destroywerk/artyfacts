@@ -11,7 +11,7 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/gathering-ground",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#334737"
   },
   {
@@ -19,14 +19,14 @@
     "venueId": "vam",
     "title": "American Photographs",
     "startDate": "2025-06-14",
-    "endDate": "2027-05-16",
+    "endDate": "2027-04-11",
     "shortDescription": "In 1938, Walker Evans published American Photographs, capturing a country in flux. This display uses his title to examine how photography has documented and shaped the United States.",
     "imageUrl": "https://vanda-production-assets.s3.amazonaws.com/2025/05/13/14/58/03/3b0ce373-ab8b-4e27-b853-57d40a22553b/960.jpg",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/american-photographs",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#385448"
   },
   {
@@ -41,7 +41,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/dimensions-contemporary-chinese-studio-crafts",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -56,7 +56,7 @@
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/fine-rooms-open",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#277f8e"
   },
   {
@@ -71,7 +71,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/inside-aardman-wallace-gromit-and-friends",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#476d9b"
   },
   {
@@ -86,7 +86,7 @@
     "sourceUrl": "https://designmuseum.org/exhibitions/platform-simone-brewster",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#4f7694"
   },
   {
@@ -101,7 +101,7 @@
     "sourceUrl": "https://wellcomecollection.org/exhibitions/the-coming-of-age",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -116,7 +116,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/schiaparelli",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#7a7863"
   },
   {
@@ -131,23 +131,8 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/urushi-now-contemporary-japanese-lacquer",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#9e2026"
-  },
-  {
-    "id": "tate-britain-tate-britain-commission-2026-zineb-sedira-when-words-fall-silent-cinema-speaks-2026-05-13",
-    "venueId": "tate-britain",
-    "title": "Tate Britain Commission 2026: Zineb Sedira — When Words Fall Silent, Cinema Speaks",
-    "startDate": "2026-05-13",
-    "endDate": "2027-01-17",
-    "shortDescription": "Explore Zineb Sedira's monumental and intimate installation, bridging the political and the poetic.",
-    "imageUrl": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Zineb_Sedira_Bar_Image_1.width-600.jpg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
-    "priceStatus": "free",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
-    "accent": "#6b5b73"
   },
   {
     "id": "vam-rising-voices-contemporary-art-from-asia-australia-and-the-pacific-2026-05-16",
@@ -161,7 +146,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/rising-voices-contemporary-art-from-asia-australia-and-the-pacific",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#8c704d"
   },
   {
@@ -176,7 +161,7 @@
     "sourceUrl": "https://wellcomecollection.org/exhibitions/tenderness-and-rage",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#277f8e"
   },
   {
@@ -191,23 +176,8 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/lost-music-venues",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#805440"
-  },
-  {
-    "id": "tate-britain-art-now-mohammed-z-rahman-2026-06-05",
-    "venueId": "tate-britain",
-    "title": "Art Now: Mohammed Z Rahman",
-    "startDate": "2026-06-05",
-    "endDate": "2026-11-08",
-    "shortDescription": "A new body of paintings exploring notions of home and love, displayed alongside Tate works The Lovers and The Spaghetti House.",
-    "imageUrl": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/.width-600_wpoIz50.jpg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-now-mohammed-z-rahman",
-    "priceStatus": "free",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
-    "accent": "#476d9b"
   },
   {
     "id": "tate-modern-julio-le-parc-light-colour-action-2026-06-08",
@@ -221,7 +191,7 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#476d9b"
   },
   {
@@ -236,7 +206,7 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#433e79"
   },
   {
@@ -251,7 +221,7 @@
     "sourceUrl": "https://wellcomecollection.org/exhibitions/audrey-amiss-the-surviving-exhibitions",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#476d9b"
   },
   {
@@ -266,7 +236,7 @@
     "sourceUrl": "https://wellcomecollection.org/exhibitions/rudy-loewe-intimacies-of-care-spaces-of-grief-and-possibility",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#4f7694"
   },
   {
@@ -281,7 +251,7 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/ana-mendieta",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#805440"
   },
   {
@@ -296,38 +266,8 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/bharti-kher-at-the-va",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#9e2026"
-  },
-  {
-    "id": "sadie-coles-hq-catherine-murphy-recent-work-2026-09-02",
-    "venueId": "sadie-coles-hq",
-    "title": "Catherine Murphy — Recent Work",
-    "startDate": "2026-09-02",
-    "endDate": "2026-11-07",
-    "shortDescription": "She paints reality as a place of layers to be excavated, and of veils and barriers to be peered through.” Justin Paton, Artist Profile, 2024 This…",
-    "imageUrl": "https://sadie-coles.transforms.svdcdn.com/production/images/Artists/Non-SCHQ/Catherine-Murphuy/2026-Exhibition/Installation_Views__Recent_Work__Catherine_Murphy__Sadie_Coles_HQ__Bury_Street__02_September_-_07_November_2026_1_high_quality.jpeg?w=1200&h=630&q=82&auto=format&fit=crop&crop=focalpoint&fp-x=0.5015&fp-y=0.5594&dm=1788362233&s=bc12ae887303beb8523001554b175263",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.sadiecoles.com/exhibitions/recent-work",
-    "priceStatus": "unknown",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-10-12",
-    "accent": "#476d9b"
-  },
-  {
-    "id": "pilar-corrias-mary-ramsden-the-feeling-of-what-happens-2026-09-10",
-    "venueId": "pilar-corrias",
-    "title": "Mary Ramsden: The Feeling of What Happens",
-    "startDate": "2026-09-10",
-    "endDate": "2026-11-07",
-    "shortDescription": "A new body of work approaching painting as a form of enquiry into consciousness and embodied states of attention.",
-    "imageUrl": "https://static-assets.artlogic.net/w_3000,h_2000,c_limit,f_auto,fl_lossy,q_auto:best,dpr_2.0/ws-pilarcorrias/usr/images/exhibitions/hero_image/items/47/478f5e64c7c64125bbb32cf92fef53ea/rams-2026012-image-1-.jpg?focal=50,15",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
-    "priceStatus": "unknown",
-    "confidenceScore": 0.9,
-    "lastVerified": "2026-11-02",
-    "accent": "#334737"
   },
   {
     "id": "south-london-gallery-monika-sosnowska-weight-of-matter-2026-09-10",
@@ -356,7 +296,7 @@
     "sourceUrl": "https://camdenartcentre.org/whats-on/a-hard-line-to-bend",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#334737"
   },
   {
@@ -371,23 +311,8 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/sacred-treasures-from-kyiv",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#9e2026"
-  },
-  {
-    "id": "sadie-coles-hq-martine-syms-knot-eye-2026-09-17",
-    "venueId": "sadie-coles-hq",
-    "title": "Martine Syms — Knot Eye",
-    "startDate": "2026-09-17",
-    "endDate": "2026-11-07",
-    "shortDescription": "The work of Martine Syms (b. 1988, Los Angeles) engages the fluid definitions of reality and fiction of our contemporary world. In Knot Eye, her…",
-    "imageUrl": "https://sadie-coles.transforms.svdcdn.com/production/images/Artists/Martine-Syms/2026-Kingly/Installation-views/Installation_view__Martine_Syms__Knot_Eye__Sadie_Coles_HQ__Kingly_Street__17_September_-_7_November_2026_3.jpeg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1790157615&s=2b8105170094d00c2dd4bc61f82926a4",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
-    "priceStatus": "unknown",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
-    "accent": "#805440"
   },
   {
     "id": "victoria-miro-hernan-bas-time-to-shine-the-salesmen-2026-09-17",
@@ -401,23 +326,8 @@
     "sourceUrl": "https://www.victoria-miro.com/exhibitions/685/",
     "priceStatus": "free",
     "confidenceScore": 0.92,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#385448"
-  },
-  {
-    "id": "royal-academy-day-2026-09-18",
-    "venueId": "royal-academy",
-    "title": "Day",
-    "startDate": "2026-09-18",
-    "endDate": "2026-11-08",
-    "shortDescription": "An exhibition of work by RA Schools Students Anna Metzger, Sam Tromp and Joel Wycherley.",
-    "imageUrl": "https://cdn.royalacademy.org.uk/images/mtvklyaf27b1shuvhg.jpg?width=800&ratio=4:3&format=auto",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.royalacademy.org.uk/exhibition/raschools-day-2026",
-    "priceStatus": "free",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
-    "accent": "#805440"
   },
   {
     "id": "vam-henri-cartier-bresson-self-published-photobook-award-shortlist-2026-09-21",
@@ -431,7 +341,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/henri-cartier-bresson-self-published-photobook-award-shortlist",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#9e2026"
   },
   {
@@ -446,7 +356,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/the-burberry-trench-crafting-an-icon",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#277f8e"
   },
   {
@@ -461,7 +371,7 @@
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/nicole-eisenman-courtyard-sculpture",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#8c704d"
   },
   {
@@ -491,7 +401,7 @@
     "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/metamorphoses-porcelain-sculpture-by-rachel-kneebone/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#8c704d"
   },
   {
@@ -506,7 +416,7 @@
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-emmanuel-awuni",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#4f7694"
   },
   {
@@ -521,7 +431,7 @@
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-barbara-rae-ra",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#7a7863"
   },
   {
@@ -573,36 +483,6 @@
     ]
   },
   {
-    "id": "annely-juda-fine-art-chloe-bonfield-kate-lyddon-and-zulfiya-spowart-what-remains-within-2026-10-01",
-    "venueId": "annely-juda-fine-art",
-    "title": "Chloe Bonfield, Kate Lyddon and Zulfiya Spowart — What Remains Within",
-    "startDate": "2026-10-01",
-    "endDate": "2026-11-07",
-    "shortDescription": "What Remains Within , an exhibition curated by Paola Lucente, brings together the work of three contemporary artists — Chloe Bonfield, Kate Lyddon and Zulfiya Spowart — concerned with memory, inheritance and the traces experience leaves behind. Conceived in parallel with Nicola…",
-    "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-annelyjudafineart/usr/images/exhibitions/main_image_override/406/what-remains-within-2026_05.jpg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/406-what-remains-within-curated-by-paola-lucente-chloe-bonfield-kate-lyddon-zulfiya-spowart/overview/",
-    "priceStatus": "unknown",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-10-12",
-    "accent": "#433e79"
-  },
-  {
-    "id": "annely-juda-fine-art-nicola-turner-i-tear-secrets-from-your-yielding-flesh-2026-10-01",
-    "venueId": "annely-juda-fine-art",
-    "title": "Nicola Turner: I Tear Secrets From Your Yielding Flesh",
-    "startDate": "2026-10-01",
-    "endDate": "2026-11-07",
-    "shortDescription": "Annely Juda Fine Art announces its first solo exhibition by Nicola Turner, I Tear Secrets from Your Yielding Flesh . A site-responsive installation made mainly from dark wool and horsehair will fill the ground-floor galleries at 16 Hanover Square, extending in a procession-like…",
-    "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-annelyjudafineart/usr/images/exhibitions/main_image_override/405/screenshot-2026-09-30-at-15.00.00.png",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/405-nicola-turner-i-tear-secrets-from-your-yielding-flesh/overview/",
-    "priceStatus": "unknown",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
-    "accent": "#385448"
-  },
-  {
     "id": "hannah-barry-gallery-stevie-dix-vyvyan-2026-10-01",
     "venueId": "hannah-barry-gallery",
     "title": "Stevie Dix — Vyvyan",
@@ -614,7 +494,7 @@
     "sourceUrl": "https://hannahbarry.com/exhibition/stevie-dix-vyvyan-1-october-14-november-2026/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -629,7 +509,7 @@
     "sourceUrl": "https://chisenhale.org.uk/project/wakaliga-uganda/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#4f7694"
   },
   {
@@ -644,7 +524,7 @@
     "sourceUrl": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -659,7 +539,7 @@
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -674,7 +554,7 @@
     "sourceUrl": "https://courtauld.ac.uk/whats-on/exh-salman-toor-someone-like-you/",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#b75534"
   },
   {
@@ -689,7 +569,7 @@
     "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#385448"
   },
   {
@@ -704,7 +584,7 @@
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-white-cube",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#433e79"
   },
   {
@@ -719,7 +599,7 @@
     "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/cecilia-vicuna-foraging-quipu/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-10-12",
+    "lastVerified": "2026-11-09",
     "accent": "#433e79"
   },
   {
@@ -753,30 +633,6 @@
     "accent": "#277f8e"
   },
   {
-    "id": "kristin-hjellegjerde-gallery-ralf-kokke-candy-for-crocodiles-2026-10-08",
-    "venueId": "kristin-hjellegjerde-gallery",
-    "title": "Ralf Kokke: Candy for Crocodiles",
-    "startDate": "2026-10-08",
-    "endDate": "2026-11-07",
-    "shortDescription": "Private View: Wednesday, 7th October 2026, 6-8pm London (Tower Bridge) Candy for Crocodiles Ralf Kokke In a tropical landscape a female figure sits nestled within a tree. In her hand she holds a bunch of flowers – a gift or an offering to the jaws that creep perilously close to.…",
-    "privateViews": [
-      {
-        "date": "2026-10-07",
-        "startTime": "18:00",
-        "endTime": "20:00",
-        "label": "Private view",
-        "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/"
-      }
-    ],
-    "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-kh/usr/images/exhibitions/main_image_override/581/ralf-kokke_blues-tiger-2026-chalk-paint-on-canvas-100-x-120-cm.jpeg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/",
-    "priceStatus": "unknown",
-    "confidenceScore": 0.92,
-    "lastVerified": "2026-11-02",
-    "accent": "#9e2026"
-  },
-  {
     "id": "october-gallery-romuald-hazoume-my-blue-period-2026-10-08",
     "venueId": "october-gallery",
     "title": "Romuald Hazoumè: My Blue Period",
@@ -788,7 +644,7 @@
     "sourceUrl": "https://www.octobergallery.co.uk/exhibitions/romuald-hazoume-my-blue-period",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#385448"
   },
   {
@@ -803,38 +659,8 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#b75534"
-  },
-  {
-    "id": "victoria-miro-khalif-tahir-thompson-send-in-the-clowns-2026-10-08",
-    "venueId": "victoria-miro",
-    "title": "Khalif Tahir Thompson: Send in the Clowns",
-    "startDate": "2026-10-08",
-    "endDate": "2026-11-07",
-    "shortDescription": "In these new paintings, Thompson invites viewers into the everyday lives of his subjects through vibrant domestic scenes, creating scenarios from his own childhood growing up in Brooklyn and today.",
-    "imageUrl": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/artlogicstorage/victoriamiro/images/view/3d0533ecf3a3bb12d6493499798233dej.jpg",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.victoria-miro.com/exhibitions/683/",
-    "priceStatus": "free",
-    "confidenceScore": 0.92,
-    "lastVerified": "2026-11-02",
-    "accent": "#476d9b"
-  },
-  {
-    "id": "whitechapel-gallery-this-must-be-the-place-artists-for-whitechapel-gallery-2026-10-08",
-    "venueId": "whitechapel-gallery",
-    "title": "This Must Be the Place: Artists for Whitechapel Gallery",
-    "startDate": "2026-10-08",
-    "endDate": "2026-11-08",
-    "shortDescription": "This Must Be the Place is a special exhibition and sale, developed in collaboration with artists and their galleries to mark Whitechapel Gallery’s 125th anniversary and help support its future.",
-    "imageUrl": "https://www.whitechapelgallery.org/wp-content/uploads/2026/08/tmbtp-scent.png",
-    "cachedThumbnail": null,
-    "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/this-must-be-the-place-artists-for-whitechapel-gallery/",
-    "priceStatus": "free",
-    "confidenceScore": 0.78,
-    "lastVerified": "2026-10-12",
-    "accent": "#9e2026"
   },
   {
     "id": "pilar-corrias-rirkrit-tiravanija-situational-awareness-2026-10-09",
@@ -848,7 +674,7 @@
     "sourceUrl": "https://www.pilarcorrias.com/exhibitions/538-rirkrit-tiravanija-situational-awareness/",
     "priceStatus": "unknown",
     "confidenceScore": 0.9,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#385448"
   },
   {
@@ -887,7 +713,7 @@
     "sourceUrl": "https://www.gasworks.org.uk/exhibitions/umi-ishihara/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#7a7863"
   },
   {
@@ -904,6 +730,21 @@
     "confidenceScore": 0.96,
     "lastVerified": "2026-10-12",
     "accent": "#805440"
+  },
+  {
+    "id": "royal-academy-in-the-cradle-of-british-art-john-constable-and-the-ra-2026-10-12",
+    "venueId": "royal-academy",
+    "title": "In the cradle of British art: John Constable and the RA",
+    "startDate": "2026-10-12",
+    "endDate": "2027-02-01",
+    "shortDescription": "On the 250th anniversary of the English artist’s birth, this display's artworks and objects reveal Constable's long association with – and devotion to – the Royal Academy.",
+    "imageUrl": "https://cdn.royalacademy.org.uk/images/muya2zhf6p3yxdjej.jpg?width=800&ratio=4:3&format=auto",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.royalacademy.org.uk/exhibition/john-constable-at-ra",
+    "priceStatus": "free",
+    "confidenceScore": 0.78,
+    "lastVerified": "2026-11-09",
+    "accent": "#8c704d"
   },
   {
     "id": "tate-modern-hyundai-commission-tarek-atoui-2026-10-13",
@@ -932,7 +773,7 @@
     "sourceUrl": "https://maddoxgallery.com/pages/exhibition/bibi-lei-where-light-blooms",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -945,9 +786,9 @@
     "imageUrl": "https://www.soane.org/sites/default/files/styles/meta_facebook/public/banners/Michael%20Landy%20John%20Soane%20in%20ruins%20web%20banner%20v8.png?itok=lXrkylgF",
     "cachedThumbnail": null,
     "sourceUrl": "https://www.soane.org/exhibitions/michael-landy-future-ruins",
-    "priceStatus": "unknown",
+    "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -962,7 +803,7 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#476d9b"
   },
   {
@@ -977,7 +818,7 @@
     "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/yinka-shonibare-and-thomas-gainsborough-a-conversation",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#b75534"
   },
   {
@@ -992,7 +833,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/degrees-of-disruption-vera-molnar-and-generative-art",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#433e79"
   },
   {
@@ -1022,7 +863,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#277f8e"
   },
   {
@@ -1037,7 +878,7 @@
     "sourceUrl": "https://www.sadiecoles.com/exhibitions/shaping-silence",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -1052,7 +893,7 @@
     "sourceUrl": "https://www.estorickcollection.com/exhibitions/tagged-with/intervention",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#334737"
   },
   {
@@ -1067,7 +908,7 @@
     "sourceUrl": "https://autoitaliasoutheast.org/projects/participation-artist-in-residence-rose-nordin/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#8c704d"
   },
   {
@@ -1112,7 +953,7 @@
     "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/no-plan-at-all-prints-from-borch-editions",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -1127,7 +968,7 @@
     "sourceUrl": "https://www.vam.ac.uk/exhibitions/constantinople-to-istanbul-one-city-two-empires",
     "priceStatus": "paid",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#476d9b"
   },
   {
@@ -1146,6 +987,36 @@
     "accent": "#334737"
   },
   {
+    "id": "blueshop-cottage-mutinous-bodies-and-other-stories-by-jenny-lewis-gallery-2-2026-11-11",
+    "venueId": "blueshop-cottage",
+    "title": "'Mutinous Bodies and other stories' by Jenny Lewis | Gallery 2",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-28",
+    "shortDescription": "",
+    "imageUrl": "http://static1.squarespace.com/static/62165cc62f0f7a66c5d2c1c5/t/6aea0b6b259ce4280345985d/1793723243800/Screenshot+2026-11-03+at+16.26.15.png?format=1500w",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.blueshopcottage.com/exhibitions/jenny-lewis",
+    "priceStatus": "unknown",
+    "confidenceScore": 0.96,
+    "lastVerified": "2026-11-09",
+    "accent": "#476d9b"
+  },
+  {
+    "id": "blueshop-cottage-to-be-pretty-and-free-by-ned-elliott-gallery-1-2026-11-11",
+    "venueId": "blueshop-cottage",
+    "title": "'To Be Pretty and Free' by Ned Elliott | Gallery 1",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-28",
+    "shortDescription": "",
+    "imageUrl": "http://static1.squarespace.com/static/62165cc62f0f7a66c5d2c1c5/t/6aeb339f90e8f31814159867/1793799071277/Ned_Elliott_BSG_2026_Thumb.jpg?format=1500w",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.blueshopcottage.com/exhibitions/ned-elliott-2026",
+    "priceStatus": "free",
+    "confidenceScore": 0.96,
+    "lastVerified": "2026-11-09",
+    "accent": "#476d9b"
+  },
+  {
     "id": "tate-britain-vanessa-bell-duncan-grant-2026-11-12",
     "venueId": "tate-britain",
     "title": "Vanessa Bell & Duncan Grant",
@@ -1157,7 +1028,7 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/vanessa-bell-and-duncan-grant",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#4f7694"
   },
   {
@@ -1181,7 +1052,7 @@
     "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/600/overview/",
     "priceStatus": "unknown",
     "confidenceScore": 0.92,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#385448"
   },
   {
@@ -1196,7 +1067,7 @@
     "sourceUrl": "https://www.victoria-miro.com/exhibitions/684/",
     "priceStatus": "free",
     "confidenceScore": 0.92,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#277f8e"
   },
   {
@@ -1211,7 +1082,7 @@
     "sourceUrl": "https://www.victoria-miro.com/exhibitions/684/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#6b5b73"
   },
   {
@@ -1226,8 +1097,53 @@
     "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/the-90s/relaxed-hours-the-90s-art-and-fashion",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#b75534"
+  },
+  {
+    "id": "tate-modern-frida-the-making-of-an-icon-2026-11-17",
+    "venueId": "tate-modern",
+    "title": "Frida: The Making of an Icon",
+    "startDate": "2026-11-17",
+    "endDate": "2027-04-20",
+    "shortDescription": "Sign up and log in to book Book tickets Become a Member Content guidance: This exhibition contains images of dead bodies, and references to sexual violence and miscarriage. In partnership with Supported by John J.",
+    "imageUrl": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Frida_Kahlo_lead.width-600.jpg",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon/frida-the-making-of-an-icon",
+    "priceStatus": "paid",
+    "confidenceScore": 0.78,
+    "lastVerified": "2026-11-09",
+    "accent": "#476d9b"
+  },
+  {
+    "id": "sadie-coles-hq-jim-lambie-jim-lambie-2026-11-18",
+    "venueId": "sadie-coles-hq",
+    "title": "Jim Lambie | Jim Lambie",
+    "startDate": "2026-11-18",
+    "endDate": "2027-01-30",
+    "shortDescription": "Sadie Coles HQ presents the work of established and emerging international artists, across three spaces in London's West End.",
+    "imageUrl": "https://sadie-coles.transforms.svdcdn.com/production/images/Artists/Jim-Lambie/2026-Bury-Street/JL_Web_3x4.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1794222559&s=1e3ebb697b89115744398c32235a0d70",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.sadiecoles.com/exhibitions/jim-lambie-2",
+    "priceStatus": "unknown",
+    "confidenceScore": 0.78,
+    "lastVerified": "2026-11-09",
+    "accent": "#4f7694"
+  },
+  {
+    "id": "tate-britain-relaxed-hours-vanessa-bell-and-duncan-grant-2026-11-18",
+    "venueId": "tate-britain",
+    "title": "Relaxed Hours: Vanessa Bell and Duncan Grant",
+    "startDate": "2026-11-18",
+    "endDate": "2027-03-17",
+    "shortDescription": "Sign up and log in to book Book tickets Become a Member Content Guidance: This exhibition contains one room with sexually explicit content Supported by KIM JONES, VICE PRESIDENT OF THE CHARLESTON TRUST Further support from With additional support from The Vanessa Bell & Duncan G…",
+    "imageUrl": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Tate_Website_-_VBDG_2.width-600.jpg",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/vanessa-bell-and-duncan-grant/relaxed-hours-bell-and-grant",
+    "priceStatus": "paid",
+    "confidenceScore": 0.78,
+    "lastVerified": "2026-11-09",
+    "accent": "#7a7863"
   },
   {
     "id": "wallace-collection-cosimo-i-de-medici-art-and-dynasty-2026-11-18",
@@ -1241,7 +1157,7 @@
     "sourceUrl": "https://www.wallacecollection.org/whats-on/exhibitions-displays/cosimo-i-de-medici-art-and-dynasty/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#334737"
   },
   {
@@ -1256,7 +1172,7 @@
     "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/407-leon-kossoff-trains-and-stations/overview/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#7a7863"
   },
   {
@@ -1271,7 +1187,7 @@
     "sourceUrl": "https://maddoxgallery.com/pages/exhibition/cooper-in-good-company",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#9e2026"
   },
   {
@@ -1286,7 +1202,7 @@
     "sourceUrl": "https://www.houldsworth.co.uk/exhibitions/176-george-wilkin-ad-libidinum/press_release_text/",
     "priceStatus": "unknown",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#7a7863"
   },
   {
@@ -1301,7 +1217,7 @@
     "sourceUrl": "https://www.nationalgallery.org.uk/exhibitions/van-eyck-the-portraits",
     "priceStatus": "unknown",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#9e2026"
   },
   {
@@ -1316,7 +1232,7 @@
     "sourceUrl": "https://www.royalacademy.org.uk/exhibition/peggy-guggenheim-in-london",
     "priceStatus": "paid",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#433e79"
   },
   {
@@ -1346,7 +1262,7 @@
     "sourceUrl": "https://www.octobergallery.co.uk/exhibitions/rafael-trelles-caliban",
     "priceStatus": "free",
     "confidenceScore": 0.96,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#385448"
   },
   {
@@ -1361,7 +1277,7 @@
     "sourceUrl": "https://www.victoria-miro.com/exhibitions/682/",
     "priceStatus": "free",
     "confidenceScore": 0.92,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#433e79"
   },
   {
@@ -1376,7 +1292,22 @@
     "sourceUrl": "https://www.victoria-miro.com/exhibitions/682/",
     "priceStatus": "free",
     "confidenceScore": 0.78,
-    "lastVerified": "2026-11-02",
+    "lastVerified": "2026-11-09",
     "accent": "#7a7863"
+  },
+  {
+    "id": "auto-italia-magic-system-2026-11-27",
+    "venueId": "auto-italia",
+    "title": "MAGIC SYSTEM",
+    "startDate": "2026-11-27",
+    "endDate": "2027-02-28",
+    "shortDescription": "Oh (Ah)* Bringing together newly commissioned sound, sculpture and moving image, the exhibition explores image-making as myth, propaganda and fetish. Through an assembly of props, portals and noise, SUUTOO stages an abandoned play, continuing the artist’s inquiry into myth-makin…",
+    "imageUrl": "https://autoitaliasoutheast.org/wp-content/uploads/2026/10/OPACITY-MAGICSYSTEMLEAD-GRAIN.jpg",
+    "cachedThumbnail": null,
+    "sourceUrl": "https://autoitaliasoutheast.org/projects/magic-system/",
+    "priceStatus": "free",
+    "confidenceScore": 0.78,
+    "lastVerified": "2026-11-09",
+    "accent": "#8c704d"
   }
 ]

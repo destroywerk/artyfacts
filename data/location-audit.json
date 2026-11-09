@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T11:23:09.701880+00:00",
-  "windowStart": "2026-11-02",
-  "windowEnd": "2026-12-02",
+  "generatedAt": "2026-11-09T11:48:03.348740+00:00",
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-12-09",
   "windowKind": "calendar-month-inclusive",
   "venues": [
     {
@@ -1221,15 +1221,6 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "pilar-corrias-mary-ramsden-the-feeling-of-what-happens-2026-09-10",
-      "venueId": "pilar-corrias",
-      "title": "Mary Ramsden: The Feeling of What Happens",
-      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/533-mary-ramsden-the-feeling-of-what-happens/",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "item-scoped official listing assigns the exhibition to London"
-    },
-    {
       "exhibitionId": "pilar-corrias-rirkrit-tiravanija-situational-awareness-2026-10-09",
       "venueId": "pilar-corrias",
       "title": "Rirkrit Tiravanija: (situational awareness)",
@@ -1275,13 +1266,13 @@
       "evidence": "official page London evidence: London"
     },
     {
-      "exhibitionId": "sprueth-magers-london-upcoming-exhibitions-2026-11-06",
-      "venueId": "sprueth-magers-london",
-      "title": "Upcoming Exhibitions",
-      "sourceUrl": "https://spruethmagers.com/exhibitions/upcoming/",
+      "exhibitionId": "kristin-hjellegjerde-gallery-alexander-appleby-west-palm-beach-salon-2026-12-05",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Alexander Appleby: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/607/overview/",
       "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "exhibitionId": "kristin-hjellegjerde-gallery-anne-griffiths-the-bliss-of-rain-2026-11-05",
@@ -1302,10 +1293,28 @@
       "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
+      "exhibitionId": "kristin-hjellegjerde-gallery-citra-sasmita-empire-of-soul-2026-12-05",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Citra Sasmita: Empire of Soul",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/526/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
       "exhibitionId": "kristin-hjellegjerde-gallery-elin-melberg-west-palm-beach-salon-2026-10-30",
       "venueId": "kristin-hjellegjerde-gallery",
       "title": "Elin Melberg: WEST PALM BEACH | SALON",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/612/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-henry-baldwin-west-palm-beach-salon-2026-12-05",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Henry Baldwin: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/608/overview/",
       "accepted": false,
       "reasonCode": "missing-london-branch-evidence",
       "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
@@ -1329,15 +1338,6 @@
       "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
-      "exhibitionId": "kristin-hjellegjerde-gallery-ralf-kokke-candy-for-crocodiles-2026-10-08",
-      "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Ralf Kokke: Candy for Crocodiles",
-      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "item-scoped official listing assigns the exhibition to London"
-    },
-    {
       "exhibitionId": "kristin-hjellegjerde-gallery-ruth-speer-the-village-2026-11-13",
       "venueId": "kristin-hjellegjerde-gallery",
       "title": "Ruth Speer: The Village",
@@ -1345,6 +1345,15 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "kristin-hjellegjerde-gallery-sara-vanderbeek-west-palm-beach-salon-2026-12-05",
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Sara VanDerBeek: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/606/overview/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "exhibitionId": "kristin-hjellegjerde-gallery-umar-rashid-west-palm-beach-salon-2026-10-30",
@@ -1437,24 +1446,6 @@
       "evidence": "page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
     },
     {
-      "exhibitionId": "victoria-miro-khalif-tahir-thompson-send-in-the-clowns-2026-10-08",
-      "venueId": "victoria-miro",
-      "title": "Khalif Tahir Thompson: Send in the Clowns",
-      "sourceUrl": "https://www.victoria-miro.com/exhibitions/683/",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "page text explicitly assigns the event to London; item-scoped official listing assigns the exhibition to London"
-    },
-    {
-      "exhibitionId": "tate-britain-art-now-mohammed-z-rahman-2026-06-05",
-      "venueId": "tate-britain",
-      "title": "Art Now: Mohammed Z Rahman",
-      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-now-mohammed-z-rahman",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "official location-specific branch URL"
-    },
-    {
       "exhibitionId": "tate-britain-relaxed-hours-the-90s-art-and-fashion-2026-10-20",
       "venueId": "tate-britain",
       "title": "Relaxed Hours: The 90s: Art and Fashion",
@@ -1473,10 +1464,10 @@
       "evidence": "official location-specific branch URL; item-scoped official listing assigns the exhibition to London"
     },
     {
-      "exhibitionId": "tate-britain-tate-britain-commission-2026-zineb-sedira-when-words-fall-silent-cinema-speaks-2026-05-13",
+      "exhibitionId": "tate-britain-relaxed-hours-vanessa-bell-and-duncan-grant-2026-11-18",
       "venueId": "tate-britain",
-      "title": "Tate Britain Commission 2026: Zineb Sedira — When Words Fall Silent, Cinema Speaks",
-      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/zineb-sedira",
+      "title": "Relaxed Hours: Vanessa Bell and Duncan Grant",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/vanessa-bell-and-duncan-grant/relaxed-hours-bell-and-grant",
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "official location-specific branch URL; item-scoped official listing assigns the exhibition to London"
@@ -1563,15 +1554,6 @@
       "evidence": "Official exhibition page contains no explicit London location or London postcode"
     },
     {
-      "exhibitionId": "whitechapel-gallery-this-must-be-the-place-artists-for-whitechapel-gallery-2026-10-08",
-      "venueId": "whitechapel-gallery",
-      "title": "This Must Be the Place: Artists for Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/this-must-be-the-place-artists-for-whitechapel-gallery/",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "official page London evidence: London"
-    },
-    {
       "exhibitionId": "pippy-houldsworth-gallery-george-wilkin-20-november-2026-9-january-2027-2026-11-20",
       "venueId": "pippy-houldsworth-gallery",
       "title": "George Wilkin | 20 November 2026 - 9 January 2027",
@@ -1644,22 +1626,22 @@
       "evidence": "Official event title/location assigns the exhibition to venice, not London"
     },
     {
-      "exhibitionId": "sadie-coles-hq-catherine-murphy-recent-work-2026-09-02",
-      "venueId": "sadie-coles-hq",
-      "title": "Catherine Murphy — Recent Work",
-      "sourceUrl": "https://www.sadiecoles.com/exhibitions/recent-work",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "official page London evidence: SW1Y 6AB"
+      "exhibitionId": "ben-brown-fine-arts-gavin-turk-2026-11-21",
+      "venueId": "ben-brown-fine-arts",
+      "title": "Gavin Turk",
+      "sourceUrl": "https://www.benbrownfinearts.com/exhibitions/236-gavin-turk-betwixt/",
+      "accepted": false,
+      "reasonCode": "missing-london-branch-evidence",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
-      "exhibitionId": "sadie-coles-hq-martine-syms-knot-eye-2026-09-17",
+      "exhibitionId": "sadie-coles-hq-jim-lambie-jim-lambie-2026-11-18",
       "venueId": "sadie-coles-hq",
-      "title": "Martine Syms — Knot Eye",
-      "sourceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
+      "title": "Jim Lambie | Jim Lambie",
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/jim-lambie-2",
       "accepted": true,
       "reasonCode": "verified-london",
-      "evidence": "official page London evidence: SW1Y 6AB"
+      "evidence": "item-scoped official listing assigns the exhibition to London"
     },
     {
       "exhibitionId": "sadie-coles-hq-nicole-eisenman-2026-09-23",
@@ -1696,6 +1678,15 @@
       "accepted": false,
       "reasonCode": "non-london-location",
       "evidence": "Official event title/location assigns the exhibition to Hong Kong, not London"
+    },
+    {
+      "exhibitionId": "rhodes-contemporary-art-project-room-incantations-2026-11-27",
+      "venueId": "rhodes-contemporary-art",
+      "title": "Project Room: Incantations",
+      "sourceUrl": "https://rhodescontemporaryart.com/exhibitions/177-project-room-incantations-taylor-franklin-quinn/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "exhibitionId": "the-courtauld-gallery-salman-toor-someone-like-you-2026-10-02",
@@ -1743,7 +1734,7 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "pace-gallery-london-exhibitions-pace-gallery-2025-04-10",
+      "exhibitionId": "pace-gallery-london-exhibitions-pace-gallery-2026-11-06",
       "venueId": "pace-gallery-london",
       "title": "Exhibitions | Pace Gallery",
       "sourceUrl": "https://www.pacegallery.com/exhibitions/",
@@ -1770,15 +1761,6 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
-      "exhibitionId": "pace-gallery-london-lucas-samaras-boxes-and-reconstructions-pace-gallery-2026-11-06",
-      "venueId": "pace-gallery-london",
-      "title": "Lucas Samaras: Boxes and Reconstructions | Pace Gallery",
-      "sourceUrl": "https://www.pacegallery.com/exhibitions/lucas-samaras-boxes-reconstructions/",
-      "accepted": false,
-      "reasonCode": "venue-location-unverified",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
       "exhibitionId": "pace-gallery-london-pam-evelyn-the-wild-asphalt-pace-gallery-2026-11-12",
       "venueId": "pace-gallery-london",
       "title": "Pam Evelyn: The Wild Asphalt | Pace Gallery",
@@ -1786,15 +1768,6 @@
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
-    },
-    {
-      "exhibitionId": "royal-academy-day-2026-09-18",
-      "venueId": "royal-academy",
-      "title": "Day",
-      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/raschools-day-2026",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "official page London evidence: W1J 0BD"
     },
     {
       "exhibitionId": "royal-academy-emmanuel-awuni-2026-09-29",
@@ -1810,6 +1783,15 @@
       "venueId": "royal-academy",
       "title": "In Provence and Southern France",
       "sourceUrl": "https://www.royalacademy.org.uk/exhibition/selling-display-barbara-rae-ra",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: W1J 0BD"
+    },
+    {
+      "exhibitionId": "royal-academy-in-the-cradle-of-british-art-john-constable-and-the-ra-2026-10-12",
+      "venueId": "royal-academy",
+      "title": "In the cradle of British art: John Constable and the RA",
+      "sourceUrl": "https://www.royalacademy.org.uk/exhibition/john-constable-at-ra",
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "official page London evidence: W1J 0BD"
@@ -1887,28 +1869,28 @@
       "evidence": "structured location: {\"@type\": \"Place\", \"sameAs\": \"https://www.nationalgallery.org.uk/\", \"address\": \"Trafalgar Square, London, WC2N 5DN, UK\", \"name\": \"The National Gallery\"}; item-scoped official listing assigns the exhibition to London"
     },
     {
-      "exhibitionId": "annely-juda-fine-art-chloe-bonfield-kate-lyddon-and-zulfiya-spowart-what-remains-within-2026-10-01",
-      "venueId": "annely-juda-fine-art",
-      "title": "Chloe Bonfield, Kate Lyddon and Zulfiya Spowart — What Remains Within",
-      "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/406-what-remains-within-curated-by-paola-lucente-chloe-bonfield-kate-lyddon-zulfiya-spowart/overview/",
+      "exhibitionId": "blueshop-cottage-mutinous-bodies-and-other-stories-by-jenny-lewis-gallery-2-2026-11-11",
+      "venueId": "blueshop-cottage",
+      "title": "'Mutinous Bodies and other stories' by Jenny Lewis | Gallery 2",
+      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/jenny-lewis",
       "accepted": true,
       "reasonCode": "verified-london",
-      "evidence": "official page London evidence: W1S 1HT"
+      "evidence": "official page London evidence: London"
+    },
+    {
+      "exhibitionId": "blueshop-cottage-to-be-pretty-and-free-by-ned-elliott-gallery-1-2026-11-11",
+      "venueId": "blueshop-cottage",
+      "title": "'To Be Pretty and Free' by Ned Elliott | Gallery 1",
+      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/ned-elliott-2026",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official page London evidence: London"
     },
     {
       "exhibitionId": "annely-juda-fine-art-leon-kossoff-19-november-2026-30-january-2027-2026-11-19",
       "venueId": "annely-juda-fine-art",
       "title": "Leon Kossoff | 19 November 2026 - 30 January 2027",
       "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/407-leon-kossoff-trains-and-stations/overview/",
-      "accepted": true,
-      "reasonCode": "verified-london",
-      "evidence": "official page London evidence: W1S 1HT"
-    },
-    {
-      "exhibitionId": "annely-juda-fine-art-nicola-turner-i-tear-secrets-from-your-yielding-flesh-2026-10-01",
-      "venueId": "annely-juda-fine-art",
-      "title": "Nicola Turner: I Tear Secrets From Your Yielding Flesh",
-      "sourceUrl": "https://www.annelyjudafineart.co.uk/exhibitions/405-nicola-turner-i-tear-secrets-from-your-yielding-flesh/overview/",
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "official page London evidence: W1S 1HT"
@@ -1924,6 +1906,15 @@
     },
     {
       "exhibitionId": "auto-italia-magic-system-2026-11-26",
+      "venueId": "auto-italia",
+      "title": "MAGIC SYSTEM",
+      "sourceUrl": "https://autoitaliasoutheast.org/projects/magic-system/",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "page text explicitly assigns the event to London"
+    },
+    {
+      "exhibitionId": "auto-italia-magic-system-2026-11-27",
       "venueId": "auto-italia",
       "title": "MAGIC SYSTEM",
       "sourceUrl": "https://autoitaliasoutheast.org/projects/magic-system/",
@@ -1975,6 +1966,15 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "item-scoped official listing assigns the exhibition to London"
+    },
+    {
+      "exhibitionId": "design-museum-the-nue-black-aesthetic-2026-11-06",
+      "venueId": "design-museum",
+      "title": "The Nue Black Aesthetic",
+      "sourceUrl": "https://designmuseum.org/exhibitions/the-nue-black-aesthetic",
+      "accepted": false,
+      "reasonCode": "missing-london-event-evidence",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
     },
     {
       "exhibitionId": "dulwich-picture-gallery-charlie-mackesy-the-boy-the-mole-the-fox-the-horse-and-you-2026-11-03",
@@ -2106,7 +2106,7 @@
       "exhibitionId": "goldsmiths-cca-goldsmiths-cca-exhibitions-episode-16-katie-shannon-2026-11-06",
       "venueId": "goldsmiths-cca",
       "title": "Goldsmiths CCA Exhibitions EPISODE 16: KATIE SHANNON",
-      "sourceUrl": "https://goldsmithscca.art/exhibitions/upcoming/",
+      "sourceUrl": "https://goldsmithscca.art/exhibition/episode-16-katie-shannon/",
       "accepted": false,
       "reasonCode": "venue-location-unverified",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
@@ -2175,6 +2175,24 @@
       "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
+      "exhibitionId": "london-museum-sound-of-london-dj-collective-2026-12-04",
+      "venueId": "london-museum",
+      "title": "Sound of London DJ collective",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/sound-of-london-dj-collective/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "exhibitionId": "london-museum-tea-club-2026-12-08",
+      "venueId": "london-museum",
+      "title": "Tea Club",
+      "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/tea-club/",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
       "exhibitionId": "london-museum-tots-at-the-docks-2026-11-20",
       "venueId": "london-museum",
       "title": "Tots at the docks",
@@ -2218,6 +2236,15 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "Official @r.efuses post identifies Queensrollahouse, 18 Trading Estate Road, London NW10 7LU."
+    },
+    {
+      "exhibitionId": "royal-museums-greenwich-moana-100-2026-10-10",
+      "venueId": "royal-museums-greenwich",
+      "title": "Moana 100",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/moana-100",
+      "accepted": false,
+      "reasonCode": "venue-location-unverified",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "exhibitionId": "royal-museums-greenwich-sensory-sailors-2026-10-10",
@@ -2272,6 +2299,15 @@
       "accepted": true,
       "reasonCode": "verified-london",
       "evidence": "official location-specific branch URL"
+    },
+    {
+      "exhibitionId": "tate-modern-frida-the-making-of-an-icon-2026-11-17",
+      "venueId": "tate-modern",
+      "title": "Frida: The Making of an Icon",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/frida-kahlo-the-making-of-an-icon/frida-the-making-of-an-icon",
+      "accepted": true,
+      "reasonCode": "verified-london",
+      "evidence": "official location-specific branch URL; item-scoped official listing assigns the exhibition to London"
     },
     {
       "exhibitionId": "tate-modern-gathering-ground-2025-01-29",

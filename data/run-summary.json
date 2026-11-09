@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T11:23:09.690304+00:00",
-  "windowStart": "2026-11-02",
-  "windowEnd": "2026-12-02",
+  "generatedAt": "2026-11-09T11:48:03.334809+00:00",
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-12-09",
   "windowKind": "calendar-month-inclusive",
   "windowInclusiveDays": 31,
   "userAgent": "LondonExhibitionsBot/1.0 (private non-commercial exhibition index; contact: Tim Green)",
   "totalVenues": 100,
   "successfulScrapes": 39,
   "linkOnlyBlockedFailedOrUnverified": 61,
-  "exhibitionsFound": 89,
-  "activeLondonVenues": 32,
-  "rejectedCandidates": 1043,
-  "rejectedNonLondonRecords": 188,
-  "rejectedLocationUnverifiedRecords": 38,
+  "exhibitionsFound": 85,
+  "activeLondonVenues": 33,
+  "rejectedCandidates": 1050,
+  "rejectedNonLondonRecords": 196,
+  "rejectedLocationUnverifiedRecords": 41,
   "priorityInstitutionCount": 53,
   "priorityVenueRecordCount": 54,
-  "priorityInstitutionsWithVerifiedShows": 16,
-  "priorityExhibitionsFound": 45,
+  "priorityInstitutionsWithVerifiedShows": 17,
+  "priorityExhibitionsFound": 41,
   "addressVerifiedVenues": 53,
   "addressUnresolvedVenues": 47,
-  "titleOverridesApplied": 18,
+  "titleOverridesApplied": 14,
   "independentPolicyFreeExhibitions": 2,
-  "exhibitionsWithImages": 89,
+  "exhibitionsWithImages": 85,
   "exhibitionsMissingImages": 0,
-  "privateViewCount": 5,
+  "privateViewCount": 4,
   "openTodayPriceCountsBeforePolicy": {
     "free": 22,
-    "paid": 14,
-    "unknown": 32
+    "paid": 16,
+    "unknown": 25
   },
   "openTodayPriceCounts": {
     "free": 30,
-    "paid": 14,
-    "unknown": 24
+    "paid": 16,
+    "unknown": 17
   },
   "priorityGaps": [
     {
@@ -433,17 +433,6 @@
         "blocked"
       ],
       "locationVerified": true
-    },
-    {
-      "rank": 53,
-      "name": "Blue Shop Cottage",
-      "venueIds": [
-        "blueshop-cottage"
-      ],
-      "statuses": [
-        "no-current-shows"
-      ],
-      "locationVerified": true
     }
   ],
   "statusCounts": {
@@ -452,8 +441,8 @@
     "closed": 2,
     "failed": 3,
     "instagram-only": 1,
-    "no-current-shows": 7,
-    "success": 32,
+    "no-current-shows": 6,
+    "success": 33,
     "temporarily-closed-unverified": 1,
     "unresolved": 39
   },

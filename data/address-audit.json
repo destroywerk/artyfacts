@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T11:23:09.707469+00:00",
-  "windowStart": "2026-11-02",
-  "windowEnd": "2026-12-02",
+  "generatedAt": "2026-11-09T11:48:03.355387+00:00",
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-12-09",
   "windowKind": "calendar-month-inclusive",
   "totalVenues": 100,
   "verified": 53,
@@ -347,7 +347,7 @@
       "sourceUrl": "https://halesgallery.com/about/contact/",
       "evidence": "Official venue address 7 Bethnal Green Road, NW1 4NR; postcode resolves to Westminster, London",
       "previousAddress": "7 Bethnal Green Road",
-      "previousPostcode": "E1 6LA"
+      "previousPostcode": "NW1 4NR"
     },
     {
       "venueId": "serpentine-south",

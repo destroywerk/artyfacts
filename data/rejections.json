@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T11:23:09.695797+00:00",
-  "windowStart": "2026-11-02",
-  "windowEnd": "2026-12-02",
+  "generatedAt": "2026-11-09T11:48:03.341345+00:00",
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-12-09",
   "windowKind": "calendar-month-inclusive",
-  "total": 1043,
+  "total": 1050,
   "records": [
     {
       "venueId": "the-photographers-gallery",
@@ -16,27 +16,11 @@
     },
     {
       "venueId": "the-photographers-gallery",
-      "title": "Book Launch & Signing, Jerry Hsu: How About Never",
-      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/book-launch-signing-jerry-hsu-how-about-never",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "the-photographers-gallery",
       "title": "Develop | In Practice: Building your portfolio",
       "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/develop-practice-building-your-portfolio",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
-    },
-    {
-      "venueId": "the-photographers-gallery",
-      "title": "Discussion and Book Launch: AI and the Paradox of Agency",
-      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/discussion-and-book-launch-ai-and-paradox-agency",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2025-03-07 to 2025-06-15"
     },
     {
       "venueId": "the-photographers-gallery",
@@ -48,11 +32,27 @@
     },
     {
       "venueId": "the-photographers-gallery",
+      "title": "Members' Tour: William Eggleston and Sanlé Sory",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/members-tour-william-eggleston-and-sanle-sory",
+      "reasonCode": "excluded-event-type",
+      "reason": "Page is a non-exhibition event",
+      "evidence": null
+    },
+    {
+      "venueId": "the-photographers-gallery",
       "title": "NINAGAWA Mika: Captive Blooms",
       "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/ninagawa-mika-captive-blooms",
       "reasonCode": "venue-location-unverified",
       "reason": "Rejected by the London location audit",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
+    },
+    {
+      "venueId": "the-photographers-gallery",
+      "title": "Photo Walk | Using Colour",
+      "sourceUrl": "https://thephotographersgallery.org.uk/whats-on/photo-walk-using-colour",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "the-photographers-gallery",
@@ -141,14 +141,6 @@
       "reasonCode": "generic-listing-not-exhibition",
       "reason": "Title identifies a calendar or listing page, not a named exhibition",
       "evidence": "Titled Flirter avec l'abstrait , the exhibition brings together a new suite of paintings that push figuration to its limits, flirting with but never fully embracing abstraction. 13.3 - 23.5.2026 Exhibitions Alyina Zaidi Rewilding Pilar Corrias is pleased to present Rewilding , a…"
-    },
-    {
-      "venueId": "pilar-corrias",
-      "title": "Georg Wilson | Against Nature",
-      "sourceUrl": "https://www.pilarcorrias.com/exhibitions/511-georg-wilson-against-nature/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
     },
     {
       "venueId": "pilar-corrias",
@@ -242,14 +234,6 @@
       "venueId": "chisenhale-gallery",
       "title": "Panel discussion with Dr Bernadette Buckley, Dr Vivienne Jabri, and Abiba Coulibaly, chaired by Dr Anna Adima. - Chisenhale Gallery",
       "sourceUrl": "https://chisenhale.org.uk/whats-on/panel-discussion-with-dr-bernadette-buckley-dr-vivienne-jabri-and-abiba-coulibaly-chaired/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "chisenhale-gallery",
-      "title": "Panel discussion with Mati Diop, Dr Eva Namusoke, and Dr Jennifer Nansubuga Makumbi, chaired by Dr Nobunye Levin. - Chisenhale Gallery",
-      "sourceUrl": "https://chisenhale.org.uk/whats-on/panel-discussion-with-mati-diop-dr-eva-namusoke-and-dr-jennifer-nansubuga-makumbi-chaired/",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -576,6 +560,14 @@
     },
     {
       "venueId": "hannah-barry-gallery",
+      "title": "C. Mae Bloom - Artissima (30 October–1 November 2026) • Hannah Barry Gallery",
+      "sourceUrl": "https://hannahbarry.com/exhibition/c-mae-bloom-artissima-30-october-1-november-2026/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-10-30 to 2026-11-01"
+    },
+    {
+      "venueId": "hannah-barry-gallery",
       "title": "C. Mae Bloom - Borrowers (12 March - 9 May 2026) • Hannah Barry Gallery",
       "sourceUrl": "https://hannahbarry.com/exhibition/c-mae-bloom-tbt-12-march-9-may-2026/",
       "reasonCode": "outside-window",
@@ -629,14 +621,6 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2025-03-27 to 2025-05-17"
-    },
-    {
-      "venueId": "hannah-barry-gallery",
-      "title": "Natalia González Martín - A change (would do you good) (13 May - 25 June 2022) • Hannah Barry Gallery",
-      "sourceUrl": "https://hannahbarry.com/exhibition/natalia-gonzalez-martin-a-change-would-do-you-good-13-may-25-june/",
-      "reasonCode": "invalid-date-range",
-      "reason": "Dates are reversed or outside the two-year validation boundary",
-      "evidence": "2022-05-13 to 2022-06-25"
     },
     {
       "venueId": "hannah-barry-gallery",
@@ -728,6 +712,14 @@
     },
     {
       "venueId": "sprueth-magers-london",
+      "title": "Hyun-Sook Song - Hyun-Sook Song - London – Sprüth Magers",
+      "sourceUrl": "https://spruethmagers.com/exhibitions/hyun-sook-song-london/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "sprueth-magers-london",
       "title": "John Baldessari - Sculptures - Los Angeles – Sprüth Magers",
       "sourceUrl": "https://spruethmagers.com/exhibitions/john-baldessari-sculptures-los-angeles/",
       "reasonCode": "location-branch-mismatch",
@@ -754,9 +746,9 @@
       "venueId": "sprueth-magers-london",
       "title": "Upcoming Exhibitions",
       "sourceUrl": "https://spruethmagers.com/exhibitions/upcoming/",
-      "reasonCode": "venue-location-unverified",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "sprueth-magers-london",
@@ -786,9 +778,9 @@
       "venueId": "kristin-hjellegjerde-gallery",
       "title": "Alexander Appleby: WEST PALM BEACH | SALON",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/607/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-05 to 2027-01-23"
+      "reasonCode": "missing-london-branch-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -860,7 +852,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/605/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-01-30 to 2027-02-27"
+      "evidence": "2027-03-06 to 2027-04-17"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -880,7 +872,7 @@
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Be Disobedient",
+      "title": "Be Disobedient: Trevor Anderson-Evans, Miranda Boulton, Andy Harper, Shawn McGovern, Lars Morell, Ro Robertson",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/620/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
@@ -930,9 +922,9 @@
       "venueId": "kristin-hjellegjerde-gallery",
       "title": "Citra Sasmita: Empire of Soul",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/526/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-05 to 2027-01-23"
+      "reasonCode": "missing-london-branch-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1130,9 +1122,9 @@
       "venueId": "kristin-hjellegjerde-gallery",
       "title": "Henry Baldwin: WEST PALM BEACH | SALON",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/608/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-05 to 2027-01-23"
+      "reasonCode": "missing-london-branch-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1384,6 +1376,14 @@
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Maliha Abidi: WEST PALM BEACH | SALON",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/646/overview/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-01-30 to 2027-02-27"
+    },
+    {
+      "venueId": "kristin-hjellegjerde-gallery",
       "title": "Manuela Benaim, Makiko Harris, Emily Pope: Body Archive",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/522/overview/",
       "reasonCode": "outside-window",
@@ -1512,6 +1512,14 @@
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Ralf Kokke: Candy for Crocodiles",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/581/overview/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-10-08 to 2026-11-07"
+    },
+    {
+      "venueId": "kristin-hjellegjerde-gallery",
       "title": "Rebecca Brodskis: West Palm Beach | Salon",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/574/overview/",
       "reasonCode": "outside-window",
@@ -1608,11 +1616,11 @@
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
-      "title": "Sara Vanderbeek: WEST PALM BEACH | SALON",
+      "title": "Sara VanDerBeek: WEST PALM BEACH | SALON",
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/606/overview/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-05 to 2027-01-23"
+      "reasonCode": "missing-london-branch-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1628,7 +1636,7 @@
       "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/643/overview/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2028-01-28 to 2028-02-26"
+      "evidence": "2028-01-28 to 2028-03-04"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -1709,6 +1717,14 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2027-11-05 to 2027-12-04"
+    },
+    {
+      "venueId": "kristin-hjellegjerde-gallery",
+      "title": "Umar Rashid",
+      "sourceUrl": "https://kristinhjellegjerde.com/exhibitions/647/overview/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2028-04-08 to 2028-05-06"
     },
     {
       "venueId": "kristin-hjellegjerde-gallery",
@@ -2376,6 +2392,22 @@
     },
     {
       "venueId": "serpentine-south",
+      "title": "I DIDNT REALISE YOU THOUGHT LIKE THAT",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/i-didnt-realise-you-thought-like-that/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Event is not explicitly assigned to this London branch",
+      "evidence": "{\"@type\": \"Place\", \"name\": \"Online Event\"}"
+    },
+    {
+      "venueId": "serpentine-south",
+      "title": "I DIDNT REALISE YOU THOUGHT LIKE THAT | Serpentine",
+      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/i-didnt-realise-you-thought-like-that/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "I DIDNT REALISE YOU THOUGHT LIKE THAT | Serpentine"
+    },
+    {
+      "venueId": "serpentine-south",
       "title": "Justin Caguiat: Change Ringing",
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/justin-caguiat-change-ringing/",
       "reasonCode": "excluded-event-type",
@@ -2440,14 +2472,6 @@
     },
     {
       "venueId": "serpentine-south",
-      "title": "Saturday Talks | Chris Bayley on Amar Kanwar | Serpentine",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-chris-bayley-on-amar-kanwar/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "serpentine-south",
       "title": "Saturday Talks | Kit Gurnos on Amar Kanwar | Serpentine",
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-kit-gurnos-on-amar-kanwar/",
       "reasonCode": "excluded-event-type",
@@ -2460,14 +2484,6 @@
       "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-natalia-grabowska-on-justin-caguiat-change-ringing/",
       "reasonCode": "excluded-event-type",
       "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "serpentine-south",
-      "title": "Saturday Talks: Chris Bayley on Amar Kanwar",
-      "sourceUrl": "https://www.serpentinegalleries.org/whats-on/saturday-talks-chris-bayley-on-amar-kanwar/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
       "evidence": null
     },
     {
@@ -2784,14 +2800,6 @@
     },
     {
       "venueId": "victoria-miro",
-      "title": "Haejin Park: Imaginer",
-      "sourceUrl": "https://www.victoria-miro.com/exhibitions/687/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "{\"name\": \"Miro Presents\"}"
-    },
-    {
-      "venueId": "victoria-miro",
       "title": "Hedda Sterne: Metamorphoses",
       "sourceUrl": "https://www.victoria-miro.com/exhibitions/608/",
       "reasonCode": "location-branch-mismatch",
@@ -2885,6 +2893,22 @@
       "reasonCode": "invalid-date-range",
       "reason": "Dates are reversed or outside the two-year validation boundary",
       "evidence": "2024-10-04 to 2024-11-02"
+    },
+    {
+      "venueId": "victoria-miro",
+      "title": "Khalif Tahir Thompson: Send in the Clowns",
+      "sourceUrl": "https://www.victoria-miro.com/exhibitions/683/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-10-08 to 2026-11-07"
+    },
+    {
+      "venueId": "victoria-miro",
+      "title": "Khalif Tahir Thompson: Send in the Clowns",
+      "sourceUrl": "https://www.victoria-miro.com/exhibitions/khalif-tahir-thompson-london-2026/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-10-08 to 2026-11-07"
     },
     {
       "venueId": "victoria-miro",
@@ -3184,6 +3208,14 @@
     },
     {
       "venueId": "victoria-miro",
+      "title": "Victoria Miro Projects – Haejin Park: Imaginer",
+      "sourceUrl": "https://www.victoria-miro.com/exhibitions/687/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Event is not explicitly assigned to this London branch",
+      "evidence": "{\"name\": \"Miro Presents\"}"
+    },
+    {
+      "venueId": "victoria-miro",
       "title": "Victoria Miro Projects – Jemima Murphy: Finding June",
       "sourceUrl": "https://www.victoria-miro.com/exhibitions/639/",
       "reasonCode": "invalid-date-range",
@@ -3240,8 +3272,8 @@
     },
     {
       "venueId": "victoria-miro",
-      "title": "Victoria Miro Projects: Sarah Cain",
-      "sourceUrl": "https://www.victoria-miro.com/exhibitions/596/",
+      "title": "Victoria Miro Projects – Yulia Iosilzon: Entangled Pluralism",
+      "sourceUrl": "https://www.victoria-miro.com/exhibitions/675/",
       "reasonCode": "location-branch-mismatch",
       "reason": "Event is not explicitly assigned to this London branch",
       "evidence": "{\"name\": \"Miro Presents\"}"
@@ -3285,22 +3317,6 @@
       "reasonCode": "invalid-date-range",
       "reason": "Dates are reversed or outside the two-year validation boundary",
       "evidence": "2024-09-25 to 2024-11-02"
-    },
-    {
-      "venueId": "victoria-miro",
-      "title": "Yulia Iosilzon: Entangled Pluralism",
-      "sourceUrl": "https://www.victoria-miro.com/exhibitions/675/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Event is not explicitly assigned to this London branch",
-      "evidence": "{\"name\": \"Miro Presents\"}"
-    },
-    {
-      "venueId": "tate-britain",
-      "title": "Art Chit Chats",
-      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-britain/art-chit-chats",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
     },
     {
       "venueId": "tate-britain",
@@ -3384,35 +3400,27 @@
     },
     {
       "venueId": "whitechapel-gallery",
-      "title": "Backyard Biennial: East - Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/backyard-biennial-east/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "whitechapel-gallery",
-      "title": "East End Voices Film Programme - Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/east-end-voices-film-programme/",
-      "reasonCode": "excluded-event-type",
-      "reason": "Page is a non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "whitechapel-gallery",
-      "title": "East of the Aldgate Pump - Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/east-of-the-aldgate-pump/",
+      "title": "Common Rooms Displays - Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/common-rooms-displays/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2026-07-15 to 2026-09-06"
     },
     {
       "venueId": "whitechapel-gallery",
-      "title": "Gabriel Chaile: Archaeology of Memory - Whitechapel Gallery",
-      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/gabriel-chaile-archaeology-of-memory/",
+      "title": "Fozia Ismail: A Song for the Xeedho – The Knot Makers - Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/fozia-ismail-a-song-for-the-xeedho-the-knot-makers/",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-04-01 to 2026-09-06"
+      "evidence": "2026-07-15 to 2026-09-06"
+    },
+    {
+      "venueId": "whitechapel-gallery",
+      "title": "John Smith Film Programme - Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/john-smith-film-programme/",
+      "reasonCode": "excluded-event-type",
+      "reason": "Page is a non-exhibition event",
+      "evidence": null
     },
     {
       "venueId": "whitechapel-gallery",
@@ -3429,6 +3437,14 @@
       "reasonCode": "excluded-event-type",
       "reason": "Page is a non-exhibition event",
       "evidence": null
+    },
+    {
+      "venueId": "whitechapel-gallery",
+      "title": "This Must Be the Place: Artists for Whitechapel Gallery - Whitechapel Gallery",
+      "sourceUrl": "https://www.whitechapelgallery.org/exhibitions/this-must-be-the-place-artists-for-whitechapel-gallery/",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-10-08 to 2026-11-08"
     },
     {
       "venueId": "whitechapel-gallery",
@@ -3504,6 +3520,14 @@
     },
     {
       "venueId": "gagosian-britannia-street",
+      "title": "John Chamberlain & Robert Rauschenberg, Rome, November 5–December 1, 2026",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/john-chamberlain-and-robert-rauschenberg/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "John Chamberlain & Robert Rauschenberg, Rome, November 5–December 1, 2026"
+    },
+    {
+      "venueId": "gagosian-britannia-street",
       "title": "Lee Krasner: Works from the 1960s, rue de Ponthieu, Paris, October 19–December 18, 2026",
       "sourceUrl": "https://gagosian.com/exhibitions/2026/lee-krasner/",
       "reasonCode": "location-branch-mismatch",
@@ -3520,19 +3544,19 @@
     },
     {
       "venueId": "gagosian-britannia-street",
+      "title": "Richard Avedon: Hollywood, Beverly Hills, November 4–December 19, 2026",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/richard-avedon-hollywood/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "Richard Avedon: Hollywood, Beverly Hills, November 4–December 19, 2026"
+    },
+    {
+      "venueId": "gagosian-britannia-street",
       "title": "Rudolf Stingel, rue de Castiglione, Paris, October 22, 2026–January 9, 2027",
       "sourceUrl": "https://gagosian.com/exhibitions/2026/rudolf-stingel/",
       "reasonCode": "location-branch-mismatch",
       "reason": "Page is not explicitly assigned to this London branch",
       "evidence": "Rudolf Stingel, rue de Castiglione, Paris, October 22, 2026–January 9, 2027"
-    },
-    {
-      "venueId": "gagosian-britannia-street",
-      "title": "Stanley Whitney: Isn’t Love the Strangest Thing, Hong Kong, September 10–November 7, 2026",
-      "sourceUrl": "https://gagosian.com/exhibitions/2026/stanley-whitney-isnt-love-the-strangest-thing/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Stanley Whitney: Isn’t Love the Strangest Thing, Hong Kong, September 10–November 7, 2026"
     },
     {
       "venueId": "gagosian-britannia-street",
@@ -3592,6 +3616,14 @@
     },
     {
       "venueId": "gagosian-grosvenor-hill",
+      "title": "John Chamberlain & Robert Rauschenberg, Rome, November 5–December 1, 2026",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/john-chamberlain-and-robert-rauschenberg/",
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "John Chamberlain & Robert Rauschenberg, Rome, November 5–December 1, 2026"
+    },
+    {
+      "venueId": "gagosian-grosvenor-hill",
       "title": "Lee Krasner: Works from the 1960s, rue de Ponthieu, Paris, October 19–December 18, 2026",
       "sourceUrl": "https://gagosian.com/exhibitions/2026/lee-krasner/",
       "reasonCode": "non-london-location",
@@ -3608,19 +3640,19 @@
     },
     {
       "venueId": "gagosian-grosvenor-hill",
+      "title": "Richard Avedon: Hollywood, Beverly Hills, November 4–December 19, 2026",
+      "sourceUrl": "https://gagosian.com/exhibitions/2026/richard-avedon-hollywood/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "gagosian-grosvenor-hill",
       "title": "Rudolf Stingel, rue de Castiglione, Paris, October 22, 2026–January 9, 2027",
       "sourceUrl": "https://gagosian.com/exhibitions/2026/rudolf-stingel/",
       "reasonCode": "non-london-location",
       "reason": "Rejected by the London location audit",
       "evidence": "Official event title/location assigns the exhibition to Paris, not London"
-    },
-    {
-      "venueId": "gagosian-grosvenor-hill",
-      "title": "Stanley Whitney: Isn’t Love the Strangest Thing, Hong Kong, September 10–November 7, 2026",
-      "sourceUrl": "https://gagosian.com/exhibitions/2026/stanley-whitney-isnt-love-the-strangest-thing/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Stanley Whitney: Isn’t Love the Strangest Thing, Hong Kong, September 10–November 7, 2026"
     },
     {
       "venueId": "gagosian-grosvenor-hill",
@@ -4064,11 +4096,11 @@
     },
     {
       "venueId": "ben-brown-fine-arts",
-      "title": "Gavin Turk: The Conspiracy of Blindness",
-      "sourceUrl": "https://www.benbrownfinearts.com/exhibitions/212-gavin-turk-the-conspiracy-of-blindness/",
-      "reasonCode": "invalid-date-range",
-      "reason": "Dates are reversed or outside the two-year validation boundary",
-      "evidence": "2024-03-15 to 2024-05-10"
+      "title": "Gavin Turk",
+      "sourceUrl": "https://www.benbrownfinearts.com/exhibitions/236-gavin-turk-betwixt/",
+      "reasonCode": "missing-london-branch-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Multi-location gallery page does not explicitly assign this exhibition to London"
     },
     {
       "venueId": "ben-brown-fine-arts",
@@ -4224,6 +4256,14 @@
     },
     {
       "venueId": "sadie-coles-hq",
+      "title": "Jim Lambie | Jim Lambie",
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/jim-lambie-2",
+      "reasonCode": "missing-dates",
+      "reason": "Exhibition requires both start and end dates",
+      "evidence": null
+    },
+    {
+      "venueId": "sadie-coles-hq",
       "title": "John Currin | John Currin",
       "sourceUrl": "https://www.sadiecoles.com/exhibitions/opening-credits",
       "reasonCode": "missing-dates",
@@ -4261,6 +4301,14 @@
       "reasonCode": "missing-dates",
       "reason": "Exhibition requires both start and end dates",
       "evidence": null
+    },
+    {
+      "venueId": "sadie-coles-hq",
+      "title": "Knot Eye | Martine Syms",
+      "sourceUrl": "https://www.sadiecoles.com/exhibitions/knot-eye",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2026-09-17 to 2026-11-07"
     },
     {
       "venueId": "sadie-coles-hq",
@@ -4317,14 +4365,6 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2026-01-17 to 2026-03-07"
-    },
-    {
-      "venueId": "sadie-coles-hq",
-      "title": "Recent Work | Catherine Murphy",
-      "sourceUrl": "https://www.sadiecoles.com/exhibitions/recent-work",
-      "reasonCode": "missing-dates",
-      "reason": "Exhibition requires both start and end dates",
-      "evidence": null
     },
     {
       "venueId": "sadie-coles-hq",
@@ -4456,14 +4496,6 @@
     },
     {
       "venueId": "the-redfern-gallery",
-      "title": "Centenary Exhibition: Part 1 - Paintings, Drawings, Prints & Sculpture - Works",
-      "sourceUrl": "https://www.redfern-gallery.com/exhibitions/94-centenary-exhibition-part-1-paintings-drawings-prints-sculpture/",
-      "reasonCode": "invalid-date-range",
-      "reason": "Dates are reversed or outside the two-year validation boundary",
-      "evidence": "2023-06-21 to 2023-09-07"
-    },
-    {
-      "venueId": "the-redfern-gallery",
       "title": "Centenary Exhibition: Part 2 - The Red Studio - Works",
       "sourceUrl": "https://www.redfern-gallery.com/exhibitions/95-centenary-exhibition-part-2-the-red-studio/",
       "reasonCode": "invalid-date-range",
@@ -4512,6 +4544,14 @@
     },
     {
       "venueId": "the-redfern-gallery",
+      "title": "Lydia Corbett | Sylvette David - My Dance With Picasso - A Retrospective - Works",
+      "sourceUrl": "https://www.redfern-gallery.com/exhibitions/121-lydia-corbett-sylvette-david-my-dance-a-retrospective/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "the-redfern-gallery",
       "title": "Patrick Procktor RA - Selected Prints - Works",
       "sourceUrl": "https://www.redfern-gallery.com/exhibitions/116-patrick-procktor-ra-selected-prints/",
       "reasonCode": "outside-window",
@@ -4530,8 +4570,8 @@
       "venueId": "the-redfern-gallery",
       "title": "Peter Sedgley - 5 Decades - Works",
       "sourceUrl": "https://www.redfern-gallery.com/exhibitions/105-peter-sedgley-5-decades/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "reasonCode": "invalid-date-range",
+      "reason": "Dates are reversed or outside the two-year validation boundary",
       "evidence": "2024-11-06 to 2024-12-19"
     },
     {
@@ -4618,9 +4658,9 @@
       "venueId": "david-zwirner-london",
       "title": "Jem Perucchini: Sospiro | New York: Tribeca | November 6—December 19, 2026 | David Zwirner",
       "sourceUrl": "https://www.davidzwirner.com/exhibitions/2026/jem-perucchini",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "Jem Perucchini: Sospiro | New York: Tribeca | November 6—December 19, 2026 | David Zwirner"
     },
     {
       "venueId": "david-zwirner-london",
@@ -4776,14 +4816,6 @@
     },
     {
       "venueId": "rhodes-contemporary-art",
-      "title": "Group Chat",
-      "sourceUrl": "https://rhodescontemporaryart.com/exhibitions/143-group-chat-group-show/",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "rhodes-contemporary-art",
       "title": "Head Over Heels",
       "sourceUrl": "https://rhodescontemporaryart.com/exhibitions/163-head-over-heels-kevin-sabo/",
       "reasonCode": "outside-window",
@@ -4821,6 +4853,14 @@
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
+    },
+    {
+      "venueId": "rhodes-contemporary-art",
+      "title": "Project Room: Incantations",
+      "sourceUrl": "https://rhodescontemporaryart.com/exhibitions/177-project-room-incantations-taylor-franklin-quinn/",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "rhodes-contemporary-art",
@@ -5056,14 +5096,6 @@
     },
     {
       "venueId": "pace-gallery-london",
-      "title": "Asher Liftin: Recent Work | Pace Gallery",
-      "sourceUrl": "https://www.pacegallery.com/exhibitions/asher-liftin-recent-work/",
-      "reasonCode": "location-branch-mismatch",
-      "reason": "Page is not explicitly assigned to this London branch",
-      "evidence": "Asher Liftin: Recent Work | Pace Gallery"
-    },
-    {
-      "venueId": "pace-gallery-london",
       "title": "At the Edge of Things | Pace Gallery",
       "sourceUrl": "https://www.pacegallery.com/exhibitions/baer-corse-martin/",
       "reasonCode": "missing-dates",
@@ -5093,6 +5125,14 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2026-01-30 to 2026-07-14"
+    },
+    {
+      "venueId": "pace-gallery-london",
+      "title": "Drawings and Prints: Calvin Burnett and Walter Feldman | Pace Gallery",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/drawings-and-prints-calvin-burnett-and-walter-feldman/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "pace-gallery-london",
@@ -5170,9 +5210,9 @@
       "venueId": "pace-gallery-london",
       "title": "Lucas Samaras: Boxes and Reconstructions | Pace Gallery",
       "sourceUrl": "https://www.pacegallery.com/exhibitions/lucas-samaras-boxes-reconstructions/",
-      "reasonCode": "venue-location-unverified",
-      "reason": "Rejected by the London location audit",
-      "evidence": "Venue lacks an official-source postcode verified to the London region"
+      "reasonCode": "location-branch-mismatch",
+      "reason": "Page is not explicitly assigned to this London branch",
+      "evidence": "Lucas Samaras: Boxes and Reconstructions | Pace Gallery"
     },
     {
       "venueId": "pace-gallery-london",
@@ -5600,16 +5640,16 @@
     },
     {
       "venueId": "union-pacific",
-      "title": "The Other Summer - Sebastián Espejo - Union Pacific",
-      "sourceUrl": "https://www.unionpacific.co.uk/exhibitions/theothersummer/",
+      "title": "Tamara Kalo - In light of my absence - Union Pacific",
+      "sourceUrl": "https://www.unionpacific.co.uk/exhibitions/tamara-kalo/",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
     },
     {
       "venueId": "union-pacific",
-      "title": "The Window Set - Koak - Union Pacific",
-      "sourceUrl": "https://www.unionpacific.co.uk/exhibitions/the-window-set/",
+      "title": "The Other Summer - Sebastián Espejo - Union Pacific",
+      "sourceUrl": "https://www.unionpacific.co.uk/exhibitions/theothersummer/",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -5677,22 +5717,6 @@
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2026-10-07 to 2026-10-31"
-    },
-    {
-      "venueId": "blueshop-cottage",
-      "title": "‘Landslides’ by Orla Kane — Blue Shop Cottage",
-      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/landslides-by-orla-kane",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-03-04 to 2026-03-28"
-    },
-    {
-      "venueId": "blueshop-cottage",
-      "title": "‘Punching Around the Big Balloon’ by Vivien McDermid — Blue Shop Cottage",
-      "sourceUrl": "https://www.blueshopcottage.com/exhibitions/punching-around-the-big-balloon-by-vivien-mcdermid",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-04-08 to 2026-05-02"
     },
     {
       "venueId": "blueshop-cottage",
@@ -6008,6 +6032,14 @@
     },
     {
       "venueId": "design-museum",
+      "title": "The Nue Black Aesthetic",
+      "sourceUrl": "https://designmuseum.org/exhibitions/the-nue-black-aesthetic",
+      "reasonCode": "missing-london-event-evidence",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Official exhibition page contains no explicit London location or London postcode"
+    },
+    {
+      "venueId": "design-museum",
       "title": "Touring Exhibitions",
       "sourceUrl": "https://designmuseum.org/exhibitions/touring-exhibitions",
       "reasonCode": "missing-dates",
@@ -6304,8 +6336,16 @@
     },
     {
       "venueId": "goldsmiths-cca",
-      "title": "Goldsmiths CCA Exhibitions EPISODE 16: KATIE SHANNON",
+      "title": "Goldsmiths CCA Exhibitions",
       "sourceUrl": "https://goldsmithscca.art/exhibitions/upcoming/",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "goldsmiths-cca",
+      "title": "Goldsmiths CCA Exhibitions EPISODE 16: KATIE SHANNON",
+      "sourceUrl": "https://goldsmithscca.art/exhibition/episode-16-katie-shannon/",
       "reasonCode": "venue-location-unverified",
       "reason": "Rejected by the London location audit",
       "evidence": "Venue lacks an official-source postcode verified to the London region"
@@ -6554,17 +6594,17 @@
       "venueId": "london-museum",
       "title": "Sound of London DJ collective",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/sound-of-london-dj-collective/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-04 to 2027-03-27"
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "london-museum",
       "title": "Tea Club",
       "sourceUrl": "https://www.londonmuseum.org.uk/whats-on/tea-club/",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2026-12-08 to 2027-03-30"
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "london-museum",
@@ -6904,16 +6944,16 @@
     },
     {
       "venueId": "royal-museums-greenwich",
-      "title": "An Introduction to Life in the Universe",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/astronomy-courses/life-universe",
-      "reasonCode": "out-of-scope",
-      "reason": "Page is outside the London temporary-exhibition scope",
-      "evidence": "An Introduction to Life in the Universe"
+      "title": "Astronomers Take Over",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/astronomers-take-over",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
     },
     {
       "venueId": "royal-museums-greenwich",
-      "title": "Astronomers Take Over",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/astronomers-take-over",
+      "title": "Book launch - Black and Asian Seafarers: A Visual History",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/cutty-sark/book-launch-black-asian-seafarers-visual-history",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -6960,27 +7000,11 @@
     },
     {
       "venueId": "royal-museums-greenwich",
-      "title": "Diwali at the National Maritime Museum",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/diwali",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "royal-museums-greenwich",
-      "title": "First Look at First Light",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/first-look-first-light",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "royal-museums-greenwich",
-      "title": "Introduction to Astrophotography Online",
-      "sourceUrl": "https://www.rmg.co.uk/whats-on/astronomy-courses/introduction-astrophotography",
+      "title": "Foundation Astrophysics",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/astronomy-courses/foundation-astrophysics",
       "reasonCode": "out-of-scope",
       "reason": "Page is outside the London temporary-exhibition scope",
-      "evidence": "Introduction to Astrophotography Online"
+      "evidence": "Foundation Astrophysics"
     },
     {
       "venueId": "royal-museums-greenwich",
@@ -6989,6 +7013,14 @@
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
+    },
+    {
+      "venueId": "royal-museums-greenwich",
+      "title": "Moana 100",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/national-maritime-museum/moana-100",
+      "reasonCode": "venue-location-unverified",
+      "reason": "Rejected by the London location audit",
+      "evidence": "Venue lacks an official-source postcode verified to the London region"
     },
     {
       "venueId": "royal-museums-greenwich",
@@ -7034,6 +7066,14 @@
       "venueId": "royal-museums-greenwich",
       "title": "ZWO Astronomy Photographer of the Year 2026 winners",
       "sourceUrl": "https://www.rmg.co.uk/whats-on/astronomy-photographer-year/galleries/overall-winners-2026",
+      "reasonCode": "missing-dates",
+      "reason": "Page does not provide both exhibition dates",
+      "evidence": null
+    },
+    {
+      "venueId": "royal-museums-greenwich",
+      "title": "in the dark",
+      "sourceUrl": "https://www.rmg.co.uk/whats-on/cutty-sark/in-the-dark",
       "reasonCode": "missing-dates",
       "reason": "Page does not provide both exhibition dates",
       "evidence": null
@@ -7128,22 +7168,6 @@
     },
     {
       "venueId": "somerset-house",
-      "title": "Jenkin van Zyl: Enclosure - Relaxed Session",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/jenkin-van-zyl-enclosure-relaxed-session",
-      "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
-      "evidence": null
-    },
-    {
-      "venueId": "somerset-house",
-      "title": "Jenkin van Zyl: Enclosure | Relaxed Session",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/jenkin-van-zyl-enclosure-relaxed-session",
-      "reasonCode": "outside-window",
-      "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-02-27 to 2027-05-09"
-    },
-    {
-      "venueId": "somerset-house",
       "title": "Skate Lates with Aperol Spritz",
       "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-lates-26-27",
       "reasonCode": "excluded-event-type",
@@ -7160,18 +7184,34 @@
     },
     {
       "venueId": "somerset-house",
-      "title": "Skate at Somerset House with Virgin Atlantic Holidays",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-somerset-house",
+      "title": "Skate Lates with Aperol Spritz: 2CPERREA: Jone of Arx",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-lates-with-aperol-spritz--2cperrea-jone-of-arx",
       "reasonCode": "excluded-event-type",
-      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
+      "reason": "Page is a non-exhibition event",
       "evidence": null
     },
     {
       "venueId": "somerset-house",
-      "title": "Upgrade Yourself Monthly | How to Grow Sustainable Materials Through Biodesign",
-      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/upgrade-yourself-monthly-sessions/upgrade-yourself-monthly-how-to-grow-sustainable-materials-biodesign",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
+      "title": "Skate Lates with Aperol Spritz: Netil Radio",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-lates-with-aperol-spritz-netil-radio",
+      "reasonCode": "excluded-event-type",
+      "reason": "Page is a non-exhibition event",
+      "evidence": null
+    },
+    {
+      "venueId": "somerset-house",
+      "title": "Skate Lates with Aperol Spritz: Rhythm Section: Mali-I & The Return of She",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-lates-with-aperol-spritz-rhythm-section-mali-i-the-return-of-she",
+      "reasonCode": "excluded-event-type",
+      "reason": "Page is a non-exhibition event",
+      "evidence": null
+    },
+    {
+      "venueId": "somerset-house",
+      "title": "Skate at Somerset House with Virgin Atlantic Holidays",
+      "sourceUrl": "https://www.somersethouse.org.uk/whats-on/skate-somerset-house",
+      "reasonCode": "excluded-event-type",
+      "reason": "Talk, tour, course, screening, preview, or other non-exhibition event",
       "evidence": null
     },
     {
@@ -7368,14 +7408,6 @@
     },
     {
       "venueId": "tate-modern",
-      "title": "Hyundai Commission 2027",
-      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/hyundai-commission-2027",
-      "reasonCode": "missing-dates",
-      "reason": "Page does not provide both exhibition dates",
-      "evidence": null
-    },
-    {
-      "venueId": "tate-modern",
       "title": "Ink",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/ink",
       "reasonCode": "outside-window",
@@ -7400,11 +7432,35 @@
     },
     {
       "venueId": "tate-modern",
+      "title": "Monet: Painting Time",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/monet/relaxed-hours-monet",
+      "reasonCode": "outside-window",
+      "reason": "Exhibition does not overlap the generated calendar-month window",
+      "evidence": "2027-03-16 to 2027-06-08"
+    },
+    {
+      "venueId": "tate-modern",
       "title": "Nalini Malani",
       "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/nalini-malani",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
       "evidence": "2027-07-01 to 2028-01-09"
+    },
+    {
+      "venueId": "tate-modern",
+      "title": "Relaxed Hours: Julio Le Parc",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/julio-le-parc/relaxed-hours-julio-le-parc",
+      "reasonCode": "missing-required-description",
+      "reason": "Tate exhibition has no reliable exhibition-specific description",
+      "evidence": null
+    },
+    {
+      "venueId": "tate-modern",
+      "title": "Relaxed Hours: Light and Magic",
+      "sourceUrl": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic/relaxed-hours-light-and-magic",
+      "reasonCode": "missing-required-description",
+      "reason": "Tate exhibition has no reliable exhibition-specific description",
+      "evidence": null
     },
     {
       "venueId": "vam",
@@ -7452,7 +7508,7 @@
       "sourceUrl": "https://www.vam.ac.uk/exhibitions/punk-to-pop",
       "reasonCode": "outside-window",
       "reason": "Exhibition does not overlap the generated calendar-month window",
-      "evidence": "2027-03-13 to 2028-01-02"
+      "evidence": "2027-03-13 to 2027-03-21"
     },
     {
       "venueId": "vam",
@@ -8004,7 +8060,7 @@
       "sourceUrl": "https://wellcomecollection.org/exhibitions/the-archive-of-an-unseen",
       "reasonCode": "invalid-date-range",
       "reason": "Dates are reversed or outside the two-year validation boundary",
-      "evidence": "2022-12-13 to 2023-04-23"
+      "evidence": "2022-12-13 to 2023-04-22"
     },
     {
       "venueId": "wellcome-collection",
